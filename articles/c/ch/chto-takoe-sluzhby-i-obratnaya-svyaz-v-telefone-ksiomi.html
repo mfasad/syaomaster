@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Службы и обратная связь Xiaomi: что это и как настроить? — СяоМастер</title>
+    <meta name="description" content="Подробный разбор системных процессов Android на Xiaomi. Что такое службы, как работает обратная связь и стоит ли отключать системные компоненты?">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/c/ch/chto-takoe-sluzhby-i-obratnaya-svyaz-v-telefone-ksiomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Службы и обратная связь Xiaomi: что это и как настроить?">
+    <meta property="og:description" content="Подробный разбор системных процессов Android на Xiaomi. Что такое службы, как работает обратная связь и стоит ли отключать системные компоненты?">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Службы и обратная связь Xiaomi: что это и как настроить?</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#что-такое-системные-службы-в-android-и-miui">Что такое системные службы в Android и MIUI</a></li><li><a href="#основные-типы-фоновых-процессов-на-xiaomi">Основные типы фоновых процессов на Xiaomi</a></li><li><a href="#механизм-обратной-связи-user-experience-program">Механизм обратной связи: User Experience Program</a></li><li><a href="#приложение-обратная-связь-services-feedback">Приложение «Обратная связь» (Services & Feedback)</a></li><li><a href="#стоит-ли-отключать-системные-службы">Стоит ли отключать системные службы</a></li><li><a href="#диагностика-и-управление-через-инженерное-меню">Диагностика и управление через инженерное меню</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/c/ch/chto-takoe-miuibiometric-na-xiaomi.html">MiuiBiometric на Xiaomi: что это и можно ли удалить?</a></li><li><a href="/articles/k/ka/kak-podklyuchit-termometr-xiaomi.html">Как подключить термометр Xiaomi: полная инструкция</a></li><li><a href="/articles/k/ka/kak-posmotret-parol-ot-gugla-v-telefone-xiaomi.html">Как посмотреть пароль от Гугла на Xiaomi: инструкция</a></li><li><a href="/articles/k/ka/kak-ubrat-zerkalnoe-video-na-syaomi.html">Как убрать зеркальное видео на Xiaomi: полные настройки камеры</a></li><li><a href="/articles/c/ch/chto-mozhno-uznat-po-serijnomu-nomeru-telefona-xiaomi.html">Что можно узнать по серийному номеру Xiaomi: полная расшифровка</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Службы и обратная связь в телефонах Xiaomi: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#что-такое-системные-службы-в-android-и-miui">Что такое системные службы в Android и MIUI</a></li><li><a href="#основные-типы-фоновых-процессов-на-xiaomi">Основные типы фоновых процессов на Xiaomi</a></li><li><a href="#механизм-обратной-связи-user-experience-program">Механизм обратной связи: User Experience Program</a></li><li><a href="#приложение-обратная-связь-services-feedback">Приложение «Обратная связь» (Services & Feedback)</a></li><li><a href="#стоит-ли-отключать-системные-службы">Стоит ли отключать системные службы</a></li><li><a href="#диагностика-и-управление-через-инженерное-меню">Диагностика и управление через инженерное меню</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфонов <em>Xiaomi</em>, <em>Redmi</em> и <em>POCO</em> часто сталкиваются с непонятными уведомлениями или процессами в диспетчере задач, связанными со службами системы. Многие пользователи ошибочно полагают, что эти фоновые процессы лишь расходуют заряд батареи, хотя на самом деле они обеспечивают базовую функциональность устройства. Понимание того, как работают <strong>системные службы</strong>, позволяет грамотно настроить гаджет и избежать нестабильной работы.</p>
+
+<p>С другой стороны, термин «обратная связь» в экосистеме <em>MIUI</em> и <em>HyperOS</em> имеет двойное значение: это и механизм передачи данных об ошибках разработчикам, и конкретное приложение для тестирования. Разобраться в том, какие процессы можно безопасно завершить, а какие трогать категорически нельзя, поможет вам стать более продвинутым пользователем. В этой статье мы детально разберем архитектуру работы фоновых задач и инструменты аналитики.</p>
+
+<h2 id="что-такое-системные-службы-в-android-и-miui">Что такое системные службы в Android и MIUI</h2>
+
+<p>Системные службы представляют собой низкоуровневые процессы, которые запускаются операционной системой для выполнения специфических задач без прямого вмешательства пользователя. В отличие от обычных приложений, которые вы открываете и закрываете, службы работают в фоновом режиме постоянно или по расписанию. В оболочках <em>Xiaomi</em> они часто имеют префикс <code>com.android.</code> или <code>com.miui.</code>, что указывает на их принадлежность к ядру системы или фирменным надстройкам производителя.</p>
+
+<p>Основная цель существования служб — обеспечение связи между «железом» смартфона и установленными программами. Например, когда вы получаете звонок, именно соответствующая служба активирует динамик, экран и вибромотор, передавая данные от сотового модуля к интерфейсу. Если попытаться принудительно остановить критически важный процесс, устройство может уйти в циклическую перезагрузку или перестать реагировать на касания.</p>
+
+<p>Важно различать пользовательские приложения и системные компоненты. Пользовательские программы можно удалять, а системные — лишь ограничивать их активность. <strong>Диспетчер задач</strong> в Android показывает запущенные процессы, но не всегда дает полный контроль над ними из соображений безопасности. Понимание этой иерархии необходимо для правильной оптимизации работы смартфона.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не используйте сторонние «убийцы задач» для принудительного завершения системных процессов, помеченных как критические. Это может привести к потере данных или повреждению системных файлов оболочки.</p>
+</blockquote>
+
+<p>Современные версии <em>Android</em> имеют встроенные механизмы управления памятью, которые сами решают, какие службы держать активными, а какие выгрузить. Вмешательство в этот процесс без веской причины (например, баг конкретной службы) обычно приносит больше вреда, чем пользы для автономности устройства.</p>
+
+<h2 id="основные-типы-фоновых-процессов-на-xiaomi">Основные типы фоновых процессов на Xiaomi</h2>
+
+<p>В смартфонах <em>Xiaomi</em> можно выделить несколько ключевых категорий служб, каждая из которых отвечает за свой сегмент функциональности. Первую группу составляют службы базовой связи, которые обеспечивают работу звонков, SMS и мобильного интернета. Без них телефон превращается в простой медиа-плеер, неспособный взаимодействовать с сетью оператора.</p>
+
+<p>Вторую категорию представляют сервисы <em>Google Play</em> и системные службы <em>MIUI</em>. Они отвечают за синхронизацию контактов, работу карт, геолокацию, уведомления из магазинов приложений иPush-уведомления от мессенджеров. Именно эти процессы чаще всего вызывают вопросы у пользователей из-за своего постоянного присутствия в оперативной памяти.</p>
+
+<p>Третья группа — это службы аналитики и диагностики. Они собирают данные о работе устройства, чтобы отправлять отчеты об ошибках или улучшать алгоритмы работы системы. Пользователь может частично управлять их активностью через настройки конфиденциальности, но полностью отключить их без root-прав обычно невозможно.</p>
+
+<ul>
+<li>📱 <strong>Telephony Services</strong> — обеспечивают регистрацию в сети и передачу голосовых данных.</li>
+<li>🔍 <strong>Location Services</strong> — обрабатывают данные GPS, Wi-Fi и вышек сотовой связи для определения координат.</li>
+<li>🔄 <strong>Sync Services</strong> — отвечают за фоновую загрузку почты, фото в облако и обновление виджетов.</li>
+<li>🛡️ <strong>Security Services</strong> — мониторят систему на наличие вирусов и подозрительной активности в реальном времени.</li>
+</ul>
+
+<div class="pb-poll" id="poll-d76fe96e"><div class="pb-poll-question">📊 Какая категория служб больше всего расходует батарею на вашем Xiaomi?</div><div class="pb-poll-option" data-poll="d76fe96e" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Службы Google (Play, Карты)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d76fe96e" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Системные службы MIUI</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d76fe96e" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Приложения соцсетей</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d76fe96e" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, не слежу</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="механизм-обратной-связи-user-experience-program">Механизм обратной связи: User Experience Program</h2>
+
+<p>В настройках каждого смартфона <em>Xiaomi</em> присутствует раздел, посвященный программе улучшения пользовательского опыта. Это и есть механизм <strong>обратной связи</strong> (Feedback), который автоматически собирает телеметрические данные. К ним относятся логи сбоев приложений, статистика использования функций и техническая информация об устройстве.</p>
+
+<p>Передача этих данных помогает инженерам компании выявлять баги в новых версиях прошивки <em>HyperOS</em> или <em>MIUI</em>. Если вы являетесь участником бета-тестирования, наличие активной обратной связи является обязательным требованием. Для обычных пользователей участие в программе носит добровольный характер, и ее можно отключить в любой момент.</p>
+
+<p>Стоит отметить, что отключение сбора данных не влияет на работу основных функций телефона, таких как звонки или интернет. Однако, в редких случаях, при возникновении системных ошибок, автоматический отчет может помочь службе поддержки быстрее диагностировать проблему, если вы обратитесь к ним официально.</p>
+
+<p>Для доступа к настройкам необходимо перейти в меню <code>Настройки → Пароли и безопасность → Конфиденциальность → Программа улучшения работы</code>. Здесь вы увидите переключатель, который активирует или деактивирует отправку статистики. Также в этом разделе часто содержится информация о том, какие именно данные собираются.</p>
+
+<details class="pb-accordion"><summary>Что именно отправляется в Xiaomi?</summary><div class="pb-accordion-body"><p>В отчеты обычно входит модель устройства, версия прошивки, список установленных приложений, данные о сбоях (крэшах) и использование батареи. Личные файлы, фотографии, переписки и пароли в эти отчеты не входят и не передаются на серверы компании.</p></div></details>
+
+<h2 id="приложение-обратная-связь-services-feedback">Приложение «Обратная связь» (Services & Feedback)</h2>
+
+<p>Отдельного внимания заслуживает системное приложение с названием «Обратная связь» или «Services & Feedback». В отличие от фоновых процессов, это полноценный инструмент для взаимодействия пользователя с разработчиками. Оно предустановлено на всех актуальных моделях <em>Redmi</em>, <em>POCO</em> и <em>Xiaomi</em>.</p>
+
+<p>Основная функция этого приложения — создание детализированных отчетов о багах. Если вы обнаружили ошибку в работе интерфейса, странное поведение камеры или проблемы со звуком, вы можете создать репорт прямо из этого меню. Система автоматически соберет логи, скриншоты и техническую информацию, которую затем можно отправить разработчикам.</p>
+
+<p>Кроме того, внутри приложения доступен раздел с часто задаваемыми вопросами и руководствами по использованию различных функций оболочки. Там можно найти ответы на вопросы о настройке второго пространства, клонировании приложений или использовании ИК-порта.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Функция приложения</th>
+<th>Описание</th>
+<th>Необходимость</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Отчет об ошибке</td>
+<td>Сбор логов при сбое системы</td>
+<td>Только при наличии багов</td>
+</tr>
+<tr>
+<td>FAQ и советы</td>
+<td>Базы знаний и инструкции</td>
+<td>Полезно для новичков</td>
+</tr>
+<tr>
+<td>Оценка функций</td>
+<td>Голосование за новые идеи</td>
+<td>Для активных участников сообщества</td>
+</tr>
+<tr>
+<td>Проверка обновлений</td>
+<td>Ручной поиск новых версий ПО</td>
+<td>Средняя (есть в настройках)</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед отправкой отчета</h4><label class="check-item"><input type="checkbox"><span>Опишите проблему подробно</span></label><label class="check-item"><input type="checkbox"><span>Укажите шаги для воспроизведения</span></label><label class="check-item"><input type="checkbox"><span>Приложите скриншоты ошибки</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь в наличии интернета</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="стоит-ли-отключать-системные-службы">Стоит ли отключать системные службы</h2>
+
+<p>Вопрос об отключении служб волнует многих пользователей, стремящихся продлить время работы от аккумулятора. Теоретически, отключение неиспользуемых сервисов может сэкономить немного энергии, но на практике современные смартфоны <em>Xiaomi</em> достаточно оптимизированы. Бездумное отключение служб часто приводит к непредсказуемым последствиям.</p>
+
+<p>Например, отключение службы геолокации может привести к тому, что карты перестанут показывать текущее местоположение, а погода не будет обновляться. Отключение служб синхронизации приведет к тому, что новые письма в Gmail или контакты не будут появляться на телефоне автоматически. <mark>Критически важным является сохранение активности служб, связанных с телефонией и системным ядром Android.</mark></p>
+
+<p>Если вы заметили, что конкретная служба (например, <code>com.google.android.gms</code>) потребляет аномально много энергии, сначала попробуйте очистить кэш соответствующего приложения или обновить его. Радикальные меры вроде заморозки через ADB или получения root-прав стоит применять только при наличии глубоких знаний о последствиях.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Отключение службы «Google Play Услуги» приведет к неработоспособности большинства приложений, включая банковские клиенты, навигаторы и магазин Play Market.</p>
+</blockquote>
+
+<p>Более безопасным методом экономии является использование встроенного режима энергосбережения, который автоматически ограничивает фоновую активность приложений, не трогая системные службы. Вы также можете вручную настроить ограничения для конкретных программ в разделе <code>Настройки → Приложения → Управление приложениями → Батарея</code>.</p>
+
+<h2 id="диагностика-и-управление-через-инженерное-меню">Диагностика и управление через инженерное меню</h2>
+
+<p>Для более продвинутых пользователей в телефонах <em>Xiaomi</em> доступно инженерное меню, позволяющее получать детальную информацию о состоянии служб и сетей. Доступ к нему осуществляется через набор специального кода в приложении «Телефон». Это позволяет проверить работу модема, сенсора и других аппаратных компонентов.</p>
+
+<p>Для входа в меню тестирования часто используется код <code><em>#</em>#6484#<em>#</em></code> (CIT) или <code><em>#</em>#4636#<em>#</em></code> (меню информации). В разделе «Информация о телефоне» можно увидеть статус служб мобильной сети, уровень сигнала и переключить режимы работы (например, только 4G/LTE).</p>
+
+<p>Использование инженерного меню требует осторожности. Изменение параметров в разделах, назначение которых вам неизвестно, может привести к потере связи или некорректной работе датчиков. Рекомендуется использовать этот инструмент только для диагностики проблем, а не для постоянной «оптимизации».</p>
+
+<pre><code>adb shell dumpsys activity services</code></pre>
+
+<p>Эта команда, введенная через компьютер с установленным <strong>ADB</strong> (Android Debug Bridge), выведет полный список запущенных служб в реальном времени. Это профессиональный инструмент, который позволяет увидеть, какие именно процессы потребляют ресурсы процессора в данный момент.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если телефон начал сильно греться, проверьте в настройках батареи, какая именно служба или приложение потребляет больше всего энергии. Часто виновником оказывается зависший процесс Google Фото или навигатор.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли полностью удалить приложение «Обратная связь»?</summary>
+<p>Удалить системное приложение «Обратная связь» стандартными средствами невозможно, так как оно является частью прошивки. Его можно отключить в настройках приложений или удалить только с правами суперпользователя (Root) через системные модификаторы, но это не рекомендуется, так как может нарушить работу отчетов об ошибках.</p>
+</details>
+
+<details>
+<summary>Почему службы Google постоянно работают в фоне?</summary>
+<p>Службы Google (<em>Google Play Services</em>) являются фундаментом для работы большинства приложений на Android. Они обеспечивают синхронизацию, безопасность, push-уведомления и геолокацию. Их постоянная работа необходима для корректного функционирования экосистемы Google.</p>
+</details>
+
+<details>
+<summary>Безопасно ли отключать «Программу улучшения работы»?</summary>
+<p>Да, отключение «Программы улучшения работы» (User Experience Program) абсолютно безопасно для стабильности системы. Это лишь прекратит отправку статистики разработчикам, но никак не повлияет на скорость работы или функциональность вашего смартфона <em>Xiaomi</em>.</p>
+</details>
+
+<details>
+<summary>Что делать, если служба «Телефон» потребляет много батареи?</summary>
+<p>Если стандартная звонилка потребляет много энергии, попробуйте очистить кэш приложения «Телефон» и «Контакты». Также проверьте, не застрял ли какой-то вызов в очереди или не работает ли плохо сотовая связь в вашем районе, так как поиск сети сильно расходует заряд.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Грамотное управление службами — это не их полное отключение, а понимание их назначения и ограничение активности только для второстепенных приложений.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/c/ch/chto-takoe-miuibiometric-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">MiuiBiometric на Xiaomi: что это и можно ли удалить?</span>
+                <span class="pb-related-desc">Полный разбор системного процесса MiuiBiometric на Xiaomi. Узнайте, за что отвечает сервис, почему о</span>
+            </a><a href="/articles/k/ka/kak-podklyuchit-termometr-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как подключить термометр Xiaomi: полная инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция: как подключить термометр Xiaomi к телефону. Настройка Mi Home, устранение ошиб</span>
+            </a><a href="/articles/k/ka/kak-posmotret-parol-ot-gugla-v-telefone-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как посмотреть пароль от Гугла на Xiaomi: инструкция</span>
+                <span class="pb-related-desc">Узнайте, как найти сохраненный пароль Google аккаунта на телефоне Xiaomi. Подробная инструкция для M</span>
+            </a><a href="/articles/k/ka/kak-ubrat-zerkalnoe-video-na-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как убрать зеркальное видео на Xiaomi: полные настройки камеры</span>
+                <span class="pb-related-desc">Подробная инструкция: как отключить зеркальное селфи на Xiaomi, Redmi и POCO. Настройки камеры, стор</span>
+            </a><a href="/articles/c/ch/chto-mozhno-uznat-po-serijnomu-nomeru-telefona-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Что можно узнать по серийному номеру Xiaomi: полная расшифровка</span>
+                <span class="pb-related-desc">Узнайте, как проверить подлинность, дату выпуска и комплектацию Xiaomi по IMEI и S/N коду. Полная ин</span>
+            </a><a href="/articles/k/ka/kak-otkryt-2-prilozheniya-na-odnom-ekrane-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как открыть 2 приложения на одном экране Xiaomi: Инструкция</span>
+                <span class="pb-related-desc">Узнайте, как открыть два приложения на одном экране Xiaomi. Подробная настройка разделенного экрана </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как восстановить кирпич Xiaomi: пошаговая инструкция — СяоМастер</title>
+    <meta name="description" content="Подробный гид по восстановлению Xiaomi после неудачной прошивки. Узнайте, как убрать кирпич с помощью Fastboot, Recovery и MiFlash.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-vosstanovit-telefon-kirpich-xiaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как восстановить кирпич Xiaomi: пошаговая инструкция">
+    <meta property="og:description" content="Подробный гид по восстановлению Xiaomi после неудачной прошивки. Узнайте, как убрать кирпич с помощью Fastboot, Recovery и MiFlash.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как восстановить кирпич Xiaomi: пошаговая инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#диагностика-состояния-определяем-тип-кирпича">Диагностика состояния: определяем тип «кирпича»</a></li><li><a href="#подготовка-рабочего-места-и-необходимого-по">Подготовка рабочего места и необходимого ПО</a></li><li><a href="#восстановление-через-режим-recovery-mi-recovery">Восстановление через режим Recovery (Mi Recovery)</a></li><li><a href="#полная-перепрошивка-через-fastboot-и-miflash">Полная перепрошивка через Fastboot и MiFlash</a></li><li><a href="#решение-проблем-с-драйверами-и-ошибками-подключения">Решение проблем с драйверами и ошибками подключения</a></li><li><a href="#аварийный-режим-edl-и-глубокая-реанимация">Аварийный режим EDL и глубокая реанимация</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/t/td/td-lte-mee7-xiaomi-kakaya-model.html">TD LTE MEE7 Xiaomi: какая модель и как узнать версию</a></li><li><a href="/articles/b/ba/band-6-syaomi-kak-podklyuchit.html">Банд 6 Xiaomi: как подключить, настроить и обновить</a></li><li><a href="/articles/k/ka/kak-otkatit-ksiomi-k-zavodskim-nastrojkam.html">Как откатить Xiaomi к заводским настройкам: полная инструкция</a></li><li><a href="/articles/s/sk/skolko-stoit-syaomi-10-ultra.html">Сколько стоит Xiaomi 10 Ultra: актуальные цены и где купить</a></li><li><a href="/articles/k/ka/kak-kupit-odin-naushnik-xiaomi.html">Как купить один наушник Xiaomi: где найти и цена</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как восстановить телефон Xiaomi, если он превратился в кирпич</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#диагностика-состояния-определяем-тип-кирпича">Диагностика состояния: определяем тип «кирпича»</a></li><li><a href="#подготовка-рабочего-места-и-необходимого-по">Подготовка рабочего места и необходимого ПО</a></li><li><a href="#восстановление-через-режим-recovery-mi-recovery">Восстановление через режим Recovery (Mi Recovery)</a></li><li><a href="#полная-перепрошивка-через-fastboot-и-miflash">Полная перепрошивка через Fastboot и MiFlash</a></li><li><a href="#решение-проблем-с-драйверами-и-ошибками-подключения">Решение проблем с драйверами и ошибками подключения</a></li><li><a href="#аварийный-режим-edl-и-глубокая-реанимация">Аварийный режим EDL и глубокая реанимация</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда любимый <em>смартфон Xiaomi</em> внезапно перестает реагировать на команды и превращается в бесполезный кусок пластика и стекла, знакома многим энтузиастам. Экран остается черным, устройство вибрирует в бесконечном цикле или показывает логотип, но дальше загрузка не идет. Это состояние в народе получило название «кирпич», и оно часто возникает после неудачных экспериментов с <strong>root-правами</strong>, кастомными рекавери или прерывания процесса обновления системы.</p>
+
+<p>Однако паниковать раньше времени не стоит. В отличие от многих других брендов, устройства <em>Mi</em> и <em>Redmi</em> обладают мощными инструментами низкоуровневого восстановления, которые позволяют вернуть гаджет к жизни даже в самых сложных случаях. <mark>В 90% случаев «кирпич» является программным (soft brick), что означает возможность восстановления без пайки микросхем памяти.</mark> Главное — четко понимать, на какой стадии загрузки остановился аппарат, и выбрать правильный метод реанимации.</p>
+
+<p>Дальнейшие действия будут зависеть от того, в каком именно режиме завис телефон: <strong>Fastboot</strong>, <strong>Recovery</strong> или режим полной загрузки (Bootloop). Мы рассмотрим все доступные варианты, начиная от простых перезагрузок и заканчивая полной перепрошивкой через компьютер. Важно соблюдать последовательность действий, чтобы не усугубить положение.</p>
+
+<h2 id="диагностика-состояния-определяем-тип-кирпича">Диагностика состояния: определяем тип «кирпича»</h2>
+
+<p>Прежде чем приступать к активным действиям, необходимо точно определить текущее состояние операционной системы <em>Android</em>. От этого напрямую зависит выбор программного обеспечения для восстановления. Если телефон просто показывает логотип и перезагружается, это один сценарий, а если экран полностью черный — совершенно другой.</p>
+
+<p>Попробуйте зажать комбинацию кнопок <code>Громкость Вниз + Питание</code>. Если на экране появится изображение зайца, чинящего андроида, или надпись <strong>Fastboot</strong>, вам повезло. Это режим загрузчика, который позволяет взаимодействовать с устройством на низком уровне. В этом состоянии телефон принимает команды с компьютера, что значительно упрощает процесс восстановления прошивки.</p>
+
+<p>Если же при зажатии <code>Громкость Вверх + Питание</code> появляется меню с несколькими пунктами на английском или китайском языке, значит, раздел <strong>Recovery</strong> функционирует. Это также хороший знак, позволяющий выполнить сброс данных или установить новую прошивку без использования ПК, хотя компьютерный метод часто надежнее.</p>
+
+<ul>
+<li>🐰 Режим Fastboot: экран горит, виден логотип Fastboot или заяц, ПК издает звук подключения USB.</li>
+<li>🛠️ Режим Recovery: меню с выбором языка, пункты Wipe Data, Reboot, Connect with MIAssistant.</li>
+<li>💀 Hard Brick: телефон не реагирует ни на какие кнопки, экран черный, ПК не издает звуков подключения (требуется разборка).</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Если телефон не подает признаков жизни вообще (нет вибрации, свечения индикатора, реакции на зарядку), возможно, проблема кроется в аппаратной части, например, в глубоком разряде аккумулятора или выходе из строя контроллера питания.</p>
+</blockquote>
+
+<p>В некоторых случаях, особенно после неудачного обновления, телефон может уходить в цикл перезагрузок, так называемый <strong>Bootloop</strong>. В этом состоянии устройство пытается загрузиться, сталкивается с ошибкой и перезапускается заново. Для диагностики в таком режиме часто помогает длительное удержание кнопки питания в течение 15-20 секунд, что может принудительно перевести гаджет в режим Fastboot.</p>
+
+<h2 id="подготовка-рабочего-места-и-необходимого-по">Подготовка рабочего места и необходимого ПО</h2>
+
+<p>Для успешного проведения процедуры восстановления вам потребуется персональный компьютер или ноутбук с операционной системой <em>Windows</em>. Использование Mac или Linux возможно, но требует дополнительных настроек драйверов и командной строки, что может быть сложно для новичков. Убедитесь, что на диске C: есть хотя бы 10-15 ГБ свободного места для временных файлов прошивки.</p>
+
+<p>Критически важным элементом является оригинальный или качественный USB-кабель. Дешевые кабели «только для зарядки» часто не имеют необходимых контактов для передачи данных, что приведет к ошибкам подключения в самый неподходящий момент. Также рекомендуется использовать USB-порт, встроенный непосредственно в материнскую плату ПК, избегая передних панелей корпуса или USB-хабов.</p>
+
+<p>Вам потребуется скачать и установить специализированный софт. Основным инструментом для устройств <em>Xiaomi</em> является утилита <strong>MiFlash Tool</strong>. Кроме того, необходимо установить актуальные <strong>ADB и Fastboot драйверы</strong>, а также драйверы Qualcomm или MediaTek, в зависимости от процессора вашего смартфона. Без правильных драйверов компьютер просто не увидит телефон в нужном режиме.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к восстановлению</h4><label class="check-item"><input type="checkbox"><span>Установить драйверы ADB/Fastboot</span></label><label class="check-item"><input type="checkbox"><span>Скачать MiFlash Tool</span></label><label class="check-item"><input type="checkbox"><span>Найти оригинальный USB-кабель</span></label><label class="check-item"><input type="checkbox"><span>Зарядить телефон минимум до 50%</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Прошивку следует искать исключительно на официальных ресурсах или проверенных форумах, таких как 4PDA или XDA Developers. Вам нужен файл в формате <code>.zip</code> (для Recovery) или <code>.tgz</code> (для Fastboot). Важно убедиться, что версия прошивки соответствует вашей модели (глобальная, китайская, индийская) и типу устройства (codename), иначе процесс может закончиться полной неработоспособностью.</p>
+
+<h2 id="восстановление-через-режим-recovery-mi-recovery">Восстановление через режим Recovery (Mi Recovery)</h2>
+
+<p>Если ваш телефон реагирует на кнопки и входит в меню восстановления, это самый простой способ вернуть его к заводским настройкам. Этот метод подразумевает полный сброс пользовательских данных, поэтому все фото, контакты и приложения будут удалены, но система будет очищена от ошибок, вызвавших сбой.</p>
+
+<p>Для входа в режим Recovery выключите телефон (если он включается) и зажмите одновременно кнопки <code>Громкость Вверх</code> и <code>Питание</code>. Держите их до появления логотипа <em>Mi</em>, затем отпустите питание, но продолжайте держать громкость, пока не появится главное меню. Навигация осуществляется кнопками громкости, а выбор — кнопкой питания.</p>
+
+<p>В меню выберите пункт <strong>Wipe Data</strong> (или «Очистить данные»). Система попросит подтвердить действие, часто требуя ввести код или нажать кнопку подтверждения несколько раз. После этого начнется процесс очистки, который может занять несколько минут. По завершении выберите <strong>Reboot</strong> для перезагрузки.</p>
+
+<details class="pb-accordion"><summary>Что делать, если меню на китайском?</summary><div class="pb-accordion-body"><p>Если в меню Recovery вы видите китайские иероглифы, не паникуйте. Обычно это стандартный китайский рекавери. Вам нужно найти пункт, который находится вторым или третьим сверху (часто иконка с метлой или шестеренкой), нажать на него, выбрать верхний пункт (Wipe Data) и подтвердить. Если есть пункт "Language", выберите English.</p></div></details>
+
+<p>Иногда стандартный сброс не помогает, если повреждены системные файлы. В таком случае можно попробовать обновиться локально. Для этого скачайте архив прошивки, переименуйте его в <code>update.zip</code> и положите в корень внутренней памяти (если она определяется) или подключите телефон в режиме <strong>MI Assistant</strong> через ADB Sideload.</p>
+
+<h2 id="полная-перепрошивка-через-fastboot-и-miflash">Полная перепрошивка через Fastboot и MiFlash</h2>
+
+<p>Метод перепрошивки через <strong>Fastboot</strong> является наиболее надежным и часто единственным способом спасти телефон, который не загружается дальше логотипа или меню восстановления. Этот процесс полностью заменяет содержимое разделов памяти на чистые файлы, устраняя любые программные конфликты.</p>
+
+<p>Сначала переведите телефон в режим Fastboot, зажав <code>Громкость Вниз + Питание</code>. Подключите устройство к компьютеру кабелем. Запустите программу <em>MiFlash Tool</em> от имени администратора. Нажмите кнопку «Refresh», и в списке должно появиться ваше устройство с серийным номером. Если устройство не определяется, проверьте диспетчер устройств Windows на наличие неизвестных устройств.</p>
+
+<p>Распакуйте скачанный архив прошивки в корень диска, например, в папку <code>C:\xiaomi_rom</code>. Путь не должен содержать кириллицы или пробелов. В MiFlash нажмите «Select» и укажите путь к папке с прошивкой. В нижнем правом углу выберите режим прошивки: <strong>clean all</strong> (полная очистка) или <strong>clean all and lock</strong> (очистка и блокировка загрузчика).</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Режим прошивки</th>
+<th>Сохранение данных</th>
+<th>Блокировка загрузчика</th>
+<th>Рекомендация</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clean all</td>
+<td>Нет (удаляет все)</td>
+<td>Нет (разблокирован)</td>
+<td>Для кастомных прошивок и тестов</td>
+</tr>
+<tr>
+<td>save user data</td>
+<td>Да</td>
+<td>Нет</td>
+<td>Только если система грузится</td>
+</tr>
+<tr>
+<td>clean all and lock</td>
+<td>Нет (удаляет все)</td>
+<td>Да (оригинальный)</td>
+<td>Для возврата в стоковое состояние</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>
+<p>⚠️ Внимание: Выбор опции <strong>clean all and lock</strong> на устройстве с установленной глобальной прошивкой вместо китайской (или наоборот) может привести к аппаратному кирпичу, который невозможно исправить программно. Убедитесь, что регион прошивки совпадает с регионом устройства.</p>
+</blockquote>
+
+<p>После выбора всех параметров нажмите кнопку «Flash». Процесс займет от 200 до 600 секунд. Не отключайте кабель и не трогайте телефон до появления зеленой надписи «Success». Если возникла ошибка, попробуйте другой USB-порт или кабель, а также проверьте, не прерывается ли питание.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Использование оригинаального USB-кабеля и порта USB 2.0 значительно снижает риск ошибок при перепрошивке через Fastboot.</p></aside>
+
+<h2 id="решение-проблем-с-драйверами-и-ошибками-подключения">Решение проблем с драйверами и ошибками подключения</h2>
+
+<p>Одной из самых частых проблем при восстановлении является отсутствие связи между ПК и смартфоном. Компьютер может издавать звук подключения, но в диспетчере устройств устройство будет определяться как «Неизвестное устройство» или «QDLoader 9008» без установленных драйверов.</p>
+
+<p>Для решения этой проблемы необходимо вручную обновить драйверы. Зайдите в «Диспетчер устройств», найдите устройство с желтым восклицательным знаком, нажмите правой кнопкой мыши и выберите «Обновить драйвер». Выберите «Выбрать драйвер из списка доступных драйверов» и укажите путь к папке с драйверами Qualcomm или Xiaomi, которую вы предварительно скачали.</p>
+
+<p>Иногда помогает отключение проверки цифровой подписи драйверов в Windows. Для этого при загрузке компьютера нажмите <code>F8</code> (или используйте параметры загрузки в Windows 10/11) и выберите «Отключить обязательную проверку подписи драйверов». Это позволит системе установить старые или модифицированные драйверы, необходимые для работы с <strong>EDL режимом</strong>.</p>
+
+<ul>
+<li>🔌 Используйте порты USB 2.0, так как USB 3.0/3.1 иногда конфликтуют со старыми версиями загрузчиков.</li>
+<li>💻 Отключите антивирус и брандмауэр на время прошивки, они могут блокировать работу MiFlash.</li>
+<li>🔄 Попробуйте разные версии MiFlash Tool, если текущая выдает ошибки при отправке команд.</li>
+</ul>
+
+<p>Если телефон определяется как <code>Qualcomm HS-USB QDLoader 9008</code>, это означает, что он находится в аварийном режиме загрузки. Это состояние требует авторизованного аккаунта для прошивки через официальные инструменты, либо использования специальных патченных версий программ, что является более сложной процедурой.</p>
+
+<div class="pb-poll" id="poll-3bdef9ad"><div class="pb-poll-question">📊 С какой проблемой при восстановлении Xiaomi вы столкнулись?</div><div class="pb-poll-option" data-poll="3bdef9ad" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Телефон не включается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3bdef9ad" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Ошибка драйверов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3bdef9ad" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Ошибка MiFlash</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3bdef9ad" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Бесконечная перезагрузка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3bdef9ad" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, что делать</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="аварийный-режим-edl-и-глубокая-реанимация">Аварийный режим EDL и глубокая реанимация</h2>
+
+<p>Когда все методы бессильны, остается режим <strong>EDL (Emergency Download Mode)</strong>. Это низкоуровневый режим, встроенный в процессоры Qualcomm, который позволяет прошивать телефон даже при полностью поврежденном загрузчике. Вход в этот режим часто требует разборки устройства и замыкания специальных контактов на плате.</p>
+
+<p>Для входа в EDL без разборки можно попробовать команду ADB: <code>adb reboot edl</code>, если отладка по USB была включена ранее. Однако на «кирпиче» это редко работает. Чаще всего приходится снимать заднюю крышку, отключать шлейф аккумулятора и замыкать два контакта тестером (Test Point) на материнской плате, одновременно подключая USB-кабель.</p>
+
+<p>Прошивка в режиме EDL обычно требует авторизованного аккаунта Mi Account с правами инженера. Официально такие услуги предоставляет только сервисный центр. Однако существуют платные сервисы удаленной прошивки, где оператор через TeamViewer или AnyDesk управляет процессом, используя свой авторизованный аккаunt для загрузки прошивки в ваш телефон.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Самостоятельное замыкание контактов Test Point может привести к короткому замыканию и окончательному выходу устройства из строя. Если вы не уверены в своих навыках работы с электроникой, лучше обратиться к профессионалам.</p>
+</blockquote>
+
+<p>Процесс прошивки в EDL аналогичен Fastboot, но занимает больше времени и требует стабильного интернет-соединения, так как серверы Xiaomi проверяют права доступа. Успешное завершение этого процесса возвращает телефон в состояние «из коробки», полностью очищая память.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли восстановить телефон без потери данных?</summary>
+<p>К сожалению, если телефон превратился в «кирпич» и не загружается в систему, сохранить данные без специальных навыков и оборудования практически невозможно. Методы восстановления (Wipe Data, Clean All) подразумевают полную очистку памяти. Единственный шанс — режим Recovery с опцией «Update without wiping data», но она работает только если системные файлы повреждены частично.</p>
+</details>
+
+<details>
+<summary>Безопасно ли разблокировать загрузчик для предотвращения кирпичей?</summary>
+<p>Разблокировка загрузчика сама по себе не предотвращает появление кирпичей, но дает больше инструментов для восстановления (например, установку кастомного Recovery TWRP). Однако разблокировка автоматически включает функцию защиты данных, делая невозможным восстановление без сброса паролей, если телефон был украден или найден.</p>
+</details>
+
+<details>
+<summary>Сколько времени занимает полная перепрошивка Xiaomi?</summary>
+<p>Сам процесс записи файлов через MiFlash занимает от 3 до 10 минут в зависимости от объема прошивки и скорости USB-порта. Однако подготовка (скачивание, установка драйверов, распаковка) может занять от 30 минут до часа. В режиме EDL время прошивки может увеличиться до 15-20 минут.</p>
+</details>
+
+<details>
+<summary>Что делать, если MiFlash выдает ошибку "Miss matching image"?</summary>
+<p>Эта ошибка означает, что вы пытаетесь прошить прошивку, не предназначенную для вашего устройства, или используете неподходящий режим (например, Recovery прошивку через Fastboot). Проверьте кодовое имя устройства (codename) и формат файла прошивки.</p>
+</details>
+
+<details>
+<summary>Может ли телефон превратиться в кирпич сам по себе?</summary>
+<p>Самопроизвольное превращение в кирпич без вмешательства пользователя случается крайне редко. Обычно это связано с внезапным отключением питания во время системного обновления, физическим повреждением памяти или критическим сбоем файловой системы после скачка напряжения при зарядке.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/t/td/td-lte-mee7-xiaomi-kakaya-model.html" class="pb-related-card">
+                <span class="pb-related-title">TD LTE MEE7 Xiaomi: какая модель и как узнать версию</span>
+                <span class="pb-related-desc">Узнайте, какой модели Xiaomi соответствует TD LTE MEE7. Подробный разбор характеристик, идентификаци</span>
+            </a><a href="/articles/b/ba/band-6-syaomi-kak-podklyuchit.html" class="pb-related-card">
+                <span class="pb-related-title">Банд 6 Xiaomi: как подключить, настроить и обновить</span>
+                <span class="pb-related-desc">Полная инструкция по подключению Mi Band 6. Настройка Bluetooth, сопряжение с Android и iPhone, реше</span>
+            </a><a href="/articles/k/ka/kak-otkatit-ksiomi-k-zavodskim-nastrojkam.html" class="pb-related-card">
+                <span class="pb-related-title">Как откатить Xiaomi к заводским настройкам: полная инструкция</span>
+                <span class="pb-related-desc">Подробное руководство, как сбросить Xiaomi до заводских настроек через меню и Recovery. Решение проб</span>
+            </a><a href="/articles/s/sk/skolko-stoit-syaomi-10-ultra.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько стоит Xiaomi 10 Ultra: актуальные цены и где купить</span>
+                <span class="pb-related-desc">Узнайте реальную стоимость Xiaomi Mi 10 Ultra. Анализ цен на б/у и новые смартфоны, характеристики, </span>
+            </a><a href="/articles/k/ka/kak-kupit-odin-naushnik-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как купить один наушник Xiaomi: где найти и цена</span>
+                <span class="pb-related-desc">Ищете, как купить один наушник Xiaomi взамен утерянного? Узнайте про официальные сервисы, гарантии и</span>
+            </a><a href="/articles/g/gd/gde-nakhodyatsya-udalennye-fotografii-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Где находятся удаленные фото на Xiaomi: поиск и восстановление</span>
+                <span class="pb-related-desc">Узнайте, где находятся удаленные фотографии на Xiaomi. Полный гид по папкам, корзине и методам восст</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

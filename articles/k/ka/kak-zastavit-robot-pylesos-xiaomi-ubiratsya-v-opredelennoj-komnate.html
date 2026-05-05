@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как настроить уборку Xiaomi по комнатам: инструкция — СяоМастер</title>
+    <meta name="description" content="Подробная инструкция, как заставить робот-пылесос Xiaomi убираться в определенной комнате. Настройка зон, виртуальных стен и карт в приложении.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-zastavit-robot-pylesos-xiaomi-ubiratsya-v-opredelennoj-komnate.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как настроить уборку Xiaomi по комнатам: инструкция">
+    <meta property="og:description" content="Подробная инструкция, как заставить робот-пылесос Xiaomi убираться в определенной комнате. Настройка зон, виртуальных стен и карт в приложении.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как настроить уборку Xiaomi по комнатам: инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#фундаментальные-принципы-навигации-и-построения-карты">Фундаментальные принципы навигации и построения карты</a></li><li><a href="#подготовка-устройства-и-первичное-сканирование">Подготовка устройства и первичное сканирование</a></li><li><a href="#разделение-пространства-на-виртуальные-комнаты">Разделение пространства на виртуальные комнаты</a></li><li><a href="#настройка-запретных-зон-и-виртуальных-стен">Настройка запретных зон и виртуальных стен</a></li><li><a href="#запуск-целевой-уборки-и-управление-режимами">Запуск целевой уборки и управление режимами</a></li><li><a href="#работа-с-несколькими-картами-и-сохранение-данных">Работа с несколькими картами и сохранение данных</a></li><li><a href="#типичные-проблемы-и-способы-их-решения">Типичные проблемы и способы их решения</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/a/ad/adas-v-videoregistratore-chto-eto-xiaomi.html">ADAS в видеорегистраторе Xiaomi: что это и как работает в 2026 году</a></li><li><a href="/articles/k/kt/kto-proizvodit-syaomi.html">Кто производит Xiaomi: заводы, бренды и реальное производство</a></li><li><a href="/articles/c/ch/chem-otlichaetsya-kitajskaya-versiya-ot-globalnoj-xiaomi-mi-band.html">Китайская или Глобальная версия Xiaomi Mi Band: отличия и выбор</a></li><li><a href="/drugoe/k/ks/ksiomi-chto-znachit.html">Ксиоми: что это значит? Разбор термина и его связи с Xiaomi</a></li><li><a href="/articles/k/ka/kak-udalit-sistemnye-prilozheniya-na-syaomi-bez-kompyutera.html">Удаление системных приложений на Xiaomi без ПК: гайд</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как заставить робот-пылесос Xiaomi убираться в определенной комнате</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#фундаментальные-принципы-навигации-и-построения-карты">Фундаментальные принципы навигации и построения карты</a></li><li><a href="#подготовка-устройства-и-первичное-сканирование">Подготовка устройства и первичное сканирование</a></li><li><a href="#разделение-пространства-на-виртуальные-комнаты">Разделение пространства на виртуальные комнаты</a></li><li><a href="#настройка-запретных-зон-и-виртуальных-стен">Настройка запретных зон и виртуальных стен</a></li><li><a href="#запуск-целевой-уборки-и-управление-режимами">Запуск целевой уборки и управление режимами</a></li><li><a href="#работа-с-несколькими-картами-и-сохранение-данных">Работа с несколькими картами и сохранение данных</a></li><li><a href="#типичные-проблемы-и-способы-их-решения">Типичные проблемы и способы их решения</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современные <strong>роботы-пылесосы</strong> от бренда <em>Xiaomi</em> и экосистемы <em>Mijia</em> представляют собой сложные устройства, способные ориентироваться в пространстве с помощью лидара. Однако многие владельцы сталкиваются с тем, что гаджет убирает всю квартиру сразу, игнорируя необходимость изолированной очистки конкретного помещения. Это часто приводит к переносу пыли или смешиванию мусора из коридора со спальней. Решением проблемы служит грамотная настройка <strong>виртуальных карт</strong> и зонирование.</p>
+
+<p>Для реализации уборки только в одном помещении вам потребуется стабильное подключение к <strong>Wi-Fi</strong> и установленное приложение <em>Mi Home</em> или <em>Xiaomi Home</em>. Важно понимать, что базовая навигация устройства строится на построении общей карты, которую затем можно редактировать. <mark>Без предварительного построения полной карты квартиры функция выборочной уборки комнаты работать не будет</mark>. Сначала робот должен «увидеть» все пространство, чтобы понять, где заканчивается одна комната и начинается другая.</p>
+
+<p>В данном руководстве мы разберем все нюансы процесса: от первичного сканирования до создания невидимых барьеров. Вы научитесь управлять <strong>алгоритмами</strong> движения устройства, запрещать вход в определенные зоны и задавать приоритеты для разных типов напольных покрытий. Это позволит значительно повысить эффективность работы <em>робота</em> и продлить срок службы его батареи.</p>
+
+<h2 id="фундаментальные-принципы-навигации-и-построения-карты">Фундаментальные принципы навигации и построения карты</h2>
+
+<p>Прежде чем переходить к конкретным настройкам, необходимо разобраться, как именно <strong>навигационная система</strong> воспринимает ваше жилище. Роботы <em>Xiaomi</em> с лазерным дальномером (LDS) или визуальной навигацией (VSLAM) создают цифровую копию помещения. Этот процесс называется <strong>картографированием</strong>. Устройство сканирует препятствия, углы и проемы, сохраняя их координаты во внутренней памяти.</p>
+
+<p>Для корректной работы функции уборки по комнатам критически важно, чтобы карта была единой и непрерывной. Если вы будете носить устройство на руках из комнаты в комнату во время сканирования, <strong>алгоритм</strong> собьется, и карта разорвется на несколько фрагментов. В таком случае программа не сможет идентифицировать отдельные помещения как изолированные объекты для выборочной очистки.</p>
+
+<p>Идеальный сценарий первичного запуска выглядит так: устройство стартует с базы, объезжает всю доступную площадь, возвращаясь на зарядку при необходимости. Только после того, как на экране смартфона отобразится полный план квартиры с четкими границами стен, можно приступать к <strong>зонированию</strong>.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не переносите базу зарядки на новое место после того, как робот построил первую карту. Это приведет к рассинхронизации координат, и устройство потеряется в пространстве, не сумев найти дорогу к док-станции или в нужную комнату.</p>
+</blockquote>
+
+<h2 id="подготовка-устройства-и-первичное-сканирование">Подготовка устройства и первичное сканирование</h2>
+
+<p>Начальный этап требует вашей непосредственной участия. Убедитесь, что пол в квартире максимально свободен от лишних предметов: проводов, игрушек, обуви. Хотя современные модели <em>Xiaomi</em> умеют обходить препятствия, хаос на полу может привести к ошибочному определению границ <strong>комнат</strong>. Робот может посчитать кучу одежды стеной или непреодолимым барьером.</p>
+
+<p>Запустите полную уборку через приложение, чтобы устройство прошло по всему периметру жилища. В это время не мешайте ему, не поднимайте на руки и не блокируйте путь. Если модель поддерживает функцию <strong>сохранения нескольких карт</strong> (актуально для многоэтажных домов), убедитесь, что выбрана правильная карта для текущего этажа.</p>
+
+<p>После завершения цикла проверьте результат в приложении. Карта должна быть четкой, без разрывов. Если в коридоре образовался «туман» или разрыв, запустите устройство повторно именно из этой точки, чтобы оно досканировало участок. Качество итоговой <strong>карты</strong> напрямую влияет на точность разделения на комнаты.</p>
+
+<ul>
+<li>🧹 Уберите с пола все мелкие предметы, которые могут запутать щетку.</li>
+<li>🚪 Откройте все межкомнатные двери для свободного прохода.</li>
+<li>🔋 Убедитесь, что заряд батареи составляет не менее 80% перед стартом.</li>
+<li>📶 Проверьте стабильность сигнала Wi-Fi во всех углах квартиры.</li>
+</ul>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Готовность к построению карты</h4><label class="check-item"><input type="checkbox"><span>Очистить пол от препятствий</span></label><label class="check-item"><input type="checkbox"><span>Открыть все двери</span></label><label class="check-item"><input type="checkbox"><span>Зарядить робот до 100%</span></label><label class="check-item"><input type="checkbox"><span>Запустить полную уборку</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="разделение-пространства-на-виртуальные-комнаты">Разделение пространства на виртуальные комнаты</h2>
+
+<p>После успешного сканирования переходим к самому важному этапу — логическому разделению пространства. В приложении <em>Mi Home</em> или <em>Xiaomi Home</em> перейдите в настройки карты (обычно иконка с тремя точками или значок карты в верхнем углу). Вам понадобится функция «Редактирование карты» или «Управление комнатами».</p>
+
+<p>Система часто предлагает автоматическое разделение, но <strong>алгоритм</strong> может ошибиться, объединив кухню и гостиную или разделив большую спальню на две части. Используйте инструмент «Разделить комнату», чтобы провести линию разграничения вручную. Точно обведите контуры нужного помещения, чтобы отсечь его от остальной площади.</p>
+
+<p>Каждому выделенному участку необходимо присвоить имя (Кухня, Спальня, Коридор). Это не просто для красоты: <strong>голосовое управление</strong> и сценарии умного дома работают именно по этим названиям. После присвоения имен структура карты сохраняется в памяти устройства, и оно начинает воспринимать квартиру как набор отдельных объектов.</p>
+
+<p>Если автоматическое разделение прошло неудачно, используйте функцию «Объединить комнаты» для слияния ошибочно разделенных зон, а затем заново проведите границы. Точность на этом этапе определяет, насколько хорошо <strong>робот</strong> будет понимать команду «убрать кухню» в будущем.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Функция</th>
+<th>Описание действия</th>
+<th>Когда использовать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Разделить</td>
+<td>Проведение линии через помещение</td>
+<td>Если одна большая комната распознана как две</td>
+</tr>
+<tr>
+<td>Объединить</td>
+<td>Слияние двух выделенных зон</td>
+<td>Если коридор и комната стали одним целым</td>
+</tr>
+<tr>
+<td>Переименовать</td>
+<td>Присвоение текстового имени</td>
+<td>Для голосового управления и сценариев</td>
+</tr>
+<tr>
+<td>Сброс карты</td>
+<td>Удаление всех данных навигации</td>
+<td>При критических ошибках сканирования</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-poll" id="poll-93d1899b"><div class="pb-poll-question">📊 Как часто вы используете зонирование?</div><div class="pb-poll-option" data-poll="93d1899b" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только для кухни</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="93d1899b" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Только для спальни</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="93d1899b" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Для всех комнат по очереди</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="93d1899b" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Вообще не использую</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="настройка-запретных-зон-и-виртуальных-стен">Настройка запретных зон и виртуальных стен</h2>
+
+<p>Иногда недостаточно просто выбрать комнату для уборки — нужно четко ограничить доступ в соседние помещения, где робот не нужен прямо сейчас. Для этого в арсенале <em>Xiaomi</em> существуют <strong>виртуальные стены</strong> и <strong>запретные зоны</strong>. Эти инструменты создают невидимые барьеры, которые устройство не может пересечь.</p>
+
+<p>Виртуальная стена работает как сплошная линия-барьер. Робот будет ехать вдоль нее, но никогда не пересечет. Это идеально подходит для изоляции целой комнаты или коридора. Запретная зона (квадрат) используется для блокировки конкретных участков, например, пространства вокруг миски домашнего животного или ковра с длинным ворсом, если функция влажной уборки активна.</p>
+
+<p>Настроить их можно в том же меню редактирования карты. Выберите тип ограничения, установите прямоугольник или линию в нужном месте. Если вы передвинете базу или коврик, виртуальная стена останется на старом месте, и робот может начать упираться в воздух или, наоборот, заедет туда, куда не должен.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Виртуальные стены и запретные зоны действуют только в режиме «По карте». Если вы запустите робот локально (кнопкой на корпусе) или в режиме «Без карты», ограничения могут игнорироваться в зависимости от модели и версии прошивки.</p>
+</blockquote>
+
+<h2 id="запуск-целевой-уборки-и-управление-режимами">Запуск целевой уборки и управление режимами</h2>
+
+<p>Когда карта разделена на комнаты и установлены необходимые ограничения, наступает момент истины. Чтобы <strong>робот-пылесос</strong> убрался только в определенной комнате, откройте приложение, выберите карту и нажмите на нужное помещение. В появившемся меню выберите «Уборка комнаты» или «Точечная уборка».</p>
+
+<p>Устройство построит маршрут непосредственно к целевой зоне, игнорируя остальные части квартиры. Это экономит заряд батареи и время. Вы также можете выбрать несколько комнат одновременно, зажав их на экране, или задать режим «Тихий» для ночной уборки в спальне, чтобы не беспокоить домочадцев.</p>
+
+<p>Для продвинутых пользователей доступна настройка <strong>интенсивности всасывания</strong> для каждой комнаты отдельно. Например, для кухни можно установить максимальную мощность, а для гостиной — стандартную. Эти настройки сохраняются в профиле уборки и применяются автоматически при следующем запуске по расписанию.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте функцию «Повторная уборка» для сильно загрязненных мест. Робот очистит выбранную комнату, а затем вернется и пройдет по ней еще раз зигзагом, что особенно эффективно для ковров.</p></aside>
+
+<h2 id="работа-с-несколькими-картами-и-сохранение-данных">Работа с несколькими картами и сохранение данных</h2>
+
+<p>Владельцы двухуровневых квартир или домов оценят возможность сохранения нескольких карт. <em>Xiaomi</em> позволяет хранить до 4-5 разных планов этажей. Чтобы настроить уборку на втором этаже, просто перенесите базу туда (или оставьте ее там постоянно) и создайте новую карту с нуля.</p>
+
+<p>При переключении между этажами устройство автоматически распознает местоположение по характерным landmarks (углам, мебели) или по команде пользователя в приложении. Убедитесь, что для каждого этажа проведено независимое <strong>зонирование</strong>. Названия комнат могут повторяться (две «Спальни» на разных этажах), но в приложении они будут привязаны к разным картам.</p>
+
+<p>Регулярно проверяйте актуальность сохраненных данных. Если вы сделали перестановку мебели, карту лучше обновить. Старые данные могут привести к тому, что робот будет пытаться заехать на место, где теперь стоит стол, или, наоборот, пропустит участок, который стал свободным.</p>
+
+<ul>
+<li>🏠 Поддерживайте актуальность карт при каждой серьезной перестановке.</li>
+<li>🔄 Используйте облачное резервное копирование настроек в аккаунте Mi.</li>
+<li>🧹 Регулярно очищайте датчики лидара от пыли для точного позиционирования.</li>
+<li>📱 Обновляйте приложение Mi Home для получения новых функций навигации.</li>
+</ul>
+
+<details class="pb-accordion"><summary>Что делать, если робот потерял карту?</summary><div class="pb-accordion-body"><p>Если устройство сообщает об ошибке карты или постоянно крутится на месте, попробуйте сбросить карту в настройках и запустить полное сканирование заново. Убедитесь, что лазерный дальномер (башенка на корпусе) свободно вращается и не застрял.</p></div></details>
+
+<h2 id="типичные-проблемы-и-способы-их-решения">Типичные проблемы и способы их решения</h2>
+
+<p>Даже при правильной настройке могут возникать сбои. Часто пользователи жалуются, что робот игнорирует команду и едет в другую комнату. Это может быть связано с тем, что <strong>навигационный модуль</strong> потерял ориентацию. Попробуйте вручную перенести устройство в центр нужной комнаты и запустить уборку снова.</p>
+
+<p>Другая распространенная проблема — «дрейф» карты. Со временем координаты могут немного смещаться. В таких случаях помогает калибровка или повторное сканирование проблемного участка. Также следите за чистотой колес и боковой щетки: налипшая шерсть может менять траекторию движения, сбивая точные расчеты <strong>алгоритма</strong>.</p>
+
+<p>Если робот упорно не видит виртуальную стену, проверьте, не обновилась ли прошивка. Иногда новые версии ПО меняют логику работы ограничений. В таком случае стоит перечитать changelog обновления или временно отключить сложные сценарии для проверки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главный секрет успешной работы — это чистота сенсоров и актуальность карты. Регулярное обслуживание механики важнее сложных настроек ПО.</p></aside>
+
+<details>
+<summary>Можно ли запретить роботу заезжать на черный ковер?</summary>
+<p>Да, это возможно. Черные поверхности некоторые модели воспринимают как обрыв (датчики падения), но если робот все же заезжает, используйте функцию «Запретная зона» (квадрат) прямо поверх ковра в приложении. Также можно использовать физические магнитные ленты, если модель их поддерживает.</p>
+</details>
+
+<details>
+<summary>Почему робот не делит карту на комнаты автоматически?</summary>
+<p>Автоматическое разделение работает не идеально. Алгоритм ищет дверные проемы и изменения геометрии. Если у вас студия или открытая планировка, робот может видеть одно большое пространство. В этом случае ручное разделение линиями — единственное верное решение.</p>
+</details>
+
+<details>
+<summary>Сработает ли уборка по комнате, если нет интернета?</summary>
+<p>Нет. Для управления конкретными комнатами, виртуальными стенами и картами требуется активное соединение с сервером <em>Xiaomi</em> через интернет. Без сети робот может работать только в базовом режиме (кнопка на корпусе), убирая все доступное пространство хаотично или по последнему известному маршруту, но без возможности выбора зоны.</p>
+</details>
+
+<details>
+<summary>Как часто нужно перестраивать карту?</summary>
+<p>Только при изменении планировки, перестановке крупной мебели или переезде базы. Если расстановка предметов в доме стабильна, одна построенная карта может служить годами, требуя лишь периодической корректировки виртуальных стен.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/a/ad/adas-v-videoregistratore-chto-eto-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">ADAS в видеорегистраторе Xiaomi: что это и как работает в 2026 году</span>
+                <span class="pb-related-desc">Разбираемся, что такое система ADAS в видеорегистраторах Xiaomi: функции, принципы работы, модели с </span>
+            </a><a href="/articles/k/kt/kto-proizvodit-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Кто производит Xiaomi: заводы, бренды и реальное производство</span>
+                <span class="pb-related-desc">Полный разбор: кто производит смартфоны Xiaomi. Список заводов в Китае, Индии и Европе. Разоблачение</span>
+            </a><a href="/articles/c/ch/chem-otlichaetsya-kitajskaya-versiya-ot-globalnoj-xiaomi-mi-band.html" class="pb-related-card">
+                <span class="pb-related-title">Китайская или Глобальная версия Xiaomi Mi Band: отличия и выбор</span>
+                <span class="pb-related-desc">Подробный разбор отличий китайской и глобальной версий Xiaomi Mi Band. Стоит ли переплачивать? Пробл</span>
+            </a><a href="/drugoe/k/ks/ksiomi-chto-znachit.html" class="pb-related-card">
+                <span class="pb-related-title">Ксиоми: что это значит? Разбор термина и его связи с Xiaomi</span>
+                <span class="pb-related-desc">Подробный разбор значения слова «ксиоми»: как оно связано с брендом Xiaomi, почему так называют техн</span>
+            </a><a href="/articles/k/ka/kak-udalit-sistemnye-prilozheniya-na-syaomi-bez-kompyutera.html" class="pb-related-card">
+                <span class="pb-related-title">Удаление системных приложений на Xiaomi без ПК: гайд</span>
+                <span class="pb-related-desc">Подробная инструкция, как удалить системный софт на Xiaomi без компьютера. Используем ADB по Wi-Fi, </span>
+            </a><a href="/articles/s/sm/smart-chasy-xiaomi-kakie-luchshe-vybrat-v-2023.html" class="pb-related-card">
+                <span class="pb-related-title">Лучшие смарт-часы Xiaomi 2023: Рейтинг и выбор</span>
+                <span class="pb-related-desc">Как выбрать умные часы Xiaomi в 2023 году? Сравнение Mi Band, Watch S и Amazfit. Обзор функций, NFC </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

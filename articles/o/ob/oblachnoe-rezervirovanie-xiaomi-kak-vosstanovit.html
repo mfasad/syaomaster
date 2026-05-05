@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Облачное резервирование Xiaomi: как восстановить данные — СяоМастер</title>
+    <meta name="description" content="Подробная инструкция по восстановлению Xiaomi из облака. Как вернуть контакты, фото и настройки через Mi Cloud и Google.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/o/ob/oblachnoe-rezervirovanie-xiaomi-kak-vosstanovit.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Облачное резервирование Xiaomi: как восстановить данные">
+    <meta property="og:description" content="Подробная инструкция по восстановлению Xiaomi из облака. Как вернуть контакты, фото и настройки через Mi Cloud и Google.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Облачное резервирование Xiaomi: как восстановить данные</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принципы-работы-облачного-хранилища-mi-cloud">Принципы работы облачного хранилища Mi Cloud</a></li><li><a href="#подготовка-устройства-перед-восстановлением">Подготовка устройства перед восстановлением</a></li><li><a href="#восстановление-через-настройки-mi-cloud">Восстановление через настройки Mi Cloud</a></li><li><a href="#использование-google-аккаунта-для-синхронизации">Использование Google Аккаунта для синхронизации</a></li><li><a href="#локальное-резервное-копирование-и-его-восстановление">Локальное резервное копирование и его восстановление</a></li><li><a href="#решение-распространенных-проблем-при-восстановлении">Решение распространенных проблем при восстановлении</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-skopirovat-dannye-s-telefona-khuavej-na-telefon-xiaomi.html">Как перенести данные с Huawei на Xiaomi: полная инструкция</a></li><li><a href="/articles/p/po/pochemu-telefon-medlenno-zaryazhaetsya-xiaomi-redmi-note-7.html">Xiaomi Redmi Note 7: причины медленной зарядки и решения</a></li><li><a href="/articles/v/vy/vy-stali-razrabotchikom-xiaomi-chto-eto-takoe.html">Статус «Разработчик Xiaomi»: что это значит и как получить</a></li><li><a href="/drugoe/k/kr/krolik-xiaomi-kak-zovut.html">Кролик Xiaomi: как зовут талисман бренда и его история</a></li><li><a href="/articles/c/ch/chto-takoe-band-20-v-smartfone-xiaomi.html">Band 20 в Xiaomi: что это и как включить 4G LTE</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Облачное резервирование Xiaomi: как восстановить данные</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принципы-работы-облачного-хранилища-mi-cloud">Принципы работы облачного хранилища Mi Cloud</a></li><li><a href="#подготовка-устройства-перед-восстановлением">Подготовка устройства перед восстановлением</a></li><li><a href="#восстановление-через-настройки-mi-cloud">Восстановление через настройки Mi Cloud</a></li><li><a href="#использование-google-аккаунта-для-синхронизации">Использование Google Аккаунта для синхронизации</a></li><li><a href="#локальное-резервное-копирование-и-его-восстановление">Локальное резервное копирование и его восстановление</a></li><li><a href="#решение-распространенных-проблем-при-восстановлении">Решение распространенных проблем при восстановлении</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Потеря важных данных на смартфоне всегда становится неприятным сюрпризом, будь то внезапный сбой системы, кража устройства или просто случайное удаление. Владельцы экосистемы <em>Xiaomi</em> находятся в более выгодном положении, так как компания предоставляет мощные инструменты для сохранения цифровой жизни пользователя. Основным механизмом защиты здесь выступает <strong>облачное резервирование</strong>, которое позволяет создавать копии контактов, сообщений, заметок и даже раскладки домашнего экрана.</p>
+
+<p>Процесс возврата информации не всегда проходит автоматически, особенно после перепрошивки или при переходе на новый гаджет. Часто пользователи сталкиваются с ситуацией, когда синхронизация вроде бы включена, но данные не появляются. Важно понимать архитектуру хранения: часть данных лежит на серверах <em>Mi Cloud</em>, а другая часть может быть привязана к аккаунту <strong>Google</strong>. Разделение этих потоков информации — ключ к успешному восстановлению.</p>
+
+<p>В этом руководстве мы детально разберем алгоритмы действий для различных сценариев. Вы узнаете, как активировать скрытые функции восстановления, в чем разница между локальным бэкапом и облачным, а также что делать, если стандартные методы не работают. Грамотное использование этих инструментов позволит свести downtime вашего устройства к минимуму.</p>
+
+<h2 id="принципы-работы-облачного-хранилища-mi-cloud">Принципы работы облачного хранилища Mi Cloud</h2>
+
+<p>Сервис <em>Mi Cloud</em> является центральным узлом для хранения пользовательских данных в экосистеме бренда. В отличие от простых файловых помоек, эта система интегрирована глубоко в оболочку <strong>MIUI</strong> или <em>HyperOS</em>. Она умеет сохранять не только медиафайлы, но и системные настройки, историю вызовов и пароли Wi-Fi. При первичной настройке телефона система часто предлагает включить синхронизацию, и от этого предложения лучше не отказываться.</p>
+
+<p>Основное преимущество заключается в том, что резервное копирование происходит фоновом режиме. Вам не нужно каждый вечер подключать кабель к компьютеру. Однако для полноценной работы требуется стабильное соединение с интернетом и авторизация под вашим <strong>Mi Account</strong>. Без привязки аккаунта функция попросту не активируется.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Бесплатный объем хранилища в <em>Mi Cloud</em> ограничен 5 ГБ. Если вы планируете хранить там много фотографий в оригинальном качестве, пространство закончится быстро, и синхронизация новых файлов прекратится.</p>
+</blockquote>
+
+<p>Стоит отметить разницу между синхронизацией и полным бэкапом. Синхронизация работает в реальном времени для контактов и заметок, тогда как полный бэкап системы создается периодически или по запросу пользователя. Понимание этой разницы помогает избежать иллюзии полной безопасности данных.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда проверяйте статус синхронизации в настройках аккаунта перед сбросом настроек или перепрошивкой устройства, чтобы убедиться в актуальности копии.</p></aside>
+
+<h2 id="подготовка-устройства-перед-восстановлением">Подготовка устройства перед восстановлением</h2>
+
+<p>Прежде чем запускать процесс возврата данных, необходимо убедиться, что устройство готово к приему информации. Хаотичные попытки войти в аккаунты без подготовки могут привести к конфликтам версий ПО или дублированию записей в телефонной книге. Сначала проверьте версию операционной системы.</p>
+
+<p>Зайдите в меню <code>Настройки → О телефоне</code> и убедитесь, что установлена актуальная версия прошивки. Часто старые версии <em>MIUI</em> имеют баги при работе с новыми протоколами синхронизации. Также критически важно наличие стабильного подключения к сети Wi-Fi, так как восстановление большого объема данных через мобильный интернет может быть прервано илить весь трафик.</p>
+
+<ul>
+<li>🔋 Зарядите аккумулятор смартфона минимум до 60%, чтобы процесс не прервался из-за разрядки.</li>
+<li>📶 Подключитесь к надежной сети Wi-Fi с хорошей скоростью отдачи.</li>
+<li>🔐 Вспомните пароль от своего <strong>Mi Account</strong> и аккаунта Google, так как система безопасности может запросить их повторно.</li>
+</ul>
+
+<p>Если вы только что выполнили сброс до заводских настроек, дождитесь полной загрузки рабочего стола. Не спешите устанавливать тяжелые приложения сразу же. Дайте системе завершить фоновые процессы инициализации сервисов <em>Google Play</em> и <strong>Mi Service</strong>.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Готовность к восстановлению</h4><label class="check-item"><input type="checkbox"><span>Проверка заряда батареи:Подключение к Wi-Fi:Ввод паролей от аккаунтов:Освобождение места в памяти</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<h2 id="восстановление-через-настройки-mi-cloud">Восстановление через настройки Mi Cloud</h2>
+
+<p>Самый прямой способ вернуть данные — использовать встроенный интерфейс настроек. Этот метод идеален, если вы хотите выборочно восстановить контакты, сообщения или заметки, не трогая остальные файлы. Для начала откройте приложение <code>Настройки</code> и перейдите в раздел, отвечающий за ваш аккаунт.</p>
+
+<p>Нажмите на имя своего профиля в верхней части экрана или выберите пункт <code>Mi Аккаунт</code>. Внутри меню найдите раздел <strong>Облако</strong>. Здесь отображается статус синхронизации и список данных, доступных для восстановления. Если вы видите старые даты последнего обновления, нажмите на кнопку синхронизации.</p>
+
+<pre><code>Настройки → Mi Аккаунт → Облако → Восстановить данные</code></pre>
+
+<p>Система предложит выбрать типы данных для восстановления. Вы можете поставить галочки только напротив нужных пунктов, например,"Контакты" и"Сообщения", оставив галерею без изменений, если она не нужна. После подтверждения начнется процесс загрузки, прогресс которого будет отображаться в уведомлении.</p>
+
+<details class="pb-accordion"><summary>Что делать, если кнопка"Восстановить" неактивна?</summary><div class="pb-accordion-body"><p>Если кнопка не нажимается, проверьте, не включена ли экономия трафика или режим"только Wi-Fi" для синхронизации, а также убедитесь, что на сервере действительно есть сохраненные копии.</p></div></details>
+
+<h2 id="использование-google-аккаунта-для-синхронизации">Использование Google Аккаунта для синхронизации</h2>
+
+<p>Не стоит забывать про экосистему <strong>Google</strong>, которая часто является основным хранилищем для контактов и календаря у многих пользователей Android. Даже если вы активно пользуетесь услугами <em>Xiaomi</em>, проверка Google-аккаунта обязательна. Часто пользователи неосознанно сохраняют номера именно туда.</p>
+
+<p>Для проверки перейдите в <code>Настройки → Аккаунты и синхронизация</code>. Выберите свой адрес Gmail. Убедитесь, что ползунки напротив пунктов"Контакты","Календарь" и"Заметки Google" активированы. Если вы только что сбросили телефон, данные могут подтянуться автоматически в течение 10-15 минут после подключения к сети.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип данных</th>
+<th>Где хранится</th>
+<th>Скорость восстановления</th>
+<th>Зависимость от сети</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Контакты</td>
+<td>Google / Mi Cloud</td>
+<td>Мгновенно</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Фотографии</td>
+<td>Google Фото / Mi Cloud</td>
+<td>Медленно (зависит от объема)</td>
+<td>Критична</td>
+</tr>
+<tr>
+<td>Пароли Wi-Fi</td>
+<td>Google Аккаунт</td>
+<td>При подключении к сети</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Системные настройки</td>
+<td>Mi Cloud</td>
+<td>При первой настройке</td>
+<td>Высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Если контакты не появились автоматически, можно форсировать процесс. Зайдите в приложение"Контакты", откройте настройки и выберите"Импорт/экспорт контактов" или"Синхронизировать сейчас". Это заставит телефон обратиться к серверам <em>Google</em> за свежей информацией.</p>
+
+<div class="pb-poll" id="poll-d715b186"><div class="pb-poll-question">📊 Где вы чаще всего храните контакты?</div><div class="pb-poll-option" data-poll="d715b186" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">В SIM-карте:В памяти телефона:В аккаунте Google:В аккаунте Mi Cloud</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="локальное-резервное-копирование-и-его-восстановление">Локальное резервное копирование и его восстановление</h2>
+
+<p>Помимо облака, смартфоны <em>Xiaomi</em> имеют мощную функцию локального бэкапа. Это создание полного снимка системы, который сохраняется во внутренней памяти или на SD-карте. Этот метод особенно полезен, когда нет доступа к интернету или нужно перенести данные между телефонами без использования облачных сервисов.</p>
+
+<p>Файлы резервной копии обычно находятся по пути <code>MIUI → backup → AllBackup</code>. Чтобы восстановить данные из такой копии, нужно перейти в <code>Настройки → О телефоне → Резервирование и восстановление</code>. Здесь вы увидите список доступных дат.</p>
+
+<p>Выберите нужную дату создания копии. Система предупредит, что текущие данные могут быть перезаписаны. Это важный момент: <mark>локальное восстановление полностью заменяет текущие данные на устройстве данными из архива</mark>. Поэтому убедитесь, что в архиве есть всё необходимое.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Локальная копия занимает много места. Если вы храните её на внутреннем накопителе, при сбросе телефона до заводских настроек она будет удалена вместе со всем остальным. Всегда копируйте файл <code>.bak</code> на компьютер или внешний диск.</p>
+</blockquote>
+
+<p>Процесс восстановления может занять от 10 минут до часа, в зависимости от объема данных и скорости памяти. В это время экран может гаснуть, но прерывать процесс нельзя. Телефон будет несколько раз перезагружаться.</p>
+
+<h2 id="решение-распространенных-проблем-при-восстановлении">Решение распространенных проблем при восстановлении</h2>
+
+<p>Даже при соблюдении всех инструкций иногда возникают ошибки. Чаще всего пользователи сталкиваются с сообщением"Не удалось синхронизировать" или бесконечным процессом загрузки. Первым делом проверьте дату и время на устройстве. Если они сбиты, сертификаты безопасности не будут работать, и сервер отвергнет соединение.</p>
+
+<p>Второй частой проблемой является переполненное хранилище. Если вы восстанавливаете фото из <em>Google Фото</em> или <strong>Mi Cloud</strong>, убедитесь, что на телефоне есть свободное место. Попытка загрузить 50 ГБ данных на телефон с 10 ГБ свободного места приведет к ошибке.</p>
+
+<ul>
+<li>🔄 Очистите кеш приложения"Сервисы Google Play" и"Mi Cloud" через меню управления приложениями.</li>
+<li>🔒 Проверьте, не требуется ли повторная авторизация из-за смены пароля или подозрительной активности.</li>
+<li>📡 Попробуйте переключиться на мобильную сеть или другую точку доступа Wi-Fi, если провайдер блокирует порты синхронизации.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если восстановление зависает на одном проценте, попробуйте включить режим полета на 10 секунд, затем выключить его и заново запустить синхронизацию. Это перезапустит сетевые модули.</p></aside>
+
+<p>В редких случаях проблема кроется в версии приложения-клиента. Зайдите в <em>GetApps</em> или <strong>Google Play</strong> и проверьте наличие обновлений для системных компонентов. Устаревшие версии могут некорректно работать с новыми форматами резервных копий.</p>
+
+<details>
+<summary>Что делать, если телефон пишет"Аккаунт заблокирован"?</summary>
+<p>Это защита FRP (Factory Reset Protection). Вам необходимо ввести логин и пароль Google-аккаунта, который был основным на этом устройстве до сброса. Без этих данных разблокировать телефон легальными способами практически невозможно. Если вы сменили пароль недавно, подождите 24 часа перед попыткой ввода.</p>
+</details>
+
+<details>
+<summary>Можно ли восстановить данные с разбитого экрана?</summary>
+<p>Если сенсор не работает, но изображение есть, можно попробовать подключить USB-мышь через OTG-адаптер. Это позволит управлять интерфейсом и сделать резервную копию или проверить статус синхронизации. Если экран черный, но телефон работает, поможет только ранее включенная удаленная синхронизация через веб-интерфейс i.mi.com.</p>
+</details>
+
+<details>
+<summary>Сколько хранятся данные в облаке после удаления аккаунта?</summary>
+<p>После удаления аккаунта <em>Mi Account</em> данные хранятся в течение 30 дней в корзине, после чего удаляются безвозвратно. Для аккаунтов Google срок хранения удаленных элементов в корзине составляет также 30 дней. После этого восстановить их через стандартные средства нельзя.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-skopirovat-dannye-s-telefona-khuavej-na-telefon-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как перенести данные с Huawei на Xiaomi: полная инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство по переносу контактов, фото и приложений с телефона Huawei на Xiaomi. Лучшие м</span>
+            </a><a href="/articles/p/po/pochemu-telefon-medlenno-zaryazhaetsya-xiaomi-redmi-note-7.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi Redmi Note 7: причины медленной зарядки и решения</span>
+                <span class="pb-related-desc">Почему телефон Xiaomi Redmi Note 7 заряжается долго? Разбор причин, проверка кабеля, портов, ПО и те</span>
+            </a><a href="/articles/v/vy/vy-stali-razrabotchikom-xiaomi-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Статус «Разработчик Xiaomi»: что это значит и как получить</span>
+                <span class="pb-related-desc">Узнайте, что означает статус разработчика Xiaomi, чем он отличается от обычного аккаунта и как стать</span>
+            </a><a href="/drugoe/k/kr/krolik-xiaomi-kak-zovut.html" class="pb-related-card">
+                <span class="pb-related-title">Кролик Xiaomi: как зовут талисман бренда и его история</span>
+                <span class="pb-related-desc">Узнайте, как зовут кролика Xiaomi — официального талисмана бренда, его происхождение, значение для к</span>
+            </a><a href="/articles/c/ch/chto-takoe-band-20-v-smartfone-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Band 20 в Xiaomi: что это и как включить 4G LTE</span>
+                <span class="pb-related-desc">Подробно о Band 20 в смартфонах Xiaomi: что это за частота, как включить скрытый режим LTE в России </span>
+            </a><a href="/articles/k/ka/kak-otformatirovat-sd-kartu-na-telefone-xiaomi-redmi-7a.html" class="pb-related-card">
+                <span class="pb-related-title">Как отформатировать SD карту на Xiaomi Redmi 7A: Полная инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по форматированию microSD на Redmi 7A. Узнайте, как выбрать файловую систему, </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

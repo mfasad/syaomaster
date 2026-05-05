@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как использовать Xiaomi как модем: USB, Wi-Fi, Bluetooth — СяоМастер</title>
+    <meta name="description" content="Подробная инструкция, как раздать интернет с телефона Xiaomi на ПК. Настройка USB-модема, Wi-Fi точки доступа и Bluetooth-панели в MIUI/HyperOS.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-ispolzovat-smartfon-xiaomi-v-kachestve-modema-dlya-kompyutera.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как использовать Xiaomi как модем: USB, Wi-Fi, Bluetooth">
+    <meta property="og:description" content="Подробная инструкция, как раздать интернет с телефона Xiaomi на ПК. Настройка USB-модема, Wi-Fi точки доступа и Bluetooth-панели в MIUI/HyperOS.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как использовать Xiaomi как модем: USB, Wi-Fi, Bluetooth</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#настройка-точки-доступа-wi-fi-для-раздачи-интернета">Настройка точки доступа Wi-Fi для раздачи интернета</a></li><li><a href="#подключение-через-usb-кабель-стабильность-и-скорость">Подключение через USB-кабель: стабильность и скорость</a></li><li><a href="#использование-bluetooth-модема-для-экономии-энергии">Использование Bluetooth-модема для экономии энергии</a></li><li><a href="#сравнение-методов-подключения-таблица-характеристик">Сравнение методов подключения: таблица характеристик</a></li><li><a href="#оптимизация-и-продление-автономной-работы">Оптимизация и продление автономной работы</a></li><li><a href="#решение-распространенных-проблем-подключения">Решение распространенных проблем подключения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-ustanovit-shrift-na-syaomi-redmi.html">Как установить шрифт на Xiaomi Redmi: полная инструкция</a></li><li><a href="/articles/c/ch/chto-delat-esli-net-datchika-priblizheniya-v-nastrojkakh-ksiomi.html">Нет датчика приближения в настройках Xiaomi: как включить</a></li><li><a href="/drugoe/k/ka/kak-pravilno-govoritsya-xiaomi.html">Как правильно произносится Xiaomi: официальное и народное название</a></li><li><a href="/articles/k/ka/kak-perezagruzit-lampochku-xiaomi.html">Как перезагрузить лампочку Xiaomi: сброс и настройка Mi Home</a></li><li><a href="/articles/k/ka/kak-oplachivat-telefonom-xiaomi.html">Как оплачивать телефоном Xiaomi: NFC, Google Pay и Mi Pay</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как использовать смартфон Xiaomi в качестве модема для компьютера</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#настройка-точки-доступа-wi-fi-для-раздачи-интернета">Настройка точки доступа Wi-Fi для раздачи интернета</a></li><li><a href="#подключение-через-usb-кабель-стабильность-и-скорость">Подключение через USB-кабель: стабильность и скорость</a></li><li><a href="#использование-bluetooth-модема-для-экономии-энергии">Использование Bluetooth-модема для экономии энергии</a></li><li><a href="#сравнение-методов-подключения-таблица-характеристик">Сравнение методов подключения: таблица характеристик</a></li><li><a href="#оптимизация-и-продление-автономной-работы">Оптимизация и продление автономной работы</a></li><li><a href="#решение-распространенных-проблем-подключения">Решение распространенных проблем подключения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+<p>Ситуации, когда стационарный компьютер или ноутбук остается без доступа к глобальной сети, а Wi-Fi роутер внезапно отключается или его вовсе нет под рукой, возникают у каждого пользователя цифровой техники. В такие моменты <strong>смартфон</strong> становится единственным спасением, позволяющим быстро выйти в онлайн для работы или учебы. Современные устройства <em>Xiaomi</em>, Redmi и POCO оснащены мощными модулями связи, которые позволяют эффективно транслировать мобильный трафик на другие гаджеты.</p>
+<p>Существует несколько проверенных способов превратить ваш аппарат в полноценный <strong>роутер</strong>, каждый из которых имеет свои технические особенности и сценарии использования. Выбор конкретного метода зависит от наличия свободных портов, требований к скорости соединения и необходимости экономии заряда батареи. Ниже мы детально разберем алгоритмы действий для всех актуальных вариантов подключения.</p>
+<p>Прежде чем приступать к настройке, убедитесь, что на вашем тарифном плане включена услуга передачи данных и на балансе имеются средства. Также стоит проверить уровень сигнала в помещении, так как от качества приема <strong>4G/LTE</strong> напрямую зависит итоговая скорость на подключаемом компьютере. Если эти базовые условия соблюдены, можно переходить к технической реализации.</p>
+
+<h2 id="настройка-точки-доступа-wi-fi-для-раздачи-интернета">Настройка точки доступа Wi-Fi для раздачи интернета</h2>
+<p>Наиболее популярным и универсальным методом является создание виртуальной точки доступа через беспроводной интерфейс <strong>Wi-Fi</strong>. Этот способ не требует проводов и позволяет подключать к сети сразу несколько устройств, включая ноутбуки, планшеты и даже игровые консоли. Для активации функции необходимо перейти в меню настроек системы, где расположен соответствующий раздел управления сетями.</p>
+<p>После входа в меню следует выбрать пункт <code>Точка доступа Wi-Fi</code> и активировать ползунок включения. Система предложит задать имя сети (SSID) и установить надежный пароль, чтобы предотвратить несанкционированный доступ посторонних лиц к вашему трафику. Важно использовать стойкий протокол шифрования, обычно это <strong>WPA2 PSK</strong>, который обеспечивает базовый уровень защиты передаваемых данных.</p>
+<p>В расширенных настройках <em>MIUI</em> или <em>HyperOS</em> можно изменить частотный диапазон радиомодуля. Переключение на 5 ГГц позволит достичь более высокой скорости передачи данных, однако радиус покрытия и пробивная способность стен у этого диапазона ниже, чем у стандартного 2.4 ГГц.</p>
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Активная раздача интернета через Wi-Fi значительно увеличивает энергопотребление и нагрев корпуса смартфона. Не накрывайте устройство тканью во время работы и следите за температурой процессора.</p>
+</blockquote>
+<p>Для оптимизации работы точки доступа можно ограничить количество подключаемых клиентов или установить таймер автоматического отключения. Это поможет сохранить заряд батареи, если вы забудете выключить функцию после завершения сеанса работы.</p>
+
+<div class="pb-poll" id="poll-b07b2172"><div class="pb-poll-question">📊 Какой способ раздачи интернета вы используете чаще всего?</div><div class="pb-poll-option" data-poll="b07b2172" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Wi-Fi точка доступа</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b07b2172" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">USB-модем</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b07b2172" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Bluetooth-панель</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b07b2172" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Внешний роутер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="подключение-через-usb-кабель-стабильность-и-скорость">Подключение через USB-кабель: стабильность и скорость</h2>
+<p>Если вам требуется максимальная стабильность соединения и минимальные задержки (ping), то использование <strong>USB-кабеля</strong> является безальтернативным лидером. Такой метод не только обеспечивает надежный канал связи, защищенный от внешних радиопомех, но и позволяет одновременно заряжать аккумулятор мобильного устройства от компьютера.</p>
+<p>Для начала работы необходимо соединить смартфон и ПК качественным кабелем, способным передавать данные, а не только ток для зарядки. После физического подключения в меню телефона, в разделе настроек точки доступа, станет активным пункт <code>USB-модем</code>. Его нужно активировать вручную, так как по умолчанию эта функция часто отключена в целях безопасности.</p>
+<p>Операционная система компьютера, будь то <em>Windows</em>, <em>macOS</em> или <em>Linux</em>, должна автоматически определить новое сетевое подключение. В диспетчере устройств оно будет отображаться как виртуальная сетевая карта. Если драйверы не установились автоматически, может потребоваться ручная установка компонентов через официальный сайт производителя или приложение <em>Mi PC Suite</em>.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед подключением USB</h4><label class="check-item"><input type="checkbox"><span>Качественный кабель с передачей данных</span></label><label class="check-item"><input type="checkbox"><span>Установлены драйверы ADB (опционально)</span></label><label class="check-item"><input type="checkbox"><span>Включена отладка по USB (если требуется)</span></label><label class="check-item"><input type="checkbox"><span>Активирован мобильный интернет</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+<p>Преимуществом проводного соединения является отсутствие потерь скорости из-за радиопомех, что критично для онлайн-игр или видеоконференций в высоком разрешении. Кроме того, компьютер не расходует заряд батареи телефона, а наоборот, подпитывает его, что позволяет использовать устройство как полноценный стационарный модем.</p>
+
+<h2 id="использование-bluetooth-модема-для-экономии-энергии">Использование Bluetooth-модема для экономии энергии</h2>
+<p>Хотя технология <strong>Bluetooth</strong> существенно уступает в скорости передачи данных современным стандартам Wi-Fi и USB, она остается актуальной для ситуаций, когда требуется передать небольшой объем текстовой информации или почты при критически низком заряде батареи. Энергопотребление Bluetooth-модуля минимально, что позволяет устройству работать в режиме модема несколько часов без подзарядки.</p>
+<p>Процесс настройки начинается с сопряжения компьютера и смартфона. Убедитесь, что оба устройства видят друг друга, и выполните (спаривание), введя одинаковый код подтверждения на экранах гаджетов. После успешного сопряжения в настройках Bluetooth на телефоне необходимо активировать пункт <code>Bluetooth-модем</code>.</p>
+<p>На стороне компьютера, в панели управления Bluetooth-устройствами, нужно найти сопряженный смартфон <em>Xiaomi</em>, кликнуть правой кнопкой мыши и выбрать опцию подключения через сеть (<strong>PAN</strong> — Personal Area Network). Система установит соединение, которое будет работать медленнее Wi-Fi, но стабильнее прерывистого EDGE.</p>
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Скорость соединения через Bluetooth-модем редко превышает 1-2 Мбит/с. Не используйте этот метод для просмотра видео в HD или загрузки больших файлов.</p>
+</blockquote>
+<p>Этот метод также полезен в корпоративных сетях с жесткими ограничениями безопасности, где использование неизвестных Wi-Fi адаптеров может быть заблокировано администратором, а Bluetooth-протокол считается более контролируемым каналом связи.</p>
+
+<h2 id="сравнение-методов-подключения-таблица-характеристик">Сравнение методов подключения: таблица характеристик</h2>
+<p>Чтобы окончательно определиться с выбором способа раздачи интернета, целесообразно провести сравнительный анализ технических характеристик каждого метода. Различные сценарии использования диктуют свои требования к пропускной способности, задержкам и энергоэффективности.</p>
+<p>Ниже приведена таблица, демонстрирующая ключевые различия между USB, Wi-Fi и Bluetooth подключением в контексте использования смартфона <em>Xiaomi</em> в качестве модема.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Характеристика</th>
+<th>USB-модем</th>
+<th>Wi-Fi точка доступа</th>
+<th>Bluetooth-модем</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Максимальная скорость</td>
+<td>Высокая (до 400+ Мбит/с)</td>
+<td>Средняя/Высокая (зависит от стандарта)</td>
+<td>Низкая (до 2 Мбит/)</td>
+</tr>
+<tr>
+<td>Задержка (Ping)</td>
+<td>Минимальная</td>
+<td>Средняя</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Расход батареи</td>
+<td>Зарядка от ПК</td>
+<td>Высокий</td>
+<td>Минимальный</td>
+</tr>
+<tr>
+<td>Количество клиентов</td>
+<td>1 устройство</td>
+<td>До 10 устройств</td>
+<td>1 устройство</td>
+</tr>
+<tr>
+<td>Стабильность</td>
+<td>Максимальная</td>
+<td>Зависит от помех</td>
+<td>Средняя</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Анализируя данные, можно сделать вывод, что для постоянной работы за компьютером лучше всего подходит <strong>USB-кабель</strong>. Если же нужно быстро раздать файл коллеге или подключить планшет для ребенка, оптимальным выбором станет <strong>Wi-Fi</strong>.</p>
+
+<details class="pb-accordion"><summary>Скрытые настройки APN</summary><div class="pb-accordion-body"><p>В некоторых случаях для корректной работы модема требуется ручная настройка точек доступа (APN). Зайдите в Настройки -> SIM-карты и мобильные сети -> Точки доступа (APN). Выберите активного оператора и проверьте, чтобы тип APN включал параметры default,supl. Для некоторых операторов может потребоваться добавление параметra dun в строку типа APN, что явно указывает сети на использование телефона как модема.</p></div></details>
+
+<h2 id="оптимизация-и-продление-автономной-работы">Оптимизация и продление автономной работы</h2>
+<p>Режим модема является одним из самых энергоемких процессов для смартфона. Интенсивная работа радиомодуля и постоянный обмен данными приводят к быстрому разряду <strong>аккумулятора</strong> и нагреву внутренних компонентов. Чтобы минимизировать негативное воздействие, рекомендуется снизить яркость экрана до минимума или вовсе выключить дисплей после активации раздачи.</p>
+<p>В настройках точки доступа <em>Xiaomi</em> можно установить лимит трафика. Это полезная функция, которая автоматически отключит модем после достижения заданного объема переданных данных (например, 1 ГБ или 5 ГБ). Такая мера предосторожности убережет вас от непредвиденных расходов, если мобильный оператор не предоставляет безлимитный тариф.</p>
+<p>Также стоит отключить фоновые приложения на самом смартфоне, которые могут потреблять трафик, пока вы раздаете интернет. Обновление приложений в <em>Google Play</em>, синхронизация фотографий в облаке или загрузка новостей могут незаметно «съесть» часть вашего пакета данных.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте режим «Не беспокоить» во время раздачи интернета. Это предотвратит появление всплывающих уведомлений на экране, если он включен, и снизит нагрузку на процессор, что немного продлит время работы от батареи.</p></aside>
+<p>Если вы используете USB-модинг часто, имеет смысл приобрести качественный кабель с поддержкой быстрой зарядки. Это обеспечит подачу достаточного тока на телефон, компенсируя энергозатраты на передачу данных по сети.</p>
+
+<h2 id="решение-распространенных-проблем-подключения">Решение распространенных проблем подключения</h2>
+<p>Несмотря на простоту настройки, пользователи могут столкнуться с рядом технических трудностей. Часто компьютер видит телефон как устройство для зарядки, но не определяет его как сетевой адаптер. В этом случае необходимо проверить режим работы USB-порта.</p>
+<p>При подключении кабеля выберите в появившемся меню на экране смартфона режим <code>Передача файлов (MTP)</code> или специально предназначенный режим <code>USB-модем</code>, если он вынесен в отдельное меню уведомлений. Иногда помогает переключение режима отладки по USB в меню для разработчиков.</p>
+<p>Еще одной распространенной проблемой является отсутствие интернета на подключенном устройстве при наличии сигнала на телефоне. Это может быть вызвано неверными настройками <strong>APN</strong> или блокировкой со стороны мобильного оператора. Некоторые тарифные планы запрещают раздачу интернета (Tethering), и оператор может искусственно занижать скорость или блокировать соединение.</p>
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Если компьютер не видит драйверы модема, попробуйте временно отключить антивирус или брандмауэр, которые могут блокировать создание нового сетевого подключения.</p>
+</blockquote>
+<p>В случае persistent-ошибок поможет полный сброс настроек сети на смартфоне. Эта операция удалит сохраненные пароли Wi-Fi и настройки Bluetooth, но часто решает программные конфликты модулей связи.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Кабельное соединение через USB всегда предпочтительнее для стационарной работы, так как оно гарантирует максимальную скорость и отсутствие радиопомех, в отличие от беспроводных методов.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Почему компьютер не видит Xiaomi как модем через USB?</summary>
+<p>Чаще всего проблема кроется в кабеле. Многие дешевые кабели предназначены только для зарядки и не имеют линий для передачи данных. Замените кабель на оригинальный или сертифицированный аналог. Также проверьте, установлен ли драйвер MTP или ADB в диспетчере устройств Windows.</p>
+</details>
+<details>
+<summary>Можно ли раздать Wi-Fi, если телефон уже подключен к Wi-Fi?</summary>
+<p>Да, большинство современных смартфонов <em>Xiaomi</em> с оболочкой <em>MIUI 12/13/14</em> и <em>HyperOS</em> поддерживают функцию репитера (Wi-Fi Bridge). Вы можете принимать интернет по Wi-Fi и транслировать его дальше, создав новую сеть. Однако скорость может быть ограничена пропускной способностью антенны.</p>
+</details>
+<details>
+<summary>Влияет ли раздача интернета на скорость мобильного соединения?</summary>
+<p>Да, часть вычислительных ресурсов процессора и пропускной способности радиомодуля уходит на организацию локальной сети и трансляцию пакетов. Кроме того, при подключении нескольких устройств общая скорость делится между всеми клиентами.</p>
+</details>
+<details>
+<summary>Как узнать, кто подключился к моей точке доступа?</summary>
+<p>В меню настройки точки доступа Wi-Fi на смартфонах Xiaomi обычно отображается список подключенных устройств. Там можно увидеть имя гаджета и его MAC-адрес, а также при необходимости заблокировать незваного гостя.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-ustanovit-shrift-na-syaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить шрифт на Xiaomi Redmi: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как установить шрифт на Xiaomi Redmi. Способы через тему, Mi Fonts и сторонние приложения. </span>
+            </a><a href="/articles/c/ch/chto-delat-esli-net-datchika-priblizheniya-v-nastrojkakh-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Нет датчика приближения в настройках Xiaomi: как включить</span>
+                <span class="pb-related-desc">Пропал датчик приближения на Xiaomi? Узнайте, как вернуть настройки, убрать красную зону в Redmi Not</span>
+            </a><a href="/drugoe/k/ka/kak-pravilno-govoritsya-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно произносится Xiaomi: официальное и народное название</span>
+                <span class="pb-related-desc">Узнайте, как корректно говорить «Сяоми» на русском, китайском и английском. Официальная транскрипция</span>
+            </a><a href="/articles/k/ka/kak-perezagruzit-lampochku-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как перезагрузить лампочку Xiaomi: сброс и настройка Mi Home</span>
+                <span class="pb-related-desc">Подробная инструкция: как перезагрузить умную лампочку Xiaomi. Методы перезагрузки через приложение,</span>
+            </a><a href="/articles/k/ka/kak-oplachivat-telefonom-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как оплачивать телефоном Xiaomi: NFC, Google Pay и Mi Pay</span>
+                <span class="pb-related-desc">Полная инструкция, как настроить и оплачивать покупки телефоном Xiaomi. Решения для NFC, Google Pay,</span>
+            </a><a href="/articles/p/po/pochemu-oboi-ne-ustanavlivayutsya-na-ekran-blokirovki-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Обои не ставятся на экран блокировки Xiaomi: решения</span>
+                <span class="pb-related-desc">Обои не устанавливаются на экран блокировки Xiaomi? Разбираем причины сбоя в MIUI и HyperOS. Решения</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

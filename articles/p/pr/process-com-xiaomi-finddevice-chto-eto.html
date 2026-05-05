@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>process com.xiaomi.finddevice: что это и как отключить — СяоМастер</title>
+    <meta name="description" content="Подробный разбор процесса com.xiaomi.finddevice. Узнайте, зачем нужен системный сервис поиска Xiaomi, как его настроить или удалить без root-прав.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/p/pr/process-com-xiaomi-finddevice-chto-eto.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="process com.xiaomi.finddevice: что это и как отключить">
+    <meta property="og:description" content="Подробный разбор процесса com.xiaomi.finddevice. Узнайте, зачем нужен системный сервис поиска Xiaomi, как его настроить или удалить без root-прав.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">process com.xiaomi.finddevice: что это и как отключить</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#назначение-системного-компонента">Назначение системного компонента</a></li><li><a href="#принцип-работы-и-потребление-ресурсов">Принцип работы и потребление ресурсов</a></li><li><a href="#можно-ли-удалить-или-отключить-процесс">Можно ли удалить или отключить процесс</a></li><li><a href="#настройка-параметров-безопасности">Настройка параметров безопасности</a></li><li><a href="#проблемы-и-ошибки-работы-сервиса">Проблемы и ошибки работы сервиса</a></li><li><a href="#взаимосвязь-с-другими-службами-miui">Взаимосвязь с другими службами MIUI</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/x/xi/xiaomi-pro-tool-kak-kupit-kredity.html">Xiaomi Pro Tool: как купить кредиты и разблокировать</a></li><li><a href="/articles/k/ka/kak-razobrat-blyutuz-naushniki-xiaomi.html">Как разобрать Bluetooth наушники Xiaomi: полная инструкция</a></li><li><a href="/articles/g/gd/gde-iskat-skachannye-fajly-na-android-xiaomi-redmi.html">Где скачанные файлы на Xiaomi Redmi: поиск и папки</a></li><li><a href="/articles/k/ka/kak-ustanovit-prilozhenie-na-sd-kartu-na-xiaomi-redmi-9a.html">Как установить приложение на SD карту на Xiaomi Redmi 9A</a></li><li><a href="/articles/k/ka/kak-ochistit-vyzovy-na-xiaomi-redmi.html">Как очистить вызовы на Xiaomi Redmi: журнал и история звонков</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Процесс com.xiaomi.finddevice: функции и управление сервисом</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#назначение-системного-компонента">Назначение системного компонента</a></li><li><a href="#принцип-работы-и-потребление-ресурсов">Принцип работы и потребление ресурсов</a></li><li><a href="#можно-ли-удалить-или-отключить-процесс">Можно ли удалить или отключить процесс</a></li><li><a href="#настройка-параметров-безопасности">Настройка параметров безопасности</a></li><li><a href="#проблемы-и-ошибки-работы-сервиса">Проблемы и ошибки работы сервиса</a></li><li><a href="#взаимосвязь-с-другими-службами-miui">Взаимосвязь с другими службами MIUI</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфонов Xiaomi часто сталкиваются с необходимостью разобраться в системных процессах, которые отображаются в меню приложений или потребляют ресурсы батареи. Одним из таких процессов является <code>com.xiaomi.finddevice</code>, который вызывает множество вопросов у пользователей, следящих за безопасностью и производительностью своего устройства. Этот системный компонент является неотъемлемой частью экосистемы MIUI и отвечает за работу функции «Поиск устройства».</p>
+
+<p>Понимание того, что представляет собой этот сервис, критически важно для грамотного управления гаджетом. Если вы заметили его активную работу или хотите знать, можно ли его отключить без ущерба для безопасности, этот материал поможет вам разобраться во всех нюансах.</p>
+
+<p>В отличие от стороннего софта, который можно удалить стандартными методами, системные процессы требуют более внимательного подхода. Мы рассмотрим, какую роль играет <strong>Find Device</strong> в защите вашего смартфона от кражи и потери, а также как правильно взаимодействовать с этим модулем.</p>
+
+<h2 id="назначение-системного-компонента">Назначение системного компонента</h2>
+
+<p>Процесс <em>com.xiaomi.finddevice</em> — это системная служба, которая обеспечивает работу функции поиска потерянного или украденного смартфона. Она является аналогом «Google Find My Device», но интегрирована непосредственно в оболочку <em>MIUI</em> и завязана на аккаунт Mi Account. Основное назначение заключается в удаленном управлении устройством в экстренных ситуациях.</p>
+
+<p>Когда вы активируете эту функцию, ваш телефон периодически отправляет координаты GPS на серверы компании. Это позволяет в случае утери открыть карту на другом устройстве и увидеть местоположение гаджета. Кроме того, сервис позволяет удаленно заблокировать экран, вывести сообщение на блокировку или полностью стереть данные.</p>
+
+<p>Важно понимать, что данный процесс не является вирусом или майнером, как иногда ошибочно полагают пользователи, увидев его в списке запущенных служб. Это <strong>штатный элемент защиты</strong>, который работает в фоновом режиме, ожидая команд от сервера или отправляя сигналы о местоположении.</p>
+
+<ul>
+<li>📍 Точное определение геолокации смартфона через спутники GPS и Wi-Fi сети.</li>
+<li>🔒 Удаленная блокировка устройства с возможностью вывода текста на экран блокировки.</li>
+<li>🗑️ Полное удаление данных (Wipe) для защиты конфиденциальной информации при краже.</li>
+<li>🔊 Принудительное включение звукового сигнала даже при выключенном звуке.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Отключение этого процесса делает невозможным использование официальных методов поиска телефона. Если устройство будет украдено, вы не сможете отследить его через сервисы Xiaomi.</p>
+</blockquote>
+
+<h2 id="принцип-работы-и-потребление-ресурсов">Принцип работы и потребление ресурсов</h2>
+
+<p>Многие пользователи обеспокоены тем, что <code>com.xiaomi.finddevice</code> может расходовать заряд батареи. В штатном режиме работы, когда телефон находится в сети и не потерян, потребление энергии минимально. Сервис активируется по расписанию или при смене базовой станции, отправляя короткий пакет данных.</p>
+
+<p>Однако, если вы находитесь в зоне плохого приема сигнала или постоянно перемещаетесь, частота запросов может возрасти. Система пытается уточнить координаты, что заставляет модуль GPS и модуль связи работать интенсивнее. В таких случаях в статистике батареи можно заметить повышенный расход.</p>
+
+<p>Если же процесс начинает «есть» заряд в состоянии покоя, это может указывать на сбой в работе служб Google Play или самого аккаунта Mi. В такой ситуации происходит циклический перезапуск службы, что и приводит к разрядке. Решением часто становится переподключение аккаунта или очистка кэша служб.</p>
+
+<div class="pb-poll" id="poll-6d0bfa69"><div class="pb-poll-question">📊 Как часто вы пользуетесь функцией поиска устройства?</div><div class="pb-poll-option" data-poll="6d0bfa69" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не пользовался/не терял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6d0bfa69" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Использовал один раз для проверки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6d0bfa69" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Регулярно отслеживаю местоположение семьи</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6d0bfa69" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Боюсь, что это слежка, и хочу отключить</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Стоит отметить, что для корректной работы службы необходимо стабильное интернет-соединение. Без доступа к сети процесс будет накапливать попытки отправки данных, что также может временно увеличить нагрузку на процессор.</p>
+
+<h2 id="можно-ли-удалить-или-отключить-процесс">Можно ли удалить или отключить процесс</h2>
+
+<p>Вопрос удаления <em>com.xiaomi.finddevice</em> стоит особенно остро для тех, кто хочет полностью дегауссифицировать устройство или просто освободить ресурсы. Стандартными средствами системы удалить этот компонент нельзя, так как он помечен как системный. Кнопка «Удалить» в настройках приложений будет недоступна.</p>
+
+<p>Отключить процесс можно через меню приложений, но это действие часто носит временный характер. После перезагрузки или обновления системы служба может снова активироваться. Кроме того, полное отключение может привести к ошибкам в работе аккаунта Mi и невозможности использования других сервисов экосистемы.</p>
+
+<p>Для продвинутых пользователей существует способ удаления через ADB (Android Debug Bridge). Этот метод требует подключения смартфона к компьютеру и наличия соответствующих драйверов. Команда для удаления выглядит следующим образом:</p>
+
+<pre><code>adb shell pm uninstall -k --user 0 com.xiaomi.finddevice</code></pre>
+
+<p>Использование этой команды удалит приложение только для текущего пользователя, не затрагивая системный раздел. Это позволяет вернуть функциональность, выполнив сброс до заводских настроек. Однако, <strong>будьте осторожны</strong>: удаление системных компонентов может нарушить стабность работы MIUI.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед удалением сервиса</h4><label class="check-item"><input type="checkbox"><span>Сделайте резервную копию данных</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь, что знаете пароль от Mi Account</span></label><label class="check-item"><input type="checkbox"><span>Зарядите телефон минимум до 50%</span></label><label class="check-item"><input type="checkbox"><span>Подготовьте компьютер с установленным ADB</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="настройка-параметров-безопасности">Настройка параметров безопасности</h2>
+
+<p>Вместо полного удаления, гораздо разумнее правильно настроить параметры работы сервиса. Это позволит сохранить баланс между безопасностью и автономностью. Зайдите в настройки безопасности и найдите раздел, связанный с поиском устройства.</p>
+
+<p>Здесь вы можете разрешить или запретить доступ к геопозиции. Если вы не боитесь потерять телефон, доступ можно ограничить. Однако, рекомендуется оставить включенной опцию передачи данных при блокировке экрана, чтобы в случае кражи телефон можно было отследить даже без разблокировки.</p>
+
+<p>Также стоит обратить внимание на привязанные устройства. В аккаунте Mi можно посмотреть список гаджетов, которые имеют доступ к управлению вашим телефоном. Удаление неизвестных устройств — важная мера безопасности.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Рекомендуемое значение</th>
+<th>Влияние на батарею</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Поиск устройства</td>
+<td>Включено</td>
+<td>Минимальное</td>
+</tr>
+<tr>
+<td>Передача данных</td>
+<td>Только Wi-Fi</td>
+<td>Среднее</td>
+</tr>
+<tr>
+<td>Точность GPS</td>
+<td>По координатам сети</td>
+<td>Низкое</td>
+</tr>
+<tr>
+<td>Уведомления</td>
+<td>Выключено</td>
+<td>Отсутствует</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Настройка передачи данных только через Wi-Fi может существенно снизить расход трафика и энергии, если вы не хотите, чтобы телефон использовал мобильную сеть для отправки координат. Однако, в случае потери телефона с вынутым SIM-картой, эта настройка может сыграть злую шутку, если устройство не подключится к известной Wi-Fi сети.</p>
+
+<h2 id="проблемы-и-ошибки-работы-сервиса">Проблемы и ошибки работы сервиса</h2>
+
+<p>Пользователи иногда сталкиваются с ситуацией, когда процесс <code>com.xiaomi.finddevice</code> зависает или вызывает постоянные уведомления об ошибке. Чаще всего это связано с рассинхронизацией времени или проблемами на стороне серверов Xiaomi. В таком случае помогает сброс настроек даты и времени на автоматические.</p>
+
+<p>Другая распространенная проблема — невозможность войти в аккаунт из-за ошибки этого процесса. Если вы сбрасывали пароль или меняли регион аккаунта, сервис может не принимать новые учетные данные. Требуется полная очистка данных приложения «Безопасность» и «Сервисы Xiaomi».</p>
+
+<blockquote>
+<p>⚠️ Внимание: Очистка данных системных приложений может привести к сбросу некоторых настроек приватности и разрешений. Будьте готовы заново настроить доступы для важных приложений.</p>
+</blockquote>
+
+<p>Если ошибка persists (сохраняется) после всех манипуляций, возможно, поврежден файл лицензии или системный ключ. В этом случае единственным решением остается полный сброс до заводских настроек (Wipe Data).</p>
+
+<details class="pb-accordion"><summary>Что делать, если процесс грузит процессор?</summary><div class="pb-accordion-body"><p>Если com.xiaomi.finddevice грузит процессор более 5-10 минут в фоне, попробуйте следующее: 1. Отключите интернет. 2. Зайдите в Настройки -> Приложения -> Все приложения. 3. Найдите «Поиск устройства» или введите в поиске com.xiaomi.finddevice. 4. Нажмите «Остановить» и «Очистить кэш». 5. Перезагрузите телефон. Если проблема не решена, возможно, конфликт с установленным антивирусом или модифицированной прошивкой.</p></div></details>
+
+<h2 id="взаимосвязь-с-другими-службами-miui">Взаимосвязь с другими службами MIUI</h2>
+
+<p>Сервис поиска тесно интегрирован с другими компонентами оболочки. Он взаимодействует с <em>MIUI Security</em>, <em>Cloud Services</em> и системным менеджером разрешений. При попытке отключить один из этих компонентов, система может автоматически реактивировать <code>com.xiaomi.finddevice</code> для обеспечения целостности защитного периметра.</p>
+
+<p>Особенно важна связь с облачным хранилищем. Именно через облако синхронизируются данные о местоположении. Если у вас переполнено облако Xiaomi, сервис поиска может работать некорректно или не отправлять последние координаты. Освобождение места в облаке часто решает проблему.</p>
+
+<p>Также стоит упомянуть взаимодействие с Google Play Services. На глобальных версиях прошивок эти два сервиса могут конфликтовать, если включены оба метода поиска. Система обычно приоритизирует родной сервис Xiaomi, но в некоторых случаях это приводит к двойному расходу ресурсов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Совет: Для максимальной экономии заряда оставляйте включенным только один сервис поиска — либо Google, либо Xiaomi. Дублирование функций не повышает безопасность, но увеличивает расход батареи.</p></aside>
+
+<p>Понимание этих связей помогает избежать ошибок при оптимизации системы. Не стоит слепо отключать все подряд службы в погоне за автономностью, так как это может нарушить логику работы смартфона.</p>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Безопасно ли удалять com.xiaomi.finddevice через ADB?</summary>
+<p>Удаление через ADB безопасно с точки зрения целостности системы (не приведет к «кирпичу»), но вы теряете возможность найти телефон через официальный сервис. Делайте это только если понимаете риски и имеете альтернативные средства защиты.</p>
+</details>
+
+<details>
+<summary>Почему процесс com.xiaomi.finddevice не виден в списке приложений?</summary>
+<p>По умолчанию системные процессы скрыты. Чтобы увидеть его, нужно в меню приложений нажать на три точки в углу и выбрать «Показать системные процессы» или воспользоваться поиском по пакетному имени.</p>
+</details>
+
+<details>
+<summary>Может ли этот процесс передавать мои личные фото?</summary>
+<p>Нет, процесс <code>com.xiaomi.finddevice</code> отвечает только за геолокацию и команды управления (блокировка, звук). Он не имеет доступа к галерее и не передает личные файлы без вашего explicit-запроса через функцию поиска.</p>
+</details>
+
+<details>
+<summary>Что будет, если отключить интернет, но оставить процесс активным?</summary>
+<p>Без интернета процесс не сможет отправить координаты на сервер. Телефон будет накапливать попытки соединения, что может слегка увеличить расход батареи, но функционал поиска работать не будет до появления сети.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Процесс com.xiaomi.finddevice — это важный элемент безопасности, который не стоит удалять без крайней необходимости. Грамотная настройка предпочтительнее полного отключения.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/x/xi/xiaomi-pro-tool-kak-kupit-kredity.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi Pro Tool: как купить кредиты и разблокировать</span>
+                <span class="pb-related-desc">Полный гид по пополнению баланса Xiaomi Pro Tool. Где купить кредиты, цены, способы оплаты и альтерн</span>
+            </a><a href="/articles/k/ka/kak-razobrat-blyutuz-naushniki-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как разобрать Bluetooth наушники Xiaomi: полная инструкция</span>
+                <span class="pb-related-desc">Подробный гид по разборке TWS-наушников Xiaomi. Советы по замене аккумулятора, чистке динамика и рем</span>
+            </a><a href="/articles/g/gd/gde-iskat-skachannye-fajly-na-android-xiaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Где скачанные файлы на Xiaomi Redmi: поиск и папки</span>
+                <span class="pb-related-desc">Полный гид по поиску загруженных файлов на Xiaomi Redmi. Узнайте, где лежат APK, PDF и картинки в си</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-prilozhenie-na-sd-kartu-na-xiaomi-redmi-9a.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить приложение на SD карту на Xiaomi Redmi 9A</span>
+                <span class="pb-related-desc">Полная инструкция по переносу приложений на SD карту в Xiaomi Redmi 9A. Решите проблему нехватки пам</span>
+            </a><a href="/articles/k/ka/kak-ochistit-vyzovy-na-xiaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как очистить вызовы на Xiaomi Redmi: журнал и история звонков</span>
+                <span class="pb-related-desc">Подробная инструкция, как удалить историю вызовов на Xiaomi Redmi. Удаление отдельных записей, очист</span>
+            </a><a href="/articles/k/ka/kak-nastroit-kameru-xiaomi-mi.html" class="pb-related-card">
+                <span class="pb-related-title">Как настроить камеру Xiaomi Mi: полное руководство</span>
+                <span class="pb-related-desc">Подробная инструкция по настройке камеры Xiaomi Mi. Разберем режимы Pro, HDR, стабилизацию и скрытые</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

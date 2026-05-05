@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как отключить предупреждение о записи на Xiaomi Redmi 9 — СяоМастер</title>
+    <meta name="description" content="Пошаговая инструкция по отключению голосового оповещения при записи разговора на Xiaomi Redmi 9. Обход ограничений MIUI 12 и 14 без root-прав.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-otklyuchit-preduprezhdenie-o-zapisi-razgovora-xiaomi-redmi-9.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как отключить предупреждение о записи на Xiaomi Redmi 9">
+    <meta property="og:description" content="Пошаговая инструкция по отключению голосового оповещения при записи разговора на Xiaomi Redmi 9. Обход ограничений MIUI 12 и 14 без root-прав.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как отключить предупреждение о записи на Xiaomi Redmi 9</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#причины-появления-голосового-оповещения">Причины появления голосового оповещения</a></li><li><a href="#проверка-региональных-настроек-смартфона">Проверка региональных настроек смартфона</a></li><li><a href="#использование-приложения-google-телефон">Использование приложения Google Телефон</a></li><li><a href="#метод-отключения-через-adb-для-продвинутых-пользователей">Метод отключения через ADB (для продвинутых пользователей)</a></li><li><a href="#сравнение-методов-решения-проблемы">Сравнение методов решения проблемы</a></li><li><a href="#альтернативные-решения-и-сторонний-софт">Альтернативные решения и сторонний софт</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-ochistit-drugie-fajly-na-xiaomi-redmi-3s.html">Как очистить &#x27;Другое&#x27; на Xiaomi Redmi 3S: полное руководство</a></li><li><a href="/articles/w/wp/wps-office-chto-eto-v-xiaomi.html">WPS Office на Xiaomi: что это и нужно ли приложение?</a></li><li><a href="/articles/k/ka/kak-opredelit-originalnost-naushnikov-syaomi.html">Как отличить оригинальные наушники Xiaomi от подделки</a></li><li><a href="/articles/g/gd/gde-najti-zapis-razgovora-na-xiaomi-redmi-8.html">Где найти запись разговора на Xiaomi Redmi 8: полный гид</a></li><li><a href="/articles/c/ch/chto-delat-esli-telefon-zavis-na-zastavke-vklyucheniya-syaomi.html">Телефон Xiaomi завис на логотипе: решение проблемы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как отключить предупреждение о записи разговора на Xiaomi Redmi 9</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#причины-появления-голосового-оповещения">Причины появления голосового оповещения</a></li><li><a href="#проверка-региональных-настроек-смартфона">Проверка региональных настроек смартфона</a></li><li><a href="#использование-приложения-google-телефон">Использование приложения Google Телефон</a></li><li><a href="#метод-отключения-через-adb-для-продвинутых-пользователей">Метод отключения через ADB (для продвинутых пользователей)</a></li><li><a href="#сравнение-методов-решения-проблемы">Сравнение методов решения проблемы</a></li><li><a href="#альтернативные-решения-и-сторонний-софт">Альтернативные решения и сторонний софт</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфонов <em>Xiaomi</em>, в частности популярной модели <em>Redmi 9</em>, часто сталкиваются с навязчивым голосовым оповещением «Запись начата» при каждом звонке. Эта функция, внедренная в оболочку <em>MIUI</em> версий 12 и выше, призвана информировать собеседника о фиксации диалога в соответствии с международными нормами конфиденциальности. Однако для многих пользователей постоянное звучание этого сигнала является серьезным раздражителем, мешающим естественному ходу беседы.</p>
+
+<p>Проблема усугубляется тем, что стандартными методами в меню настроек отключить именно голосовое предупреждение, оставив саму функцию записи, на современных прошивках <em>Xiaomi</em> невозможно. Разработчики намеренно убрали этот переключатель, чтобы избежать юридических сложностей в разных странах. Тем не менее, существуют проверенные обходные пути, позволяющие устранить этот дефект восприятия.</p>
+
+<p>В данном руководстве мы рассмотрим наиболее эффективные методы решения проблемы для <em>Redmi 9</em>. Мы разберем как программные настройки, так и более сложные методы с использованием отладки по <strong>ADB</strong>. Важно понимать, что каждый метод имеет свои риски и особенности применения в зависимости от версии установленной операционной системы.</p>
+
+<h2 id="причины-появления-голосового-оповещения">Причины появления голосового оповещения</h2>
+
+<p>Появление громкого уведомления о начале записи на <em>Redmi 9</em> связано с изменением законодательства о защите персональных данных в Европейском Союзе и других регионах. Компания <em>Xiaomi</em>, стремясь соответствовать строгим требованиям <strong>GDPR</strong>, внедрила принудительное аудио-уведомление для всех пользователей глобальных версий прошивок. Это означает, что даже если вы находитесь в стране, где запись разговоров разрешена, телефон будет вести себя так, как будто он в Европе.</p>
+
+<p>Стоит отметить, что на китайских версиях прошивок (<em>China ROM</em>) такое предупреждение часто отсутствует или его можно легко отключить в настройках. Однако при перепрошивке устройства на глобальную версию (<em>Global ROM</em>) для работы с местными частотами связи и сервисами <strong>Google</strong>, этот функционал активируется автоматически. Система считает, что пользователь должен быть предупрежден о любых действиях, которые могут нарушить приватность собеседника.</p>
+
+<p>С технической точки зрения, этот звуковой файл интегрирован в системное приложение «Телефон» (<em>Google Dialer</em> или <em>MIUI Dialer</em>). В более старых версиях <em>Android</em> существовала возможность просто убрать галочку в настройках, но в актуальных сборках <em>MIUI 12, 13 и 14</em> этот интерфейс скрыт. Именно поэтому для решения задачи на <em>Redmi 9</em> требуется применение нестандартных подходов.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Принудительное отключение системных уведомлений может привести к нестабильной работе приложения «Телефон». Перед внесением изменений настоятельно рекомендуется создать полную резервную копию важных контактов и данных.</p>
+</blockquote>
+
+<p>Понимание природы этого ограничения помогает выбрать правильный метод обхода. Если вы просто хотите записывать разговоры для себя и вас не волнует юридическая сторона вопроса в рамках личного использования, следующие разделы предоставят вам необходимые инструменты.</p>
+
+<h2 id="проверка-региональных-настроек-смартфона">Проверка региональных настроек смартфона</h2>
+
+<p>Первым и самым простым шагом, который стоит выполнить владельцу <em>Redmi 9</em> перед применением сложных технических решений, является проверка региональных настроек устройства. Логика работы системы такова, что в некоторых регионах запись разговоров регулируется менее строго, и алгоритмы <em>MIUI</em> могут вести себя иначе. Хотя гарантий полной отключения звука это не дает, в ряде случаев смена региона меняет поведение системы.</p>
+
+<p>Для выполнения этой процедуры вам необходимо перейти в меню настроек вашего устройства. Найдите раздел, отвечающий за дополнительные параметры системы. Обычно путь выглядит следующим образом: <code>Настройки → Дополнительные настройки → Регион</code>. В открывшемся списке выберите страну, где законодательство наиболее лояльно к записи разговоров, например, Индию, Сингапур или Украину. После смены региона телефон может потребовать перезагрузки или просто обновит конфигурацию сервисов.</p>
+
+<p>После смены региона необходимо проверить, исчезло ли предупреждение. Для этого совершите тестовый звонок. Если голосовое сообщение все равно воспроизводится, значит, ваша версия прошивки жестко привязана к глобальным стандартам, и смена региона не помогла. В таком случае переходите к следующим, более эффективным методам.</p>
+
+<ul>
+<li>🌍 Смена региона может повлиять на работу некоторых локальных сервисов и виджетов в ленте «Google».</li>
+<li>📞 Тестовый звонок лучше совершать на номер другого оператора или городской телефон для проверки.</li>
+<li>🔄 После смены региона рекомендуется очистить кэш приложения «Телефон» через настройки приложений.</li>
+</ul>
+
+<p> Однако его эффективность на последних версиях <em>MIUI</em> для модели <em>Redmi 9</em> стремится к нулю, так как Google активно унифицирует политику безопасности across all regions.</p>
+
+<div class="pb-poll" id="poll-e3da2486"><div class="pb-poll-question">📊 Помогла ли вам смена региона в настройках?</div><div class="pb-poll-option" data-poll="e3da2486" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, звук пропал</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e3da2486" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, ничего не изменилось</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e3da2486" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Я боюсь менять настройки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e3da2486" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">У меня другая модель Xiaomi</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="использование-приложения-google-телефон">Использование приложения Google Телефон</h2>
+
+<p>На большинстве современных смартфонов <em>Xiaomi</em>, включая <em>Redmi 9</em>, стандартным звонилкой является приложение <strong>Google Phone</strong>. Именно в его недрах скрываются основные настройки записи. В отличие от старого <em>MIUI Dialer</em>, здесь настройки более детализированы, но все еще ограничены производителем. Проверка настроек этого приложения — обязательный этап диагностики.</p>
+
+<p>Откройте приложение «Телефон» и нажмите на три точки в правом верхнем углу, затем выберите «Настройки». Найдите раздел «Запись звонков». Здесь вы можете увидеть переключатель «Всегда записывать» или «Предупреждать о записи». Если переключатель «Предупреждать» активен и доступен для изменения, просто отключите его. Однако в 95% случаев на <em>Redmi 9</em> этот пункт будет либо отсутствовать, либо быть заблокированным (серым).</p>
+
+<p>Если стандартные настройки не дают результата, можно попробовать сбросить настройки приложения «Телефон» до заводских. Это не удалит ваши контакты, но вернет все параметры звонилки в исходное состояние. Перейдите в <code>Настройки → Приложения → Все приложения → Телефон → Память → Очистить</code>. Выберите «Очистить все». После этого заново настройте запись разговоров, возможно, система предложит новые варианты конфигурации.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка настроек Google Телефон</h4><label class="check-item"><input type="checkbox"><span>Открыть приложение Телефон</span></label><label class="check-item"><input type="checkbox"><span>Перейти в Настройки (три точки)</span></label><label class="check-item"><input type="checkbox"><span>Выбрать Запись звонков</span></label><label class="check-item"><input type="checkbox"><span>Проверить активность переключателей</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Стоит упомянуть, что существуют модифицированные версии приложения <strong>Google Phone</strong> (так называемые <em>Mods</em>), в которых разработчики вручную разблокировали скрытые меню. Установка такого APK-файла на <em>Redmi 9</em> может дать доступ к полному контролю над записью, включая отключение звука. Однако использование сторонних APK несет риски безопасности, так как вы доверяете приложению доступ к вашим.</p>
+
+<h2 id="метод-отключения-через-adb-для-продвинутых-пользователей">Метод отключения через ADB (для продвинутых пользователей)</h2>
+
+<p>Наиболее эффективным способом убрать раздражающее «Запись начата» на <em>Redmi 9</em> без получения <strong>Root-прав</strong> является использование инструментария <strong>ADB</strong> (Android Debug Bridge). Этот метод позволяет отправлять специальные команды системе Android, изменяя скрытые конфигурационные файлы, которые недоступны через обычный интерфейс. Данный способ требует наличия компьютера (Windows, macOS или Linux) и USB-кабеля.</p>
+
+<p>Перед началом процедуры необходимо активировать режим разработчика на вашем <em>Xiaomi</em>. Для этого перейдите в <code>Настройки → О телефоне</code> и быстро нажмите 7 раз на пункт «Версия MIUI». После появления сообщения «Вы стали разработчиком» вернитесь в главное меню настроек, выберите «Дополнительные настройки» → «Для разработчиков». Здесь необходимо активировать переключатель «Отладка по USB». Также рекомендуется включить опцию «Отладка по USB (Настройки безопасности)», если она доступна, хотя на некоторых версиях <em>MIUI</em> это требует ожидания 7 дней.</p>
+
+<p>После подготовки телефона, подключите его к компьютеру. Вам понадобится пакет <strong>Platform Tools</strong> от Google. Распакуйте архив и откройте командную строку в папке с инструментами. Введите команду <code>adb devices</code> для проверки соединения. На экране телефона появится запрос на разрешение отладки — подтвердите его. Теперь можно вводить команду, которая принудительно отключает аудио-уведомление в системе записи:</p>
+
+<pre><code>adb shell settings put global call_recording_notification_enabled 0</code></pre>
+
+<p>В некоторых случаях, в зависимости от версии <em>Android</em> и <em>MIUI</em>, команда может отличаться. Альтернативный вариант, который работает на многих сборках <em>Redmi 9</em>:</p>
+
+<pre><code>adb shell settings put global call_recording_announcement_enabled false</code></pre>
+
+<p>После ввода команды перезагрузите смартфон. Эффект должен быть мгновенным: запись будет вестись, но голосового сопровождения не будет. Если первая команда не сработала, попробуйте вторую. Важно отметить, что после крупного обновления системы (<strong>OTA update</strong>) эти настройки могут сброситься, и процедуру придется повторить.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Использование ADB требует внимательности. Вводите команды точно так, как они указаны. Ошибка в синтаксисе может привести к непредсказуемому поведению системы, хотя риск «окирпичивания» при использовании только команд settings минимален.</p>
+</blockquote>
+
+<details class="pb-accordion"><summary>Что делать, если компьютер не видит телефон?</summary><div class="pb-accordion-body"><p>Если при подключении кабеля компьютер не реагирует, проверьте сам кабель — он может быть предназначен только для зарядки. Попробуйте другой USB-порт, preferably USB 2.0. Также убедитесь, что на компьютере установлены драйверы ADB. Для Windows часто требуется установка универсальных драйверов Google USB Driver через SDK Manager или сторонние утилиты вроде Minimal ADB and Fastboot.</p></div></details>
+
+<h2 id="сравнение-методов-решения-проблемы">Сравнение методов решения проблемы</h2>
+
+<p>Выбор подходящего метода зависит от вашей технической подготовки и готовности рисковать стабильностью системы. Ниже приведена таблица, которая поможет вам сравнить рассмотренные способы и выбрать оптимальный для вашей ситуации с <em>Redmi 9</em>.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>Сложность</th>
+<th>Эффективность</th>
+<th>Риски</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Смена региона</td>
+<td>Низкая</td>
+<td>Низкая (10-15%)</td>
+<td>Минимальные</td>
+</tr>
+<tr>
+<td>Настройки Google Phone</td>
+<td>Низкая</td>
+<td>Средняя (30-40%)</td>
+<td>Отсутствуют</td>
+</tr>
+<tr>
+<td>Команды ADB</td>
+<td>Высокая</td>
+<td>Высокая (90%)</td>
+<td>Средние (ошибка ввода)</td>
+</tr>
+<tr>
+<td>Сторонние приложения</td>
+<td>Средняя</td>
+<td> variable</td>
+<td>Высокие (вирусы, утечка)</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из таблицы, метод с использованием <strong>ADB</strong> является наиболее надежным, но требует наличия ПК и базовых знаний. Смена региона — это «выстрел в небо», который редко дает результат на свежих прошивках, но абсолютно безопасен. Сторонние приложения-записчики из <strong>Play Market</strong> часто не могут перехватить аудиопоток на <em>Android 10+</em> из-за ограничений безопасности Google, поэтому их эффективность сомнительна.</p>
+
+<p>Если вы не уверены в своих силах при работе с командной строкой, лучше ограничиться стандартными настройками. Однако, если тишина при записи для вас критична, изучение основ ADB того стоит. Это универсальный навык для любого владельца <em>Android</em>-устройства, позволяющий глубже кастомизировать систему.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед выполнением любых команд ADB сфотографируйте экран с текущими настройками или запишите их. Это позволит быстро вернуть все как было, если что-то пойдет не так.</p></aside>
+
+<h2 id="альтернативные-решения-и-сторонний-софт">Альтернативные решения и сторонний софт</h2>
+
+<p>В случае, если системные методы не помогают или кажутся слишком сложными, можно рассмотреть установку альтернативных приложений для записи разговоров. Однако на <em>Redmi 9</em> с современной версией <em>Android</em> вы столкнетесь с ограничениями доступа к микрофону во время звонка. Приложения вроде <strong>Cube ACR</strong> или <strong>Call Recorder - SKVALEX</strong> требуют дополнительных манипуляций для работы.</p>
+
+<p>Для работы таких приложений часто требуется включение специальных возможностей (<strong>Accessibility</strong>) или использование режима «Громкая связь» в автоматическом режиме, чтобы приложение могло захватить звук через микрофон, а не системный поток. Это не всегда удобно и может снижать качество записи, так как будет записываться эхо и окружающий шум.</p>
+
+<p>Еще одним вариантом является использование облачных сервисов записи, если они поддерживаются вашим оператором связи. Некоторые тарифные планы включают услугу записи разговоров на стороне сети. В этом случае запись ведется сервером оператора, и голосовое предупреждение может генерироваться сетью, а не телефоном. Проверьте услуги вашего оператора, возможно, там есть встроенное решение, которое удобнее системного.</p>
+
+<ul>
+<li>📱 Cube ACR требует настройки App Connector в специальных возможностях.</li>
+<li>🔊 Качество записи сторонними приложениями часто хуже системного.</li>
+<li>🔋 Сторонние рекордеры могут быстрее расходовать заряд батареи.</li>
+</ul>
+
+<p>Не стоит забывать и о диктофоне. Если разговор крайне важен, а автоматическая запись не работает корректно, всегда можно включить громкую связь и запустить диктофон. Это «дедовский» метод, но он работает безотказно на любой модели, включая <em>Redmi 9</em>, и не требует никаких технических знаний.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Пропадет ли функция записи после обновления MIUI?</summary>
+<p>Функция записи, скорее всего, останется, но настройки, измененные через ADB, могут быть сброшены до заводских значений. Вам придется повторно ввести команды после каждого крупного обновления системы. Сама возможность записи в <em>Redmi 9</em> является частью прошивки и редко удаляется полностью.</p>
+</details>
+
+<details>
+<summary>Будет ли запись вестись в хорошем качестве после отключения звука?</summary>
+<p>Да, отключение голосового уведомления никак не влияет на качество аудиопотока. Запись будет вестись в стандартном качестве, определенном системой, обычно это формат <strong>.m4a</strong> или <strong>.mp3</strong> с битрейтом, достаточным для четкого распознавания речи.</p>
+</details>
+
+<details>
+<summary>Опасно ли использовать команды ADB на новом телефоне?</summary>
+<p>Использование команд <code>settings put</code> считается безопасным, так как вы меняете только пользовательские конфигурации, а не системные файлы ядра. Однако всегда есть минимальный риск человеческой ошибки. Действуйте внимательно и строго по инструкции.</p>
+</details>
+
+<details>
+<summary>Можно ли записать разговор без ведома собеседника юридически?</summary>
+<p>Законодательство разных стран различается. В некоторых странах для записи достаточно согласия одной из сторон (вашего), в других требуется согласие обеих сторон. Голосовое предупреждение введено именно для соблюдения второй модели. Используйте запись responsibly.</p>
+</details>
+
+<details>
+<summary>Почему на моем Redmi 9 нет меню записи?</summary>
+<p>Если в настройках звонилки полностью отсутствует пункт «Запись звонков», возможно, ваша версия приложения «Телефон» урезана или регион устройства установлен в страну, где запись запрещена законом. Попробуйте сменить регион на Индию или Сингапур и очистить данные приложения Телефон.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Самый надежный способ убрать звук «Запись начата» на Xiaomi Redmi 9 — это использование команд ADB, которые изменяют скрытый системный флаг, отвечающий за аудио-уведомления.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-ochistit-drugie-fajly-na-xiaomi-redmi-3s.html" class="pb-related-card">
+                <span class="pb-related-title">Как очистить &#x27;Другое&#x27; на Xiaomi Redmi 3S: полное руководство</span>
+                <span class="pb-related-desc">Узнайте, как безопасно удалить категорию &#x27;Другое&#x27; на Redmi 3S. Эффективные методы очистки кэша, мусо</span>
+            </a><a href="/articles/w/wp/wps-office-chto-eto-v-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">WPS Office на Xiaomi: что это и нужно ли приложение?</span>
+                <span class="pb-related-desc">Узнайте, зачем нужно приложение WPS Office на смартфонах Xiaomi, Redmi и POCO. Можно ли его удалить,</span>
+            </a><a href="/articles/k/ka/kak-opredelit-originalnost-naushnikov-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как отличить оригинальные наушники Xiaomi от подделки</span>
+                <span class="pb-related-desc">Проверенные способы, как определить подлинность наушников Xiaomi. Сверка IMEI, QR-кода, звука и упак</span>
+            </a><a href="/articles/g/gd/gde-najti-zapis-razgovora-na-xiaomi-redmi-8.html" class="pb-related-card">
+                <span class="pb-related-title">Где найти запись разговора на Xiaomi Redmi 8: полный гид</span>
+                <span class="pb-related-desc">Подробная инструкция, где искать и как настроить запись звонков на Redmi 8. Разбор стандартного дикт</span>
+            </a><a href="/articles/c/ch/chto-delat-esli-telefon-zavis-na-zastavke-vklyucheniya-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Телефон Xiaomi завис на логотипе: решение проблемы</span>
+                <span class="pb-related-desc">Смартфон Xiaomi завис на заставке Mi? Узнайте, как реанимировать устройство: от простой перезагрузки</span>
+            </a><a href="/articles/k/ka/kak-vyklyuchit-vyklyuchenie-ekrana-pri-zvonke-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить выключение экрана при звонке на Xiaomi: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как настроить датчик приближения и экран на Xiaomi, чтобы он не гас во время звонка. Решени</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Куда делась оперативная память Xiaomi: анализ потерь и решение — СяоМастер</title>
+    <meta name="description" content="Почему на Xiaomi 6/128 ГБ свободно только 3.5 ГБ? Разбор системы MIUI/HyperOS, скрытых резервов и методов оптимизации RAM.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ku/kuda-delas-operativnaya-pamyat-xiaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Куда делась оперативная память Xiaomi: анализ потерь и решение">
+    <meta property="og:description" content="Почему на Xiaomi 6/128 ГБ свободно только 3.5 ГБ? Разбор системы MIUI/HyperOS, скрытых резервов и методов оптимизации RAM.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Куда делась оперативная память Xiaomi: анализ потерь и решение</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#системный-налог-почему-android-съедает-память">Системный налог: почему Android съедает память</a></li><li><a href="#технология-memory-extension-виртуальное-расширение-памяти">Технология Memory Extension: виртуальное расширение памяти</a></li><li><a href="#аппаратные-резервы-и-зарезервированная-память">Аппаратные резервы и зарезервированная память</a></li><li><a href="#влияние-фоновых-процессов-и-служб-miui">Влияние фоновых процессов и служб MIUI</a></li><li><a href="#как-проверить-реальное-потребление-памяти">Как проверить реальное потребление памяти</a></li><li><a href="#оптимизация-и-освобождение-ресурсов">Оптимизация и освобождение ресурсов</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-udalit-gemini-na-xiaomi.html">Как удалить Gemini на Xiaomi: полное руководство 2026</a></li><li><a href="/articles/c/ch/chto-takoe-3s-5s-10s-v-kamere-xiaomi.html">Режимы 3s, 5s, 10s в камере Xiaomi: зачем и как использовать</a></li><li><a href="/articles/c/ch/chto-budet-esli-perezagruzit-syaomi-vo-vremya-obnovleniya.html">Что будет, если перезагрузить Xiaomi при обновлении: риски и восстановление</a></li><li><a href="/articles/k/ka/kak-ochistit-kesh-vatsap-na-syaomi-redmi.html">Как очистить кэш WhatsApp на Xiaomi Redmi: полная инструкция</a></li><li><a href="/articles/u/ul/ultra-ekonomiya-energii-xiaomi-chto-eto-takoe.html">Ультра экономия Xiaomi: что это и как настроить?</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Куда делась оперативная память Xiaomi: глубокий анализ потерь</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#системный-налог-почему-android-съедает-память">Системный налог: почему Android съедает память</a></li><li><a href="#технология-memory-extension-виртуальное-расширение-памяти">Технология Memory Extension: виртуальное расширение памяти</a></li><li><a href="#аппаратные-резервы-и-зарезервированная-память">Аппаратные резервы и зарезервированная память</a></li><li><a href="#влияние-фоновых-процессов-и-служб-miui">Влияние фоновых процессов и служб MIUI</a></li><li><a href="#как-проверить-реальное-потребление-памяти">Как проверить реальное потребление памяти</a></li><li><a href="#оптимизация-и-освобождение-ресурсов">Оптимизация и освобождение ресурсов</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Вы купили новый смартфон <em>Xiaomi</em> с заявленными 8 ГБ оперативной памяти, но при первом же запуске диспетчера задач обнаружили, что свободно лишь 4 ГБ. Это классическая ситуация, которая ставит в тупок многих пользователей, привыкших к чистому <em>Android</em> или компьютерной архитектуре, где «гигабайт есть гигабайт». Ощущение, что производитель вас обманул, возникает мгновенно, но реальность кроется в глубоких системных процессах, которые не видны обычному глазу.</p>
+
+<p>Феномен «исчезновения» памяти — это не баг, а сложный механизм работы оболочки <em>MIUI</em> или новой <em>HyperOS</em>, которые заточены под агрессивное управление ресурсами. Система резервирует значительную часть <strong>RAM</strong> для обеспечения стабильности работы процессора, кэширования часто используемых приложений и функционирования фоновых служб, без которых телефон превратится в «кирпич». Давайте разберемся, где именно прячутся эти гигабайты и можно ли их вернуть.</p>
+
+<p>Важно понимать, что цифры в спецификациях и цифры в настройках — это две разные вселенные. Производители чипов памяти и разработчики операционных систем используют разные методы подсчета, а поверх этого накладывается тяжеловесный интерфейс Xiaomi. В этой статье мы детально рассмотрим архитектуру потребления памяти, влияние виртуального расширения и реальные способы освободить драгоценные мегабайты для ваших игр и рабочих задач.</p>
+
+<h2 id="системный-налог-почему-android-съедает-память">Системный налог: почему Android съедает память</h2>
+
+<p>Первое, с чем сталкивается владелец смартфона — это базовые потребности операционной системы. В отличие от Windows, которая может работать на минималках, современный <em>Android</em> требует значительных ресурсов просто для своего существования. Ядро системы, драйверы оборудования, графический ускоритель и службы безопасности занимают фиксированный объем, который не зависит от ваших желаний. На устройствах <em>Xiaomi</em> этот «налог» может составлять от 2 до 3 ГБ сразу после включения.</p>
+
+<p>Особую роль играет механизм работы с приложениями. <strong>Android</strong> стремится держать часто используемые программы в памяти, чтобы они открывались мгновенно, а не запускались с нуля каждый раз. Это называется кэшированием. Если у вас 8 ГБ памяти, система может зарезервировать 4 ГБ под свои нужды, 2 ГБ отдать под кэш, и только остаток будет доступен для новых задач. Это не потеря, а инвестиция в быстродействие интерфейса.</p>
+
+<p>Оболочка <em>MIUI</em> известна своей прожорливостью. В нее встроено множество сервисов, которые работают постоянно: синхронизация облака, анализ использования, голосовой помощник, оптимизатор батареи. Все эти процессы висят в оперативной памяти, ожидая своего часа. Даже если вы ими не пользуетесь прямо сейчас, они занимают место, обеспечивая функциональность экосистемы.</p>
+
+<blockquote>⚠️ Внимание: Попытки принудительно остановить системные процессы через настройки разработчика могут привести к нестабильной работе телефона, самопроизвольным перезагрузкам или даже циклическому включению (bootloop).</blockquote>
+
+<p>Стоит также упомянуть о различии в подсчете объема. Производители используют десятичную систему (1 ГБ = 1 000 000 000 байт), а операционная система — двоичную (1 ГиБ = 1 073 741 824 байт). Поэтому из заявленных 8 ГБ «физических» в системе изначально видно около 7.45 ГБ. Остальное — это математическая разница систем счисления, а не украденная память.</p>
+
+<h2 id="технология-memory-extension-виртуальное-расширение-памяти">Технология Memory Extension: виртуальное расширение памяти</h2>
+
+<p>Одной из главных причин, куда «пропадает» свободное место, является функция <strong>Memory Extension</strong>. Эта технология позволяет смартфону брать часть встроенной флеш-памяти (<em>ROM</em>) и использовать её как дополнение к оперативной памяти (<em>RAM</em>). На устройствах <em>Xiaomi</em> эта опция часто включена по умолчанию или предлагается к активации при первом запуске.</p>
+
+<p>Когда вы видите, что из 8 ГБ физической памяти доступно меньше, чем ожидалось, проверьте настройки расширения. Система может резервировать 2, 3 или даже 5 ГБ из хранилища, чтобы эмулировать дополнительную оперативку. Это полезно для тяжелых игр, но физическая RAM при этом никуда не девается — она просто занята управлением этим процессом.</p>
+
+<details class="pb-accordion"><summary>Как работает виртуальная память?</summary><div class="pb-accordion-body"><p>Технология использует алгоритм свопинга, перемещая редко используемые данные из быстрой RAM в более медленную, но объемную внутреннюю память. Это позволяет держать больше приложений открытыми, но скорость работы может быть ниже, чем у чистой физической памяти.</p></div></details>
+
+<p>Отключить эту функцию можно в меню настроек, что иногда дает прирост производительности, так как чистая физическая память работает быстрее эмулированной. Однако, если вы привыкли держать открытыми десятки вкладок в браузере, расширение может быть полезным компромиссом между скоростью и многозадачностью.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Настройка Memory Extension</h4><label class="check-item"><input type="checkbox"><span>Зайдите в Настройки → Дополнительные настройки</span></label><label class="check-item"><input type="checkbox"><span>Найдите пункт «Расширение памяти»</span></label><label class="check-item"><input type="checkbox"><span>Выберите нужный объем (2/3/4 ГБ)</span></label><label class="check-item"><input type="checkbox"><span>Перезагрузите устройство для применения изменений</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="аппаратные-резервы-и-зарезервированная-память">Аппаратные резервы и зарезервированная память</h2>
+
+<p>Значительная часть оперативной памяти выделяется аппаратно для нужд компонентов смартфона еще до загрузки операционной системы. Графический процессор (<em>GPU</em>) не имеет собственной видеопамяти, как компьютерные видеокарты, и вынужден использовать часть общей <strong>RAM</strong> для буферизации изображения. На экранах с высоким разрешением и частотой обновления 120 Гц эти затраты существенно возрастают.</p>
+
+<p>Также память резервируется для модема связи, обработки сигналов Wi-Fi, Bluetooth и GPS. Эти модули работают независимо от основного процессора и требуют выделенных областей памяти для буферизации сетевых пакетов. В смартфонах <em>Xiaomi</em> с поддержкой 5G объем зарезервированной памяти может быть выше из-за сложности обработки высокоскоростных сигналов.</p>
+
+<p>Ниже представлена таблица, демонстрирующая примерное распределение памяти на устройстве с 8 ГБ RAM:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Компонент / Процесс</th>
+<th>Примерный объем (ГБ)</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ядро Android и драйверы</td>
+<td>1.5 - 2.0</td>
+<td>Базовая работа ОС</td>
+</tr>
+<tr>
+<td>Оболочка MIUI / HyperOS</td>
+<td>1.0 - 1.5</td>
+<td>Интерфейс и сервисы</td>
+</tr>
+<tr>
+<td>Графический буфер (GPU)</td>
+<td>0.5 - 1.0</td>
+<td>Отображение изображения</td>
+</tr>
+<tr>
+<td>Фоновые процессы</td>
+<td>0.5 - 1.0</td>
+<td>Синхронизация, уведомления</td>
+</tr>
+<tr>
+<td><strong>Доступно пользователю</strong></td>
+<td><strong>3.0 - 4.0</strong></td>
+<td><strong>Запуск приложений</strong></td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Такое распределение гарантирует, что телефон не «упадет» при резком скачке нагрузки. Если бы система занимала только минимум, любой запуск камеры или игры приводил бы к закрытию фоновых задач или зависанию интерфейса.</p>
+
+<h2 id="влияние-фоновых-процессов-и-служб-miui">Влияние фоновых процессов и служб MIUI</h2>
+
+<p>Экосистема <em>Xiaomi</em> славится обилием предустановленного софта и служб, которые работают в фоне. Сервисы аналитики (<em>MSA</em>), рекламные модули, облачные сервисы <em>Mi Cloud</em> и постоянная проверка безопасности занимают ощутимый кусок пирога. Даже если вы не видите открытых приложений, эти процессы потребляют ресурсы.</p>
+
+<p>Кроме того, многие приложения после установки прописывают себя в автозагрузку. Мессенджеры, соцсети, лаунчеры — все они стремятся запустить свои службы для мгновенного получения уведомлений. На смартфонах с 6 ГБ памяти это может приводить к тому, что свободно остается менее 1 ГБ, что вызывает тормоза системы.</p>
+
+<div class="pb-poll" id="poll-79b16a63"><div class="pb-poll-question">📊 Сколько памяти свободно на вашем Xiaomi?</div><div class="pb-poll-option" data-poll="79b16a63" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Меньше 1 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="79b16a63" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">1-2 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="79b16a63" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">2-3 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="79b16a63" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Более 3 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Для управления этим хаосом в <em>Xiaomi</em> существует встроенный оптимизатор. Он автоматически закрывает неиспользуемые приложения, но иногда его алгоритмы бывают слишком агрессивными, закрывая то, что вам нужно, или, наоборот, пропуская «мусорные» процессы. Ручной контроль через меню разработчика дает больше понимания того, что именно ест вашу память.</p>
+
+<h2 id="как-проверить-реальное-потребление-памяти">Как проверить реальное потребление памяти</h2>
+
+<p>Чтобы увидеть реальную картину, стандартного диспетчера задач может быть недостаточно. Наиболее точным инструментом является меню для разработчиков. Чтобы попасть туда, нужно несколько раз нажать на номер сборки в разделе «О телефоне». После активации в меню появится пункт «Для разработчиков».</p>
+
+<p>Внутри этого раздела найдите пункт «Память» или «Running Services» (Работающие службы). Здесь отображается детальная статистика: сколько памяти занято системой, сколько приложениями и сколько доступно. Это лучший способ диагностировать проблему, если телефон начал работать медленно.</p>
+
+<p>Также можно использовать команды <strong>ADB</strong> для получения детального отчета. Подключив телефон к компьютеру, введите команду:</p>
+
+<pre><code>adb shell dumpsys meminfo</code></pre>
+
+<p>Эта команда выдаст подробнейший список всех процессов с указанием точного объема занимаемой ими памяти (PSS, Private Dirty). Это профессиональный инструмент, который поможет выявить приложение-«паразит», которое незаметно пожирает ресурсы в фоне.</p>
+
+<blockquote>⚠️ Внимание: Не отключайте системные службы с непонятными названиями (например, содержащие «android», «system», «miui») через ADB или настройки, если не уверены в их назначении — это может нарушить работу телефона.</blockquote>
+
+<h2 id="оптимизация-и-освобождение-ресурсов">Оптимизация и освобождение ресурсов</h2>
+
+<p>Если после анализа вы поняли, что память занята действительно лишним, можно предпринять шаги по оптимизации. В первую очередь удалите или отключите неиспользуемые приложения. Даже если вы ими не пользуетесь, они могут иметь фоновые службы. Зайдите в <code>Настройки → Приложения → Все приложения</code> и проведите ревизию.</p>
+
+<p>Второй шаг — ограничение фоновой активности. В меню для разработчиков есть опция «Лимит фоновых процессов». Установите значение «Не более 2-3 процессов». Это заставит систему жестче контролировать прожорливые приложения, хотя уведомления из них могут приходить с задержкой.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте режим «Без звука» или «Не беспокоить» в ночное время — это не только отключит уведомления, но и позволит системе агрессивнее выгружать фоновые процессы из памяти, экономя заряд и RAM.</p></aside>
+
+<p>Третий шаг — отключение анимаций. Хотя это не освободит память физически, это снизит нагрузку на графический буфер и процессор, сделав интерфейс визуально отзывчивее даже при нехватке свободных гигабайт. Уменьшите масштаб анимации в меню разработчика до 0.5x или отключите полностью.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Полное освобождение памяти невозможно и не нужно — система сама управляет ресурсами эффективнее пользователя. Задача владельца — убрать только явный «мусор» и лишние автозагрузки.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Почему на новом Xiaomi 8/256 ГБ свободно только 4 ГБ?</summary>
+<p>Это нормально. Около 2-3 ГБ занимает система Android и оболочка MIUI/HyperOS, еще часть зарезервирована под GPU и системные нужды. Оставшиеся 4 ГБ — это ваш рабочий объем для приложений.</p>
+</details>
+
+<details>
+<summary>Стоит ли отключать расширение памяти (Memory Extension)?</summary>
+<p>Если у вас 8 ГБ и более физической памяти — лучше отключить, так как физическая RAM быстрее. Если 4-6 ГБ и вы играете в тяжелые игры — оставьте включенным, это поможет избежать вылетов.</p>
+</details>
+
+<details>
+<summary>Поможет ли сброс до заводских настроек вернуть память?</summary>
+<p>Сброс удалит накопившийся мусор и кэш, вернув показатели к заводским. Однако системный минимум (3-4 ГБ) все равно будет занят, так как это требование операционной системы.</p>
+</details>
+
+<details>
+<summary>Правда ли, что вирусы скрывают оперативную память?</summary>
+<p>Вирусы могут загружать процессор и занимать память своими процессами, но «скрывать» физический объем RAM они не могут. Если пропало аномально много памяти (например, видно 1 ГБ вместо 4), проверьте список установленных приложений на наличие подозрительного софта.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-udalit-gemini-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как удалить Gemini на Xiaomi: полное руководство 2026</span>
+                <span class="pb-related-desc">Пошаговая инструкция по отключению и удалению Google Gemini на смартфонах Xiaomi. Эффективные методы</span>
+            </a><a href="/articles/c/ch/chto-takoe-3s-5s-10s-v-kamere-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Режимы 3s, 5s, 10s в камере Xiaomi: зачем и как использовать</span>
+                <span class="pb-related-desc">Полный разбор режимов таймера 3s, 5s и 10s в MIUI. Как настроить интервалы, использовать пульт и изб</span>
+            </a><a href="/articles/c/ch/chto-budet-esli-perezagruzit-syaomi-vo-vremya-obnovleniya.html" class="pb-related-card">
+                <span class="pb-related-title">Что будет, если перезагрузить Xiaomi при обновлении: риски и восстановление</span>
+                <span class="pb-related-desc">Последствия прерывания обновления MIUI. Что делать, если Xiaomi выключился во время прошивки? Инстру</span>
+            </a><a href="/articles/k/ka/kak-ochistit-kesh-vatsap-na-syaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как очистить кэш WhatsApp на Xiaomi Redmi: полная инструкция</span>
+                <span class="pb-related-desc">Подробный гайд: как освободить место в WhatsApp на Xiaomi. Очистка кэша, удаление мусора, сброс наст</span>
+            </a><a href="/articles/u/ul/ultra-ekonomiya-energii-xiaomi-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Ультра экономия Xiaomi: что это и как настроить?</span>
+                <span class="pb-related-desc">Полный разбор режима ультра экономии Xiaomi. Как включить, какие функции блокирует и сколько заряда </span>
+            </a><a href="/articles/k/ka/kak-perezagruzit-xiaomi-redmi-note-4-bez-knopki-vklyucheniya.html" class="pb-related-card">
+                <span class="pb-related-title">Как перезагрузить Xiaomi Redmi Note 4 без кнопки включения</span>
+                <span class="pb-related-desc">Полное руководство: как выключить или перезагрузить Xiaomi Redmi Note 4, если сломана кнопка Power. </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

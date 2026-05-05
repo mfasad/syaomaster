@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как удалить emoji keyboard с Xiaomi Poco: полное руководство — СяоМастер</title>
+    <meta name="description" content="Подробная инструкция, как убрать сторонние эмодзи на Xiaomi и Poco. Удаление приложения, отключение системных шрифтов и настройка Gboard.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/e/em/emoji-keyboard-kak-udalit-s-xiaomi-poco.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как удалить emoji keyboard с Xiaomi Poco: полное руководство">
+    <meta property="og:description" content="Подробная инструкция, как убрать сторонние эмодзи на Xiaomi и Poco. Удаление приложения, отключение системных шрифтов и настройка Gboard.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как удалить emoji keyboard с Xiaomi Poco: полное руководство</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#анализ-источника-появления-лишних-эмодзи">Анализ источника появления лишних эмодзи</a></li><li><a href="#удаление-через-настройки-приложений-и-хранилища">Удаление через настройки приложений и хранилища</a></li><li><a href="#настройка-и-сброс-клавиатуры-gboard">Настройка и сброс клавиатуры Gboard</a></li><li><a href="#отключение-системных-тем-и-шрифтов-miui">Отключение системных тем и шрифтов MIUI</a></li><li><a href="#использование-adb-для-удаления-системных-компонентов">Использование ADB для удаления системных компонентов</a></li><li><a href="#профилактика-и-альтернативные-решения">Профилактика и альтернативные решения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-zajti-v-korzinu-na-telefone-xiaomi-redmi-7.html">Как зайти в корзину на Xiaomi Redmi 7: полное руководство</a></li><li><a href="/articles/k/ka/kak-zapravlyat-dozator-myla-xiaomi.html">Как заправлять дозатор мыла Xiaomi: инструкция</a></li><li><a href="/articles/k/ka/kak-perezagruzit-lampochku-xiaomi.html">Как перезагрузить лампочку Xiaomi: сброс и настройка Mi Home</a></li><li><a href="/articles/k/ka/kak-zvuchit-ksiomi.html">Как звучит Xiaomi: настройка звука, кодеки и эквалайзер</a></li><li><a href="/drugoe/k/ka/kak-kitajtsy-proiznosyat-xiaomi.html">Как китайцы произносят Xiaomi: правильное ударение и тонкости</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Удаление Emoji Keyboard на Xiaomi и Poco: методы и решения</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#анализ-источника-появления-лишних-эмодзи">Анализ источника появления лишних эмодзи</a></li><li><a href="#удаление-через-настройки-приложений-и-хранилища">Удаление через настройки приложений и хранилища</a></li><li><a href="#настройка-и-сброс-клавиатуры-gboard">Настройка и сброс клавиатуры Gboard</a></li><li><a href="#отключение-системных-тем-и-шрифтов-miui">Отключение системных тем и шрифтов MIUI</a></li><li><a href="#использование-adb-для-удаления-системных-компонентов">Использование ADB для удаления системных компонентов</a></li><li><a href="#профилактика-и-альтернативные-решения">Профилактика и альтернативные решения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфонов <em>Xiaomi</em> и <em>Poco</em> часто сталкиваются с навязчивой функцией появления сторонних стикеров и измененных наборов смайликов при вводе текста. Это явление, известное как <strong>emoji keyboard</strong>, может раздражать пользователей, привыкших к стандартному набору символов Google или системным шрифтам MIUI. Проблема часто кроется не в вирусе, а в предустановленных темах или дополнительных плагинах клавиатуры, которые активируются автоматически.</p>
+
+<p>Убрать этот элемент можно несколькими способами, начиная от простых настроек языка и заканчивая глубоким удалением системных компонентов через ADB. <em>Важно понимать</em>, что полная ликвидация может потребовать отключения стандартных сервисов ввода, поэтому перед началом работ стоит изучить все доступные варианты. В этом руководстве мы разберем безопасные методы очистки интерфейса ввода от лишнего визуального мусора.</p>
+
+<p>Стоит отметить, что в последних версиях оболочки <strong>HyperOS</strong> и <em>MIUI 14</em> алгоритмы работы тем и шрифтов были изменены. Если вы обновились недавно, старые методы могут не сработать, и потребуется более глубокий подход к настройке системы. Ниже представлены актуальные решения для текущих версий программного обеспечения.</p>
+
+<h2 id="анализ-источника-появления-лишних-эмодзи">Анализ источника появления лишних эмодзи</h2>
+
+<p>Прежде чем приступать к радикальным мерам, необходимо точно определить, что именно вызывает появление нестандартных смайликов. Чаще всего виновником является активная <strong>тема оформления</strong>, которая заменяет системные шрифты на свои собственные. Также источником проблем может быть стороннее приложение-клавиатура, установленное по умолчанию без ведома пользователя, или плагин для <em>Gboard</em>.</p>
+
+<p>В некоторых случаях пользователи случайно устанавливают приложения из магазина <em>GetApps</em> или <em>Google Play</em>, которые перехватывают управление вводом. Такие программы часто маскируются под простые утилиты для стикеров, но внедряются глубоко в систему. Для диагностики нужно внимательно проверить список установленных приложений и активных тем.</p>
+
+<p>Если вы используете кастомную тему, попробуйте переключиться на стандартную тему <em>Classic</em> или <em>Default</em>. Это самый быстрый способ проверить, влияет ли визуальное оформление на работу клавиатуры. Если после смены темы эмодзи вернулись к стандартному виду, проблема решена без удаления системных файлов.</p>
+
+<ul>
+<li>🔍 Проверьте активную тему в приложении «Темы» и сбросьте её до заводской.</li>
+<li>📱 Убедитесь, что в качестве метода ввода не выбрано стороннее приложение вроде «Emoji Keyboard».</li>
+<li>🛑 Отключите недавно установленные плагины для клавиатуры в настройках языка.</li>
+<li>🔄 Перезагрузите устройство после смены настроек для применения изменений.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы скачали тему из ненадежного источника, она может содержать рекламные модули. Будьте осторожны при установке оформлений от неизвестных авторов в официальном магазине Xiaomi.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-acb7410f"><div class="pb-poll-question">📊 Что является источником лишних эмодзи на вашем устройстве?</div><div class="pb-poll-option" data-poll="acb7410f" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Сторонняя тема</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="acb7410f" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Приложение-клавиатура</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="acb7410f" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Системный баг</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="acb7410f" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, само появилось</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="удаление-через-настройки-приложений-и-хранилища">Удаление через настройки приложений и хранилища</h2>
+
+<p>Если источником проблемы является конкретное приложение, его можно удалить стандартным способом через меню настроек. Зайдите в раздел <code>Настройки → Приложения → Все приложения</code> и найдите в списке подозрительные программы с названиями, содержащими слова «Emoji», «Keyboard» или «Stickers». <strong>Удаление</strong> такого софта часто полностью решает проблему.</p>
+
+<p>Однако, если приложение является системным, кнопка удаления может быть неактивна. В этом случае необходимо воспользоваться функцией «Очистить данные» и «Очистить кэш». Это вернет программу к заводским настройкам, что может убрать кастомные наборы смайликов. После очистки рекомендуется перезагрузить смартфон <em>Poco</em> или <em>Xiaomi</em>.</p>
+
+<p>Для системных компонентов, таких как «Стикеры MIUI» или аналогичные сервисы, можно попробовать отключить их. В меню информации о приложении нажмите кнопку «Отключить» или «Выключить». Это скроет приложение из списка и предотвратит его запуск, даже если удалить его полностью невозможно без прав суперпользователя.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист очистки приложения</h4><label class="check-item"><input type="checkbox"><span>Найти приложение в списке:Открыть настройки приложения:Очистить кэш:Очистить данные:Отключить приложение (если доступно)</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<p>В некоторых прошивках встречается компонент <code>com.miui.personalization</code> или similar, который отвечает за персонализацию ввода. Его очистка также может помочь. Не бойтесь очищать данные системных сервисов персонализации — это безопасно и не приведет к потере личных данных, таких как фото или контакты.</p>
+
+<h2 id="настройка-и-сброс-клавиатуры-gboard">Настройка и сброс клавиатуры Gboard</h2>
+
+<p>Стандартная клавиатура <strong>Gboard</strong> от Google является наиболее стабильным решением для устройств на базе Android. Если на вашем <em>Xiaomi</em> или <em>Poco</em> отображаются странные эмодзи, возможно, сбились настройки самой Gboard или активирован сторонний плагин. Зайдите в настройки клавиатуры через меню <code>Настройки → Дополнительные настройки → Язык и ввод</code>.</p>
+
+<p>Внутри настроек Gboard найдите раздел «Настройки» (шестеренка) и прокрутите вниз до пункта «Сбросить настройки». Это действие вернет все параметры ввода к исходному состоянию, удалив любые кастомные словари и, возможно, сбросив конфликтующие настройки отображения символов. <em>Важно</em>, что это не удалит ваш личный словарь часто используемых слов, если вы не выберете соответствующий пункт.</p>
+
+<p>Также проверьте раздел «Темы» внутри самой клавиатуры. Иногда пользователи случайно устанавливают темы с измененным дизайном кнопок и символов. Переключение на стандартную тему «Material» или «Classic» внутри Gboard часто возвращает привычный вид смайликов.</p>
+
+<ul>
+<li>⚙️ Откройте настройки Gboard через значок шестеренки на панели клавиатуры.</li>
+<li>🗑️ Выполните сброс настроек клавиатуры в нижнем меню.</li>
+<li>🎨 Проверьте активную тему оформления внутри приложения Gboard.</li>
+<li>🌐 Убедитесь, что в языковой панели не добавлены лишние раскладки с эмодзи.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: При сбросе настроек Gboard могут быть удалены сохраненные фразы и настройки автокоррекции, но личные данные устройства затронуты не будут.</p>
+</blockquote>
+
+<details class="pb-accordion"><summary>Как вернуть Gboard по умолчанию?</summary><div class="pb-accordion-body"><p>Если после очистки клавиатура не появилась, зайдите в Настройки → Приложения → Управление приложениями → Три точки в углу → Показать системные процессы. Найдите Gboard и убедитесь, что он не отключен. Также проверьте раздел «Язык и ввод», где Gboard должен быть выбран как текущий метод ввода.</p></div></details>
+
+<h2 id="отключение-системных-тем-и-шрифтов-miui">Отключение системных тем и шрифтов MIUI</h2>
+
+<p>Глубинной причиной появления «emoji keyboard» часто является конфликт между системными шрифтами MIUI/HyperOS и приложениями Google. Оболочка <em>Xiaomi</em> имеет собственный механизм рендеринга эмодзи, который может перекрывать стандартный Android. Чтобы устранить это, необходимо принудительно применить стандартный шрифт.</p>
+
+<p>Зайдите в приложение «Темы» (Themes), перейдите в профиль (иконка человека) и выберите «Шрифты». Найдите шрифт с названием «Classic» или «System Default» и примените его. После применения система потребует перезагрузки. Этот шаг критически важен для замены кастомных наборов символов на стандартные.</p>
+
+<p>Если стандартный шрифт не помогает, попробуйте удалить кэш приложения «Темы». Найдите его в списке приложений, нажмите «Очистить данные» и «Очистить кэш». Это разорвет связь с сервером тем, который может подгружать ошибочные пакеты символов. В некоторых случаях помогает полное удаление обновлений приложения «Темы» через меню настроек.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Где найти</th>
+<th>Эффект</th>
+<th>Безопасность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Смена шрифта</td>
+<td>Приложение Темы → Шрифты</td>
+<td>Высокий</td>
+<td>Безопасно</td>
+</tr>
+<tr>
+<td>Очистка кэша Тем</td>
+<td>Настройки → Приложения → Темы</td>
+<td>Средний</td>
+<td>Безопасно</td>
+</tr>
+<tr>
+<td>Сброс Gboard</td>
+<td>Настройки Gboard → Сброс</td>
+<td>Высокий</td>
+<td>Безопасно</td>
+</tr>
+<tr>
+<td>Удаление тем</td>
+<td>Профиль → Мои темы</td>
+<td>Средний</td>
+<td>Безопасно</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Полезный совет: После смены шрифта обязательно перезагрузите устройство, даже если система не требует этого явно. Это гарантирует полное обновление кэша шрифтов во всех приложениях.</p></aside>
+
+<h2 id="использование-adb-для-удаления-системных-компонентов">Использование ADB для удаления системных компонентов</h2>
+
+<p>Для продвинутых пользователей, желающих полностью <strong>удалить emoji keyboard</strong> на уровне системы, существует метод с использованием инструмента <em>ADB (Android Debug Bridge)</em>. Этот способ позволяет удалять системные приложения, которые обычно скрыты от пользователя. <mark>Этот метод требует подключения к компьютеру и включения отладки по USB.</mark></p>
+
+<p>Сначала необходимо активировать режим разработчика. Для этого перейдите в <code>Настройки → О телефоне</code> и быстро нажмите 7 раз на пункт «Версия MIUI» или «Версия OS». Затем в расширенных настройках включите «Отладка по USB». Подключите телефон к ПК и запустите командную строку.</p>
+
+<p>Для удаления компонентов, отвечающих за персонализацию и стикеры, можно использовать следующие команды. Будьте предельно осторожны: удаление критических системных пакетов может привести к нестабильной работе устройства или циклической перезагрузке.</p>
+
+<pre><code>adb shell pm uninstall -k --user 0 com.miui.personalization
+<p>adb shell pm uninstall -k --user 0 com.xiaomi.scanner</p>
+<p>adb shell pm uninstall -k --user 0 com.miui.emoji</code></pre></p>
+
+<p>Команда <code>com.miui.emoji</code> (если пакет существует в вашей версии прошивки) напрямую отвечает за системные эмодзи. Если такого пакета нет, проблема может крыться в <code>com.miui.personalization</code>. После выполнения команд изменения вступают в силу немедленно, но рекомендуется перезагрузка. Вернуть удаленное через ADB приложение можно командой <code>adb shell cmd package install-existing <имя_пакета></code>.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Использование ADB для удаления системных пакетов несет риски. Не удаляйте пакеты, назначение которых вам неизвестно, особенно те, что содержат слова «framework», «system» или «service».</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Использование ADB — это самый мощный способ удаления встроенных компонентов, но он требует осторожности и наличия компьютера под рукой.</p></aside>
+
+<h2 id="профилактика-и-альтернативные-решения">Профилактика и альтернативные решения</h2>
+
+<p>Чтобы проблема с навязчивыми эмодзи не возвращалась, рекомендуется придерживаться нескольких правил при использовании смартфонов <em>Xiaomi</em> и <em>Poco</em>. В первую очередь, избегайте установки тем из непроверенных источников и сторонних магазинов приложений. Официальный магазин тем Xiaomi проходит модерацию, но даже там встречаются темы с агрессивной персонализацией.</p>
+
+<p>Рассмотрите установку альтернативной клавиатуры, если стандартная Gboard продолжает вызывать вопросы. Клавиатуры вроде <strong>Microsoft SwiftKey</strong> или <em>Yandex Keyboard</em> имеют собственные движки рендеринга эмодзи и не зависят от системных шрифтов MIUI. Это полностью изолирует процесс ввода от системных конфликтов.</p>
+
+<p>Регулярно проверяйте обновления системы. Инженеры Xiaomi часто выпускают патчи, исправляющие баги с отображением шрифтов и клавиатур. Переход на стабильную версию прошивки (Stable ROM) вместо бета-версии (Beta ROM) также снижает вероятность encountering подобных glitches.</p>
+
+<ul>
+<li>🛡️ Устанавливайте приложения только из проверенных источников (Google Play, GetApps).</li>
+<li>🔄 Регулярно обновляйте прошивку и системные приложения.</li>
+<li>⌨️ Используйте независимые клавиатуры (SwiftKey, Яндекс) для изоляции проблем ввода.</li>
+<li>🚫 Избегайте «тяжелых» тем с глубокой модификацией системных шрифтов.</li>
+</ul>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Безопасно ли удалять системные пакеты через ADB?</summary>
+<p>Удаление системных пакетов через ADB безопасно, если вы точно знаете, что делаете. Удаление критических компонентов может привести к неработоспособности телефона. Всегда проверяйте название пакета перед удалением и знайте, как его восстановить.</p>
+</details>
+
+<details>
+<summary>Почему после сброса настроек эмодзи снова изменились?</summary>
+<p>Это может происходить, если на телефоне активна тема оформления, которая автоматически применяется после сброса, или если аккаунт Mi Cloud синхронизирует настройки тем. Проверьте приложение «Темы» и отключите автосинхронизацию настроек персонализации.</p>
+</details>
+
+<details>
+<summary>Можно ли полностью отключить клавиатуру MIUI?</summary>
+<p>Да, можно. Для этого нужно установить другую клавиатуру (например, Gboard), активировать её в настройках языка и ввода, а затем в списке приложений найти «Клавиатура MIUI» (или аналогичное название) и нажать «Отключить».</p>
+</details>
+
+<details>
+<summary>Влияет ли регион устройства на набор эмодзи?</summary>
+<p>Да, в некоторых регионах (например, Китайская версия прошивки) по умолчанию используются другие наборы смайликов и шрифтов. Смена региона в настройках «Дополнительно → Регион» иногда помогает изменить доступные опции отображения, хотя это работает не во всех случаях.</p>
+</details>
+
+<details>
+<summary>Что делать, если эмодзи отображаются квадратами после удаления?</summary>
+<p>Если после удаления системных компонентов эмодзи превратились в квадраты или вопросительные знаки, значит, вы удалили шрифт, отвечающий за их отображение. Необходимо выполнить сброс настроек телефона или перепрошивку, либо установить шрифт через тему оформления заново.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-zajti-v-korzinu-na-telefone-xiaomi-redmi-7.html" class="pb-related-card">
+                <span class="pb-related-title">Как зайти в корзину на Xiaomi Redmi 7: полное руководство</span>
+                <span class="pb-related-desc">Подробная инструкция, как открыть корзину на Xiaomi Redmi 7. Решение проблем с исчезновением ярлыка </span>
+            </a><a href="/articles/k/ka/kak-zapravlyat-dozator-myla-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как заправлять дозатор мыла Xiaomi: инструкция</span>
+                <span class="pb-related-desc">Подробное руководство, как заправить дозатор мыла Xiaomi. Инструкция для mijia, Yuemi и других модел</span>
+            </a><a href="/articles/k/ka/kak-perezagruzit-lampochku-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как перезагрузить лампочку Xiaomi: сброс и настройка Mi Home</span>
+                <span class="pb-related-desc">Подробная инструкция: как перезагрузить умную лампочку Xiaomi. Методы перезагрузки через приложение,</span>
+            </a><a href="/articles/k/ka/kak-zvuchit-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как звучит Xiaomi: настройка звука, кодеки и эквалайзер</span>
+                <span class="pb-related-desc">Полный гид по аудиовозможностям смартфонов Xiaomi. Настройка Dolby Atmos, выбор кодеков LDAC, работа</span>
+            </a><a href="/drugoe/k/ka/kak-kitajtsy-proiznosyat-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как китайцы произносят Xiaomi: правильное ударение и тонкости</span>
+                <span class="pb-related-desc">Узнайте, как корректно произносится бренд Xiaomi на китайском: расшифровка иероглифов, тона и ударен</span>
+            </a><a href="/articles/p/po/pochemu-oboi-ne-ustanavlivayutsya-na-ekran-blokirovki-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Обои не ставятся на экран блокировки Xiaomi: решения</span>
+                <span class="pb-related-desc">Обои не устанавливаются на экран блокировки Xiaomi? Разбираем причины сбоя в MIUI и HyperOS. Решения</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

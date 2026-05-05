@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как удалить системные приложения на Xiaomi Redmi: полная инструкция — СяоМастер</title>
+    <meta name="description" content="Безопасное удаление системных приложений и bloatware на Xiaomi Redmi через ADB и настройки. Ускорение работы и освобождение памяти без Root-прав.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-udalit-sistemnye-prilozheniya-na-android-xiaomi-redmi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как удалить системные приложения на Xiaomi Redmi: полная инструкция">
+    <meta property="og:description" content="Безопасное удаление системных приложений и bloatware на Xiaomi Redmi через ADB и настройки. Ускорение работы и освобождение памяти без Root-прав.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как удалить системные приложения на Xiaomi Redmi: полная инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#анализ-встроенных-приложений-и-риски-удаления">Анализ встроенных приложений и риски удаления</a></li><li><a href="#подготовка-смартфона-к-удалению-системного-софта">Подготовка смартфона к удалению системного софта</a></li><li><a href="#удаление-приложений-через-настройки-miui-без-root">Удаление приложений через настройки MIUI без Root</a></li><li><a href="#использование-adb-для-продвинутого-удаления-программ">Использование ADB для продвинутого удаления программ</a></li><li><a href="#альтернативные-утилиты-для-очистки-системы">Альтернативные утилиты для очистки системы</a></li><li><a href="#восстановление-удаленных-системных-компонентов">Восстановление удаленных системных компонентов</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/c/ch/chto-oznachaet-sovmestimyj-brend-xiaomi.html">Совместимый бренд Xiaomi: что это значит и как выбрать</a></li><li><a href="/articles/k/ks/ksiomi-rc-chto-takoe.html">Xiaomi RC: что это такое и как использовать пульт</a></li><li><a href="/drugoe/k/ka/kak-postirat-ryukzak-xiaomi.html">Как постирать рюкзак Xiaomi: безопасная чистка</a></li><li><a href="/articles/k/ka/kak-peremestit-prilozheniya-na-sd-kartu-xiaomi-5a.html">Как переместить приложения на SD карту Xiaomi 5A: полная инструкция</a></li><li><a href="/articles/k/ka/kak-otklyuchit-mobilnuyu-svyaz-no-ostavit-internet-na-smartfone-xiaomi-redmi.html">Как отключить мобильную связь, но оставить интернет на Xiaomi Redmi</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как удалить системные приложения на Xiaomi Redmi: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#анализ-встроенных-приложений-и-риски-удаления">Анализ встроенных приложений и риски удаления</a></li><li><a href="#подготовка-смартфона-к-удалению-системного-софта">Подготовка смартфона к удалению системного софта</a></li><li><a href="#удаление-приложений-через-настройки-miui-без-root">Удаление приложений через настройки MIUI без Root</a></li><li><a href="#использование-adb-для-продвинутого-удаления-программ">Использование ADB для продвинутого удаления программ</a></li><li><a href="#альтернативные-утилиты-для-очистки-системы">Альтернативные утилиты для очистки системы</a></li><li><a href="#восстановление-удаленных-системных-компонентов">Восстановление удаленных системных компонентов</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфонов <em>Xiaomi</em> и <em>Redmi</em> часто сталкиваются с проблемой предустановленного программного обеспечения, которое занимает драгоценное место в памяти и расходует ресурсы процессора. Многие пользователи задаются вопросом, как удалить системные приложения на Android Xiaomi Redmi, чтобы ускорить работу гаджета и избавиться от навязчивой рекламы. К счастью, современные версии оболочки <em>MIUI</em> и <em>HyperOS</em> предоставляют несколько способов решения этой задачи, не требуя глубоких знаний программирования.</p>
+
+<p>Процесс очистки системы может варьироваться от простого отключения ненужных сервисов до полного удаления через компьютер с использованием отладки по USB. Важно понимать, что вмешательство в системные файлы требует осторожности, так как удаление критически важных компонентов может привести к нестабильной работе устройства или потере гарантии. В этой статье мы подробно разберем безопасные методы очистки и предоставим списки приложений, которые можно удалять без риска для системы.</p>
+
+<p>Прежде чем приступать к активным действиям, необходимо создать резервную копию важных данных и убедиться, что аккумулятор заряжен хотя бы на 50%. Даже если вы планируете использовать только настройки смартфона, подготовка всегда является ключевым этапом любого технического обслуживания. Ниже мы рассмотрим все доступные методы, начиная от самых простых и заканчивая продвинутыми инструментами для опытных пользователей.</p>
+
+<h2 id="анализ-встроенных-приложений-и-риски-удаления">Анализ встроенных приложений и риски удаления</h2>
+
+<p>Первым шагом в оптимизации <em>Xiaomi</em> является понимание того, что именно установлено на вашем устройстве. Система Android в связке с оболочкой <em>MIUI</em> содержит сотни процессов, многие из которых скрыты от глаз обычного пользователя. <strong>Системные приложения</strong> делятся на три категории: жизненно важные для работы ОС, функциональные дополнения производителя и сторонний софт (bloatware), который часто не несет никакой пользы.</p>
+
+<p>Удаление критически важных компонентов, таких как <code>Системный фреймворк</code> или <code>Диспетчер задач</code>, приведет к циклической перезагрузке устройства, известному как bootloop. В этом случае смартфон перестанет включаться, и для восстановления потребуется перепрошивка через компьютер, что может быть сложной процедурой для новичка. Поэтому перед любыми манипуляциями необходимо четко знать назначение каждого пакета.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Удаление системных компонентов через ADB или сторонние программы может аннулировать гарантию. Всегда проверяйте назначение пакета в интернете перед его принудительным удалением.</p>
+</blockquote>
+
+<p>Для безопасной навигации по списку установленных программ рекомендуется использовать специальные справочники или приложения-идентификаторы. Они позволяют узнать реальное имя пакета, которое часто отличается от отображаемого названия. Например, приложение"Музыка" может иметь системное имя <code>com.miui.player</code>, а"Галерея" — <code>com.miui.gallery</code>.</p>
+
+<div class="pb-poll" id="poll-efdc003d"><div class="pb-poll-question">📊 Какая версия MIUI установлена на вашем устройстве?</div><div class="pb-poll-option" data-poll="efdc003d" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">MIUI 12</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="efdc003d" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">MIUI 13</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="efdc003d" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">MIUI 14</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="efdc003d" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">HyperOS</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="efdc003d" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другая</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="подготовка-смартфона-к-удалению-системного-софта">Подготовка смартфона к удалению системного софта</h2>
+
+<p>Для проведения глубокой очистки устройства необходимо активировать скрытые функции разработчика. Это позволит получить доступ к отладке по USB, что является обязательным условием для использования компьютерных методов удаления. Без этого шага компьютер не сможет получить достаточные права для управления системными файлами смартфона.</p>
+
+<p>Процесс активации занимает всего несколько минут и выполняется через меню настроек. Вам нужно найти раздел <code>О телефоне</code> и семь раз быстро нажать на пункт <code>Версия MIUI</code> или <code>Версия OS</code>. После этого в меню настроек появится новый раздел"Для разработчиков", где и находятся нужные переключатели.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист подготовки</h4><label class="check-item"><input type="checkbox"><span>Включить режим разработчика</span></label><label class="check-item"><input type="checkbox"><span>Активировать отладку по USB</span></label><label class="check-item"><input type="checkbox"><span>Установить драйверы ADB на ПК</span></label><label class="check-item"><input type="checkbox"><span>Зарядить телефон выше 50%</span></label><label class="check-item"><input type="checkbox"><span>Сделать резервную копию</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>После включения отладки по USB при подключении кабеля к компьютеру на экране смартфона появится запрос на подтверждение доступа. Необходимо нажать"Разрешить" и, желательно, галочку"Всегда разрешать с этого компьютера", чтобы не подтверждать действие при каждом подключении. Также стоит включить опцию"USB-отладка (настройки безопасности)", если она доступна в вашей версии прошивки.</p>
+
+<h2 id="удаление-приложений-через-настройки-miui-без-root">Удаление приложений через настройки MIUI без Root</h2>
+
+<p>Самый безопасный, хотя и менее эффективный метод — использование штатных средств операционной системы. В последних версиях <em>HyperOS</em> и <em>MIUI</em> появилась возможность удалять некоторые предустановленные приложения напрямую из меню управления памятью. Это позволяет избавиться от явного мусора без риска повредить систему.</p>
+
+<p>Для этого перейдите в <code>Настройки → Приложения → Все приложения</code>. Найдите в списке ненужную программу (например,"Mi Магазин" или"Путешествия"). Если приложение можно удалить, кнопка"Удалить" будет активна. Если же доступна только кнопка"Отключить", значит, система считает этот компонент важным, и стандартными методами его не убрать.</p>
+
+<p>Отключение приложения — это хорошая альтернатива удалению. При отключении программа перестает запускаться, обновляться и расходовать батарею, но ее файлы остаются на диске. Это идеальный вариант для тех, кто боится нарушить работу системы, но хочет остановить фоновые процессы.</p>
+
+<ul>
+<li>📱 Отключайте приложения, которыми не пользуетесь, через меню настроек, чтобы сохранить стаб
+</p>
+<p>ильность системы.</li></p>
+<li>🗑️ Удаляйте только те программы, которые имеют активную кнопку удаления в меню приложений.</li>
+<li>⚙️ Используйте поиск в настройках, чтобы быстро найти конкретный системный сервис по названию.</li>
+</ul>
+
+<p>Стоит отметить, что через стандартный интерфейс невозможно удалить ключевые компоненты экосистемы <em>Xiaomi</em>, такие как реклама в системе или глубокие сервисы аналитики. Для этого потребуются более мощные инструменты, о которых пойдет речь ниже.</p>
+
+<h2 id="использование-adb-для-продвинутого-удаления-программ">Использование ADB для продвинутого удаления программ</h2>
+
+<p>Наиболее эффективный способ очистки — использование инструментария <strong>Android Debug Bridge (ADB)</strong>. Этот метод позволяет удалять любые приложения, включая те, которые скрыты от пользователя. Вам потребуется компьютер (Windows, macOS или Linux), USB-кабель и установленные драйверы ADB.</p>
+
+<p>После подключения смартфона и включения отладки откройте командную строку или терминал на компьютере в папке с ADB. Введите команду <code>adb devices</code> для проверки соединения. Если устройство определилось, можно переходить к списку установленных пакетов.</p>
+
+<pre><code>adb shell pm list packages</code></pre>
+
+<p>Эта команда выведет список всех пакетов. Чтобы найти конкретное приложение, используйте фильтр, например: <code>adb shell pm list packages | grep miui</code>. Найдя имя ненужного пакета (например, <code>com.miui.system</code> для некоторых сервисов, но будьте осторожны), используйте команду удаления.</p>
+
+<details class="pb-accordion"><summary>Список безопасных для удаления пакетов Xiaomi</summary><div class="pb-accordion-body"><p>com.miui.misys (Mi Cloud services - если не используете облако)|com.miui.video (Mi Video)|com.miui.weather2 (Погода)|com.xiaomi.scanner (Сканер)|com.miui.player (Музыка)|com.miui.notes (Заметки) — удаляйте, если есть альтернативы</p></div></details>
+
+<p>Для непосредственного удаления введите команду:</p>
+
+<pre><code>adb shell pm uninstall -k --user 0 <имя_пакета></code></pre>
+
+<p>Важно: параметр <code>--user 0</code> удаляет приложение только для текущего пользователя, не затраг
+</p>
+<p>ивая системный раздел. Это позволяет вернуть приложение обратно в случае ошибки простым сбросом настроек.</p></p>
+
+<h2 id="альтернативные-утилиты-для-очистки-системы">Альтернативные утилиты для очистки системы</h2>
+
+<p>Если работа с командной строкой кажется вам слишком сложной, существуют графические оболочки для ADB, которые значительно упрощают процесс. Программы вроде <em>Xiaomi ADB/Fastboot Tools</em> или <em>Universal Android Debloater</em> предоставляют удобный интерфейс с чекбоксами, где можно выбирать приложения для удаления.</p>
+
+<p>Такие утилиты часто имеют встроенные базы данных, которые помечают приложения цветом в зависимости от риска их удаления. Зеленые зоны обычно безопасны, желтые требуют осторожности, а красные трогать категорически не рекомендуется. Это снижает вероятность случайного повреждения системы.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Название утилиты</th>
+<th>Платформа</th>
+<th>Сложность</th>
+<th>Безопасность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xiaomi ADB/Fastboot Tools</td>
+<td>Windows/Mac/Linux</td>
+<td>Низкая</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Universal Android Debloater</td>
+<td>Windows/Mac/Linux</td>
+<td>Средняя</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>ADB AppControl</td>
+<td>Windows</td>
+<td>Низкая</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Командная строка (ADB)</td>
+<td>Все</td>
+<td>Высокая</td>
+<td>Зависит от пользователя</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Использование стороннего софта ускоряет процесс, но всегда скачивайте программы только с официальных репозиториев, таких как GitHub. Модифицированные версии могут содержать вредоносный код, который украдет ваши данные.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте функцию"Freeze" (Заморозка) в утилитах перед удалением. Это отключит приложение на несколько дней, и если система будет работать стабильно, его можно удалить окончательно.</p></aside>
+
+<h2 id="восстановление-удаленных-системных-компонентов">Восстановление удаленных системных компонентов</h2>
+
+<p>Если в процессе очистки вы удалили что-то лишнее и система начала работать некорректно (пропал звук, не работает камера или меню), не паникуйте. Поскольку мы использовали метод удаления для пользователя 0, данные приложения не стерты физически, а лишь скрыты. Их можно легко восстановить.</p>
+
+<p>Для возврата удаленного пакета воспользуйтесь командой установки через ADB:</p>
+
+<pre><code>adb shell cmd package install-existing <имя_пакета></code></pre>
+
+<p>Эта команда вернет приложение в исходное состояние. Если же вы не помните имя удаленного пакета, самым быстрым способом восстановления полной функциональности будет сброс до заводских настроек. Однако перед этим попробуйте просто перезагрузить устройство в безопасный режим, чтобы проверить, не вызван ли сбой другим фактором.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Полный сброс (Wipe Data) удалит все ваши личные файлы, фото и контакты. Обязательно сделайте резервное копирование перед восстановлением системы.</p>
+</blockquote>
+
+<p>В случае, если телефон уходит в бесконечную перезагрузку (bootloop) сразу после включения, восстановить систему через ADB может не получиться. В такой ситуации потребуется вход в режим Recovery и выполнение команды <code>Wipe Data</code> или перепрошивка устройства через режим Fastboot с использованием официальной прошивки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Метод удаления через ADB с флагом --user 0 является обратимым и не требует перепрошивки для восстановления удаленных компонентов.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Безопасно ли удалять Google Play Services?</summary>
+<p>Категорически нет. <strong>Google Play Services</strong> — это фундаментальный компонент Android, отвечающий за работу большинства приложений, push-уведомлений, геолокации и синхронизации. Его удаление приведет к неработоспособности смартфона.</p>
+</details>
+
+<details>
+<summary>Нужны ли Root-права для удаления системных приложений?</summary>
+<p>Нет, для удаления большинства встроенных приложений <em>Xiaomi</em> Root-права не требуются. Достаточно использовать ADB-команды с правами обычного пользователя, что безопаснее и не нарушает целостность системного раздела.</p>
+</details>
+
+<details>
+<summary>Что делать, если после удаления пропал интернет или связь?</summary>
+<p>Скорее всего, вы удалили важный системный модуль, отвечающий за радиомодуль или сетевые настройки. Выполните команду восстановления пакета или сделайте полный сброс настроек через меню Recovery.</p>
+</details>
+
+<details>
+<summary>Увеличится ли автономность после удаления системного мусора?</summary>
+<p>Да, отключение фоновых процессов, таких как аналитика, рекламные сервисы и неиспользуемые приложения, может положительно сказаться на времени работы от батареи, так как процессор будет меньше нагружен фоновыми задачами.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/c/ch/chto-oznachaet-sovmestimyj-brend-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Совместимый бренд Xiaomi: что это значит и как выбрать</span>
+                <span class="pb-related-desc">Разбираем, что означает совместимый бренд Xiaomi. Отличия суббрендов, экосистема Mi Home и список лу</span>
+            </a><a href="/articles/k/ks/ksiomi-rc-chto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi RC: что это такое и как использовать пульт</span>
+                <span class="pb-related-desc">Подробный разбор Xiaomi RC: назначение, функции пульта Mi Remote, настройка ИК-порта и управление ум</span>
+            </a><a href="/drugoe/k/ka/kak-postirat-ryukzak-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как постирать рюкзак Xiaomi: безопасная чистка</span>
+                <span class="pb-related-desc">Полная инструкция: как постирать рюкзак Xiaomi в машинке и вручную. Правильный уход за тканью, сушка</span>
+            </a><a href="/articles/k/ka/kak-peremestit-prilozheniya-na-sd-kartu-xiaomi-5a.html" class="pb-related-card">
+                <span class="pb-related-title">Как переместить приложения на SD карту Xiaomi 5A: полная инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция по переносу приложений на SD карту Xiaomi 5A. Как настроить Adoptable Storage, </span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-mobilnuyu-svyaz-no-ostavit-internet-na-smartfone-xiaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить мобильную связь, но оставить интернет на Xiaomi Redmi</span>
+                <span class="pb-related-desc">Подробная инструкция: как на Xiaomi Redmi убрать голосовые звонки, сохранив 4G/LTE для мессенджеров.</span>
+            </a><a href="/articles/k/ka/kak-na-pylesos-xiaomi-ustanovit-russkij-golos.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить русский голос на пылесос Xiaomi: инструкция</span>
+                <span class="pb-related-desc">Подробный гайд по смене языка на роботах-пылесосах Xiaomi. Установка русской озвучки, смена региона </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

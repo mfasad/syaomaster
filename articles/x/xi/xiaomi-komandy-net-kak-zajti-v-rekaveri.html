@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Xiaomi команды нет: как зайти в Recovery Mode — СяоМастер</title>
+    <meta name="description" content="Нет команды в рекавери Xiaomi? Узнайте, как запустить Recovery без ПК, через ADB и Fastboot. Решение проблемы&#x27;No command&#x27; на Android.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/x/xi/xiaomi-komandy-net-kak-zajti-v-rekaveri.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Xiaomi команды нет: как зайти в Recovery Mode">
+    <meta property="og:description" content="Нет команды в рекавери Xiaomi? Узнайте, как запустить Recovery без ПК, через ADB и Fastboot. Решение проблемы&#x27;No command&#x27; на Android.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Xiaomi команды нет: как зайти в Recovery Mode</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#причины-невозможности-входа-в-recovery-mode">Причины невозможности входа в Recovery Mode</a></li><li><a href="#аппаратный-метод-входа-через-комбинации-кнопок">Аппаратный метод входа через комбинации кнопок</a></li><li><a href="#использование-adb-для-принудительного-входа">Использование ADB для принудительного входа</a></li><li><a href="#метод-через-fastboot-и-утилиту-mi-flash">Метод через Fastboot и утилиту Mi Flash</a></li><li><a href="#решение-проблемыno-command-на-экране">Решение проблемы"No Command" на экране</a></li><li><a href="#диагностика-и-устранение-неисправностей">Диагностика и устранение неисправностей</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-sbrosit-gugl-akkaunt-na-xiaomi-4a.html">Как сбросить Google аккаунт на Xiaomi Redmi 4A: все способы</a></li><li><a href="/articles/k/ka/kak-otkryt-menyu-mnogozadachnosti-na-xiaomi.html">Как открыть меню многозадачности на Xiaomi: полная инструкция</a></li><li><a href="/articles/k/ka/kak-otklyuchit-neizvestnye-istochniki-na-xiaomi-redmi-8.html">Как отключить неизвестные источники на Xiaomi Redmi 8: полная инструкция</a></li><li><a href="/articles/k/ka/kak-sinkhronizirovat-naushniki-xiaomi-airdots-2-mezhdu-soboj.html">Как синхронизировать наушники Xiaomi Airdots 2: полная инструкция</a></li><li><a href="/articles/k/ka/kak-proverit-xiaomi-pri-pokupke-s-ruk-2020-god.html">Как проверить Xiaomi при покупке с рук 2020: Гайд</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Xiaomi команды нет: как зайти в Recovery Mode</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#причины-невозможности-входа-в-recovery-mode">Причины невозможности входа в Recovery Mode</a></li><li><a href="#аппаратный-метод-входа-через-комбинации-кнопок">Аппаратный метод входа через комбинации кнопок</a></li><li><a href="#использование-adb-для-принудительного-входа">Использование ADB для принудительного входа</a></li><li><a href="#метод-через-fastboot-и-утилиту-mi-flash">Метод через Fastboot и утилиту Mi Flash</a></li><li><a href="#решение-проблемыno-command-на-экране">Решение проблемы"No Command" на экране</a></li><li><a href="#диагностика-и-устранение-неисправностей">Диагностика и устранение неисправностей</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Пользователи смартфонов <em>Xiaomi</em>, <em>Redmi</em> и <em>Poco</em> часто сталкиваются с ситуацией, когда стандартная комбинация кнопок не приводит к желаемому результату, а на экране появляется надпись"No command" или система просто загружается в обычном режиме. Это распространенная проблема, которая может возникнуть из-за сбоя в программном обеспечении, повреждения системных файлов или неправильного выполнения действий пользователем. <strong>Recovery Mode</strong> — это критически важный инструмент для восстановления работоспособности устройства, позволяющий выполнить сброс данных или перепрошивку.</p>
+
+<p>В данной статье мы подробно разберем, почему может не работать вход в режим восстановления и какие существуют альтернативные методы активации этого режима. Мы рассмотрим как программные способы через компьютер, так и аппаратные манипуляции с кнопками, которые помогут обойти стандартные ограничения системы. Понимание этих процессов необходимо каждому владельцу техники <em>Mi</em> для самостоятельного обслуживания гаджета.</p>
+
+<p>Стоит отметить, что отсутствие реакции на кнопки часто путают с режимом <strong>Fastboot</strong>, который выглядит как изображение зайца, чинящего андроида. Важно четко различать эти состояния, так как методы входа и выхода из них кардинально отличаются. Если ваше устройство зависло или ведет себя некорректно, правильная диагностика текущего состояния — первый шаг к успешному решению проблемы.</p>
+
+<h2 id="причины-невозможности-входа-в-recovery-mode">Причины невозможности входа в Recovery Mode</h2>
+
+<p>Существует несколько фундаментальных причин, по которых стандартный вход в режим восстановления может быть заблокирован или невозможен. Чаще всего проблема кроется в повреждении системного раздела <code>/recovery</code>, который отвечает за запуск диагностического интерфейса. Если этот раздел поврежден в результате неудачного обновления или вмешательства в системные файлы, телефон будет игнорировать команды входа.</p>
+
+<p>Другой распространенной причиной является активная блокировка загрузчика или наличие цифровых подписей, которые проверяются при старте устройства. В таких случаях система безопасности <em>MIUI</em> может препятствовать переходу в режимы низкого уровня без предварительной разблокировки. Также стоит учитывать физический износ кнопок громкости, которые используются для навигации в этом меню.</p>
+
+<details class="pb-accordion"><summary>Почему появляется надпись No Command?</summary><div class="pb-accordion-body"><p>На экране может появиться андроид с красным восклицательным знаком и надпись"No command". Это штатное поведение стокового Android, означающее, что режим восстановления ожидает ввода команды от пользователя. Обычно нужно зажать кнопку питания и один раз нажать кнопку увеличения громкости (или наоборот, в зависимости от модели), чтобы появилось меню.</p></div></details>
+
+<p>Кроме того, некоторые кастомные прошивки или модифицированные версии <strong>MIUI</strong> могут иметь измененный алгоритм входа в сервисные меню. Если вы недавно устанавливали стороннее ПО или получали <strong>Root-права</strong>, стандартные инструкции могут не работать. В таком случае необходимо искать специфичные инструкции именно для вашей версии операциной системы.</p>
+
+<h2 id="аппаратный-метод-входа-через-комбинации-кнопок">Аппаратный метод входа через комбинации кнопок</h2>
+
+<p>Самый распространенный способ попасть в меню восстановления — использование физической комбинации кнопок на выключенном устройстве. Этот метод не требует наличия компьютера или дополнительного программного обеспечения, что делает его доступным в любой ситуации. Однако точность и скорость выполнения действий здесь играют решающую роль.</p>
+
+<p>Для начала полностью выключите смартфон. Если устройство зависло и не реагирует на обычное выключение, зажмите кнопку питания на 10-15 секунд до полной вибрации и выключения экрана. После этого убедитесь, что телефон действительно выключен, а не находится в спящем режиме.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм входа кнопками</h4><label class="check-item"><input type="checkbox"><span>Полностью выключить устройство</span></label><label class="check-item"><input type="checkbox"><span>Зажать кнопку питания и громкость +</span></label><label class="check-item"><input type="checkbox"><span>Держать до появления логотипа Mi</span></label><label class="check-item"><input type="checkbox"><span>Отпустить питание, удерживая громкость</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Затем одновременно зажмите кнопку питания и кнопку увеличения громкости (<code>Volume Up</code>). Удерживайте обе кнопки до тех пор, пока не появится логотип <em>Mi</em> или <em>Poco</em>. Как только логотип станет виден, отпустите кнопку питания, но продолжайте удерживать кнопку громкости. Отпускать кнопку громкости следует только после появления главного меню <strong>Recovery</strong>.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы отпустите кнопку громкости слишком рано, телефон просто загрузится в обычном режиме. Если вы будете держать кнопки слишком долго после появления логотипа, устройство может перейти в режим <strong>Fastboot</strong> (изображение зайца).</p>
+</blockquote>
+
+<p>Важно соблюдать правильный тайминг, так как окно для переключения между режимами загрузки очень короткое. На некоторых моделях с сенсорными кнопками или специфической компоновкой корпуса этот процесс может отличаться. Если с первого раза не получилось, попробуйте повторить процедуру, немного изменив момент отпускания кнопок.</p>
+
+<h2 id="использование-adb-для-принудительного-входа">Использование ADB для принудительного входа</h2>
+
+<p>Если аппаратные кнопки не работают или повреждены, единственным надежным способом входа в <strong>Recovery Mode</strong> остается использование отладочного моста <strong>Android Debug Bridge (ADB)</strong>. Этот метод требует наличия компьютера с установленными драйверами и минимальными знаниями работы с командной строкой. Это наиболее профессиональный и гарантированный способ.</p>
+
+<p>Для начала вам необходимо скачать и установить <strong>SDK Platform Tools</strong> на ваш компьютер. Также на самом смартфоне должна быть активирована опция"Отладка по USB" в меню"Для разработчиков". Если телефон включается и работает, вы можете активировать эту функцию через <code>Настройки → О телефоне → Версия MIUI</code> (нажимать 7 раз).</p>
+
+<pre><code>adb reboot recovery</code></pre>
+
+<p>После подключения устройства к компьютеру через качественный USB-кабель, откройте командную строку в папке с инструментами ADB и введите команду, указанную выше. Устройство немедленно перезагрузится в режим восстановления, минуя любые программные блокировки кнопок. Это особенно полезно, если кнопка громкости физически неисправна.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте оригинальный USB-кабель или качественный аналог с поддержкой передачи данных. Дешевые кабели"только для зарядки" не позволят компьютеру увидеть устройство, и команда ADB не будет выполнена.</p></aside>
+
+<p>Стоит отметить, что если на устройстве ранее не был разрешен доступ для отладки с этого компьютера, на экране смартфона может появиться запрос на подтверждение RSA-ключа. В таком случае необходимо разблокировать экран и нажать"Разрешить", чтобы команда была выполнена успешно. Без этого шага вход в режим восстановления через ADB невозможен.</p>
+
+<h2 id="метод-через-fastboot-и-утилиту-mi-flash">Метод через Fastboot и утилиту Mi Flash</h2>
+
+<p>В ситуациях, когда стандартный <strong>Recovery</strong> поврежден, но режим <strong>Fastboot</strong> доступен, можно использовать официальную утилиту <strong>Mi Flash Tool</strong> или команды Fastboot для перенаправления загрузки. Это более сложный метод, требующий наличия разблокированного загрузчика или специфических условий, но он часто спасает в критических ситуациях.</p>
+
+<p>Сначала необходимо перевести устройство в режим <strong>Fastboot</strong>. Для этого на выключенном телефоне зажмите одновременно кнопку питания и кнопку уменьшения громкости (<code>Volume Down</code>). Когда на экране появится заяц в шапке-ушанке, подключите телефон к компьютеру. В этом режиме устройство готово принимать низкоуровневые команды.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Команда Fastboot</th>
+<th>Описание действия</th>
+<th>Необходимые условия</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fastboot reboot</code></td>
+<td>Обычная перезагрузка в систему</td>
+<td>Режим Fastboot</td>
+</tr>
+<tr>
+<td><code>fastboot reboot recovery</code></td>
+<td>Принудительный вход в Recovery</td>
+<td>Режим Fastboot</td>
+</tr>
+<tr>
+<td><code>fastboot devices</code></td>
+<td>Проверка подключения устройства</td>
+<td>Установленные драйверы</td>
+</tr>
+<tr>
+<td><code>fastboot oem reboot-recovery</code></td>
+<td>Альтернативная команда входа</td>
+<td>Разблокированный bootloader</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Используя командную строку в папке с ADB/Fastboot, введите команду <code>fastboot reboot recovery</code>. Эта команда отправляет сигнал загрузчику immediately перейти в раздел восстановления при следующей перезагрузке. Это работает даже в тех случаях, когда файловая система <code>/recovery</code> частично повреждена, но сам загрузчик функционирует корректно.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Режим Fastboot (Заяц) — это нижний уровень доступа к устройству, который работает независимо от состояния операционной системы Android. Если телефон включается в Fastboot, его почти всегда можно спасти.</p></aside>
+
+<p>Если стандартная команда не срабатывает, использовать альтернативные варианты, такие как <code>fastboot oem reboot-recovery</code>, хотя на современных устройствах <em>Xiaomi</em> они работают реже. Главное преимущество этого метода — возможность управления процессом загрузки с компьютера, что исключает человеческий фактор и проблемы с таймингом нажатия кнопок.</p>
+
+<div class="pb-poll" id="poll-577a92ed"><div class="pb-poll-question">📊 Какой способ входа в Recovery у вас работает?</div><div class="pb-poll-option" data-poll="577a92ed" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Комбинация кнопок</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="577a92ed" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Команда ADB</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="577a92ed" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Режим Fastboot</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="577a92ed" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Ничего не помогает</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="решение-проблемыno-command-на-экране">Решение проблемы"No Command" на экране</h2>
+
+<p>Часто пользователи попадают в ситуацию, когда телефон вроде бы входит в режим восстановления, но на черном экране отображается только робот Android с красным треугольником и надписью"No command". Многие ошибочно полагают, что устройство зависло, и пытаются его перезагрузить, хотя меню просто скрыто.</p>
+
+<p>Чтобы активировать скрытое меню, необходимо выполнить специфическую последовательность действий. Зажмите кнопку питания и, не отпуская её, один раз кратко нажмите кнопку увеличения громкости (<code>Volume Up</code>). После этого отпустите кнопку питания. Эта комбинация является стандартной для стокового <strong>Android Recovery</strong>.</p>
+
+<p>Если эта комбинация не сработала, попробуйте вариацию: зажать кнопку питания, затем быстро нажать и отпустить кнопку уменьшения громкости, а затем отпустить питание. Разные версии <em>MIUI</em> и <strong>HyperOS</strong> могут иметь незначительные отличия в обработке этих сигналов. Главное — не держать кнопки зажатыми слишком долго, иначе телефон просто перезагрузится.</p>
+
+<blockquote>
+<p>⚠️ Внимание: В режиме Recovery сенсорный экран не работает. Навигация по меню осуществляется только кнопками громкости (вверх/вниз), а выбор пункта подтверждается кнопкой питания. Не пытайтесь тыкать в экран.</p>
+</blockquote>
+
+<p>После успешного выполнения действий перед вами должно появиться текстовое меню с несколькими пунктами, такими как <code>Reboot</code>, <code>Wipe Data</code>, <code>Connect with MIAssistant</code> и другими. Теперь вы можете безопасно выполнять необходимые операции по восстановлению системы или сбросу настроек.</p>
+
+<h2 id="диагностика-и-устранение-неисправностей">Диагностика и устранение неисправностей</h2>
+
+<p>Если ни один из вышеперечисленных методов не помог войти в <strong>Recovery Mode</strong>, проблема может носить более глубокий характер. Возможно, поврежден сам раздел восстановления на уровне файловой системы, или же имеет место быть аппаратная неисправность кнопок или шлейфа. В таких случаях требуется более тщательная диагностика.</p>
+
+<p>Проверьте состояние кнопок громкости в обычном режиме работы. Если они залипают или не реагируют на нажатия в приложениях-тестерах (например, инженерное меню <code><em>#</em>#6484#<em>#</em></code>), то вход в Recovery физически невозможен без замены кнопок или использования методов через ADB. Аппаратные проблемы часто становятся причиной того, что"команды нет".</p>
+
+<p>Также стоит проверить наличие свободного места в памяти устройства. Переполненный системный раздел может препятствовать запуску скриптов восстановления. Если телефон все еще включается, попробуйте освободить место или удалить недавно установленные приложения, которые могли вызвать конфликт.</p>
+
+<details class="pb-accordion"><summary>Что делать, если Recovery поврежден?</summary><div class="pb-accordion-body"><p>Если раздел recovery поврежден, телефон может циклически перезагружаться или уходить в Fastboot. В этом случае поможет только перепрошивка устройства через режим Fastboot с использованием официальной прошивки и утилиты Mi Flash в режиме"Clean All".</p></div></details>
+
+<p>В крайнем случае, если программные методы бессильны, а устройство не подает признаков жизни или уходит в бесконечный цикл перезагрузки (bootloop), может потребоваться вмешательство специалистов сервисного центра. Они могут использовать программаторы для перепрошивки чипа памяти или восстановления загрузочных секторов, что невозможно сделать в домашних условиях без специального оборудования.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Безопасно ли делать сброс данных в Recovery Mode?</summary>
+<p>Да, это штатная функция Android. Однако помните, что пункт <code>Wipe Data/Factory Reset</code> полностью удалит все ваши личные данные, фото, контакты и приложения. Перед выполнением этой операции обязательно убедитесь, что у вас есть резервная копия важной информации в облаке или на компьютере.</p>
+</details>
+
+<details>
+<summary>Можно ли войти в Recovery, если телефон полностью разряжен?</summary>
+<p>Нет, для входа в любой режим загрузки устройству требуется минимальный заряд аккумулятора. Если телефон не включается, поставьте его на зарядку минимум на 15-20 минут, даже если экран не загорается. Только после появления хотя бы минимального заряда можно пробовать комбинации кнопок.</p>
+</details>
+
+<details>
+<summary>Что означает пункт"Connect with MIAssistant" в меню?</summary>
+<p>Этот режим позволяет подключить телефон к компьютеру и использовать официальный инструмент <strong>Mi Assistant</strong> для восстановления системы, сброса пароля экрана блокировки (если аккаунт Mi привязан) или установки прошивки без полного удаления данных. Это аналог Recovery, но с графическим интерфейсом на ПК.</p>
+</details>
+
+<details>
+<summary>Почему после входа в Recovery телефон сам сбрасывается?</summary>
+<p>Это может происходить из-за критической ошибки системы, низкого заряда батареи или повреждения системных файлов. Если сброс происходит сразу при загрузке меню, возможно, раздел <code>/recovery</code> поврежден настолько, что не может запуститься, и система аварийно перезагружает устройство.</p>
+</details>
+
+<details>
+<summary>Нужен ли интернет для входа в Recovery Mode?</summary>
+<p>Нет, для самого входа в режим восстановления интернет не требуется. Однако, если вы планируете использовать функцию"Connect with MIAssistant" для скачивания прошивки напрямую или сброса аккаунта, подключение к сети может понадобиться на этапе работы с инструментами восстановления.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-sbrosit-gugl-akkaunt-na-xiaomi-4a.html" class="pb-related-card">
+                <span class="pb-related-title">Как сбросить Google аккаунт на Xiaomi Redmi 4A: все способы</span>
+                <span class="pb-related-desc">Полная инструкция по удалению Google аккаунта на Xiaomi Redmi 4A. Сброс настроек, обход FRP, восстан</span>
+            </a><a href="/articles/k/ka/kak-otkryt-menyu-mnogozadachnosti-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как открыть меню многозадачности на Xiaomi: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как открыть меню многозадачности на Xiaomi. Настройка жестов, кнопок, очистка памяти и скры</span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-neizvestnye-istochniki-na-xiaomi-redmi-8.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить неизвестные источники на Xiaomi Redmi 8: полная инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по запрету установки приложений из неизвестных источников на Redmi 8. Настройк</span>
+            </a><a href="/articles/k/ka/kak-sinkhronizirovat-naushniki-xiaomi-airdots-2-mezhdu-soboj.html" class="pb-related-card">
+                <span class="pb-related-title">Как синхронизировать наушники Xiaomi Airdots 2: полная инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция: как синхронизировать Xiaomi Airdots 2 между собой. Решение проблем с подключен</span>
+            </a><a href="/articles/k/ka/kak-proverit-xiaomi-pri-pokupke-s-ruk-2020-god.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить Xiaomi при покупке с рук 2020: Гайд</span>
+                <span class="pb-related-desc">Полная инструкция по проверке Xiaomi 2020 года выпуска. Как отличить оригинал от подделки, проверить</span>
+            </a><a href="/articles/k/ka/kak-ochistit-kesh-vatsap-na-syaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как очистить кэш WhatsApp на Xiaomi Redmi: полная инструкция</span>
+                <span class="pb-related-desc">Подробный гайд: как освободить место в WhatsApp на Xiaomi. Очистка кэша, удаление мусора, сброс наст</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

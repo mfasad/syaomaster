@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Установка Xiaomi через USB: как включить режим и прошить — СяоМастер</title>
+    <meta name="description" content="Пошаговая инструкция: установка Xiaomi через USB как включить режим Fastboot, Mi Flash Tool и драйверы. Решение ошибок при прошивке смартфона.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/u/us/ustanovka-cherez-usb-xiaomi-kak-vklyuchit.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Установка Xiaomi через USB: как включить режим и прошить">
+    <meta property="og:description" content="Пошаговая инструкция: установка Xiaomi через USB как включить режим Fastboot, Mi Flash Tool и драйверы. Решение ошибок при прошивке смартфона.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Установка Xiaomi через USB: как включить режим и прошить</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-инструментов-и-драйверов-для-работы">Подготовка инструментов и драйверов для работы</a></li><li><a href="#выбор-режима-подключения-fastboot-или-recovery">Выбор режима подключения: Fastboot или Recovery</a></li><li><a href="#инструкция-как-включить-режим-fastboot-на-xiaomi">Инструкция: как включить режим Fastboot на Xiaomi</a></li><li><a href="#процесс-установки-прошивки-через-mi-flash-tool">Процесс установки прошивки через Mi Flash Tool</a></li><li><a href="#решение-распространенных-ошибок-при-прошивке">Решение распространенных ошибок при прошивке</a></li><li><a href="#безопасность-данных-и-завершение-работ">Безопасность данных и завершение работ</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/l/lo/lokalnoe-rezervirovanie-xiaomi-gde-khranitsya.html">Локальное резервирование Xiaomi: где хранятся файлы и как их найти</a></li><li><a href="/articles/k/ka/kak-naznachit-khrom-brauzerom-po-umolchaniyu-na-xiaomi.html">Как назначить Chrome браузером по умолчанию на Xiaomi</a></li><li><a href="/articles/k/ka/kak-proverit-obnovlenie-androida-na-syaomi.html">Как проверить обновление Android на Xiaomi: полная инструкция</a></li><li><a href="/articles/z/za/zachem-pereproshivat-telefon-xiaomi.html">Зачем перепрошивать Xiaomi: плюсы, минусы и риски</a></li><li><a href="/articles/c/ch/chto-takoe-get-apps-na-xiaomi-i-dlya-chego-on.html">GetApps на Xiaomi: что это, зачем нужен и стоит ли удалять</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как включить режим Fastboot и выполнить установку Xiaomi через USB</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-инструментов-и-драйверов-для-работы">Подготовка инструментов и драйверов для работы</a></li><li><a href="#выбор-режима-подключения-fastboot-или-recovery">Выбор режима подключения: Fastboot или Recovery</a></li><li><a href="#инструкция-как-включить-режим-fastboot-на-xiaomi">Инструкция: как включить режим Fastboot на Xiaomi</a></li><li><a href="#процесс-установки-прошивки-через-mi-flash-tool">Процесс установки прошивки через Mi Flash Tool</a></li><li><a href="#решение-распространенных-ошибок-при-прошивке">Решение распространенных ошибок при прошивке</a></li><li><a href="#безопасность-данных-и-завершение-работ">Безопасность данных и завершение работ</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современные смартфоны <em>Xiaomi</em> предоставляют пользователям широкие возможности для кастомизации, но иногда стандартные методы обновления перестают работать. Ситуации, когда устройство «окирпичивается» или зависает на логотипе, требуют более глубокого вмешательства в систему. Именно в таких случаях становится актуальной установка операционной системы через USB-кабель, что позволяет восстановить работоспособность гаджета даже при неработающем тачскрине.</p>
+
+<p>Процесс <strong>прошивки через компьютер</strong> кардинально отличается от обновления «по воздуху» (OTA). Если вы столкнулись с необходимостью вернуть телефон к жизни или откатиться на более стабильную версию <em>MIUI</em>, вам потребуется не только специальный софт, но и понимание физических режимов работы загрузчика. В этой статье мы разберем все нюансы подготовки и выполнения процедуры.</p>
+
+<p>Важно понимать, что любые манипуляции с системным разделом несут в себе риски. <mark>Прерывание процесса записи данных в память может привести к полной потере гарантии и невозможности включения устройства без пайки программатора.</mark> Поэтому внимательно следуйте каждому шагу инструкции и убедитесь в надежности источника питания вашего ПК.</p>
+
+<h2 id="подготовка-инструментов-и-драйверов-для-работы">Подготовка инструментов и драйверов для работы</h2>
+
+<p>Перед тем как подключать кабель, необходимо убедиться, что на компьютере установлены все необходимые компоненты. Базовым требованием является наличие оригинального или качественного сертифицированного USB-кабеля, способного передавать данные, а не только заряжать аккумулятор. Дешевые кабели «только для зарядки» часто становятся причиной ошибок соединения.</p>
+
+<p>Ключевым элементом успеха являются <strong>ADB и Fastboot драйверы</strong>. Без них операционная система Windows не сможет корректно идентифицировать смартфон в специальном режиме. Чаще всего они входят в состав платформы <em>SDK Platform Tools</em> от Google, но для устройств <em>Xiaomi</em> также могут потребоваться специфические драйверы Qualcomm или MediaTek, которые устанавливаются автоматически вместе с утилитой Mi Flash.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед началом</h4><label class="check-item"><input type="checkbox"><span>Оригинальный USB кабель</span></label><label class="check-item"><input type="checkbox"><span>Установлен Mi Flash Tool</span></label><label class="check-item"><input type="checkbox"><span>Драйверы ADB/Fastboot активны</span></label><label class="check-item"><input type="checkbox"><span>Заряд батареи более 60%</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Не забудьте проверить заряд батареи устройства. Хотя процесс идет от USB, скачки напряжения или случайное отключение кабеля могут стать фатальными. Оптимальным считается уровень заряда выше 60%, что обеспечит достаточный буфер времени для завершения всех операций.</p>
+
+<h2 id="выбор-режима-подключения-fastboot-или-recovery">Выбор режима подключения: Fastboot или Recovery</h2>
+
+<p>Для установки прошивки через USB в устройствах <em>Xiaomi</em> используется два основных режима загрузки. Первый и наиболее часто используемый для полной перепрошивки — это <strong>Fastboot</strong>. В этом режиме телефон принимает команды низкого уровня, позволяя полностью перезаписать разделы памяти, включая системные файлы, бутлоадер и_recovery.</p>
+
+<p>Второй режим — <em>Recovery</em>, который больше подходит для сброса настроек или установки обновлений через меню выбора файлов, но менее гибок для полной установки образа системы с компьютера. Для работы с утилитой <em>Mi Flash Tool</em> нам необходим именно режим Fastboot, который на экране телефона обычно отображается как изображение зайца, чинящего андроида, или надпись "FASTBOOT" на черном фоне.</p>
+
+<blockquote>⚠️ Внимание: Вход в режим Fastboot на заблокированном загрузчике (Locked Bootloader) позволяет только просматривать информацию об устройстве. Для записи новой прошивки разблокировка загрузчика через сервис Mi Unlock обязательна!</blockquote>
+
+<p>Разница между режимами критична. Если вы попытаетесь прошить образ Fastboot ROM через режим Recovery, утилита просто не увидит устройство или выдаст ошибку совместимости. И наоборот, прошивка Recovery ROM не предназначена для использования с Mi Flash Tool в режиме быстрой загрузки.</p>
+
+<h2 id="инструкция-как-включить-режим-fastboot-на-xiaomi">Инструкция: как включить режим Fastboot на Xiaomi</h2>
+
+<p>Процесс перевода смартфона в нужный режим зависит от его текущего состояния: включен он или выключен. Если устройство работает нормально и вы можете попасть в меню, самый простой способ — использовать настройки. Перейдите в <code>Настройки → О телефоне</code> и несколько раз нажмите на версию <em>MIUI</em>, чтобы активировать меню разработчика.</p>
+
+<p>Затем в расширенных настройках найдите пункт «Загрузчик» или «USB отладка», хотя для входа в Fastboot это не всегда обязательно. Самый надежный метод для включенного телефона — использование командной строки. Подключите устройство к ПК, откройте терминал в папке с ADB и введите команду:</p>
+
+<pre><code>adb reboot bootloader</code></pre>
+
+<p>Если телефон выключен или не реагирует на экран, используйте комбинацию клавиш. Зажмите кнопку уменьшения громкости (<code>Volume Down</code>) и, не отпуская её, подключите USB-кабель к компьютеру. Держите кнопку до появления логотипа <em>Fastboot</em> или изображения зайца.</p>
+
+<div class="pb-poll" id="poll-90c1f6dd"><div class="pb-poll-question">📊 Какой режим загрузки вы используете?</div><div class="pb-poll-option" data-poll="90c1f6dd" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Fastboot (Заяц)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="90c1f6dd" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Recovery</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="90c1f6dd" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">EDL (9008)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="90c1f6dd" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>В некоторых моделях с <em>Android 11</em> и выше может потребоваться подтверждение отладки на экране при первом подключении. Если экран черный, попробуйте коротко нажать кнопку питания, чтобы подсветить дисплей, и подтвердить запрос, после чего снова зажать громкость вниз.</p>
+
+<h2 id="процесс-установки-прошивки-через-mi-flash-tool">Процесс установки прошивки через Mi Flash Tool</h2>
+
+<p>После успешного включения режима Fastboot и подключения к ПК, запустите утилиту <em>Mi Flash Tool</em>. Программа должна автоматически определить подключенное устройство, отобразив его серийный номер в списке. Если вместо номера вы видите пустое поле или ошибку, проверьте диспетчер устройств Windows на наличие неопознанных устройств.</p>
+
+<p>Следующий шаг — выбор файла прошивки. Нажмите кнопку <code>Select</code> и укажите путь к распакованной папке с прошивкой. Важно: путь не должен содержать кириллических символов или пробелов, иначе процесс может завершиться ошибкой. Лучше всего размещать файлы прошивки в корне диска, например, <code>C:\ROM\</code>.</p>
+
+<p>В нижней части окна утилиты выберите метод flashing. Для чистой установки без сохранения данных выберите опцию <strong>clean all</strong>. Это действие полностью удалит все пользовательские данные, поэтому заранее сделайте резервную копию важной информации.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Режим прошивки</th>
+<th>Сохранение данных</th>
+<th>Время выполнения</th>
+<th>Рекомендация</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Update</td>
+<td>Да</td>
+<td>Быстро</td>
+<td>Для обновления версии без сброса</td>
+</tr>
+<tr>
+<td>Clean All</td>
+<td>Нет</td>
+<td>Средне</td>
+<td>Рекомендуется при смене региона</td>
+</tr>
+<tr>
+<td>Clean All + Lock</td>
+<td>Нет</td>
+<td>Средне</td>
+<td>Только для глобальных прошивок</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Нажмите кнопку <code>Flash</code> и ожидайте завершения процесса. Индикатор прогресса будет заполняться зеленым цветом. После успешной установки телефон автоматически перезагрузится, и вы увидите логотип <em>MI</em>.</p>
+
+<h2 id="решение-распространенных-ошибок-при-прошивке">Решение распространенных ошибок при прошивке</h2>
+
+<p>Одной из самых частых проблем является ошибка <strong>Miss matching image and device</strong>. Она возникает, когда вы пытаетесь прошить прошивку, предназначенную для другой модели, или когда тип прошивки (Fastboot/Recovery) не соответствует выбранному режиму. Всегда проверяйте кодовое имя устройства (например, <em>davinci</em>, <em>cepheus</em>) в названии файла прошивки.</p>
+
+<p>Другая распространенная ошибка — <code>Flash error</code> или таймаут соединения. Это часто связано с некачественным USB-кабелем, плохим портом на материнской плате компьютера или антивирусом, блокирующим запись в память. Попробуйте использовать порты USB 2.0 вместо 3.0 и отключить стороннее ПО.</p>
+
+<details class="pb-accordion"><summary>Что делать если телефон ушел в цикл перезагрузок?</summary><div class="pb-accordion-body"><p>Если после прошивки телефон постоянно перезагружается, попробуйте зажать кнопку питания на 15-20 секунд для принудительной перезагрузки. Если это не помогло, выполните Wipe Data в режиме Recovery или перепрошейте устройство заново с опцией Clean All.</p></div></details>
+
+<p>Если утилита выдает ошибку о несовместимости загрузчика, убедитесь, что вы не пытаетесь прошить китайскую прошивку на глобальный аппарат (или наоборот) без предварительной смены региона аккаунта Mi. Также проверьте, разблокирован ли Bootloader, если того требует тип прошивки.</p>
+
+<h2 id="безопасность-данных-и-завершение-работ">Безопасность данных и завершение работ</h2>
+
+<p>После успешной установки системы и первой загрузки устройства рекомендуется сразу же проверить версию <em>MIUI</em> и номер сборки. Убедитесь, что все базовые функции, такие как связь, Wi-Fi и камера, работают корректно. Первые несколько минут телефон может нагреваться — это нормально, так как идет оптимизация приложений.</p>
+
+<p>Не забудьте выйти из режима Fastboot, если телефон не перезагрузился сам. Для этого просто зажмите кнопку питания на 10-15 секунд, пока устройство не вибрирует и не начнет загружаться. Если вы использовали опцию блокировки загрузчика, повторная разблокировка потребует ожидания 168 часов (7 суток).</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Сделайте фото IMEI перед прошивкой: Иногда после перепрошивки или сброса могут слететь сертификаты сети. Фотография наклейки с коробки или скриншот кода *#06# помогут восстановить данные через сервисный центр.</p></aside>
+
+<p>Регулярное создание резервных копий через <em>Mi Cloud</em> или локально на компьютер обезопасит вас от потери данных в будущем. Используйте только проверенные источники прошивок, такие как официальный сайт <em>miui.com</em> или авторитетные форумы разработчиков.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Успешная прошивка зависит на 80% от качества USB-кабеля и драйверов, и только на 20% от действий в программе.</p></aside>
+
+<details>
+<summary>Можно ли прошить Xiaomi без разблокировки загрузчика?</summary>
+<p>Официально — нет, для установки Fastboot ROM через Mi Flash Tool загрузчик должен быть разблокирован. Однако можно обновляться через Recovery, используя файлы прошивки с расширением .zip, но это работает только если текущая версия системы позволяет установку более новой или такой же версии.</p>
+</details>
+
+<details>
+<summary>Слетит ли гарантия после прошивки?</summary>
+<p>Разблокировка загрузчика и установка кастомных прошивок официально аннулирует гарантию от производителя во многих регионах. Установка официальной глобальной прошивки на китайскую версию также может вызвать вопросы в сервисном центре, так как это изменение программной конфигурации устройства.</p>
+</details>
+
+<details>
+<summary>Что такое режим EDL (9008) и как в него войти?</summary>
+<p>EDL (Emergency Download Mode) — это глубокий режим восстановления Qualcomm, используемый для спасения полностью нерабочих устройств. Вход в него обычно требует вскрытия корпуса и замыкания специальных контактов на плате (Test Point), хотя на старых моделях работала комбинация кнопок.</p>
+</details>
+
+<details>
+<summary>Почему Mi Flash Tool не видит телефон?</summary>
+<p>Проверьте диспетчер устройств: если телефон определяется как "QHSUSB_BULK" или "Unknown Device", драйверы установлены неверно. Попробуйте переустановить драйверы вручную, указав путь к папке с драйверами в свойствах устройства. Также убедитесь, что кабель поддерживает передачу данных.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/l/lo/lokalnoe-rezervirovanie-xiaomi-gde-khranitsya.html" class="pb-related-card">
+                <span class="pb-related-title">Локальное резервирование Xiaomi: где хранятся файлы и как их найти</span>
+                <span class="pb-related-desc">Узнайте, где хранится локальное резервирование Xiaomi. Полный гид по путям MIUI Backup, скрытым папк</span>
+            </a><a href="/articles/k/ka/kak-naznachit-khrom-brauzerom-po-umolchaniyu-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как назначить Chrome браузером по умолчанию на Xiaomi</span>
+                <span class="pb-related-desc">Пошаговая инструкция: как сделать Google Chrome основным браузером на Xiaomi. Настройка MIUI, сброс </span>
+            </a><a href="/articles/k/ka/kak-proverit-obnovlenie-androida-na-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить обновление Android на Xiaomi: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как проверить обновление Android на Xiaomi вручную. Подробный гид по MIUI и HyperOS, устано</span>
+            </a><a href="/articles/z/za/zachem-pereproshivat-telefon-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Зачем перепрошивать Xiaomi: плюсы, минусы и риски</span>
+                <span class="pb-related-desc">Подробный разбор причин перепрошивки смартфонов Xiaomi. Стоит ли переходить на Global ROM, что дает </span>
+            </a><a href="/articles/c/ch/chto-takoe-get-apps-na-xiaomi-i-dlya-chego-on.html" class="pb-related-card">
+                <span class="pb-related-title">GetApps на Xiaomi: что это, зачем нужен и стоит ли удалять</span>
+                <span class="pb-related-desc">Полный разбор сервиса GetApps на смартфонах Xiaomi. Зачем нужен магазин приложений, как отключить ре</span>
+            </a><a href="/articles/k/ka/kak-pochistit-televizor-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как почистить телевизор Xiaomi: ускорение и сброс</span>
+                <span class="pb-related-desc">Полная инструкция по очистке Xiaomi TV от мусора. Как ускорить работу, очистить кэш приложений и сде</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

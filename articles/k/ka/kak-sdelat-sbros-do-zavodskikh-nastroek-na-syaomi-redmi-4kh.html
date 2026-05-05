@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Сброс Xiaomi Redmi 4X до заводских настроек: инструкция — СяоМастер</title>
+    <meta name="description" content="Полное руководство по сбросу Redmi 4X. Hard reset через меню и Recovery, удаление паролей, решение проблем с циклической перезагрузкой.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-sdelat-sbros-do-zavodskikh-nastroek-na-syaomi-redmi-4kh.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Сброс Xiaomi Redmi 4X до заводских настроек: инструкция">
+    <meta property="og:description" content="Полное руководство по сбросу Redmi 4X. Hard reset через меню и Recovery, удаление паролей, решение проблем с циклической перезагрузкой.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Сброс Xiaomi Redmi 4X до заводских настроек: инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-устройства-к-полному-сбросу-данных">Подготовка устройства к полному сбросу данных</a></li><li><a href="#способ-1-сброс-через-меню-настроек-системы">Способ 1: Сброс через меню настроек системы</a></li><li><a href="#способ-2-hard-reset-через-режим-recovery">Способ 2: Hard Reset через режим Recovery</a></li><li><a href="#использование-сервисного-кода-для-сброса">Использование сервисного кода для сброса</a></li><li><a href="#решение-проблем-циклическая-перезагрузка-и-ошибки">Решение проблем: циклическая перезагрузка и ошибки</a></li><li><a href="#первичная-настройка-после-восстановления">Первичная настройка после восстановления</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/f/fa/fastboot-na-xiaomi-kak-ubrat-s-ekrana.html">Как убрать Fastboot на Xiaomi: полное руководство</a></li><li><a href="/articles/c/ch/chto-takoe-xiaomi-youpin.html">Xiaomi Youpin: что это, как заказать и доставить в РФ</a></li><li><a href="/articles/s/sk/skolko-stoit-aktsiya-xiaomi-na-segodnya-v-rublyakh.html">Сколько стоит акция Xiaomi сегодня: курс в рублях</a></li><li><a href="/articles/k/ka/kak-razblokirovat-zagruzchik-na-xiaomi-redmi-9c-nfc.html">Разблокировка загрузчика Xiaomi Redmi 9C NFC: Пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-udalit-akkaunt-gugl-na-xiaomi-redmi-4x.html">Как удалить аккаунт Google на Xiaomi Redmi 4X: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как сделать сброс до заводских настроек на Xiaomi Redmi 4X</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-устройства-к-полному-сбросу-данных">Подготовка устройства к полному сбросу данных</a></li><li><a href="#способ-1-сброс-через-меню-настроек-системы">Способ 1: Сброс через меню настроек системы</a></li><li><a href="#способ-2-hard-reset-через-режим-recovery">Способ 2: Hard Reset через режим Recovery</a></li><li><a href="#использование-сервисного-кода-для-сброса">Использование сервисного кода для сброса</a></li><li><a href="#решение-проблем-циклическая-перезагрузка-и-ошибки">Решение проблем: циклическая перезагрузка и ошибки</a></li><li><a href="#первичная-настройка-после-восстановления">Первичная настройка после восстановления</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Смартфоны линейки <em>Redmi</em> от компании <em>Xiaomi</em> заслужили репутацию надежных устройств, однако даже самая стабильная система <em>MIUI</em> может со временем потребовать радикальных мер. Если ваш <em>Redmi 4X</em> начал работать медленно, зависать или вы забыли графический ключ, единственным верным решением часто становится полный возврат к исходному состоянию. Эта процедура полностью очищает внутреннюю память устройства, удаляя все пользовательские данные, приложения и настройки.</p>
+<p>Процесс восстановления заводских параметров, известный как <strong>Hard Reset</strong>, является мощным инструментом в арсенале любого владельца Android-гаджета. Он не просто удаляет файлы, но и переписывает системные разделы конфигурации, устраняя программные ошибки, которые накопились за время эксплуатации. Важно понимать, что после выполнения этой операции телефон будет выглядеть и вести себя так же, как в момент его первого включения после покупки в магазине.</p>
+<p>Прежде чем приступать к активным действиям, необходимо осознать необратимость процесса удаления личной информации. Фотографии, контакты, переписки в мессенджерах и установленные программы будут безвозвратно утеряны, если не позаботиться об их сохранности заранее. В следующих разделах мы подробно разберем все доступные методы сброса, меры предосторожности и нюансы работы с рекавери на этой конкретной модели.</p>
+
+<h2 id="подготовка-устройства-к-полному-сбросу-данных">Подготовка устройства к полному сбросу данных</h2>
+<p>Первым и самым критическим этапом является обеспечение сохранности важной информации. Поскольку <strong>сброс настроек</strong> уничтожит все содержимое внутренней памяти, вам необходимо создать резервные копии контактов, фотографий и документов. Для <em>Xiaomi Redmi 4X</em> удобнее всего использовать облачный сервис <em>Google Фото</em> для медиафайлов и синхронизацию контактов с аккаунтом <em>Google</em>.</p>
+<p>Также стоит обратить внимание на уровень заряда аккумуляторной батареи. Процесс форматирования раздела данных и переустановки системных файлов может занять от 5 до 15 минут, и прерывание питания в этот момент крайне нежелательно. Убедитесь, что индикатор показывает хотя бы 60-70% заряда, или подключите устройство к оригинальному зарядному устройству.</p>
+<blockquote>
+<p>⚠️ Внимание: Если на телефоне установлен двухфакторная аутентификация или привязка к Mi-аккаунту, обязательно помните логин и пароль. После сброса система потребует авторизации в ранее использованном аккаунте для подтверждения права владения.</p>
+</blockquote>
+<p>Не забудьте извлечь карту памяти <em>MicroSD</em>, если она установлена в слоте. Хотя современные версии <em>MIUI</em> обычно спрашивают, нужно ли форматировать SD-карту, риск случайного удаления важных файлов с нее все же существует. Лучше перестраховаться и вынуть накопитель перед началом процедуры.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист перед сбросом</h4><label class="check-item"><input type="checkbox"><span>Заряд батареи более 60%</span></label><label class="check-item"><input type="checkbox"><span>Резервная копия контактов создана</span></label><label class="check-item"><input type="checkbox"><span>Фотоснимки сохранены в облаке</span></label><label class="check-item"><input type="checkbox"><span>SIM-карта и SD-карта извлечены</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="способ-1-сброс-через-меню-настроек-системы">Способ 1: Сброс через меню настроек системы</h2>
+<p>Наиболее безопасный и простой метод доступен в том случае, если вы помните пароль разблокировки экрана и имеете доступ к рабочему столу смартфона. Этот вариант идеально подходит для продажи устройства или передачи его другому пользователю, так как он гарантирует корректное удаление данных без риска повреждения системных файлов.</p>
+<p>Для начала откройте главное меню приложений и найдите иконку <code>Настройки</code>. В открывшемся списке параметров необходимо прокрутить вниз до пункта <code>Расширенные настройки</code>. Именно здесь скрыты функции управления памятью и восстановлением заводского состояния.</p>
+<p>Внутри меню выберите опцию <code>Восстановление и сброс</code>. Система предложит вам несколько вариантов, но нас интересует именно <strong>Сброс настроек</strong>. Нажав на эту кнопку, вы увидите предупреждение о том, что все данные будут удалены. Перед подтверждением внимательно прочитайте список того, что подлежит уничтожению.</p>
+<details class="pb-accordion"><summary>Что именно удаляется при сбросе?</summary><div class="pb-accordion-body"><p>При выборе стандартного сброса удаляются все пользовательские приложения, их данные, фотографии во внутренней памяти, музыка, загрузки, настройки Wi-Fi паролей, будильники и аккаунты. Системные приложения и файлы операционной системы остаются нетронутыми.</p></div></details>
+<p>Для запуска процесса потребуется ввести цифровой пароль или графический ключ разблокировки экрана. После этого телефон может несколько секунд подумать, а затем перезагрузится и начнет процесс очистки, который визуально выглядит как быстрое мигание логотипа <em>Mi</em>.</p>
+
+<h2 id="способ-2-hard-reset-через-режим-recovery">Способ 2: Hard Reset через режим Recovery</h2>
+<p>Если доступ к меню настроек невозможен из-за забытого пароля, зависания интерфейса или вирусной активности, на помощь приходит режим <strong>Recovery</strong>. Это специальный диагностический режим, встроенный в память устройства, который позволяет управлять системой в обход основного интерфейса Android.</p>
+<p>Чтобы войти в этот режим на <em>Redmi 4X</em>, необходимо полностью выключить смартфон. Затем нужно зажать одновременно две кнопки: кнопку увеличения громкости (<code>Volume Up</code>) и кнопку питания (<code>Power</code>). Держать их нужно до появления логотипа <em>Mi</em>, после чего кнопку питания можно отпустить, продолжая удерживать громкость.</p>
+<p>Когда на экране появится меню <em>MIUI Recovery</em> (обычно с черным фоном и оранжевыми или синими кнопками), управление осуществляется кнопками громкости (вверх/вниз), а выбор подтверждается кнопкой питания. Вам нужно найти пункт <code>Wipe Data</code> и выбрать его.</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Действие в меню</th>
+<th>Кнопка управления</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Навигация по пунктам</td>
+<td>Громкость Вверх/Вниз</td>
+<td>Перемещение курсора</td>
+</tr>
+<tr>
+<td>Подтверждение выбора</td>
+<td>Питание (Power)</td>
+<td>Вход в подменю</td>
+</tr>
+<tr>
+<td>Сброс данных (Wipe Data)</td>
+<td>Громкость + Питание</td>
+<td>Запуск очистки</td>
+</tr>
+<tr>
+<td>Перезагрузка (Reboot)</td>
+<td>Громкость + Питание</td>
+<td>Выход в систему</td>
+</tr>
+</tbody>
+</table></div>
+<p>В следующем экране выберите <code>Wipe All Data</code>. Система снова запросит подтверждение, так как это действие критическое. После подтверждения начнется форматирование. По завершении появится сообщение об успехе, и нужно будет выбрать <code>Reboot</code> для перезагрузки телефона.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если меню Recovery не реагирует на нажатия кнопок громкости, попробуйте подключить устройство к компьютеру через USB-кабель. На некоторых версиях прошивки это активирует тач-управление в меню восстановления.</p></aside>
+
+<h2 id="использование-сервисного-кода-для-сброса">Использование сервисного кода для сброса</h2>
+<p>Существует менее известный, но эффективный метод сброса настроек с использованием инженерного меню через набор номера. Этот способ работает только если телефон включается и может совершать вызовы, даже если экран заблокирован (при наличии доступа к "звонилке").</p>
+<p>Откройте приложение для набора номера и введите специальную команду: <code><em>#</em>#7780#<em>#</em></code>. В некоторых версиях <em>MIUI</em> этот код может не сработать напрямую, тогда следует использовать альтернативный путь через скрытое меню. Введите код <code><em>#</em>#4636#<em>#</em></code>, что откроет меню тестирования.</p>
+<p>Однако, для <em>Redmi 4X</em> наиболее актуален код <code><em>#</em>#7780#<em>#</em></code>, который вызывает прямое меню сброса. После ввода кода на экране появится системное уведомление с запросом подтверждения. Вам потребуется ввести пароль разблокировки экрана.</p>
+<blockquote>
+<p>⚠️ Внимание: Не перепутайте этот код с кодом <code><em>#</em>#7378423#<em>#</em></code>, который открывает сервисное меню для тестирования компонентов. Сброс данных находится именно в ветке, вызываемой первым кодом или через настройки.</p>
+</blockquote>
+<p>Этот метод хорош тем, что он автоматически очищает пользовательский раздел, но оставляет системные логи и некоторые настройки сети, что иногда позволяет быстрее вернуться в строй, чем при полном Hard Reset через Recovery.</p>
+
+<div class="pb-poll" id="poll-fcdc1d11"><div class="pb-poll-question">📊 Какой способ сброса вы планируете использовать?</div><div class="pb-poll-option" data-poll="fcdc1d11" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Через меню настроек (Soft Reset)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fcdc1d11" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Через Recovery (Hard Reset)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fcdc1d11" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">С помощью сервисных кодов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fcdc1d11" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Я боюсь это делать сам</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="решение-проблем-циклическая-перезагрузка-и-ошибки">Решение проблем: циклическая перезагрузка и ошибки</h2>
+<p>Иногда после попытки сброса или в процессе его выполнения телефон может попасть в так называемый <strong>bootloop</strong> — бесконечную перезагрузку. На экране постоянно горит логотип <em>Mi</em>, и устройство не загружается дальше. Это часто случается при повреждении системных файлов или прерывании процесса записи.</p>
+<p>В большинстве случаев повторный вход в режим <em>Recovery</em> и выполнение команды <code>Wipe All Data</code> решает проблему. Если же это не помогает, возможно, поврежден раздел кэша. В меню Recovery выберите пункт <code>Wipe Cache</code> (если доступен в вашей версии) или попробуйте выполнить сброс еще раз.</p>
+<p>Более сложная ситуация возникает, если телефон вообще не реагирует на кнопки или не входит в режим восстановления. В этом случае может потребоваться перепрошивка устройства через компьютер с использованием утилиты <em>Mi Flash Tool</em>. Это уже более сложная процедура, требующая наличия драйверов и официальной прошивки.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если после сброса телефон продолжает зависать на логотипе более 20 минут, скорее всего, проблема кроется в аппаратной неисправности памяти или требуется полная перепрошивка через ПК.</p></aside>
+<p>Также стоит учитывать, что старые модели, такие как <em>Redmi 4X</em>, могут иметь изношенную flash-память. Частые циклы записи и стирания данных могли привести к физическому износу ячеек памяти, что проявляется в ошибках после сброса.</p>
+
+<h2 id="первичная-настройка-после-восстановления">Первичная настройка после восстановления</h2>
+<p>После успешного завершения процедуры сброса и перезагрузки, вы увидите экран приветствия с выбором языка. Этот этап знаком каждому, кто хоть раз включал новый смартфон. Выберите русский язык и нажмите <code>Начать</code>.</p>
+<p>Система предложит подключиться к сети Wi-Fi. Это необходимый шаг для активации устройства и проверки наличия обновлений безопасности. Если у вас был аккаунт <em>Google</em>, система попросит ввести логин и пароль. Это мера защиты от кражи (FRP — Factory Reset Protection).</p>
+<p>Далее последует предложение восстановить данные из резервной копии. Если вы создавали бэкап в облаке <em>Google</em> или на <em>Mi Cloud</em>, вы сможете выбрать точку восстановления. Контакты, календарь и список установленных приложений будут загружены автоматически.</p>
+<p>Настройте также отпечаток пальца и лицо, если планируете использовать биометрическую защиту. После завершения первоначальной настройки рекомендуется сразу же зайти в <code>Настройки → О телефоне</code> и проверить версию <em>MIUI</em>, чтобы убедиться, что у вас установлена актуальная версия ПО.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Удалится ли операционная система Android при сбросе?</summary>
+<p>Нет, операционная система <em>Android</em> и оболочка <em>MIUI</em> останутся на месте. Сброс затрагивает только пользовательский раздел данных (<code>/data</code>) и кэш, возвращая настройки системы к заводским значениям, но не удаляя саму прошивку.</p>
+</details>
+<details>
+<summary>Что делать, если телефон просит аккаунт Google после сброса?</summary>
+<p>Это защита FRP. Вам нужно ввести логин и пароль Google-аккаунта, который был синхронизирован с этим телефоном до сброса. Если вы не помните данные, восстановить доступ будет крайне сложно без обращения в сервис.</p>
+</details>
+<details>
+<summary>Можно ли прервать сброс, если он длится слишком долго?</summary>
+<p>Категорически не рекомендуется прерывать процесс принудительно, если на экране есть индикация прогресса. Это может привести к повреждению файловой системы. Ждите до 30-40 минут; если ничего не меняется — только тогда пробуйте перезагрузку.</p>
+</details>
+<details>
+<summary>Сбросится ли дата и время после Hard Reset?</summary>
+<p>Да, дата и время сбросятся до заводских значений (обычно дата выпуска прошивки). Однако, как только вы подключитесь к интернету, система автоматически синхизирует правильное время через сеть.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/f/fa/fastboot-na-xiaomi-kak-ubrat-s-ekrana.html" class="pb-related-card">
+                <span class="pb-related-title">Как убрать Fastboot на Xiaomi: полное руководство</span>
+                <span class="pb-related-desc">Смартфон Xiaomi завис на экране Fastboot? Узнайте, как выйти из режима Fastboot на Redmi и Mi пошаго</span>
+            </a><a href="/articles/c/ch/chto-takoe-xiaomi-youpin.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi Youpin: что это, как заказать и доставить в РФ</span>
+                <span class="pb-related-desc">Полный гид по платформе Xiaomi Youpin. Узнайте, как покупать эксклюзивную технику, электротранспорт </span>
+            </a><a href="/articles/s/sk/skolko-stoit-aktsiya-xiaomi-na-segodnya-v-rublyakh.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько стоит акция Xiaomi сегодня: курс в рублях</span>
+                <span class="pb-related-desc">Актуальный курс акций Xiaomi в рублях на сегодня. Анализ динамики, где покупать HKEX:1810, факторы в</span>
+            </a><a href="/articles/k/ka/kak-razblokirovat-zagruzchik-na-xiaomi-redmi-9c-nfc.html" class="pb-related-card">
+                <span class="pb-related-title">Разблокировка загрузчика Xiaomi Redmi 9C NFC: Пошаговая инструкция</span>
+                <span class="pb-related-desc">Полный гайд по разблокировке загрузчика на Redmi 9C NFC. Инструкция, драйверы, режим Fastboot и реше</span>
+            </a><a href="/articles/k/ka/kak-udalit-akkaunt-gugl-na-xiaomi-redmi-4x.html" class="pb-related-card">
+                <span class="pb-related-title">Как удалить аккаунт Google на Xiaomi Redmi 4X: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по отвязке Google-аккаунта на Redmi 4X. Решаем проблему FRP-блокировки, сбрасываем пар</span>
+            </a><a href="/articles/c/ch/chto-vypuskaet-firma-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Что выпускает Xiaomi: полный обзор экосистемы и гаджетов</span>
+                <span class="pb-related-desc">Узнайте, что выпускает фирма Xiaomi: от флагманских смартфонов и ноутбуков до умного дома и бытовой </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

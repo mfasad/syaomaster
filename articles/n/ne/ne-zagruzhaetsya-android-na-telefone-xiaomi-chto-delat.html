@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Не загружается Android на Xiaomi: пошаговое решение — СяоМастер</title>
+    <meta name="description" content="Смартфон Xiaomi не включается или завис на логотипе? Узнайте, как восстановить Android, войти в Recovery и перепрошить устройство.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/n/ne/ne-zagruzhaetsya-android-na-telefone-xiaomi-chto-delat.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Не загружается Android на Xiaomi: пошаговое решение">
+    <meta property="og:description" content="Смартфон Xiaomi не включается или завис на логотипе? Узнайте, как восстановить Android, войти в Recovery и перепрошить устройство.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Не загружается Android на Xiaomi: пошаговое решение</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-причины-сбоя-загрузки-операционной-системы">Основные причины сбоя загрузки операционной системы</a></li><li><a href="#первичная-диагностика-и-принудительная-перезагрузка">Первичная диагностика и принудительная перезагрузка</a></li><li><a href="#использование-режима-recovery-для-сброса-настроек">Использование режима Recovery для сброса настроек</a></li><li><a href="#вход-в-режим-fastboot-и-проверка-состояния">Вход в режим Fastboot и проверка состояния</a></li><li><a href="#полная-перепрошивка-через-mi-flash-tool">Полная перепрошивка через Mi Flash Tool</a></li><li><a href="#проблемы-с-памятью-и-аппаратные-неисправности">Проблемы с памятью и аппаратные неисправности</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-perenesti-prilozheniya-na-sd-kartu-xiaomi-redmi-4x.html">Перенос приложений на SD карту Xiaomi Redmi 4X: Полная инструкция</a></li><li><a href="/articles/s/sk/skolko-let-xiaomi-na-rynke.html">Сколько лет Xiaomi на рынке: история бренда и этапы</a></li><li><a href="/articles/u/um/umnyj-dom-xiaomi-s-chego-nachat-2020-god.html">Умный дом Xiaomi с нуля: старт 2020 года</a></li><li><a href="/articles/k/ka/kak-otkryt-2-prilozheniya-na-odnom-ekrane-syaomi.html">Как открыть 2 приложения на одном экране Xiaomi: Инструкция</a></li><li><a href="/articles/k/ka/kak-polzovatsya-kartoj-pamyati-na-syaomi.html">Как пользоваться картой памяти на Xiaomi: настройка и формат</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Не загружается Android на Xiaomi: что делать и как восстановить</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-причины-сбоя-загрузки-операционной-системы">Основные причины сбоя загрузки операционной системы</a></li><li><a href="#первичная-диагностика-и-принудительная-перезагрузка">Первичная диагностика и принудительная перезагрузка</a></li><li><a href="#использование-режима-recovery-для-сброса-настроек">Использование режима Recovery для сброса настроек</a></li><li><a href="#вход-в-режим-fastboot-и-проверка-состояния">Вход в режим Fastboot и проверка состояния</a></li><li><a href="#полная-перепрошивка-через-mi-flash-tool">Полная перепрошивка через Mi Flash Tool</a></li><li><a href="#проблемы-с-памятью-и-аппаратные-неисправности">Проблемы с памятью и аппаратные неисправности</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда любимый <em>Xiaomi</em> перестает реагировать на команды и не загружается до рабочего стола, может застать врасплох. Экран может гореть логотипом <strong>Mi</strong> бесконечно, либо устройство просто показывает черный экран после нажатия кнопки питания. Это распространенная проблема, которая часто возникает после неудачного обновления системы или переполнения внутренней памяти.</p>
+
+<p>Не стоит сразу паниковать или нести гаджет в сервисный центр, так как во многих случаях <strong>программный сбой</strong> можно устранить самостоятельно. Существует несколько проверенных методов реанимации, от простой перезагрузки до полной перепрошивки через компьютер. Важно действовать последовательно, чтобы не усугубить положение и не потерять личные данные.</p>
+
+<p>В этом подробном руководстве мы разберем все возможные причины, почему <em>Android</em> не загружается на вашем телефоне, и предложим конкретные решения. Мы рассмотрим работу с меню <code>Recovery</code>, использование утилиты <em>Mi Flash Tool</em> и другие технические нюансы, которые помогут вернуть устройство к жизни.</p>
+
+<h2 id="основные-причины-сбоя-загрузки-операционной-системы">Основные причины сбоя загрузки операционной системы</h2>
+
+<p>Прежде чем приступать к активным действиям, необходимо понять природу возникшей проблемы. Чаще всего <strong>циклическая перезагрузка</strong> или зависание на логотипе вызваны программными конфликтами. Это может быть результат установки несовместимого приложения, прерывания процесса обновления прошивки или повреждение системных файлов вирусами.</p>
+
+<p>Аппаратные проблемы встречаются реже, но их также нельзя сбрасывать со счетов. Если телефон падал, попадал под дождь или подвергался экстремальным температурам, мог отойти шлейф дисплея или повредиться контроллер памяти. В таких случаях программные методы восстановления могут не помочь.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если устройство сильно нагрелось перед выключением или издает посторонние звуки, немедленно прекратите попытки включения и обратитесь к специалистам по ремонту.</p>
+</blockquote>
+
+<p>Одной из самых частых причин является нехватка свободного места. Когда <strong>внутренняя память</strong> заполнена на 100%, операционная система не может создавать временные файлы, необходимые для корректного запуска. Также сбои часто случаются при использовании неоригинальных зарядных устройств, которые дают нестабильное напряжение.</p>
+
+<div class="pb-poll" id="poll-9992a6c5"><div class="pb-poll-question">📊 Что предшествовало проблеме?</div><div class="pb-poll-option" data-poll="9992a6c5" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Падение телефона</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9992a6c5" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Обновление системы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9992a6c5" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Установка приложений</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9992a6c5" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Просто перестал включаться</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="первичная-диагностика-и-принудительная-перезагрузка">Первичная диагностика и принудительная перезагрузка</h2>
+
+<p>Самый простой и часто эффективный метод — это выполнение <strong>принудительной перезагрузки</strong>. Этот процесс имитирует извлечение батареи и позволяет сбросить статическое напряжение, которое могло заблокировать загрузчик. Для этого необходимо зажать кнопку питания и удерживать её в течение 10-15 секунд.</p>
+
+<p>Если простая кнопка питания не реагирует, попробуйте комбинацию клавиш. На большинстве моделей <em>Xiaomi</em> и <em>Redmi</em> работает сочетание кнопки питания и кнопки уменьшения громкости (Volume Down). Удерживайте их одновременно около 20 секунд до появления логотипа или вибрации.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Первичная диагностика</h4><label class="check-item"><input type="checkbox"><span>Зажать кнопку питания на 15 секунд</span></label><label class="check-item"><input type="checkbox"><span>Проверить индикатор зарядки</span></label><label class="check-item"><input type="checkbox"><span>Подключить оригинальный кабель</span></label><label class="check-item"><input type="checkbox"><span>Попытаться войти в Recovery</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Обратите внимание на поведение индикатора зарядки. Если при подключении к сети он не загорается, возможно, проблема кроется в глубоком разряде аккумулятора или неисправности порта зарядки. Оставьте телефон на зарядке минимум на час, даже если экран не реагирует.</p>
+
+<p>В некоторых случаях помогает «толчок» током. Для этого подключите заряжаемое устройство к мощному блоку питания (не менее 2А) и попробуйте включить его. Если экран мигает, но загрузка не идет, переходите к более сложным методам.</p>
+
+<h2 id="использование-режима-recovery-для-сброса-настроек">Использование режима Recovery для сброса настроек</h2>
+
+<p>Если стандартные методы не помогли, необходимо перейти в режим <strong>Recovery</strong>. Это специальная среда восстановления, встроенная в память телефона, которая позволяет управлять системой на низком уровне. Вход в этот режим осуществляется при выключенном телефоне зажатием кнопки питания и кнопки увеличения громкости (Volume Up).</p>
+
+<p>После появления логотипа <em>Mi</em> кнопку питания можно отпустить, продолжая удерживать громкость. Перед вами откроется меню с английским текстом, где навигация осуществляется кнопками громкости, а выбор — кнопкой питания. Вам потребуется пункт <code>Wipe Data</code>.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Пункт меню</th>
+<th>Функция</th>
+<th>Риск потери данных</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Reboot</code></td>
+<td>Обычная перезагрузка</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td><code>Wipe Data</code></td>
+<td>Сброс к заводским настройкам</td>
+<td>Высокий (удаляет всё)</td>
+</tr>
+<tr>
+<td><code>Connect with MIAssistant</code></td>
+<td>Подключение к ПК для прошивки</td>
+<td>Зависит от действий</td>
+</tr>
+<tr>
+<td><code>Safe Mode</code></td>
+<td>Запуск с отключенными приложениями</td>
+<td>Нет</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Выберите <code>Wipe Data</code>, затем <code>Wipe All Data</code> и подтвердите действие. Этот шаг полностью очистит внутреннюю память телефона, удалив все фото, контакты и приложения, но часто это единственный способ убрать программный конфликт.</p>
+
+<details class="pb-accordion"><summary>Что делать, если меню Recovery на китайском?</summary><div class="pb-accordion-body"><p>Если вы видите иероглифы вместо английского текста, попробуйте переключить язык. Обычно это делается комбинацией кнопок громкости (вверх/вниз) для выбора языка и кнопкой питания для подтверждения. Если переключить не удается, действуйте по памяти: второй пункт сверху обычно Wipe Data, последний — Reboot.</p></div></details>
+
+<p>После завершения процесса очистки система предложит вернуться в главное меню (<code>Back to Main Menu</code>) и выбрать <code>Reboot</code> -> <code>Reboot to System</code>. Первая загрузка после сброса может занять до 5-10 минут, наберитесь терпения.</p>
+
+<h2 id="вход-в-режим-fastboot-и-проверка-состояния">Вход в режим Fastboot и проверка состояния</h2>
+
+<p>Режим <strong>Fastboot</strong> — это диагностический интерфейс, который позволяет взаимодействовать с телефоном через компьютер на низком уровне. Если телефон не загружается в Android, но входит в Fastboot, это хороший знак: процессор и память устройства исправны. Для входа зажмите кнопку питания и кнопку уменьшения громкости на выключенном устройстве.</p>
+
+<p>На экране появится изображение с зайцем в шапке-ушанке, чинящим андроида, или надпись <em>FASTBOOT</em> оранжевого цвета. Подключив телефон к ПК через качественный USB-кабель, вы можете проверить его видимость в системе. Откройте диспетчер устройств Windows и найдите раздел «Устройства Android» или «QDLoader».</p>
+
+<p>Наличие устройства в списке означает, что связь с «железом» есть. Это позволяет использовать официальную утилиту <em>Mi Flash Tool</em> для переустановки прошивки. Если компьютер не реагирует на подключение в этом режиме, попробуйте заменить USB-кабель или порт подключения.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Нахождение в режиме Fastboot разряжает аккумулятор быстрее обычного. Если вы не планируете сразу прошивать телефон, лучше выйти из режима, зажав кнопку питания на 10 секунд.</p>
+</blockquote>
+
+<p>Иногда телефон может самопроизвольно выходить из Fastboot и снова уходить в цикл перезагрузки. В таком случае необходимо быстро подключать его к компьютеру в момент появления логотипа Fastboot, чтобы успеть запустить процедуру прошивки.</p>
+
+<h2 id="полная-перепрошивка-через-mi-flash-tool">Полная перепрошивка через Mi Flash Tool</h2>
+
+<p>Если сброс данных не помог, требуется полная переустановка операционной системы. Для этого вам понадобится компьютер, USB-кабель и архив с прошивкой. Скачивать прошивку следует только с официальных источников или проверенных порталов, выбирая версию <strong>Recovery ROM</strong> или <strong>Fastboot ROM</strong> именно для вашей модели.</p>
+
+<p>Установите программу <em>Mi Flash Tool</em> на компьютер. Распакуйте скачанный архив с прошивкой в корень диска C, чтобы путь не содержал кириллицы и был коротким, например <code>C:/rom/</code>. Запустите утилиту от имени администратора.</p>
+
+<pre><code>1. Подключите телефон в режиме Fastboot.
+<p>2. Нажмите кнопку "Refresh" в программе.</p>
+<p>3. Выберите путь к папке с прошивкой.</p>
+<p>4. Внизу выберите режим "Clean all" (полная очистка).</p>
+<p>5. Нажмите "Flash" и ожидайте завершения.</code></pre></p>
+
+<p>Процесс прошивки занимает от 300 до 600 секунд. В это время категорически нельзя отключать кабель или прерывать питание компьютера. После успешного завершения телефон автоматически перезагрузится в чистую систему.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте USB-порт 2.0 (черный) вместо 3.0 (синий) на старых компьютерах — это часто повышает стабильность соединения при прошивке.</p></aside>
+
+<p>Важно выбрать правильный тип прошивки. Для глобальных версий телефонов нельзя использовать китайские прошивки без предварительной разблокировки загрузчика, иначе можно получить «кирпич». Всегда проверяйте регион устройства перед началом процедуры.</p>
+
+<h2 id="проблемы-с-памятью-и-аппаратные-неисправности">Проблемы с памятью и аппаратные неисправности</h2>
+
+<p>Если ни один из программных методов не помог, и телефон продолжает висеть на логотипе или циклически перезагружаться, высока вероятность аппаратной неисправности. Часто выходит из строя флеш-память <strong>eMMC</strong> или <strong>UFS</strong>, особенно на моделях, которые активно использовались несколько лет.</p>
+
+<p>Симптомами «умирающей» памяти являются: медленная работа системы перед поломкой, периодические зависания, исчезновение файлов или невозможность установить обновления. В этом случае программный сброс может временно помочь, но проблема вскоре вернется.</p>
+
+<p>Также стоит проверить кнопку питания. Если она «залипла» или замкнула внутри корпуса, телефон может постоянно пытаться включиться и выключиться, имитируя программный сбой. Аккуратно надавите на кнопку или слегка постучите по корпусу в районе клавиш — если характер зависаний изменится, дело в механике.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Самостоятельная разборка телефона для проверки шлейфов аннулирует гарантию. Если устройство на гарантии, несите его в авторизованный сервис.</p>
+</blockquote>
+
+<p>В редких случаях проблема кроется в контроллере питания. Скачки напряжения могли повредить микросхему, отвечающую за распределение энергии. Диагностика такого дефекта возможна только в сервисном центре с использованием специального оборудования.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если телефон не проходит логотип после перепрошивки чистой стоковой прошивкой — в 90% случаев это аппаратная поломка памяти или процессора.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли восстановить фото без сброса данных, если телефон не загружается?</summary>
+<p>К сожалению, если система не загружается до рабочего стола, получить доступ к файлам напрямую нельзя. Единственный шанс — попробовать подключить телефон к ПК в режиме MTP, если он успевает определиться перед зависанием, или использовать облачные сервисы (Mi Cloud, Google Photos), если была включена синхронизация.</p>
+</details>
+
+<details>
+<summary>Сколько времени может длиться первая загрузка после сброса?</summary>
+<p>После выполнения команды <code>Wipe Data</code> первая загрузка может занимать от 5 до 15 минут. В это время на экране может отображаться логотип <em>Android</em> или <em>Mi</em>. Не прерывайте процесс, если индикатор загрузки движется, даже очень медленно.</p>
+</details>
+
+<details>
+<summary>Что означает оранжевый текст "FASTBOOT" на экране?</summary>
+<p>Это штатный режим загрузчика. Он появляется, если вы случайно зажали кнопки громкости и питания. Чтобы выйти из него, просто зажмите и держите кнопку питания около 10-15 секунд, пока экран не погаснет и телефон не завибрирует.</p>
+</details>
+
+<details>
+<summary>Поможет ли замена SIM-карты, если телефон завис на логотипе?</summary>
+<p>В редких случаях поврежденная SIM-карта или карта памяти microSD может вызывать конфликт при загрузке. Попробуйте извлечь все карты и запустить телефон без них. Если система загрузится, проблема в одном из извлеченных модулей.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-perenesti-prilozheniya-na-sd-kartu-xiaomi-redmi-4x.html" class="pb-related-card">
+                <span class="pb-related-title">Перенос приложений на SD карту Xiaomi Redmi 4X: Полная инструкция</span>
+                <span class="pb-related-desc">Подробный гайд по переносу данных на MicroSD в Xiaomi Redmi 4X. Настройка внутренней памяти, ADB-ком</span>
+            </a><a href="/articles/s/sk/skolko-let-xiaomi-na-rynke.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько лет Xiaomi на рынке: история бренда и этапы</span>
+                <span class="pb-related-desc">Узнайте, сколько лет Xiaomi на рынке смартфонов и электроники. Подробная история компании от стартап</span>
+            </a><a href="/articles/u/um/umnyj-dom-xiaomi-s-chego-nachat-2020-god.html" class="pb-related-card">
+                <span class="pb-related-title">Умный дом Xiaomi с нуля: старт 2020 года</span>
+                <span class="pb-related-desc">Полный гид по запуску умного дома Xiaomi в 2020 году. Выбор шлюза, датчиков и настройка сценариев дл</span>
+            </a><a href="/articles/k/ka/kak-otkryt-2-prilozheniya-na-odnom-ekrane-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как открыть 2 приложения на одном экране Xiaomi: Инструкция</span>
+                <span class="pb-related-desc">Узнайте, как открыть два приложения на одном экране Xiaomi. Подробная настройка разделенного экрана </span>
+            </a><a href="/articles/k/ka/kak-polzovatsya-kartoj-pamyati-na-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как пользоваться картой памяти на Xiaomi: настройка и формат</span>
+                <span class="pb-related-desc">Подробная инструкция: как вставить, отформатировать и использовать карту памяти на Xiaomi. Перенос п</span>
+            </a><a href="/articles/s/sm/smartfon-xiaomi-do-10000-rublej-kakoj-luchshe-vybrat.html" class="pb-related-card">
+                <span class="pb-related-title">Лучший смартфон Xiaomi до 10000 рублей: выбор 2026</span>
+                <span class="pb-related-desc">Какой Xiaomi до 10000 рублей лучше купить? Сравнение Redmi, экранов, камер и производительности. Чес</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

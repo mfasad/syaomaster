@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как обновить Xiaomi Mi A1: полная инструкция по прошивке — СяоМастер</title>
+    <meta name="description" content="Подробное руководство, как обновить Xiaomi Mi A1. Официальные методы OTA, Recovery и ручная установка Android 10 через Fastboot. Решение ошибок.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-obnovit-telefon-ksiomi-mi-a-1.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как обновить Xiaomi Mi A1: полная инструкция по прошивке">
+    <meta property="og:description" content="Подробное руководство, как обновить Xiaomi Mi A1. Официальные методы OTA, Recovery и ручная установка Android 10 через Fastboot. Решение ошибок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как обновить Xiaomi Mi A1: полная инструкция по прошивке</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-устройства-и-резервное-копирование">Подготовка устройства и резервное копирование</a></li><li><a href="#официальный-метод-обновления-через-ota">Официальный метод обновления через OTA</a></li><li><a href="#ручная-установка-через-recovery-mode">Ручная установка через Recovery Mode</a></li><li><a href="#использование-fastboot-и-mi-flash-tool">Использование Fastboot и Mi Flash Tool</a></li><li><a href="#решение-ошибок-при-обновлении">Решение ошибок при обновлении</a></li><li><a href="#альтернативные-прошивки-и-кастомные-решения">Альтернативные прошивки и кастомные решения</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/x/xi/xiaomi-how.html">Xiaomi How: Полное руководство по скрытым функциям</a></li><li><a href="/articles/x/xi/xiaomi-lamp-bedside-2-kak-podklyuchit.html">Xiaomi Lamp Bedside 2: как подключить и настроить</a></li><li><a href="/articles/k/ka/kak-vosstanovit-kontakty-na-androide-xiaomi.html">Как восстановить контакты на Xiaomi: 7 рабочих способов</a></li><li><a href="/articles/k/ka/kak-nazvat-robota-pylesosa-xiaomi.html">Как назвать робота-пылесоса Xiaomi: полное руководство</a></li><li><a href="/articles/k/ka/kak-udalit-vse-dannye-s-xiaomi-pered-prodazhej.html">Как удалить все данные с Xiaomi перед продажей: полный сброс</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как обновить Xiaomi Mi A1 до последней версии Android</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-устройства-и-резервное-копирование">Подготовка устройства и резервное копирование</a></li><li><a href="#официальный-метод-обновления-через-ota">Официальный метод обновления через OTA</a></li><li><a href="#ручная-установка-через-recovery-mode">Ручная установка через Recovery Mode</a></li><li><a href="#использование-fastboot-и-mi-flash-tool">Использование Fastboot и Mi Flash Tool</a></li><li><a href="#решение-ошибок-при-обновлении">Решение ошибок при обновлении</a></li><li><a href="#альтернативные-прошивки-и-кастомные-решения">Альтернативные прошивки и кастомные решения</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+<p>Смартфон <em>Xiaomi Mi A1</em> стал легендарным устройством, войдя в программу <strong>Android One</strong> и получив чистую операционную систему. Однако официальная поддержка этого устройства уже прекращена, и последним доступным обновлением остается <strong>Android 10</strong>. Многие пользователи до сих пор эксплуатируют этот аппарат, но сталкиваются с невозможностью получить актуальные патчи безопасности или новые функции через стандартное меню.</p>
+<p>Существует несколько способов модернизировать программное обеспечение гаджета, если стандартный путь в настройках не работает. Вам придется выбрать между возвратом к заводским параметрам или ручной установкой архива прошивки. В этом материале мы детально разберем все доступные методы, включая работу с <strong>Recovery Mode</strong> и утилитой <em>Fastboot</em>.</p>
+<p>Прежде чем приступать к активным действиям, необходимо понимать риски. Прерывание процесса записи данных может привести к тому, что телефон перестанет загружаться. Поэтому внимательно изучите каждый шаг и подготовьте все необходимые инструменты заранее.</p>
+<blockquote>⚠️ Внимание: Все манипуляции с прошивкой вы выполняете на свой страх и риск. Автор статьи не несет ответственности за возможные программные сбои вашего устройства.</blockquote>
+
+<h2 id="подготовка-устройства-и-резервное-копирование">Подготовка устройства и резервное копирование</h2>
+<p>Начать следует с создания полной копии всех важных данных. Процесс обновления, особенно ручной, часто требует полной очистки внутренней памяти. Если вы пропустите этот этап, то рискуете потерять контакты, фотографии и переписки в мессенджерах без возможности восстановления.</p>
+<p>Используйте аккаунт Google для синхронизации контактов и календаря, а для фотографий примените сервис Google Фото или скопируйте файлы на компьютер. Также стоит проверить заряд батареи: уровень энергии должен быть не менее <mark>60-70%</mark>, чтобы устройство не выключилось в критический момент.</p>
+<p>Не забудьте освободить место в памяти, если вы планируете скачивать пакет обновления непосредственно на телефон. Для стабильной работы системы желательно иметь хотя бы 4-5 Гб свободного пространства, даже если сам файл прошивки весит меньше.</p>
+<ul>
+<li>📸 Сделайте резервную копию фото и видео на внешний носитель или в облако.</li>
+<li>📞 Экспортируйте контакты в формат.vcf или синхронизируйте с Google-аккаунтом.</li>
+<li>🔋 Зарядите смартфон Xiaomi Mi A1 минимум до 70%.</li>
+<li>💾 Освободите не менее 5 Гб внутренней памяти.</li>
+</ul>
+<p>Проверьте целостность USB-кабеля, которым будете подключать устройство к компьютеру. Дешевые кабели для зарядки часто не подходят для передачи данных, что может вызвать ошибки при попытке связи с ПК.</p>
+
+<h2 id="официальный-метод-обновления-через-ota">Официальный метод обновления через OTA</h2>
+<p>Самый простой и безопасный способ — использование встроенной системы обновлений <strong>OTA</strong> (Over-The-Air). Даже если официальная поддержка завершена, серверы могут все еще отдавать последнюю доступную версию для вашего региона. Это штатный путь, который не требует подключения к компьютеру.</p>
+<p>Для начала перейдите в меню настроек и найдите раздел <code>Система</code>. Там будет расположен пункт <code>Обновление системы</code>. Нажмите на него, и устройство самостоятельно свяжется с сервером для проверки наличия новых пакетов.</p>
+<p>Если обновление найдено, система предложит загрузить и установить его. Процесс займет от 15 до 40 минут в зависимости от скорости интернета и объема данных. Во время установки телефон будет перезагружен несколько раз, и экран может гаснуть — это нормальное поведение.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте стабильное Wi-Fi соединение для загрузки, так как пакеты обновлений могут весить более 1.5 Гб.</p></aside>
+<p>В случае если система пишет, что устройство работает на последней версии, но вы знаете о существовании более нового ПО, возможно, обновление приходит волнами. В такой ситуации можно попробовать сменить регион в настройках или использовать метод ручной установки.</p>
+
+<h2 id="ручная-установка-через-recovery-mode">Ручная установка через Recovery Mode</h2>
+<p>Если автоматический поиск не дал результатов, можно скачать файл прошивки вручную. Вам потребуется найти архив формата <em>.zip</em>, предназначенный именно для модели <strong>MI A1</strong> (кодовое имя tissot). Важно не перепутать его с прошивками для других моделей Xiaomi.</p>
+<p>Скопируйте downloaded-файл в корень внутренней памяти телефона. Затем необходимо перейти в режим восстановления. Для этого выключите смартфон и зажмите одновременно кнопки <code>Громкость вниз</code> и <code>Питание</code> до появления логотипа.</p>
+<p>В меню Recovery выберите язык (если доступно) и нажмите пункт <code>Обновление системы</code> (или <em>Apply update from internal storage</em>). Система найдет zip-архив и предложить начать установку. Этот метод часто помогает"перепрыгнуть" через несколько версий ПО сразу.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм действий в Recovery</h4><label class="check-item"><input type="checkbox"><span>Выключить телефон</span></label><label class="check-item"><input type="checkbox"><span>Зажать Громкость Вниз + Питание</span></label><label class="check-item"><input type="checkbox"><span>Выбрать Apply update</span></label><label class="check-item"><input type="checkbox"><span>Найти zip-файл</span></label><label class="check-item"><input type="checkbox"><span>Подтвердить установку</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+<p>После завершения процесса телефон предложит перезагрузку. Первый запуск может длиться дольше обычного — до 5-7 минут. Не паникуйте, если видите логотип Android длительное время, это идет оптимизация приложений.</p>
+
+<h2 id="использование-fastboot-и-mi-flash-tool">Использование Fastboot и Mi Flash Tool</h2>
+<p>Для продвинутых пользователей, которые хотят полностью очистить систему или восстановить телефон после сбоя, подходит метод <strong>Fastboot</strong>. Он требует наличия компьютера под управлением Windows и установленной утилиты <em>Mi Flash Tool</em>.</p>
+<p>Сначала нужно разблокировать загрузчик, если это не было сделано ранее. Без разблокированного Bootloader установка кастомных или глобальных прошивок через Fastboot будет невозможна. Также потребуются драйверы ADB и Fastboot.</p>
+<p>Скачайте образ прошивки в формате <em>.tgz</em> и распакуйте его. Запустите Mi Flash Tool, выберите папку с распакованными файлами и подключите телефон в режиме Fastboot (зажав <code>Громкость вверх</code> + <code>Питание</code> при выключенном телефоне).</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Режим работы</th>
+<th>Сохранение данных</th>
+<th>Сложность</th>
+<th>Риск ошибки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OTA (Онлайн)</td>
+<td>Сохраняются</td>
+<td>Низкая</td>
+<td>Минимальный</td>
+</tr>
+<tr>
+<td>Recovery (ZIP)</td>
+<td>Чаще сохраняются</td>
+<td>Средняя</td>
+<td>Низкий</td>
+</tr>
+<tr>
+<td>Fastboot (Clean)</td>
+<td>Полное удаление</td>
+<td>Высокая</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>Fastboot (Save)</td>
+<td>Сохраняются</td>
+<td>Высокая</td>
+<td>Средний</td>
+</tr>
+</tbody>
+</table></div>
+<p>В утилите выберите режим <code>Clean all</code> для полной очистки или <code>Save user data</code>, если хотите сохранить файлы. Нажмите кнопку Flash и дождитесь окончания процесса. Успешная прошивка обозначится зеленым сообщением в логе программы.</p>
+<details class="pb-accordion"><summary>Что делать, если Mi Flash выдает ошибку?</summary><div class="pb-accordion-body"><p>Часто ошибка возникает из-за длинного пути к папке с прошивкой. Переместите папку в корень диска (например, C:\rom) и переименуйте её, чтобы в названии не было кириллицы или пробелов.</p></div></details>
+
+<h2 id="решение-ошибок-при-обновлении">Решение ошибок при обновлении</h2>
+<p>В процессе модернизации ПО пользователи <em>Xiaomi Mi A1</em> часто сталкиваются с типичными проблемами. Одной из самых распространенных является сообщение"Не удалось проверить обновление". Это может означать поврежденный файл загрузки или сбой сервера.</p>
+<p>Еще одна частая ситуация — бесконечная перезагрузка (bootloop) после установки. Если телефон застрял на логотипе, попробуйте войти в Recovery и сделать <strong>Wipe data/factory reset</strong>. Это удалит все данные, но часто возвращает устройство к жизни.</p>
+<p>Если компьютер не видит телефон в режиме Fastboot, проверьте диспетчер устройств Windows. Возможно, потребуется вручную обновить драйвер, выбрав устройство с восклицательным знаком и указав путь к папке с драйверами ADB.</p>
+<ul>
+<li>🔄 Ошибка проверки: очистите кэш приложения"Обновление системы" в настройках приложений.</li>
+<li>🔌 Не определяется USB: используйте другой порт или кабель, желательно оригинальный.</li>
+<li>🚫 Bootloop: выполните полный сброс данных через Recovery меню.</li>
+<li>💾 Мало места: удалите все лишнее перед началом процедуры.</li>
+</ul>
+<blockquote>⚠️ Внимание: Если после прошивки перестал работать отпечаток пальца или камера, возможно, была установлена прошивка от другой модели или региона. В таком случае поможет только возврат стоковой глобальной версии.</blockquote>
+
+<h2 id="альтернативные-прошивки-и-кастомные-решения">Альтернативные прошивки и кастомные решения</h2>
+<p>Поскольку официальная поддержка <strong>Android 10</strong> для Mi A1 завершена, многие пользователи обращают внимание на кастомные прошивки. Популярны сборки на базе <em>LineageOS</em> или <em>Pixel Experience</em>, которые позволяют получить Android 11, 12 и даже новее.</p>
+<p>Установка таких систем требует разблокированного загрузчика и установленного <strong>TWRP Recovery</strong>. Это дает полный контроль над устройством, возможность получения root-прав и тонкой настройки интерфейса. Однако стабильность работы банковских приложений в таких системах не гарантируется.</p>
+<p>Перед установкой кастома обязательно изучите форум 4PDA или XDA Developers. Там находятся актуальные ссылки на файлы и инструкции по устранению багов конкретной сборки. Помните, что это путь для энтузиастов.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Кастомные прошивки — единственный способ получить Android выше 10-й версии на Xiaomi Mi A1, но они требуют технических знаний для установки.</p></aside>
+<p>Если вы не готовы к возможным нестабильностям, лучше остаться на последней официальной версии. Она обеспечивает максимальную совместимость с железом и проверенную годами работу всех модулей связи и мультимедиа.</p>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+<details>
+<summary>Можно ли обновить Xiaomi Mi A1 до Android 11 официально?</summary>
+<p>Нет, официальная поддержка устройства остановилась на Android 10. Более новые версии доступны только через установку кастомных прошивок.</p>
+</details>
+<details>
+<summary>Сбросятся ли мои данные при обновлении через OTA?</summary>
+<p>Обычно данные сохраняются при обновлении"по воздуху". Однако всегда рекомендуется делать резервную копию на случай непредвиденных сбоев.</p>
+</details>
+<details>
+<summary>Что делать, если телефон пишет"Система изменена"?</summary>
+<p>Это сообщение появляется, если был разблокирован загрузчик или установлены права суперпользователя. На работу системы это обычно не влияет, но может блокировать некоторые банковские приложения.</p>
+</details>
+<details>
+<summary>Где скачать оригинальную прошивку для Mi A1?</summary>
+<p>Официальные архивы можно найти на сайте miui.com или специализированных ресурсах вроде xiaomi-firmware-updater.com, выбирая модель tissot.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/x/xi/xiaomi-how.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi How: Полное руководство по скрытым функциям</span>
+                <span class="pb-related-desc">Ищете Xiaomi how? Узнайте, как разблокировать скрытые возможности, настроить MIUI/HyperOS и ускорить</span>
+            </a><a href="/articles/x/xi/xiaomi-lamp-bedside-2-kak-podklyuchit.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi Lamp Bedside 2: как подключить и настроить</span>
+                <span class="pb-related-desc">Полная инструкция по подключению Xiaomi Lamp Bedside 2. Настройка через Mi Home, сопряжение с Google</span>
+            </a><a href="/articles/k/ka/kak-vosstanovit-kontakty-na-androide-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как восстановить контакты на Xiaomi: 7 рабочих способов</span>
+                <span class="pb-related-desc">Полная инструкция по восстановлению контактов на Android Xiaomi. Возврат номеров из Google, Mi Cloud</span>
+            </a><a href="/articles/k/ka/kak-nazvat-robota-pylesosa-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как назвать робота-пылесоса Xiaomi: полное руководство</span>
+                <span class="pb-related-desc">Узнайте, как изменить имя робота-пылесоса Xiaomi в приложении Mi Home. Инструкция по переименованию </span>
+            </a><a href="/articles/k/ka/kak-udalit-vse-dannye-s-xiaomi-pered-prodazhej.html" class="pb-related-card">
+                <span class="pb-related-title">Как удалить все данные с Xiaomi перед продажей: полный сброс</span>
+                <span class="pb-related-desc">Пошаговая инструкция, как очистить Xiaomi от личной информации перед продажей. Сброс настроек, удале</span>
+            </a><a href="/articles/x/xi/xiaomi-mi-9se-kakoj-protsessor.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi Mi 9 SE: какой процессор и его характеристики</span>
+                <span class="pb-related-desc">Узнайте, какой процессор стоит в Xiaomi Mi 9 SE. Подробный разбор Snapdragon 712, тесты производител</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

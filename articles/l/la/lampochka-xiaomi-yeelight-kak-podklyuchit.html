@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Лампочка Xiaomi Yeelight: как подключить к Wi-Fi и Mi Home — СяоМастер</title>
+    <meta name="description" content="Полная инструкция, как настроить умную лампу Xiaomi Yeelight. Разбор частоты 2.4 ГГц, сброс и подключение через Home Assistant.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/l/la/lampochka-xiaomi-yeelight-kak-podklyuchit.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Лампочка Xiaomi Yeelight: как подключить к Wi-Fi и Mi Home">
+    <meta property="og:description" content="Полная инструкция, как настроить умную лампу Xiaomi Yeelight. Разбор частоты 2.4 ГГц, сброс и подключение через Home Assistant.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Лампочка Xiaomi Yeelight: как подключить к Wi-Fi и Mi Home</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-оборудования-и-выбор-роутера">Подготовка оборудования и выбор роутера</a></li><li><a href="#установка-приложения-mi-home-и-выбор-региона">Установка приложения Mi Home и выбор региона</a></li><li><a href="#процесс-сопряжения-пошаговая-инструкция">Процесс сопряжения: пошаговая инструкция</a></li><li><a href="#решение-проблем-с-поиском-устройства">Решение проблем с поиском устройства</a></li><li><a href="#настройка-сценариев-и-автоматизации">Настройка сценариев и автоматизации</a></li><li><a href="#интеграция-с-google-home-яндекс-и-home-assistant">Интеграция с Google Home, Яндекс и Home Assistant</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-ustanovit-samsung-pay-na-xiaomi-redmi-note-9.html">Как установить Samsung Pay на Xiaomi Redmi Note 9: Инструкция</a></li><li><a href="/drugoe/k/kt/kto-vladelets-kompanii-xiaomi.html">Кто владелец Xiaomi в 2026 году: структура собственности и ключевые лица</a></li><li><a href="/articles/k/ka/kak-vyklyuchit-robot-pylesos-xiaomi-dlya-transportirovki.html">Как выключить робот-пылесос Xiaomi для перевозки</a></li><li><a href="/articles/k/ka/kak-ustanovit-video-na-oboi-na-syaomi.html">Как установить видео на обои Xiaomi: Полная инструкция</a></li><li><a href="/drugoe/k/ka/kak-pochistit-ryukzak-xiaomi.html">Как почистить рюкзак Xiaomi: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Лампочка Xiaomi Yeelight: пошаговая инструкция подключения</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-оборудования-и-выбор-роутера">Подготовка оборудования и выбор роутера</a></li><li><a href="#установка-приложения-mi-home-и-выбор-региона">Установка приложения Mi Home и выбор региона</a></li><li><a href="#процесс-сопряжения-пошаговая-инструкция">Процесс сопряжения: пошаговая инструкция</a></li><li><a href="#решение-проблем-с-поиском-устройства">Решение проблем с поиском устройства</a></li><li><a href="#настройка-сценариев-и-автоматизации">Настройка сценариев и автоматизации</a></li><li><a href="#интеграция-с-google-home-яндекс-и-home-assistant">Интеграция с Google Home, Яндекс и Home Assistant</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Интеграция умного освещения в жилище начинается с правильного старта, и <strong>настройка первой лампочки</strong> часто становится решающим этапом. Если на этом шаге допустить ошибку в выборе частоты роутера или региона, дальнейшее использование девайса превратится в борьбу с настройками. В этой статье мы детально разберем, как избежать типичных проблем и быстро запустить <em>Yeelight</em> в работу.</p>
+
+<p>Процесс кажется простым, но имеет свои технические нюансы, которые игнорируют многие новички. Например, <strong>протокол связи</strong> требует строгого соблюдения стандартов беспроводной сети. Мы рассмотрим не только стандартный сценарий через официальное приложение, но и альтернативные методы интеграции для продвинутых пользователей, желающих объединить все устройства в единую экосистему.</p>
+
+<p>Прежде чем приступать к программной части, убедитесь, что у вас под рукой есть все необходимое оборудование. <em>Смартфон</em> с установленным софтом и сама лампа — это база, но стабильность работы зависит и от качества роутера. Давайте подготовимся к процедуре, чтобы исключить лишние перезагрузки и танцы с бубном.</p>
+
+<h2 id="подготовка-оборудования-и-выбор-роутера">Подготовка оборудования и выбор роутера</h2>
+
+<p>Главным препятствием при подключении умных устройств Xiaomi часто становится несовместимость частот Wi-Fi. Большинство моделей <em>Yeelight</em>, как и многие другие гаджеты IoT, работают исключительно в диапазоне <strong>2.4 ГГц</strong>. Если ваш роутер транслирует только 5 ГГц или объединяет обе частоты под одним именем (Smart Connect), лампочка может не увидеться приложением.</p>
+
+<p>Вам необходимо зайти в настройки роутера и проверить параметры беспроводной сети. Часто требуется разделить сети, дав им разные имена, например, <code>MyWiFi_2.4</code> и <code>MyWiFi_5</code>. Подключите телефон именно к двухгигагерцовой сети перед началом настройки.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не пытайтесь подключить лампу к гостевой сети Wi-Fi или сети с изоляцией клиентов (AP Isolation). В таком режиме устройства не смогут общаться друг с другом и с сервером управления.</p>
+</blockquote>
+
+<p>Также стоит проверить заряд батареи смартфона, так как процесс настройки требует активного использования экрана и модулей связи. Разряжающийся телефон может прервать передачу конфигурационных данных на середине процесса.</p>
+
+<ul>
+<li>📶 Убедитесь, что Wi-Fi роутер работает на частоте 2.4 ГГц.</li>
+<li>📱 Подключите смартфон к той же сети, к которой будете подключать лампу.</li>
+<li>🔋 Проверьте, что лампа вкручена в патрон и подается электричество.</li>
+<li>🌍 Установите регион в приложении, соответствующий вашему местоположению или региону устройства.</li>
+</ul>
+
+<p>Правильная подготовка сетевого окружения решает 90% проблем с видимостью устройства. Если роутер старый и не поддерживает стандарт <strong>802.11 b/g/n</strong>, возможно, потребуется его замена или использование дополнительного точки доступа.</p>
+
+<h2 id="установка-приложения-mi-home-и-выбор-региона">Установка приложения Mi Home и выбор региона</h2>
+
+<p>Центром управления для вашей лампочки станет приложение <em>Mi Home</em> (или Xiaomi Home). Его можно скачать из официальных магазинов <code>App Store</code> или <code>Google Play</code>. Важно не перепутать иконку, так как существует множество клонов. После установки запустите приложение и создайте аккаунт Xiaomi, если у вас его еще нет.</p>
+
+<p>Самый критичный момент — выбор региона сервера. При регистрации или в настройках профиля (<code>Профиль → Настройки → Регион</code>) необходимо выбрать страну. Для устройств, купленных в официальной рознице РФ или СНГ, обычно подходит регион <strong>Россия</strong>. Если лампа привезена из Китая и не определяется, возможно, придется сменить регион на <em>Китай</em>, но это может замедлить отклик сервера.</p>
+
+<div class="pb-poll" id="poll-bba614c1"><div class="pb-poll-question">📊 Какой регион вы выбрали в Mi Home?</div><div class="pb-poll-option" data-poll="bba614c1" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Россия</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bba614c1" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Китай</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bba614c1" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Европа</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bba614c1" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">США</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>После выбора региона приложение запросит разрешения на доступ к геолокации и Bluetooth. <strong>Геолокация</strong> обязательна для работы Android-смартфонов при поиске устройств Wi-Fi, это системное ограничение ОС. Без включенного GPS поиск лампочки может просто не начаться.</p>
+
+<p>Интерфейс приложения может показаться перегруженным, но для старта нам нужна только кнопка добавления. Обычно она расположена в правом верхнем углу или по центру на вкладке устройств. Нажмите «плюс» и дождитесь, пока система просканирует эфир.</p>
+
+<h2 id="процесс-сопряжения-пошаговая-инструкция">Процесс сопряжения: пошаговая инструкция</h2>
+
+<p>Теперь переходим к самому важному этапу. Вкрутите лампу <em>Yeelight</em> в патрон и подайте питание. Лампа должна начать мигать, сигнализируя о режиме сопряжения. Если она горит ровным светом, значит, она уже где-то засвечена или требуется сброс.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист перед стартом</h4><label class="check-item"><input type="checkbox"><span>Лампа вкручена и включен свет</span></label><label class="check-item"><input type="checkbox"><span>На телефоне включен Wi-Fi и GPS</span></label><label class="check-item"><input type="checkbox"><span>Приложение Mi Home запущено</span></label><label class="check-item"><input type="checkbox"><span>Регион выбран верно</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>В приложении нажмите кнопку добавления устройства. Система может автоматически найти лампу и предложить добавить её. Если автоматический поиск не сработал, выберите категорию <code>Освещение</code> и найдите вашу модель в списке или воспользуйтесь поиском по названию, например, <em>Yeelight Smart LED Bulb</em>.</p>
+
+<p>Следуйте инструкциям на экране. Вам будет предложено ввести пароль от Wi-Fi сети. Убедитесь, что вводите его правильно, соблюдая регистр символов. После ввода пароля начнется процесс передачи данных, который может занять от 10 до 60 секунд.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Статус индикатора</th>
+<th>Значение</th>
+<th>Действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Медленное мигание</td>
+<td>Режим сопряжения (Active)</td>
+<td>Искать устройство в приложении</td>
+</tr>
+<tr>
+<td>Быстрое мигание</td>
+<td>Попытка подключения к роутеру</td>
+<td>Ждать или проверить пароль</td>
+</tr>
+<tr>
+<td>Горит постоянно</td>
+<td>Устройство подключено</td>
+<td>Можно управлять</td>
+</tr>
+<tr>
+<td>Не горит</td>
+<td>Нет питания или брак</td>
+<td>Проверить патрон и ток</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>В случае успешного подключения лампа моргнет несколько раз и загорится ровным светом. В приложении она появится в списке устройств, и вы сможете переименовать её, например, в «Люстра» или «Ночник», и назначить комнату.</p>
+
+<h2 id="решение-проблем-с-поиском-устройства">Решение проблем с поиском устройства</h2>
+
+<p>Иногда процесс застревает на этапе поиска. Если приложение пишет «Устройство не найдено» или тайм-аут, не спешите паниковать. Первым делом проверьте, не «улетела» ли лампа в режим глубокого сна. Выключите и включите свет 5 раз подряд, пока лампа не начнет быстро мигать — это принудительный вход в режим.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы меняли роутер или пароль от Wi-Fi, лампу придется сбрасывать и настраивать заново. Она не умеет автоматически обновлять сетевые настройки.</p>
+</blockquote>
+
+<p>Еще одна частая причина — мак-фильтрация на роутере. Если у вас настроен белый список MAC-адресов, добавьте туда адрес вашей новой лампочки. Найти MAC-адрес можно на коробке или в приложении, если устройство хоть раз было замечено.</p>
+
+<details class="pb-accordion"><summary>Секрет стабильного подключения</summary><div class="pb-accordion-body"><p>Иногда помогает временное отключение мобильного интернета (4G/5G) во время настройки, чтобы телефон использовал только Wi-Fi канал для передачи данных.</p></div></details>
+
+<p>Также стоит обратить внимание на настройки безопасности роутера. Протоколы шифрования должны быть <strong>WPA2-PSK</strong> или <strong>WPA3</strong>. Открытые сети или корпоративные сети с авторизацией через веб-страницу (Captive Portal) не поддерживаются умными лампами.</p>
+
+<p>Если ничего не помогает, попробуйте поднести телефон максимально близко к лампе (на расстояние 1-2 метра). Слабый сигнал на этапе рукопожатия может прерывать передачу конфигурации.</p>
+
+<h2 id="настройка-сценариев-и-автоматизации">Настройка сценариев и автоматизации</h2>
+
+<p>После успешного подключения открывается мир автоматизации. В приложении Mi Home перейдите во вкладку <code>Сценарии</code> (или <em>Smart</em>). Здесь вы можете создать цепочки действий. Например, «Если время 23:00, то выключить свет в спальне».</p>
+
+<p>Для ламп <em>Yeelight</em> доступны продвинутые функции, такие как «Ночной свет» (Moonlight), когда лампа горит тусклым синим светом, не мешая спать. Вы можете настроить плавное включение света утром, имитируя рассвет, что помогает легче просыпаться.</p>
+
+<ul>
+<li>🌅 Таймер восхода: плавное увеличение яркости к заданному времени.</li>
+<li>🎮 Игровой режим: синхронизация цвета с событиями на ПК (требуется ПК-клиент).</li>
+<li>🚪 Геолокация: выключение света, когда все телефоны семьи покинули дом.</li>
+<li>🗣 Голосовое управление: интеграция с Алисой или Google Assistant.</li>
+</ul>
+
+<p>Создание сценариев позволяет превратить обычную лампочку в умный элемент дома. Вы можете комбинировать условия: если датчик движения зафиксировал активность И сейчас ночь, ТО включить ночник на 10% яркости.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте функцию «Уезжаю» в приложении, чтобы одним нажатием выключать все lights, даже если вы забыли это сделать перед выходом.</p></aside>
+
+<h2 id="интеграция-с-google-home-яндекс-и-home-assistant">Интеграция с Google Home, Яндекс и Home Assistant</h2>
+
+<p>Для управления голосом или объединения устройств разных брендов потребуется интеграция. Для <strong>Google Home</strong> и <strong>Яндекс</strong> процесс схож: в приложении-агрегаторе выберите «Добавить устройство», найдите скилл «Mi Home» или «Yeelight» и авторизуйтесь под своим аккаунтом Xiaomi.</p>
+
+<p>После связывания аккаунтов лампы появятся в списке устройств голосового помощника. Вы сможете говорить: «Алиса, включи свет на кухне» или «OK Google, сделай свет красным». Важно, чтобы имена комнат и устройств совпадали или были легко узнаваемы.</p>
+
+<p>Для продвинутых пользователей доступна интеграция через <em>Home Assistant</em>. Это позволяет управлять лампами локально, без облака Xiaomi, что ускоряет отклик и повышает приватность. Для этого используется официальная интеграция <code>Yeelight</code> или кастомные компоненты.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При использовании сторонних интеграций некоторые фирменные функции, такие как «Ночной свет» или специфические цветовые эффекты, могут быть недоступны или работать нестабильно.</p>
+</blockquote>
+
+<p>Локальное управление особенно актуально, если интернет-канал нестабилен. В таком случае команды будут выполняться мгновенно внутри локальной сети, не завися от серверов в Китае или Европе.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Локальная интеграция через Home Assistant обеспечивает максимальную скорость отклика и независимость от серверов производителя.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли управлять лампочкой без интернета?</summary>
+<p>Да, но с ограничениями. После первоначальной настройки и привязки к аккаунту, управление по локальной сети (LAN) возможно через приложение Mi Home, если телефон подключен к тому же Wi-Fi. Однако удаленное управление из другой сети и голосовые ассистенты требуют доступа в интернет.</p>
+</details>
+
+<details>
+<summary>Лампа мигает красным, что делать?</summary>
+<p>Красное мигание обычно указывает на ошибку подключения к роутеру. Проверьте пароль Wi-Fi, убедитесь, что роутер раздает сеть 2.4 ГГц, и что на роутере не стоит фильтрация по MAC-адресам. Попробуйте сбросить лампу и настроить заново.</p>
+</details>
+
+<details>
+<summary>Как сбросить лампу Yeelight до заводских настроек?</summary>
+<p>Для сброса необходимо быстро выключить и включить питание лампы 5 раз подряд (свет должен погаснуть и загореться). На 5-6 раз лампа должна начать быстро мигать, что означает успешный сброс и переход в режим сопряжения.</p>
+</details>
+
+<details>
+<summary>Работает ли лампа с выключателем с подсветкой?</summary>
+<p>Да, обычно работает. Однако некоторые выключатели с подсветкой пропускают микроток, из-за чего лампа может слабо светиться или моргать в выключенном состоянии. В таких случаях требуется установка дополнительного конденсатора или замена выключателя.</p>
+</details>
+
+<details>
+<summary>Почему лампа иногда сама меняет цвет?</summary>
+<p>Это может быть активирован режим «Цветной поток» или «Ночной свет» по расписанию. Проверьте настройки таймеров и сценариев в приложении. Также иногда это случается при временной потере связи с роутером и попытке переподключения.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-ustanovit-samsung-pay-na-xiaomi-redmi-note-9.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить Samsung Pay на Xiaomi Redmi Note 9: Инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство по установке Samsung Pay на Xiaomi Redmi Note 9. Обход блокировок, установка с</span>
+            </a><a href="/drugoe/k/kt/kto-vladelets-kompanii-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Кто владелец Xiaomi в 2026 году: структура собственности и ключевые лица</span>
+                <span class="pb-related-desc">Подробный разбор владельцев Xiaomi: кто стоит за брендом, структура акционеров, роль Лей Цзюня и вли</span>
+            </a><a href="/articles/k/ka/kak-vyklyuchit-robot-pylesos-xiaomi-dlya-transportirovki.html" class="pb-related-card">
+                <span class="pb-related-title">Как выключить робот-пылесос Xiaomi для перевозки</span>
+                <span class="pb-related-desc">Правильная инструкция по отключению Xiaomi Vacuum для транспортировки. Как активировать транспортный</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-video-na-oboi-na-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить видео на обои Xiaomi: Полная инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство, как поставить живые обои на Сяоми. Лучшие приложения, настройка MIUI и HyperO</span>
+            </a><a href="/drugoe/k/ka/kak-pochistit-ryukzak-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как почистить рюкзак Xiaomi: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по чистке рюкзаков Xiaomi. Узнайте, как стирать, сушить и ухаживать за тканью </span>
+            </a><a href="/articles/k/ka/kak-udalit-drugoe-na-androide-xiaomi-redmi-note-8-pro.html" class="pb-related-card">
+                <span class="pb-related-title">Как удалить другое на Xiaomi Redmi Note 8 Pro: очистка памяти</span>
+                <span class="pb-related-desc">Подробная инструкция, как очистить раздел «Другое» на Xiaomi Redmi Note 8 Pro. Удаление мусора, кэша</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как перенести приложения Xiaomi на карту: инструкция — СяоМастер</title>
+    <meta name="description" content="Полная инструкция, как перенести приложения Xiaomi на SD-карту. Настройка MIUI, форматирование и решение ошибок при установке программ.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/x/xi/xiaomi-kak-perenesti-prilozheniya-na-kartu.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как перенести приложения Xiaomi на карту: инструкция">
+    <meta property="og:description" content="Полная инструкция, как перенести приложения Xiaomi на SD-карту. Настройка MIUI, форматирование и решение ошибок при установке программ.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как перенести приложения Xiaomi на карту: инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-sd-карты-и-проверка-совместимости">Подготовка SD-карты и проверка совместимости</a></li><li><a href="#метод-форматирования-как-внутренней-памяти-adoptable-storage">Метод форматирования как внутренней памяти (Adoptable Storage)</a></li><li><a href="#перенос-уже-установленных-приложений-вручную">Перенос уже установленных приложений вручную</a></li><li><a href="#настройка-камеры-и-мультимедиа-по-умолчанию">Настройка камеры и мультимедиа по умолчанию</a></li><li><a href="#использование-adb-для-принудительного-переноса">Использование ADB для принудительного переноса</a></li><li><a href="#возможные-проблемы-и-их-решение">Возможные проблемы и их решение</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/k/ka/kak-narisovat-ksiomi.html">Как нарисовать логотип Xiaomi: пошаговое руководство для начинающих</a></li><li><a href="/articles/k/ka/kak-vklyuchit-beskontaktnuyu-oplatu-na-telefone-xiaomi-redmi-note-7.html">Как включить NFC на Xiaomi Redmi Note 7: полная инструкция</a></li><li><a href="/articles/z/zn/znachok-naushnikov-na-telefone-xiaomi-kak-ubrat.html">Как убрать значок наушников на Xiaomi: решение проблемы</a></li><li><a href="/drugoe/g/gd/gde-nakhoditsya-shtab-kvartira-xiaomi.html">Где находится штаб-квартира Xiaomi в 2026 году? Адрес, история и факты</a></li><li><a href="/articles/k/ka/kak-dostat-simku-iz-xiaomi-bez-skrepki.html">Как достать SIM из Xiaomi без скрепки: 5 рабочих способов</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как перенести приложения Xiaomi на карту памяти: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-sd-карты-и-проверка-совместимости">Подготовка SD-карты и проверка совместимости</a></li><li><a href="#метод-форматирования-как-внутренней-памяти-adoptable-storage">Метод форматирования как внутренней памяти (Adoptable Storage)</a></li><li><a href="#перенос-уже-установленных-приложений-вручную">Перенос уже установленных приложений вручную</a></li><li><a href="#настройка-камеры-и-мультимедиа-по-умолчанию">Настройка камеры и мультимедиа по умолчанию</a></li><li><a href="#использование-adb-для-принудительного-переноса">Использование ADB для принудительного переноса</a></li><li><a href="#возможные-проблемы-и-их-решение">Возможные проблемы и их решение</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфонов Xiaomi часто сталкиваются с нехваткой встроенного хранилища, особенно на бюджетных моделях серии Redmi и POCO, где объем памяти ограничен, а системные файлы занимают значительную часть. <strong>Перенос приложений</strong> на внешний накопитель кажется логичным решением проблемы, позволяя освободить драгоценные гигабайты для новых игр, мессенджеров и фотоальбомов. Однако интерфейс оболочки MIUI и Android имеет свои особенности, которые скрывают эту функцию от обычного пользователя.</p>
+
+<p>Современные версии операционной системы Android, начиная с 6.0 и выше, предоставляют механизм <em>Adoptable Storage</em>, который позволяет превратить карту microSD в часть системного раздела. <mark>Важно понимать, что Xiaomi, как и Samsung, по умолчанию скрывает эту опцию в стандартном меню настроек.</mark> Это сделано для обеспечения стаильности работы устройства, так как скорость чтения внешних накопителей часто ниже, чем у встроенной флеш-памяти eMMC или UFS.</p>
+
+<p>Тем не менее, существуют проверенные способы обойти эти ограничения и заставить систему работать с SD-картой как с внутренней памятью. В этой статье мы разберем методы переноса данных, риски, связанные с потерей информации, и пошаговые инструкции по настройке <strong>виртуальной памяти</strong> на вашем устройстве без получения root-прав.</p>
+
+<h2 id="подготовка-sd-карты-и-проверка-совместимости">Подготовка SD-карты и проверка совместимости</h2>
+
+<p>Прежде чем приступать к сложным манипуляциям, необходимо убедиться в качестве используемого накопителя. Для работы в режиме внутренней памяти требуется карта с высокой скоростью записи и чтения, классифицируемая как <em>Class 10</em>, <em>U3</em> или <em>V30</em>. Использование медленной карты приведет к тому, что приложения будут запускаться очень долго, а система начнет тормозить при выполнении фоновых задач.</p>
+
+<p>Обязательно создайте резервную копию всех данных, находящихся на карте. Процесс форматирования под внутреннюю память полностью уничтожит все файлы, фотографии и документы. После форматирования карта станет нечитаемой для других устройств, таких как ПК или фотоаппараты, без предварительного обратного форматирования.</p>
+
+<ul>
+<li>📱 Убедитесь, что смартфон поддерживает карты объемом более 32 ГБ (современные модели Xiaomi работают с 256 ГБ и выше).</li>
+<li>💾 Используйте карты проверенных брендов: SanDisk, Samsung, Kingston, чтобы избежать потери данных.</li>
+<li>⚡ Проверьте скорость работы карты с помощью утилиты A1 SD Bench перед началом процедуры.</li>
+<li>🔋 Зарядите устройство минимум до 60% во избежание сбоя при форматировании.</li>
+</ul>
+
+<p>Вставьте карту в слот и дождитесь уведомления системы. Если вы ранее использовали эту карту как портативное хранилище, ее необходимо предварительно очистить. Перейдите в <code>Настройки → О телефоне → Хранилище</code>, выберите вашу карту и нажмите "Очистить".</p>
+
+<div class="pb-poll" id="poll-da53293a"><div class="pb-poll-question">📊 Какой объем памяти у вашего смартфона Xiaomi?</div><div class="pb-poll-option" data-poll="da53293a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">32 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="da53293a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">64 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="da53293a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">128 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="da53293a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">256 ГБ и более</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="метод-форматирования-как-внутренней-памяти-adoptable-storage">Метод форматирования как внутренней памяти (Adoptable Storage)</h2>
+
+<p>Это основной и наиболее надежный способ перенести приложения на Xiaomi. Он заключается в том, чтобы заставить Android считать SD-карту системным разделом. Поскольку в стандартном меню MIUI кнопка "Использовать как внутреннее хранилище" часто отсутствует, мы применим небольшой трюк через настройки разработчика.</p>
+
+<p>Сначала необходимо активировать режим разработчика. Для этого перейдите в <code>Настройки → О телефоне</code> и быстро нажмите 7 раз на пункт "Версия MIUI". После появления сообщения "Вы стали разработчиком" вернитесь в главное меню настроек и выберите <code>Дополнительные настройки → Для разработчиков</code>.</p>
+
+<p>В списке параметров найдите пункт <strong>"Принудительное разрешение записи на внешние SD-карты"</strong> (Force allow apps on external). Активируйте этот переключатель. Это действие разрешит системе предлагать форматирование карты как внутренней памяти, даже если производитель счел её недостаточно быстрой.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист перед форматированием</h4><label class="check-item"><input type="checkbox"><span>Сделана резервная копия данных</span></label><label class="check-item"><input type="checkbox"><span>Карта вставлена в слот</span></label><label class="check-item"><input type="checkbox"><span>Режим разработчика активирован</span></label><label class="check-item"><input type="checkbox"><span>Пункт "Принудительное разрешение" включен</span></label><label class="check-item"><input type="checkbox"><span>Заряд батареи выше 50%</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>После активации скрытой функции перейдите в меню управления хранилищем. Путь может отличаться в зависимости от версии MIUI: <code>Настройки → Память</code> или <code>Настройки → О телефоне → Хранилище</code>. Нажмите на название вашей SD-карты. В появившемся меню должно появиться новое действие — "Форматировать как внутреннее хранилище".</p>
+
+<p>Система предупредит о том, что все данные будут удалены. Подтвердите действие и дождитесь окончания процесса. После завершения система предложит перенести уже установленные приложения и медиафайлы. Выберите вариант "Переместить сейчас" или "Переместить позже", чтобы сделать это вручную.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> После форматирования карта шифруется ключом конкретного устройства. Вы не сможете просто так вставить её в другой телефон или компьютер и прочитать данные. Для использования на другом устройстве карту придется форматировать заново.</p>
+</blockquote>
+
+<h2 id="перенос-уже-установленных-приложений-вручную">Перенос уже установленных приложений вручную</h2>
+
+<p>После того как карта отформатирована как внутренняя память, система Android получает право перемещать на неё данные приложений. Однако это не всегда происходит автоматически для всех программ. Вам потребуется вручную указать системе, какие приложения вы хотите переместить.</p>
+
+<p>Зайдите в <code>Настройки → Приложения → Все приложения</code>. Найдите в списке программу, которую хотите переместить (например, тяжелую игру или навигатор). Нажмите на неё, чтобы открыть подробную информацию.</p>
+
+<p>В меню приложения найдите пункт "Хранилище". Если приложение поддерживает перенос, вы увидите кнопку "Изменить" или "Переместить на SD-карту". Нажмите её и подтвердите действие. Процесс может занять от нескольких секунд до нескольких минут в зависимости от размера приложения.</p>
+
+<ul>
+<li>🚀 Переносите в первую очередь игры и тяжелые приложения, занимающие много места.</li>
+<li>⚙️ Системные приложения и виджеты рабочего стола часто невозможно переместить из-за ограничений Android.</li>
+<li>📸 Приложения камеры и диктофона могут требовать настройки сохранения файлов отдельно в их собственных меню.</li>
+</ul>
+
+<p>Стоит отметить, что не все разработчики приложений разрешают их перенос. Это связано с тем, что некоторые программы критически зависят от высокой скорости отклика памяти, которую SD-карта обеспечить не может. В таком случае кнопка перемещения будет отсутствовать или быть неактивной (серой).</p>
+
+<details class="pb-accordion"><summary>Почему некоторые приложения нельзя перенести?</summary><div class="pb-accordion-body"><p>Разработчики приложений блокируют установку на внешние накопители в манифесте программы (android:installLocation). Это сделано для предотвращения ошибок работы, так как внешняя карта может быть извлечена пользоват-елем в любой момент, что приведет к крашу приложения.</p>
+</blockquote></p></div></details>
+
+<h2 id="настройка-камеры-и-мультимедиа-по-умолчанию">Настройка камеры и мультимедиа по умолчанию</h2>
+
+<p>Одной из главных причин нехватки памяти является накопление фотографий и видео. После успешного форматирования карты как внутренней памяти, камера Xiaomi должна автоматически начать сохранять новые снимки на внешний накопитель. Однако иногда эту настройку нужно проверить или изменить вручную.</p>
+
+<p>Откройте приложение "Камера" и нажмите на значок меню (три полоски или шестеренка) в углу экрана. Найдите пункт "Сохранять на SD-карту" или "Путь сохранения" и убедитесь, что переключатель активирован. В новых версиях MIUI этот пункт может находиться в разделе "Настройки камеры".</p>
+
+<p>Для мессенджеров, таких как WhatsApp, Telegram или Viber, настройки сохраняются внутри самих приложений. Например, в WhatsApp нужно зайти в <code>Настройки → Чаты → Резервная копия</code> или настройки хранилища, чтобы изменить путь сохранения медиафайлов, если такая опция доступна в вашей версии.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип данных</th>
+<th>Где меняется путь</th>
+<th>Автоматический перенос</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Фото и Видео</td>
+<td>Настройки Камеры</td>
+<td>Да (после форматирования)</td>
+</tr>
+<tr>
+<td>Загрузки из браузера</td>
+<td>Настройки Браузера/Скачивания</td>
+<td>Нет (нужно менять в каждом)</td>
+</tr>
+<tr>
+<td>Музыка и Аудио</td>
+<td>Настройки Плеера</td>
+<td>Зависит от плеера</td>
+</tr>
+<tr>
+<td>Кэш карт (GPS)</td>
+<td>Настройки навигатора</td>
+<td>Требуется ручная настройка</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Рекомендуется также проверить настройки диктофона и сканера документов, если вы пользуетесь ими активно. Эти приложения часто сохраняют файлы во внутреннюю память по умолчанию, игнорируя общую настройку системы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте файловый менеджер для переноса старых папок. Зайдите во Внутреннюю память, найдите папки DCIM, Download, Movies и переместите их содержимое на SD-карту вручную, если система не сделала это сама.</p></aside>
+
+<h2 id="использование-adb-для-принудительного-переноса">Использование ADB для принудительного переноса</h2>
+
+<p>Если стандартные методы не работают или кнопка переноса отсутствует, можно воспользоваться отладкой по ADB (Android Debug Bridge). Этот метод требует подключения смартфона к компьютеру и установки драйверов, но он дает глубокий доступ к файловой системе.</p>
+
+<p>Для начала включите отладку по USB в меню "Для разработчиков". Подключите телефон к ПК кабелем. На компьютере откройте командную строку в папке с ADB и введите команду для проверки подключения:</p>
+
+<pre><code>adb devices</code></pre>
+
+<p>На экране смартфона появится запрос на разрешение отладки — подтвердите его. Далее, чтобы принудительно переместить приложение, нужно знать его пакетное имя (например, com.android.chrome). Команда для переноса выглядит следующим образом:</p>
+
+<pre><code>adb shell pm move-package com.android.chrome external</code></pre>
+
+<p>Этот метод позволяет переносить даже те приложения, которые система обычно блокирует. Однако будьте осторожны: перемещение системных сервисов может привести к нестабильной работе телефона. Используйте эту команду только для пользовательских приложений.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не пытайтесь перенести системные компоненты Google Play Services или системный интерфейс MIUI через ADB. Это может привести к циклической перезагрузке (bootloop) и потребует сброса настроек.</p>
+</blockquote>
+
+<h2 id="возможные-проблемы-и-их-решение">Возможные проблемы и их решение</h2>
+
+<p>В процессе эксплуатации смартфона с отформатированной SD-картой могут возникнуть различные ошибки. Чаще всего пользователи сталкиваются с сообщением "SD-карта повреждена" или внезапным исчезновением иконок приложений. Это может быть вызвано как программным сбоем, так и физическим повреждением карты.</p>
+
+<p>Если приложения перестали открываться, попробуйте перезагрузить устройство. Часто система просто теряет путь к файлам после обновления или сбоя питания. Если перезагрузка не помогла, извлеките карту, протрите контакты и вставьте обратно до щелчка.</p>
+
+<p>В случае постоянных ошибок "Низкая скорость" или зависаний интерфейса, вероятно, ресурс карты памяти исчерпан. Флеш-память имеет ограниченное количество циклов перезаписи. Если карта используется интенсивно более 2-3 лет, ее производительность могла упасть ниже критического уровня.</p>
+
+<ul>
+<li>🔄 Попробуйте отформатировать карту заново через меню настроек телефона (не через ПК).</li>
+<li>🔍 Проверьте карту на ошибки с помощью утилиты Error Check на компьютере.</li>
+<li>📉 Если карта греется в районе слота, это может указывать на проблемы с контроллером телефона.</li>
+</ul>
+
+<p>Также стоит упомянуть проблему с виджетами. После переноса приложения на карту, его виджет на рабочем столе может перестать обновляться или исчезнуть. В таком случае удалите виджет и добавьте его заново из меню виджетов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Стабильность работы смартфона с приложениями на SD-карте напрямую зависит от качества самого накопителя. Экономия на карте памяти часто приводит к потере данных и нервным срывам.</p></aside>
+
+<details>
+<summary>Безопасно ли переносить все приложения на карту?</summary>
+<p>Полный перенос всех приложений не рекомендуется. Системные приложения, мессенджеры, которыми вы пользуетесь постоянно, и банковские приложения лучше оставить во внутренней памяти. Это обеспечит их быструю работу и мгновенный запуск. Карту памяти лучше использовать для игр, оффлайн-карт, музыки и архивных фото.</p>
+</details>
+
+<details>
+<summary>Что будет, если вынуть карту памяти?</summary>
+<p>Если вы извлечете карту, все приложения, перенесенные на нее, перестанут работать. Их иконки могут остаться на экране, но при запуске система сообщит об ошибке или предложит удалить приложение. Данные внутри этих приложений станут недоступны до возврата карты.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать карту на другом телефоне Xiaomi?</summary>
+<p>Нет, не получится просто так. При форматировании как "внутреннее хранилище" карта шифруется привязкой к конкретному устройству. Чтобы использовать её на другом телефоне, карту придется форматировать, что уничтожит все данные и установленные приложения.</p>
+</details>
+
+<details>
+<summary>Почему после переноса телефон начал работать медленнее?</summary>
+<p>Скорость работы приложений зависит от скорости чтения памяти. Встроенная память современных смартфонов (UFS 2.1/3.1) работает в разы быстрее, чем даже самые быстрые карты microSD. При переносе тяжелых приложений на карту вы неизбежно столкнетесь с увеличением времени загрузки.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/k/ka/kak-narisovat-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как нарисовать логотип Xiaomi: пошаговое руководство для начинающих</span>
+                <span class="pb-related-desc">Узнайте, как правильно нарисовать логотип Xiaomi карандашом и в цифровом формате. Пошаговые инструкц</span>
+            </a><a href="/articles/k/ka/kak-vklyuchit-beskontaktnuyu-oplatu-na-telefone-xiaomi-redmi-note-7.html" class="pb-related-card">
+                <span class="pb-related-title">Как включить NFC на Xiaomi Redmi Note 7: полная инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция по настройке бесконтактной оплаты и NFC на Xiaomi Redmi Note 7. Решаем проблемы</span>
+            </a><a href="/articles/z/zn/znachok-naushnikov-na-telefone-xiaomi-kak-ubrat.html" class="pb-related-card">
+                <span class="pb-related-title">Как убрать значок наушников на Xiaomi: решение проблемы</span>
+                <span class="pb-related-desc">Значок наушников на телефоне Xiaomi не пропадает? Узнайте, как быстро отключить застрявший индикатор</span>
+            </a><a href="/drugoe/g/gd/gde-nakhoditsya-shtab-kvartira-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Где находится штаб-квартира Xiaomi в 2026 году? Адрес, история и факты</span>
+                <span class="pb-related-desc">Точный адрес штаб-квартиры Xiaomi в Пекине, как добраться, история переездов и интересные факты о гл</span>
+            </a><a href="/articles/k/ka/kak-dostat-simku-iz-xiaomi-bez-skrepki.html" class="pb-related-card">
+                <span class="pb-related-title">Как достать SIM из Xiaomi без скрепки: 5 рабочих способов</span>
+                <span class="pb-related-desc">Ищете, как достать симку из Xiaomi без скрепки? Экспертный гид по извлечению лотка булавкой, скрепко</span>
+            </a><a href="/articles/k/ka/kak-otkryt-2-prilozheniya-na-odnom-ekrane-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как открыть 2 приложения на одном экране Xiaomi: Инструкция</span>
+                <span class="pb-related-desc">Узнайте, как открыть два приложения на одном экране Xiaomi. Подробная настройка разделенного экрана </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

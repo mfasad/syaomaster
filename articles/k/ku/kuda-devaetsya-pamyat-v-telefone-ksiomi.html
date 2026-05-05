@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Куда девается память в телефоне Xiaomi: причины и решение — СяоМастер</title>
+    <meta name="description" content="Почему быстро заканчивается память на Xiaomi и Redmi? Полный разбор причин: кэш, системные файлы, скрытые папки. Эффективные способы очистки.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ku/kuda-devaetsya-pamyat-v-telefone-ksiomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Куда девается память в телефоне Xiaomi: причины и решение">
+    <meta property="og:description" content="Почему быстро заканчивается память на Xiaomi и Redmi? Полный разбор причин: кэш, системные файлы, скрытые папки. Эффективные способы очистки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Куда девается память в телефоне Xiaomi: причины и решение</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#системный-кэш-и-временные-файлы-невидимые-потребители">Системный кэш и временные файлы: невидимые потребители</a></li><li><a href="#феномен-папки-thumbnails-и-скрытые-директории">Феномен папки Thumbnails и скрытые директории</a></li><li><a href="#мессенджеры-telegram-whatsapp-и-их-базы-данных">Мессенджеры: Telegram, WhatsApp и их базы данных</a></li><li><a href="#аналитика-хранилища-таблица-ресурсов">Аналитика хранилища: таблица ресурсов</a></li><li><a href="#инструкция-по-глубокой-очистке-памяти">Инструкция по глубокой очистке памяти</a></li><li><a href="#профилактика-и-настройка-системы">Профилактика и настройка системы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-ubrat-dlya-vas-v-galeree-xiaomi.html">Как убрать папку «Для вас» в галерее Xiaomi: Полная инструкция</a></li><li><a href="/articles/k/ka/kak-otklyuchit-yandeks-opredelitel-nomera-na-telefone-ksiomi.html">Как отключить определитель номера Яндекс на Xiaomi: инструкция</a></li><li><a href="/articles/k/ka/kak-otmenit-sbros-nastroek-na-ksiomi.html">Как отменить сброс настроек на Xiaomi: инструкция</a></li><li><a href="/articles/k/ka/kak-vklyuchit-razdelenie-ekrana-na-xiaomi-redmi-note-10-pro.html">Как включить разделение экрана на Xiaomi Redmi Note 10 Pro</a></li><li><a href="/articles/k/ka/kak-sdelat-vtoroj-akkaunt-na-telefone-xiaomi-redmi.html">Как сделать второй аккаунт на Xiaomi Redmi: полная инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Куда девается память в телефоне Xiaomi: полный разбор причин</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#системный-кэш-и-временные-файлы-невидимые-потребители">Системный кэш и временные файлы: невидимые потребители</a></li><li><a href="#феномен-папки-thumbnails-и-скрытые-директории">Феномен папки Thumbnails и скрытые директории</a></li><li><a href="#мессенджеры-telegram-whatsapp-и-их-базы-данных">Мессенджеры: Telegram, WhatsApp и их базы данных</a></li><li><a href="#аналитика-хранилища-таблица-ресурсов">Аналитика хранилища: таблица ресурсов</a></li><li><a href="#инструкция-по-глубокой-очистке-памяти">Инструкция по глубокой очистке памяти</a></li><li><a href="#профилактика-и-настройка-системы">Профилактика и настройка системы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда <strong>внутренняя память</strong> смартфона внезапно заканчивается, знакома многим владельцам устройств <em>Xiaomi</em> и <em>Redmi</em>. Вы только что скачали обновление приложения, сделали несколько фотографий, и вдруг система сообщает о критической нехватке места. Это вызывает недоумение: ведь еще вчера было свободно несколько гигабайт. Куда же они могли исчезнуть за пару часов?</p>
+
+<p>Проблема «исчезающих» гигабайтов в <strong>MIUI</strong> и <strong>HyperOS</strong> часто кроется не в одной конкретной причине, а в совокупности факторов. <em>Операционная система Android</em> устроена так, что для ускорения работы она активно использует свободное пространство для кэширования данных. Однако иногда этот механизм выходит из-под контроля, и <strong>системный раздел</strong> начинает разрастаться непропорционально.</p>
+
+<p>В этой статье мы детально разберем, где прячутся скрытые файлы, почему папка <code>.thumbnails</code> может весить десятки гигабайт и как мессенджеры незаметно поглощают ваш дисковый ресурс. Понимание структуры файловой системы — первый шаг к освобождению места.</p>
+
+<h2 id="системный-кэш-и-временные-файлы-невидимые-потребители">Системный кэш и временные файлы: невидимые потребители</h2>
+
+<p>Основным «пожирателем» свободного места часто является <strong>кэш приложений</strong> и системы. Когда вы пользуетесь браузером, листаете ленту в социальных сетях или смотрите видео, <em>Xiaomi</em> сохраняет временные данные на диске, чтобы при повторном обращении к контенту он загружался мгновенно. Со временем объем этих данных может достигать 10-20 Гб.</p>
+
+<p>Особенно агрессивно в этом плане ведут себя приложения для просмотра видео и стриминговые сервисы. Они кэшируют буферы, превью и части потокового видео. Если вы не чистите <strong>кэш</strong> регулярно, он накапливается мертвым грузом. В отличие от данных пользователя, эту информацию можно удалять без боязни потерять аккаунты или переписки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте встроенное приложение «Безопасность» от Xiaomi для быстрой очистки кэша, но для глубокой чистки лучше использовать анализатор хранилища.</p></aside>
+
+<p>Стоит отметить, что после крупного обновления <strong>MIUI</strong> или <strong>HyperOS</strong> система может создавать резервные копии старых настроек или временные установочные файлы. Обычно они удаляются автоматически после перезагрузки, но иногда застревают в системном разделе.</p>
+
+<ul>
+<li>📱 Кэш социальных сетей (Telegram, VK, Instagram) занимает до 60% места в разделе «Приложения».</li>
+<li>🎞️ Буферизация видеоконтента в YouTube и онлайн-кинотеатрах создает тысячи мелких файлов.</li>
+<li>🔄 Ошибки синхронизации облачных сервисов могут дублировать временные файлы в скрытых директориях.</li>
+</ul>
+
+<h2 id="феномен-папки-thumbnails-и-скрытые-директории">Феномен папки Thumbnails и скрытые директории</h2>
+
+<p>Одной из самых известных проблем в среде <em>Android</em> является разрастание папки <code>.thumbnails</code>. Эта скрытая системная директория предназначена для хранения миниатюр фотографий и видео из вашей галереи. Логика проста: чтобы галерея открывалась быстро, система создает уменьшенные копии всех медиафайлов. Однако на смартфонах <em>Xiaomi</em> с ихоными экранами эти миниатюры могут весить очень много.</p>
+
+<p>Проблема усугубляется тем, что стандартные средства очистки часто игнорируют системные папки, начинающиеся с точки. Вы можете удалить все фото, но папка <strong>thumbnails</strong> останется и продолжит занимать место, ожидая новых файлов. В некоторых случаях её вес достигает absurdных 30-40 Гб, что для бюджетных моделей с 64 Гб памяти является критическим.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не удаляйте папку <code>.thumbnails</code> через файловый менеджер без предварительного создания бэкапа или использования специальных скриптов. Система может создать её заново, но процесс пересоздания миниатюр для тысяч фото временно <strong>загрузит процессор</strong> и нагреет устройство.</p>
+</blockquote>
+
+<p>Кроме того, многие приложения создают собственные скрытые папки в корне внутренней памяти. Например, загрузчики файлов или мессенджеры могут сохранять данные в директориях, которые не отображаются в стандартном обзоре хранилища. Чтобы увидеть их, необходимо включить отображение скрытых файлов в настройках проводника <em>MIUI</em>.</p>
+
+<details class="pb-accordion"><summary>Как найти скрытые папки?</summary><div class="pb-accordion-body"><p>Включите в проводнике отображение скрытых файлов (обычно кнопка с тремя точками или значок глаза). Ищите папки, начинающиеся с точки или имеющие странные названия, например,.android_data или cache_temp.</p></div></details>
+
+<h2 id="мессенджеры-telegram-whatsapp-и-их-базы-данных">Мессенджеры: Telegram, WhatsApp и их базы данных</h2>
+
+<p>Отдельного внимания заслуживают мессенджеры. <strong>Telegram</strong> и <em>WhatsApp</em> по умолчанию настроены на автоматическое сохранение всех полученных медиафайлов. Если вы состоите в десятках каналов и чатов, где ежедневно публикуются видео и фото, ваш телефон превращается в склад ненужного контента.</p>
+
+<p>В <em>Telegram</em> ситуация осложняется особенностью кэширования: приложение хранит просмотренные медиа в локальном кэше для быстрого доступа. Даже если вы очистили чат визуально, файлы могут оставаться в памяти телефона, пока вы принудительно не очистите кэш в настройках самого приложения. <strong>База данных</strong> сообщений также имеет свойство разрастаться, особенно если в чатах много пересылаемых файлов.</p>
+
+<div class="pb-poll" id="poll-f0e229c8"><div class="pb-poll-question">📊 Какой мессенджер занимает больше всего места на вашем телефоне?</div><div class="pb-poll-option" data-poll="f0e229c8" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Telegram</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f0e229c8" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">WhatsApp</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f0e229c8" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Viber</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f0e229c8" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Instagram Direct</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Для решения проблемы необходимо зайти в настройки каждого мессенджера, найти пункт «Данные и память» (или аналогичный) и настроить автоматическую очистку кэша. Например, в <em>Telegram</em> можно установить автоудаление кэша через 3 дня или неделю. Это сохранит переписку, но освободит место от медиафайлов.</p>
+
+<ul>
+<li>🗑️ Автоматическая очистка кэша в Telegram предотвращает переполнение памяти медиафайлами.</li>
+<li>💾 WhatsApp создает резервные копии локально, которые могут дублироваться в Google Диске и занимать место дважды.</li>
+<li>📹 Видеофайлы в чатах часто весят больше, чем оригиналы, из-за повторного сжатия при пересылке.</li>
+</ul>
+
+<h2 id="аналитика-хранилища-таблица-ресурсов">Аналитика хранилища: таблица ресурсов</h2>
+
+<p>Чтобы понять, что именно занимает место, недостаточно просто посмотреть в настройки. Разные типы файлов влияют на производительность и доступное пространство по-разному. Ниже приведена таблица, демонстрирующая, какие разделы чаще всего «съедают» память на устройствах <em>Xiaomi</em>.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип данных</th>
+<th>Средний объем</th>
+<th>Влияние на систему</th>
+<th>Рекомендуемое действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Кэш приложений</td>
+<td>5-15 Гб</td>
+<td>Замедляет работу при заполнении</td>
+<td>Очистка через «Безопасность»</td>
+</tr>
+<tr>
+<td>Папка.thumbnails</td>
+<td>2-40 Гб</td>
+<td>Блокирует запись новых фото</td>
+<td>Удаление через ПК или ADB</td>
+</tr>
+<tr>
+<td>Мессенджеры</td>
+<td>10-30 Гб</td>
+<td>Увеличивает время резервного копирования</td>
+<td>Настройка автоочистки в приложении</td>
+</tr>
+<tr>
+<td>Системные логи</td>
+<td>0.5-2 Гб</td>
+<td>Минимальное</td>
+<td>Периодический сброс до заводских</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из таблицы, наибольший потенциал для освобождения места дает работа с мессенджерами и системным кэшем. Однако стоит быть осторожным с системными логами: их ручное удаление без root-прав часто невозможно, а с правами суперпользователя можно повредить <strong>загрузчик</strong>.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не пытайтесь удалять файлы из системных разделов (например, <code>/data</code> или <code>/system</code>) вручную, если вы не знаете точно их назначение. Это может привести к циклической перезагрузке (bootloop) устройства.</p>
+</blockquote>
+
+<h2 id="инструкция-по-глубокой-очистке-памяти">Инструкция по глубокой очистке памяти</h2>
+
+<p>Для эффективного освобождения места на <em>Xiaomi</em> необходим комплексный подход. Просто удалить пару приложений будет недостаточно. Следуйте алгоритму ниже, чтобы безопасно вернуть гигабайты.</p>
+
+<p>Начните с анализа больших файлов. Встроенный анализатор хранилища в <strong>MIUI</strong> часто показывает только категории. Используйте сторонние утилиты или подключите телефон к ПК, чтобы найти забытые видео в 4K или установочные файлы APK, оставшиеся после обновления программ.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм очистки памяти</h4><label class="check-item"><input type="checkbox"><span>Проверить папку Загрузки (Download)</span></label><label class="check-item"><input type="checkbox"><span>Очистить кэш Telegram и WhatsApp</span></label><label class="check-item"><input type="checkbox"><span>Удалить папку.thumbnails (с осторожностью)</span></label><label class="check-item"><input type="checkbox"><span>Перенести фото на ПК или в облако</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Далее займитесь переносом данных. Фотографии и документы лучше хранить в облаке (<em>Google Фото</em>, <em>Яндекс.Диск</em>) или на компьютере. Включите функцию «Освободить место» в Google Фото — она удалит с устройства копии тех снимков, которые уже загружены в облако.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярный перенос медиафайлов на внешние носители или в облако — единственный способ гарантировать, что память не закончится внезапно.</p></aside>
+
+<p>Если ничего не помогает, можно воспользоваться режимом восстановления (<em>Recovery</em>) для очистки кэша раздела <code>Dalvik Cache</code>. Это безопасно для пользовательских данных, но требует входа в режим Recovery (обычно кнопка громкости вверх + питание при выключенном телефоне).</p>
+
+<h2 id="профилактика-и-настройка-системы">Профилактика и настройка системы</h2>
+
+<p>Чтобы проблема «куда девается память» не возвращалась, важно настроить систему правильно. <strong>HyperOS</strong> и новые версии <em>MIUI</em> имеют встроенные механизмы оптимизации, но их нужно активировать. В первую очередь ограничьте фоновую активность тяжелых приложений.</p>
+
+<p>Также стоит отключить автоматическое обновление приложений через мобильную сеть, если у вас тариф с лимитом, и разрешить обновления только по Wi-Fi. Это предотвратит накопление старых версий установщиков. Регулярно (раз в месяц) перезагружайте смартфон — это помогает системе корректно завершить фоновые процессы и очистить временные буферы.</p>
+
+<ul>
+<li>🚀 Отключите автообновление приложений в Google Play, оставив только Wi-Fi.</li>
+<li>📉 Установите лимит на размер кэша в настройках браузера (если такая опция доступна).</li>
+<li>🔄 Регулярно перезагружайте устройство для сброса системных ошибок кэширования.</li>
+</ul>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Почему после обновления MIUI память уменьшилась?</summary>
+<p>При обновлении прошивки система создает резервную копию текущей версии на случай отката. Также новая версия ОС может занимать больше места из-за новых функций. Обычно временные файлы обновления удаляются автоматически через несколько дней после успешной установки, но иногда требуется ручная очистка через меню Recovery.</p>
+</details>
+
+<details>
+<summary>Безопасно ли удалять папку MIUI</summary>
+<p>Нет, удалять системные папки с префиксом <code>MIUI</code> нельзя. Внутри них хранятся настройки темы, будильники, диктофонные записи и конфигурация системы. Удаление приведет к сбросу настроек или ошибкам в работе интерфейса.</p>
+</details>
+
+<details>
+<summary>Как очистить кэш, если телефон не включается?</summary>
+<p>Если телефон завис из-за переполнения памяти, попробуйте войти в режим Recovery (зажать громкость вверх + питание). Там выберите пункт <code>Wipe Cache</code> (не перепутайте с Wipe Data!). Это удалит временные файлы без потери личных данных.</p>
+</details>
+
+<details>
+<summary>Правда ли, что карты памяти SD замедляют телефон?</summary>
+<p>На современных смартфонах <em>Xiaomi</em> с быстрыми картами памяти (класс U3, A2) замедление минимально. Однако установка приложений на SD-карту действительно может снизить скорость их запуска. Фото и видео хранить на «флешке» можно и нужно.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-ubrat-dlya-vas-v-galeree-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как убрать папку «Для вас» в галерее Xiaomi: Полная инструкция</span>
+                <span class="pb-related-desc">Подробный гид по отключению рекомендаций и папки «Для вас» в галерее Xiaomi. Убираем рекламу, чистим</span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-yandeks-opredelitel-nomera-na-telefone-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить определитель номера Яндекс на Xiaomi: инструкция</span>
+                <span class="pb-related-desc">Полное руководство: как убрать определитель номера Яндекс на Xiaomi. Отключение виджетов, блокировка</span>
+            </a><a href="/articles/k/ka/kak-otmenit-sbros-nastroek-na-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как отменить сброс настроек на Xiaomi: инструкция</span>
+                <span class="pb-related-desc">Узнайте, можно ли отменить сброс настроек на Xiaomi. Эффективные методы восстановления данных после </span>
+            </a><a href="/articles/k/ka/kak-vklyuchit-razdelenie-ekrana-na-xiaomi-redmi-note-10-pro.html" class="pb-related-card">
+                <span class="pb-related-title">Как включить разделение экрана на Xiaomi Redmi Note 10 Pro</span>
+                <span class="pb-related-desc">Пошаговая инструкция по активации режима Split Screen на Redmi Note 10 Pro. Узнайте, как пользоватьс</span>
+            </a><a href="/articles/k/ka/kak-sdelat-vtoroj-akkaunt-na-telefone-xiaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать второй аккаунт на Xiaomi Redmi: полная инструкция</span>
+                <span class="pb-related-desc">Подробное руководство, как создать второй аккаунт на Xiaomi Redmi. Разбираем встроенные средства MIU</span>
+            </a><a href="/articles/s/sm/smartfon-xiaomi-redmi-9t-kak-vstavit-sim-kartu.html" class="pb-related-card">
+                <span class="pb-related-title">Redmi 9T: Как вставить SIM-карту — пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по установке SIM-карты в Xiaomi Redmi 9T. Узнайте расположение лотка, тип скре</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

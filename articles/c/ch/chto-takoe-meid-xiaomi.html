@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>MEID Xiaomi: что это, как узнать и изменить — СяоМастер</title>
+    <meta name="description" content="Полное руководство по MEID в смартфонах Xiaomi. Узнайте, что это за идентификатор, чем отличается от IMEI, где найти код и как восстановить утерянный номер.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/c/ch/chto-takoe-meid-xiaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="MEID Xiaomi: что это, как узнать и изменить">
+    <meta property="og:description" content="Полное руководство по MEID в смартфонах Xiaomi. Узнайте, что это за идентификатор, чем отличается от IMEI, где найти код и как восстановить утерянный номер.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">MEID Xiaomi: что это, как узнать и изменить</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#определение-и-технические-особенности-meid">Определение и технические особенности MEID</a></li><li><a href="#ключевые-отличия-meid-от-imei-и-esn">Ключевые отличия MEID от IMEI и ESN</a></li><li><a href="#где-найти-meid-на-устройствах-xiaomi">Где найти MEID на устройствах Xiaomi</a></li><li><a href="#инструкция-по-восстановлению-утерянного-meid">Инструкция по восстановлению утерянного MEID</a></li><li><a href="#проблемы-с-meid-при-перепрошивке-и-кастомных-rom">Проблемы с MEID при перепрошивке и кастомных ROM</a></li><li><a href="#влияние-идентификатора-на-работу-сети-и-гарантии">Влияние идентификатора на работу сети и гарантии</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-na-syaomi-pokazat-skorost-interneta.html">Как на Сяоми проверить и показать скорость интернета: тесты и настройки</a></li><li><a href="/drugoe/k/ka/kak-razvesti-mylo-dlya-ksiomi.html">Как развести мыло для Xiaomi: инструкция по очистке экрана</a></li><li><a href="/articles/k/ka/kak-zapustit-prilozhenie-zdorove-na-xiaomi-redmi-9.html">Как запустить приложение Здоровье на Xiaomi Redmi 9: инструкция</a></li><li><a href="/articles/k/ka/kak-pereklyuchat-muzyku-na-naushnikakh-xiaomi-mi-true-wireless-earbuds-basic-2.html">Как переключать музыку на Xiaomi Mi True Wireless Earbuds Basic 2</a></li><li><a href="/articles/p/pe/perenesti-kontakty-s-ksiomi-na-ksiomi-kak.html">Как перенести контакты с Xiaomi на Xiaomi: все способы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Что такое MEID в Xiaomi и как его узнать</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#определение-и-технические-особенности-meid">Определение и технические особенности MEID</a></li><li><a href="#ключевые-отличия-meid-от-imei-и-esn">Ключевые отличия MEID от IMEI и ESN</a></li><li><a href="#где-найти-meid-на-устройствах-xiaomi">Где найти MEID на устройствах Xiaomi</a></li><li><a href="#инструкция-по-восстановлению-утерянного-meid">Инструкция по восстановлению утерянного MEID</a></li><li><a href="#проблемы-с-meid-при-перепрошивке-и-кастомных-rom">Проблемы с MEID при перепрошивке и кастомных ROM</a></li><li><a href="#влияние-идентификатора-на-работу-сети-и-гарантии">Влияние идентификатора на работу сети и гарантии</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владение современным смартфоном <em>Xiaomi</em> подразумевает не только удовольствие от использования интерфейса <em>MIUI</em> или <em>HyperOS</em>, но и понимание технических характеристик устройства. Часто пользователи сталкиваются с необходимостью указать уникальные идентификаторы при переносе данных, регистрации в корпоративных сетях или при попытке разблокировать загрузчик. Одним из таких кодов является <strong>MEID</strong>, который вызывает множество вопросов у владельцев техники.</p>
+
+<p>Этот параметр часто путают с более известным <strong>IMEI</strong>, полагая, что это одно и то же, или вовсе игнорируют его наличие в системе. Однако для корректной работы устройства в сетях определенных операторов, особенно в США и Китае, наличие и правильность этого кода критически важны. Разберемся, зачем он нужен и почему стоит обращать на него внимание при покупке или перепрошивке.</p>
+
+<p>В этой статье мы детально разберем структуру идентификатора, способы его проверки и методы восстановления в случае сбоя. Понимание разницы между стандартами идентификации поможет вам избежать проблем с подключением к мобильной сети и правильно настроить аппарат. <mark>MEID — это уникальный 14-значный шестнадцатеричный идентификатор, который присваивается устройствам CDMA и LTE, и его подмена или изменение могут привести к блокировке связи.</mark></p>
+
+<h2 id="определение-и-технические-особенности-meid">Определение и технические особенности MEID</h2>
+
+<p><strong>Mobile Equipment Identifier</strong> представляет собой глобально уникальный номер, присваиваемый физическому мобильному устройству. В отличие от GSM-сетей, которые исторически опирались на IMEI, сети стандарта CDMA (Code Division Multiple Access) используют именно <strong>MEID</strong> для идентификации оборудования. С развитием технологий и переходом на <em>LTE</em> и <em>5G</em>, этот идентификатор стал стандартом де-факто для большинства современных смартфонов, включая флагманы <em>Xiaomi</em> серии <em>Mi</em> и <em>Redmi</em>.</p>
+
+<p>Структура кода строго регламентирована и состоит из 14 шестнадцатеричных знаков. Первые 8 символов обозначают производителя оборудования и модель, а оставшиеся 6 — серийный номер конкретного устройства. Такая кодировка позволяет операторам связи и производителям точно отслеживать происхождение гаджета. Важно понимать, что <strong>MEID</strong> «вшит» в чип модема на аппаратном уровне, что делает его изменение программными методами сложной и рискованной задачей.</p>
+
+<blockquote>⚠️ Внимание: Попытка изменить MEID программными методами (IMEI Changer) на устройствах Xiaomi без соответствующих сертификатов может привести к необратимой блокировке модуля связи и потере гарантии.</blockquote>
+
+<p>В современных реалиях, когда границы между стандартами связи стираются, один смартфон может поддерживать оба типа идентификации. <em>Xiaomi</em>, как глобальный бренд, интегрирует поддержку обоих стандартов в свои процессоры <em>Snapdragon</em> и <em>MediaTek</em>. Это обеспечивает совместимость устройства с операторами по всему миру, будь то <em>Verizon</em> в США или <em>China Mobile</em>.</p>
+
+<ul>
+<li>📱 Уникальный код из 14 шестнадцатеричных символов.</li>
+<li>🌐 Используется преимущественно в сетях CDMA, но поддерживается в LTE/5G.</li>
+<li>🔒 Прописывается в заводских условиях и защищен от простой модификации.</li>
+<li>⚙️ Необходим для регистрации устройства в сетях некоторых операторов.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>MEID является аппаратным паспортом вашего смартфона в сетях CDMA/LTE, и его целостность критична для стабильной работы мобильной связи.</p></aside>
+
+<h2 id="ключевые-отличия-meid-от-imei-и-esn">Ключевые отличия MEID от IMEI и ESN</h2>
+
+<p>Путаница между <strong>IMEI</strong>, <strong>MEID</strong> и устаревшим <strong>ESN</strong> возникает часто, так как все они служат для идентификации оборудования. Однако между ними есть фундаментальные различия в структуре и назначении. <strong>IMEI</strong> (International Mobile Equipment Identity) используется в сетях GSM и состоит из 15 десятичных цифр. <strong>MEID</strong>, в свою очередь, является наследником <strong>ESN</strong> (Electronic Serial Number) и использует шестнадцатеричную систему счисления, что позволяет создавать более длинные и уникальные комбинации.</p>
+
+<p>В смартфонах <em>Xiaomi</em> вы можете наблюдать, что при запросе информации через инженерное меню или командную строку, система выдает оба значения. Это связано с тем, что современные модемы универсальны. Если <strong>IMEI</strong> необходим для работы в сетях <em>MTS</em>, <em>Beeline</em> или <em>Megafon</em> (GSM/LTE), то <strong>MEID</strong> может потребоваться для активации устройства в сетях <em>CDMA</em> или для работы определенных функций <em>eSIM</em> в зарубежных регионах.</p>
+
+<p>Технически, <strong>MEID</strong> часто генерируется на основе <strong>IMEI</strong>, но это не всегда прямая конвертация. В некоторых случаях производители используют отдельные пулы адресов. Для пользователя разница заметна при вводе кода в <code>*#06#</code>: вы увидите разные наборы символов для разных слотов SIM-карт и разных стандартов связи.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Характеристика</th>
+<th>IMEI</th>
+<th>MEID</th>
+<th>ESN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Система счисления</td>
+<td>Десятичная (0-9)</td>
+<td>Шестнадцатеричная (0-9, A-F)</td>
+<td>Десятичная/Шестнадцатеричная</td>
+</tr>
+<tr>
+<td>Длина кода</td>
+<td>15 цифр</td>
+<td>14 символов</td>
+<td>8-11 цифр</td>
+</tr>
+<tr>
+<p>td>Основной стандарт</td></p>
+<td>GSM / UMTS / LTE</td>
+<td>CDMA / LTE</td>
+<td>CDMA (2G/3G)</td>
+</tr>
+<tr>
+<td>Статус</td>
+<td>Актуален</td>
+<td>Актуален</td>
+<td>Устарел</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Понимание этих различий важно при покупке устройства с рук. Если в документации указан только <strong>IMEI</strong>, а вам требуется <strong>MEID</strong> для регистрации у оператора, это может стать проблемой. Всегда проверяйте наличие обоих идентификаторов в настройках системы.</p>
+
+<div class="pb-poll" id="poll-05cf7af8"><div class="pb-poll-question">📊 Какой идентификатор вам приходилось вводить чаще?</div><div class="pb-poll-option" data-poll="05cf7af8" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только IMEI</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="05cf7af8" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Только MEID</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="05cf7af8" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Оба сразу</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="05cf7af8" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Ни разу не вводил</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="где-найти-meid-на-устройствах-xiaomi">Где найти MEID на устройствах Xiaomi</h2>
+
+<p>Пользователям <em>Xiaomi</em> доступно несколько способов получения информации об идентификаторе оборудования. Самый простой и безопасный метод — использование встроенного инженерного кода. Откройте приложение «Телефон» и наберите комбинацию <code>*#06#</code>. На экране мгновенно появится окно с информацией о всех SIM-слотах.</p>
+
+<p>В открывшемся списке вы увидите строки <strong>IMEI 1</strong>, <strong>IMEI 2</strong>, а также <strong>MEID</strong>. Обратите внимание, что для двухсимочных смартфонов <strong>MEID</strong> может отображаться один общий или отдельные для каждого слота, в зависимости от модели и версии прошивки. Этот метод работает на всех устройствах, от бюджетных <em>Redmi</em> до флагманских <em>Xiaomi</em>.</p>
+
+<p>Альтернативный путь лежит через меню настроек системы. Перейдите в раздел <code>Настройки → О телефоне → Общая информация</code>. Здесь продублированы все ключевые данные об устройстве. Если вы используете глобальную версию прошивки, интерфейс может незначительно отличаться, но логика остается прежней: ищите раздел с технической информацией.</p>
+
+<ul>
+<li>📞 Набор кода <code>*#06#</code> в приложении звонилки.</li>
+<li>⚙️ Меню <code>Настройки → О телефоне → Общая информация</code>.</li>
+<li>📦 Наклейка на оригинальной упаковке устройства (штрих-код).</li>
+<li>📄 Гарантийный талон или чек покупки (иногда содержит данные).</li>
+</ul>
+
+<p>Физическая наклейка на коробке также содержит эту информацию. Она расположена на торце упаковки в виде штрих-кодов. Это полезно, если телефон разряжен или не включается. Однако помните, что наклейка на коробке актуальна только если вы не меняли материнскую плату устройства.</p>
+
+<details class="pb-accordion"><summary>Что делать, если код *#06# не работает?</summary><div class="pb-accordion-body"><p>В редких случаях на кастомных прошивках или сильно модифицированных системах стандартный код может быть заблокирован. В этом случае попробуйте использовать сторонние приложения из Google Play, например, Device Info HW, которые считывают данные напрямую из системы Android.</p></div></details>
+
+<h2 id="инструкция-по-восстановлению-утерянного-meid">Инструкция по восстановлению утерянного MEID</h2>
+
+<p>Ситуация, когда <strong>MEID</strong> отображается как <code>00000000000000</code> или <code>Unknown</code>, обычно свидетельствует о серьезном программном сбое. Это часто происходит после неудачной перепрошивки, сброса разделов <code>persist</code> или использования неофициальных инструментов для разблокировки загрузчика. Восстановление этого параметра — задача сложная и требует осторожности.</p>
+
+<p>Первым шагом всегда должен быть полный сброс настроек или перепрошивка на официальную версию ПО через программу <em>Mi Flash Tool</em>. Иногда повреждение носит программный характер, и чистая установка системы способна восстановить корректные значения из резервных копий в разделе <code>persist</code>. Однако, если раздел был затерт, простыми методами не обойтись.</p>
+
+<p>Для продвинутых пользователей существует метод восстановления через инженерный режим и утилиты Qualcomm, такие как <em>QPST</em> или <em>QXDM</em>. Этот процесс требует наличия root-прав, разблокированного загрузчика и, что самое важное, оригинального бэкапа раздела <code>persist</code> именно с вашего устройства. Без бэкапа прописывание случайных значений может привести к полной неработоспособности модема.</p>
+
+<blockquote>⚠️ Внимание: Самостоятельное изменение IMEI/MEID является незаконным во многих странах и может привести к блокировке устройства оператором связи на уровне сети.</blockquote>
+
+<p>Если вы не обладаете навыками работы с низкоуровневыми инструментами отладки, единственным безопасным решением остается обращение в авторизованный сервисный центр <em>Xiaomi</em>. Инженеры имеют доступ к заводским базам данных и могут легально восстановить оригинальные идентификаторы, используя специальное оборудование.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед восстановлением</h4><label class="check-item"><input type="checkbox"><span>Сделан полный бэкап данных</span></label><label class="check-item"><input type="checkbox"><span>Известен оригинальный IMEI/MEID</span></label><label class="check-item"><input type="checkbox"><span>Установлены драйверы Qualcomm</span></label><label class="check-item"><input type="checkbox"><span>Есть стабильное питание ПК и телефона</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="проблемы-с-meid-при-перепрошивке-и-кастомных-rom">Проблемы с MEID при перепрошивке и кастомных ROM</h2>
+
+<p>Установка кастомных прошивок, таких как <em>LineageOS</em> или <em>Xiaomi.eu</em>, часто сопряжена с риском потери идентификаторов. Это происходит, когда пользователь выполняет команду <code>fastboot erase persist</code> или аналогичные действия по очистке разделов, не понимая их назначения. Раздел <code>persist</code> хранит калибровочные данные датчиков, MAC-адреса Wi-Fi/Bluetooth и, конечно же, <strong>IMEI/MEID</strong>.</p>
+
+<p>После такой процедуры телефон может включаться, но сеть будет отсутствовать, а в статус-баре будет гореть перечеркнутый значок SIM-карты. В логах системы при этом могут появляться ошибки, связанные с невозможностью инициализации радиомодуля. Решение проблемы зависит от того, сохранился ли бэкап раздела.</p>
+
+<p>Если вы планируете экспериментировать с прошивками, правило номер один — всегда делайте бэкап раздела <code>persist</code> перед любыми манипуляциями. Команда для создания резервной копии выглядит следующим образом:</p>
+
+<pre><code>adb pull /dev/block/bootdevice/by-name/persist persist.img</code></pre>
+
+<p>Сохраните этот файл в надежном месте. В случае проблем, вернуть все обратно можно командой <code>fastboot flash persist persist.img</code>. Это спасет вас от необходимости нести телефон в сервис и искать оригинальные коды.</p>
+
+<ul>
+<li>🛑 Не выполняйте команду <code>erase persist</code> без крайней необходимости.</li>
+<li>💾 Всегда создавайте резервную копию перед перепрошивкой.</li>
+<li>🔧 Используйте только проверенные recovery-меню (TWRP, OrangeFox).</li>
+<li>📡 Проверяйте работу сети сразу после первой загрузки.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При покупке б/у Xiaomi с рук обязательно сверяйте MEID в меню *#06# с данными на коробке. Если они не совпадают или отображаются нули — телефон, скорее всего, был «восстановлен» кустарным методом.</p></aside>
+
+<h2 id="влияние-идентификатора-на-работу-сети-и-гарантии">Влияние идентификатора на работу сети и гарантии</h2>
+
+<p>Наличие корректного <strong>MEID</strong> влияет не только на возможность звонить. В современных сетях LTE Advanced и 5G этот идентификатор используется для аутентификации устройства в ядре сети. Если оператор видит некорректный или измененный код, он может ограничить скорость передачи данных или полностью заблокировать доступ к услугам связи.</p>
+
+<p>Кроме того, изменение уникальных идентификаторов оборудования является прямым нарушением условий гарантии <em>Xiaomi</em>. При обращении в сервисный центр с жалобой на связь, инженеры первым делом проверяют целостность программной части. Обнаружение следов вмешательства (модифицированный <code>persist</code>, несоответствие кодов) дает право отказать в бесплатном ремонте.</p>
+
+<p>Для корпоративных клиентов, использующих MDM-системы (Mobile Device Management), <strong>MEID</strong> часто выступает ключом для привязки устройства к учетной записи сотрудника. Ошибка в одном символе может привести к тому, что телефон не получит необходимые политики безопасности и доступы.</p>
+
+<p>В заключение, <strong>MEID</strong> — это не просто набор цифр, а важный элемент экосистемы мобильной связи. Относитесь к нему бережно, не пытайтесь изменить его без веских причин и всегда храните резервные копии критических разделов системы. Это сэкономит вам время, деньги и нервы в будущем.</p>
+
+<details>
+<summary>Можно ли изменить MEID на Xiaomi без root-прав?</summary>
+<p>Нет, изменение <strong>MEID</strong> требует доступа к системным разделам, которые защищены от записи. Для внесения изменений необходимы root-права или доступ к инженерному меню через специальные утилиты, что фактически означает наличие прав суперпользователя.</p>
+</details>
+
+<details>
+<summary>Что означает, если MEID состоит из одних нулей?</summary>
+<p>Это указывает на повреждение раздела <code>persist</code> или сбой модема. Телефон не может считать свой уникальный идентификатор. Требуется перепрошивка или восстановление из бэкапа.</p>
+</details>
+
+<details>
+<summary>Влияет ли смена региона прошивки на MEID?</summary>
+<p>Смена региона (например, с Global на China) сама по себе не должна менять <strong>MEID</strong>, так как он хранится в отдельном защищенном разделе. Однако неправильный процесс прошивки может привести к его потере.</p>
+</details>
+
+<details>
+<summary>Где взять оригинальный MEID, если он утерян?</summary>
+<p>Оригинальный код указан на коробке от устройства, в гарантийном талоне или в чеке (иногда). Если ничего нет, только сервисный центр может восстановить данные из заводской базы по серийному номеру корпуса.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-na-syaomi-pokazat-skorost-interneta.html" class="pb-related-card">
+                <span class="pb-related-title">Как на Сяоми проверить и показать скорость интернета: тесты и настройки</span>
+                <span class="pb-related-desc">Подробная инструкция: как проверить скорость интернета на Xiaomi, Redmi и POCO. Тесты Wi-Fi и 4G, ус</span>
+            </a><a href="/drugoe/k/ka/kak-razvesti-mylo-dlya-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как развести мыло для Xiaomi: инструкция по очистке экрана</span>
+                <span class="pb-related-desc">Узнайте, как правильно развести мыло для очистки экрана Xiaomi. Безопасные пропорции, выбор моющего </span>
+            </a><a href="/articles/k/ka/kak-zapustit-prilozhenie-zdorove-na-xiaomi-redmi-9.html" class="pb-related-card">
+                <span class="pb-related-title">Как запустить приложение Здоровье на Xiaomi Redmi 9: инструкция</span>
+                <span class="pb-related-desc">Полная инструкция по настройке Mi Fitness на Redmi 9. Как включить датчики, синхронизировать часы и </span>
+            </a><a href="/articles/k/ka/kak-pereklyuchat-muzyku-na-naushnikakh-xiaomi-mi-true-wireless-earbuds-basic-2.html" class="pb-related-card">
+                <span class="pb-related-title">Как переключать музыку на Xiaomi Mi True Wireless Earbuds Basic 2</span>
+                <span class="pb-related-desc">Полная инструкция: как переключать треки, управлять громкостью и звонками на наушниках Xiaomi Basic </span>
+            </a><a href="/articles/p/pe/perenesti-kontakty-s-ksiomi-na-ksiomi-kak.html" class="pb-related-card">
+                <span class="pb-related-title">Как перенести контакты с Xiaomi на Xiaomi: все способы</span>
+                <span class="pb-related-desc">Пошаговая инструкция, как перенести контакты с Xiaomi на Xiaomi. Синхронизация через Mi Аккаунт, Goo</span>
+            </a><a href="/articles/k/ka/kak-podklyuchit-kartu-belarusbank-dlya-oplaty-s-telefona-ksyaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как подключить карту Беларусбанк к Xiaomi Pay: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как добавить карту Беларусбанк в Mi Pay на Xiaomi. Подробная настройка NFC, привязка через </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

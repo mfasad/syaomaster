@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как перенести приложения на SD карту Xiaomi Redmi 8T: полная инструкция — СяоМастер</title>
+    <meta name="description" content="Подробный гайд, как перенести приложения на SD карту Xiaomi Redmi 8T. Обход ограничений MIUI, использование ADB и сторонних утилит для освобождения памяти.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-perenesti-prilozheniya-na-sd-kartu-xiaomi-redmi-8t.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как перенести приложения на SD карту Xiaomi Redmi 8T: полная инструкция">
+    <meta property="og:description" content="Подробный гайд, как перенести приложения на SD карту Xiaomi Redmi 8T. Обход ограничений MIUI, использование ADB и сторонних утилит для освобождения памяти.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как перенести приложения на SD карту Xiaomi Redmi 8T: полная инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-смартфона-и-карты-памяти-к-работе">Подготовка смартфона и карты памяти к работе</a></li><li><a href="#стандартный-метод-переноса-через-настройки-android">Стандартный метод переноса через настройки Android</a></li><li><a href="#использование-режима-разработчика-для-принудительного-переноса">Использование режима разработчика для принудительного переноса</a></li><li><a href="#применение-утилиты-app2sd-для-управления-хранилищем">Применение утилиты App2SD для управления хранилищем</a></li><li><a href="#продвинутый-метод-использование-adb-команд">Продвинутый метод: использование ADB команд</a></li><li><a href="#таблица-совместимости-и-ограничения-методов">Таблица совместимости и ограничения методов</a></li><li><a href="#возможные-проблемы-и-способы-их-решения">Возможные проблемы и способы их решения</a></li><li><a href="#оптимизация-работы-redmi-8t-с-полной-картой-памяти">Оптимизация работы Redmi 8T с полной картой памяти</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-uvelichit-pamyat-telefona-android-ksyaomi.html">Как увеличить память телефона Xiaomi: полные способы и инструкции</a></li><li><a href="/articles/k/ka/kak-vosstanovit-foto-iz-korziny-na-syaomi.html">Как восстановить фото из корзины на Xiaomi: пошаговая инструкция</a></li><li><a href="/articles/g/gd/gde-nakhoditsya-bufer-obmena-v-telefone-android-ksiomi-9.html">Где находится буфер обмена на Xiaomi Redmi 9: поиск и очистка</a></li><li><a href="/articles/k/ka/kak-otklyuchit-mobilnuyu-svyaz-no-ostavit-internet-na-smartfone-xiaomi-redmi.html">Как отключить мобильную связь, но оставить интернет на Xiaomi Redmi</a></li><li><a href="/articles/t/tr/trassirovka-sistemy-xiaomi-chto-eto-za-programma-i-nuzhna-li-ona.html">Трассировка Xiaomi: что это и можно ли отключить?</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как перенести приложения на SD карту Xiaomi Redmi 8T: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-смартфона-и-карты-памяти-к-работе">Подготовка смартфона и карты памяти к работе</a></li><li><a href="#стандартный-метод-переноса-через-настройки-android">Стандартный метод переноса через настройки Android</a></li><li><a href="#использование-режима-разработчика-для-принудительного-переноса">Использование режима разработчика для принудительного переноса</a></li><li><a href="#применение-утилиты-app2sd-для-управления-хранилищем">Применение утилиты App2SD для управления хранилищем</a></li><li><a href="#продвинутый-метод-использование-adb-команд">Продвинутый метод: использование ADB команд</a></li><li><a href="#таблица-совместимости-и-ограничения-методов">Таблица совместимости и ограничения методов</a></li><li><a href="#возможные-проблемы-и-способы-их-решения">Возможные проблемы и способы их решения</a></li><li><a href="#оптимизация-работы-redmi-8t-с-полной-картой-памяти">Оптимизация работы Redmi 8T с полной картой памяти</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфона <em>Xiaomi Redmi 8T</em> часто сталкиваются с нехваткой встроенного хранилища, особенно если устройство имеет базовую комплектацию с 64 ГБ памяти. После установки социальных сетей, мессенджеров и навигаторов свободное место стремительно заканчивается, что приводит к замедлению работы системы и невозможности установки обновлений. Решением проблемы может стать использование карты памяти microSD, однако стандартными средствами MIUI перенос приложений часто недоступен.</p>
+
+<p>В этой статье мы разберем не только стандартные методы, но и продвинутые способы, позволяющие обойти системные ограничения оболочки <strong>MIUI</strong>. Вы узнаете, как сделать карту памяти основным хранилищем или использовать ее для принудительной установки тяжелых игр и программ. Это позволит значительно продлить комфортное использование вашего смартфона без необходимости покупки новой модели.</p>
+
+<p>Стоит сразу отметить, что процесс требует внимательности, так как работа с системными файлами и отладкой по USB имеет свои риски. Перед началом любых манипуляций необходимо создать резервную копию важных данных, чтобы исключить их потерю в случае непредвиденных ошибок.</p>
+
+<h2 id="подготовка-смартфона-и-карты-памяти-к-работе">Подготовка смартфона и карты памяти к работе</h2>
+
+<p>Первым шагом является правильный выбор и подготовка накопителя. Для стабильной работы приложений с карты памяти в <em>Redmi 8T</em> рекомендуется использовать microSD объемом от 32 до 128 ГБ с классом скорости не ниже <code>Class 10</code> или <code>UHS-I</code>. Медленные карты могут вызывать лаги в играх и долгой загрузке программ, что сведет на нет все преимущества расширения памяти.</p>
+
+<p>Вставьте карту в слот, расположенный в торце устройства рядом с лотком для SIM-карт. Система автоматически предложит отформатировать накопитель. Выберите вариант «Использовать как портативное хранилище», если планируете часто переносить файлы на компьютер, или «Использовать как внутреннее хранилище», если такая опция доступна в вашей версии прошивки.</p>
+
+<ul>
+<li>📱 Убедитесь, что смартфон заряжен минимум на 50% перед началом форматирования.</li>
+<li>💾 Сделайте резервное копирование всех важных файлов с карты, так как она будет полностью очищена.</li>
+<li>🔒 Проверьте карту на наличие ошибок с помощью утилиты <code>chkdsk</code> на компьютере перед установкой в телефон.</li>
+</ul>
+
+<blockquote>⚠️ Внимание: Форматирование карты памяти внутри смартфона уничтожит все данные на ней. Убедитесь, что вы сохранили важные фотографии и документы заранее.</blockquote>
+
+<p>После форматирования система создаст специальную файловую структуру. Если вы выбрали режим портативного хранилища, часть памяти будет зарезервирована под системные нужды Android. Это нормально, и объем доступного пользователю пространства может немного отличаться от заявленного производителем карты.</p>
+
+<h2 id="стандартный-метод-переноса-через-настройки-android">Стандартный метод переноса через настройки Android</h2>
+
+<p>В некоторых версиях оболочки <strong>MIUI</strong> сохраняется нативная возможность переноса приложений, унаследованная от чистого Android. Чтобы проверить доступность этой функции, перейдите в меню <code>Настройки</code> и выберите раздел <code>Приложения</code>. Найдите в списке программу, которую хотите переместить, и нажмите на нее.</p>
+
+<p>Если перенос возможен, вы увидите активную кнопку «Переместить» или «Изменить» в разделе хранилища. Нажав на нее, система предложит выбрать целевую карту памяти. Однако в большинстве случаев на <em>Xiaomi Redmi 8T</em> эта кнопка может быть неактивна или отсутствовать для системных приложений.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка возможности переноса</h4><label class="check-item"><input type="checkbox"><span>Зайти в Настройки→Приложения→Управление приложениями</span></label><label class="check-item"><input type="checkbox"><span>Выбрать нужное приложение</span></label><label class="check-item"><input type="checkbox"><span>Нажать «Хранилище»</span></label><label class="check-item"><input type="checkbox"><span>Проверить активность кнопки «Изменить»</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Стоит учитывать, что даже при успешном переносе часть данных приложения все равно останется во внутренней памяти. Это связано с особенностями работы <strong>Android</strong>, где критически важные файлы должны оставаться в быстром встроенном накопителе для обеспечения стабильности работы операционной системы.</p>
+
+<h2 id="использование-режима-разработчика-для-принудительного-переноса">Использование режима разработчика для принудительного переноса</h2>
+
+<p>Если стандартный метод не работает, можно активировать скрытую функцию Android, которая позволяет устанавливать приложения по умолчанию на внешний накопитель. Для этого необходимо включить режим разработчика. Перейдите в <code>Настройки → О телефоне</code> и быстро нажмите 7 раз на пункт <code>Версия MIUI</code>, пока не появится уведомление об активации режима.</p>
+
+<p>Далее откройте расширенные настройки и найдите пункт «Для разработчиков». В списке опций отыщите переключатель «Запись по умолчанию» или «Предпочтительное место установки». Выберите вашу SD-карту. После этого при установке новых приложений система будет предлагать сохранить их на внешний носитель.</p>
+
+<ul>
+<li>🔧 Активация режима разработчика дает доступ к скрытым системным настройкам.</li>
+<li>💾 Изменение приоритета установки не переносит уже установленные приложения автоматически.</li>
+<li>⚙️ Некоторые системные приложения могут игнорировать этот параметр и устанавливаться только внутреннюю память.</li>
+</ul>
+
+<blockquote>⚠️ Внимание: После включения этой опции старые приложения не переместятся сами. Вам придется удалять и устанавливать их заново, чтобы они встали на карту памяти.</blockquote>
+
+<p>Использование этого метода имеет свои drawbacks. При извлечении карты памяти приложения перестанут запускаться, а виджеты могут исчезнуть с рабочего стола. Кроме того, скорость работы тяжелых игр может снизиться из-за меньшей скорости чтения записи microSD по сравнению с внутренним флеш-памятью.</p>
+
+<h2 id="применение-утилиты-app2sd-для-управления-хранилищем">Применение утилиты App2SD для управления хранилищем</h2>
+
+<p>Для более гибкого управления можно воспользоваться специализированными приложениями, такими как <em>App2SD</em>. Эта утилита анализирует установленные программы и показывает, какие из них поддерживают перенос, а какие нет. Скачать ее можно из официального магазина <strong>Google Play</strong>.</p>
+
+<p>После запуска приложение предоставит список всех установленных программ с цветовой маркировкой. Зеленый цвет означает, что приложение можно полностью перенести, желтый — только часть данных, а красный — перенос невозможен без root-прав. Нажмите на нужное приложение и следуйте инструкциям на экране.</p>
+
+<details class="pb-accordion"><summary>Почему некоторые приложения нельзя перенести?</summary><div class="pb-accordion-body"><p>Разработчики приложений сами решают, где может храниться их продукт. Если в манифесте программы указано требование к быстрому доступу или защите данных, Android блокирует перенос на внешний накопитель. Это часто касается банковских приложений и мессенджеров с шифрованием.</p></div></details>
+
+<p>Важно понимать, что без прав суперпользователя (<strong>Root</strong>) возможности утилиты ограничены стандартными функциями Android. Однако даже в этом режиме можно освободить несколько гигабайт, перенеся кэш тяжелых игр или оффлайн-карты навигатора.</p>
+
+<h2 id="продвинутый-метод-использование-adb-команд">Продвинутый метод: использование ADB команд</h2>
+
+<p>Самый эффективный способ, не требующий получения Root-прав, — использование отладки по USB и компьютера. Этот метод позволяет принудительно перенести приложения, которые система считает системными или важными. Вам потребуется ПК, USB-кабель и установленные драйверы ADB.</p>
+
+<p>Подключите <em>Redmi 8T</em> к компьютеру и включите отладку по USB в меню для разработчиков. Откройте командную строку на ПК в папке с ADB и введите команду для проверки подключения: <code>adb devices</code>. На экране телефона должно появиться окно с запросом на разрешение отладки.</p>
+
+<pre><code>adb shell pm set-install-location 2</code></pre>
+
+<p>Эта команда переводит установку по умолчанию на внешнюю карту. Чтобы перенести конкретное приложение, используйте команду: <code>adb shell pm move-package <имя_пакета> <id_карты></code>. Имя пакета можно узнать через команду <code>adb shell pm list packages</code>, а ID карты обычно равен <code>4913</code> или <code>external</code>.</p>
+
+<div class="pb-poll" id="poll-054a234e"><div class="pb-poll-question">📊 Какой метод расширения памяти вы считаете самым эффективным?</div><div class="pb-poll-option" data-poll="054a234e" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Стандартные настройки MIUI</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="054a234e" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Режим разработчика</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="054a234e" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Приложения типа App2SD</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="054a234e" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Команды ADB с компьютера</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<ul>
+<li>💻 Метод требует наличия компьютера и базовых навыков работы с командной строкой.</li>
+<li>📦 Позволяет переносить приложения, скрытые в стандартном меню настроек.</li>
+<li>🔄 При сбросе настроек телефона все изменения будут отменены и процедуру придется повторить.</li>
+</ul>
+
+<h2 id="таблица-совместимости-и-ограничения-методов">Таблица совместимости и ограничения методов</h2>
+
+<p>Чтобы систематизировать информацию, рассмотрим сравнительную таблицу методов. Она поможет выбрать оптимальный способ для вашей ситуации, учитывая уровень подготовки и цели.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>Сложность</th>
+<th>Эффективность</th>
+<th>Риск потери данных</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Стандартный (Настройки)</td>
+<td>Низкая</td>
+<td>Низкая</td>
+<td>Минимальный</td>
+</tr>
+<tr>
+<td>Режим разработчика</td>
+<td>Средняя</td>
+<td>Средняя</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>Приложения (App2SD)</td>
+<td>Низкая</td>
+<td>Средняя</td>
+<td>Минимальный</td>
+</tr>
+<tr>
+<td>ADB команды</td>
+<td>Высокая</td>
+<td>Высокая</td>
+<td>Высокий</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из таблицы, наиболее безопасным является стандартный метод, но он редко доступен на современных прошивках. Метод с ADB дает лучший результат, но требует осторожности. Выбор зависит от того, насколько критична для вас стабильность системы versus объем свободной памяти.</p>
+
+<h2 id="возможные-проблемы-и-способы-их-решения">Возможные проблемы и способы их решения</h2>
+
+<p>В процессе переноса пользователи могут столкнуться с различными ошибками. Например, приложение после перемещения может перестать запускаться или работать нестабильно. В этом случае рекомендуется вернуть программу во внутреннюю память через меню настроек.</p>
+
+<p>Еще одна распространенная проблема — исчезновение виджетов с рабочего стола после переноса приложения. Это происходит потому, что виджеты часто привязаны к физическому пути расположения файла. Решением является повторное добавление виджета на рабочий стол вручную.</p>
+
+<blockquote>⚠️ Внимание: Если после переноса телефон начал работать медленнее или появились сбои, немедленно верните все приложения во внутреннюю память. Скорость карты памяти может быть недостаточной для фоновых процессов системы.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте карты памяти только от проверенных брендов (Samsung, SanDisk, Kingston). Дешевые китайские аналоги часто имеют реальную емкость гораздо меньше заявленной и быстро выходят из строя при активной записи.</p></aside>
+
+<p>Также стоит помнить о ресурсе карты памяти. Постоянная запись и чтение данных, характерные для работы приложений, быстрее изнашивают microSD, чем простое хранение фото. Регулярно проверяйте состояние накопителя и делайте резервные копии.</p>
+
+<h2 id="оптимизация-работы-redmi-8t-с-полной-картой-памяти">Оптимизация работы Redmi 8T с полной картой памяти</h2>
+
+<p>После успешного переноса приложений важно правильно настроить систему. Отключите автоматическое обновление приложений через мобильную сеть, чтобы не заполнять карту временными файлами. Настройте мессенджеры так, чтобы медиафайлы сохранялись сразу на SD-карту.</p>
+
+<p>Периодически очищайте кэш перенесенных приложений. Несмотря на то, что они находятся на отдельном носителе, раздувшийся кэш может замедлять работу файловой системы карты, что в итоге повлияет на быстродействие всего смартфона <em>Xiaomi</em>.</p>
+
+<ul>
+<li>🗑️ Регулярно удаляйте ненужные файлы из папки Download на карте памяти.</li>
+<li>📸 Настройте камеру на сохранение фото и видео напрямую на SD-карту в меню настроек камеры.</li>
+<li>📲 Используйте «легкие» версии приложений (Lite), если основной функционал вам не требуется.</li>
+</ul>
+
+<p>Грамотное управление пространством позволяет использовать <strong>Redmi 8T</strong> еще долгое время без покупки нового устройства. Комбинация переноса приложений и облачных сервисов для хранения фото дает наилучший результат.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Оптимальная стратегия — переносить на карту только тяжелые игры и медиа-контент, оставляя системные приложения и мессенджеры во внутренней памяти для максимальной скорости работы.</p></aside>
+
+<details>
+<summary>Безопасно ли переносить системные приложения на карту памяти?</summary>
+<p>Перенос системных приложений (например, Телефон, Сообщения, Настройки) крайне не рекомендуется. Это может привести к циклической перезагрузке телефона (bootloop) или нестабильной работе интерфейса. Переносите только пользовательские приложения, которые вы сами установили.</p>
+</details>
+
+<details>
+<summary>Что делать, если телефон перестал видеть карту памяти после переноса?</summary>
+<p>Попробуйте извлечь и снова вставить карту, предварительно выключив смартфон. Если это не помогло, проверьте карту на компьютере. Возможно, файловая система повреждена, и требуется повторное форматирование в формат exFAT или FAT32.</p>
+</details>
+
+<details>
+<summary>Увеличит ли перенос приложений скорость работы смартфона?</summary>
+<p>Нет, скорее всего, скорость немного снизится. Внутренняя память смартфона работает быстрее большинства карт microSD. Перенос приложений делается исключительно для освобождения места, а не для ускорения работы.</p>
+</details>
+
+<details>
+<summary>Сбросится ли перенос приложений при обновлении MIUI?</summary>
+<p>При обновлении системы «по воздуху» (OTA) настройки обычно сохраняются. Однако при сбросе до заводских настроек или перепрошивке все приложения вернутся во внутреннюю память, и процедуру придется повторять заново.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-uvelichit-pamyat-telefona-android-ksyaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как увеличить память телефона Xiaomi: полные способы и инструкции</span>
+                <span class="pb-related-desc">Подробное руководство, как увеличить память на Xiaomi. Очистка кэша, работа с SD-картой, форматирова</span>
+            </a><a href="/articles/k/ka/kak-vosstanovit-foto-iz-korziny-na-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как восстановить фото из корзины на Xiaomi: пошаговая инструкция</span>
+                <span class="pb-related-desc">Удаленные снимки на Сяоми? Узнайте, как быстро восстановить фото из корзины Галереи или облака Googl</span>
+            </a><a href="/articles/g/gd/gde-nakhoditsya-bufer-obmena-v-telefone-android-ksiomi-9.html" class="pb-related-card">
+                <span class="pb-related-title">Где находится буфер обмена на Xiaomi Redmi 9: поиск и очистка</span>
+                <span class="pb-related-desc">Узнайте, где найти буфер обмена на Xiaomi Redmi 9. Полная инструкция по работе с буфером, очистке ис</span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-mobilnuyu-svyaz-no-ostavit-internet-na-smartfone-xiaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить мобильную связь, но оставить интернет на Xiaomi Redmi</span>
+                <span class="pb-related-desc">Подробная инструкция: как на Xiaomi Redmi убрать голосовые звонки, сохранив 4G/LTE для мессенджеров.</span>
+            </a><a href="/articles/t/tr/trassirovka-sistemy-xiaomi-chto-eto-za-programma-i-nuzhna-li-ona.html" class="pb-related-card">
+                <span class="pb-related-title">Трассировка Xiaomi: что это и можно ли отключить?</span>
+                <span class="pb-related-desc">Подробный разбор службы трассировки Xiaomi. Узнайте, зачем она нужна, как влияет на батарею и стоит </span>
+            </a><a href="/drugoe/k/ka/kak-sdelat-syaomi-iz-bumagi.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать Xiaomi из бумаги: пошаговая инструкция с шаблонами</span>
+                <span class="pb-related-desc">Узнайте, как создать реалистичную модель смартфона Xiaomi из бумаги: шаблоны, инструменты, советы по</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

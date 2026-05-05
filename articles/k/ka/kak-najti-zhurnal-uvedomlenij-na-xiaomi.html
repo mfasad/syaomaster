@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Журнал уведомлений Xiaomi: как открыть, очистить и настроить — СяоМастер</title>
+    <meta name="description" content="Полное руководство по работе с журналом уведомлений на Xiaomi. Как найти историю оповещений, очистить шторку и исправить ошибки MIUI и HyperOS.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-najti-zhurnal-uvedomlenij-na-xiaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Журнал уведомлений Xiaomi: как открыть, очистить и настроить">
+    <meta property="og:description" content="Полное руководство по работе с журналом уведомлений на Xiaomi. Как найти историю оповещений, очистить шторку и исправить ошибки MIUI и HyperOS.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Журнал уведомлений Xiaomi: как открыть, очистить и настроить</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#стандартные-методы-доступа-к-истории-оповещений">Стандартные методы доступа к истории оповещений</a></li><li><a href="#использование-приложениябезопасность-для-анализа-событий">Использование приложения"Безопасность" для анализа событий</a></li><li><a href="#скрытый-журнал-уведомлений-android-через-меню-разработчика">Скрытый журнал уведомлений Android через меню разработчика</a></li><li><a href="#настройка-фильтров-и-категорий-в-miui-и-hyperos">Настройка фильтров и категорий в MIUI и HyperOS</a></li><li><a href="#сторонние-приложения-для-расширенного-логирования">Сторонние приложения для расширенного логирования</a></li><li><a href="#решение-проблем-с-пропадающими-уведомлениями">Решение проблем с пропадающими уведомлениями</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/nf/nfs-na-telefone-xiaomi-chto-takoe.html">NFS на телефоне Xiaomi: что это и как включить режим</a></li><li><a href="/articles/k/ku/kuda-zapisyvayutsya-zvonki-na-xiaomi.html">Куда записываются звонки на Xiaomi: поиск и настройка</a></li><li><a href="/articles/k/ka/kak-perenesti-prilozheniya-na-sd-kartu-na-xiaomi-7a-redmi.html">Перенос приложений на SD карту Xiaomi Redmi 7A: Полная инструкция</a></li><li><a href="/articles/a/av/avtovyklyuchenie-telefona-xiaomi-kak-otklyuchit.html">Автовыключение телефона Xiaomi: как отключить и настроить</a></li><li><a href="/articles/p/po/pochemu-telefon-medlenno-zaryazhaetsya-xiaomi-redmi-note-7.html">Xiaomi Redmi Note 7: причины медленной зарядки и решения</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как найти и очистить журнал уведомлений на Xiaomi</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#стандартные-методы-доступа-к-истории-оповещений">Стандартные методы доступа к истории оповещений</a></li><li><a href="#использование-приложениябезопасность-для-анализа-событий">Использование приложения"Безопасность" для анализа событий</a></li><li><a href="#скрытый-журнал-уведомлений-android-через-меню-разработчика">Скрытый журнал уведомлений Android через меню разработчика</a></li><li><a href="#настройка-фильтров-и-категорий-в-miui-и-hyperos">Настройка фильтров и категорий в MIUI и HyperOS</a></li><li><a href="#сторонние-приложения-для-расширенного-логирования">Сторонние приложения для расширенного логирования</a></li><li><a href="#решение-проблем-с-пропадающими-уведомлениями">Решение проблем с пропадающими уведомлениями</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современные смартфоны Xiaomi, работающие под управлением оболочек MIUI или новой HyperOS, генерируют колоссальное количество цифрового шума. Каждое новое приложение стремится привлечь ваше внимание, отправляя рекламные сообщения, новости или напоминания о действиях, которые вы совершили несколько часов назад. В какой-то момент пользователь сталкивается с проблемой: нужное оповещение было пропущено, смахнуто случайно или затерялось среди десятка других.</p>
+
+<p>В отличие от десктопных операционных систем, мобильные платформы Android не хранят полную историю всех когда-либо полученных уведомлений в стандартном интерфейсе по умолчанию. Однако в экосистеме <em>Xiaomi</em> существуют встроенные инструменты и скрытые функции, позволяющие восстановить доступ к потерянной информации. Понимание того, как работает эта система, критически важно для эффективного управления устройством.</p>
+
+<p>В этом материале мы подробно разберем, где найти журнал уведомлений, как настроить их фильтрацию и что делать, если стандартные методы перестали работать. Вы узнаете о тонкостях работы <strong>Центра управления</strong> и научитесь использовать скрытые возможности Android для полного контроля над входящими данными.</p>
+
+<blockquote>⚠️ Внимание: Некоторые системные уведомления могут быть удалены безвозвратно сразу после разблокировки экрана или очистки оперативной памяти, если не настроены соответствующие разрешения для приложения-получателя.</blockquote>
+
+<h2 id="стандартные-методы-доступа-к-истории-оповещений">Стандартные методы доступа к истории оповещений</h2>
+
+<p>Самый очевидный, но часто игнорируемый способеть пропущенные события — это использование нативного функционала шторки уведомлений. В последних версиях прошивок от Xiaomi интерфейс был значительно переработан. Теперь, чтобы увидеть не только активные, но и недавно закрытые уведомления, необходимо выполнить свайп вниз от верхнего края экрана. В отличие от старых версий Android, здесь часто сохраняется буфер из последних 5-10 событий, даже если вы нажали крестик.</p>
+
+<p>Для более глубокого анализа стоит заглянуть в настройки конкретного приложения. Если вы ожидаете важное сообщение от банка или мессенджера, но не видите его, проверьте, не заблокировано ли оно системой. Перейдите в <code>Настройки → Уведомления и строка состояния → Управление уведомлениями</code>. Здесь представлен полный список всех установленных программ с детальной статистикой.</p>
+
+<p>Внутри этого меню можно увидеть, сколько всего оповещений было отправлено приложением за последнее время. Это своего рода скрытый журнал, который показывает активность программы, даже если вы не видели ни одного всплывающего окна. Если счетчик растет, а вы ничего не получаете, значит, проблема в отображении или блокировке.</p>
+
+<ul>
+<li>📱 Проверьте раздел"Недавние" в шторке уведомлений, потянув вниз и выбрав вкладку истории, если она активирована.</li>
+<li>⚙️ Используйте меню"Управление уведомлениями" в настройках системы для просмотра статистики по каждому приложению.</li>
+<li>🔍 Ищите пропущенные события в виджетах конкретных приложений, таких как"Безопасность" или"Проводник".</li>
+</ul>
+
+<p>Стоит отметить, что в зависимости от версии <em>MIUI</em> или <em>HyperOS</em>, расположение элементов может незначительно отличаться. Однако логика работы остается прежней: система собирает данные, но скрывает их от глаз пользователя, чтобы не загромождать интерфейс. Ваша задача — найти правильный вход в эти данные.</p>
+
+<h2 id="использование-приложениябезопасность-для-анализа-событий">Использование приложения"Безопасность" для анализа событий</h2>
+
+<p>Встроенное приложение <strong>Безопасность</strong> (Security) на смартфонах Xiaomi — это не просто антивирус, а мощный системный инструмент с доступом к глубоким логам операционной системы. Именно здесь часто скрывается информация о блокировках и пропущенных событиях, которые не попали в основную шторку. Откройте приложение и найдите раздел, связанный с блокировкой или уведомлениями.</p>
+
+<p>В разделе"Антиспам" или"Черный список" хранится журнал всех заблокированных вызовов и SMS-сообщений. Это особенно актуально для тех, кто использует стандартные фильтры Xiaomi для борьбы с рекламными рассылками. Система могла посчитать важное уведомление спамом и скрыть его. Проверка этого журнала — обязательный шаг при поиске пропущенных кодов подтверждения.</p>
+
+<div class="pb-poll" id="poll-c06554d0"><div class="pb-poll-question">📊 Где вы чаще всего ищете пропущенные уведомления?</div><div class="pb-poll-option" data-poll="c06554d0" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">В шторке уведомлений</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c06554d0" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">В приложении Безопасность</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c06554d0" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">В настройках приложений</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c06554d0" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Я не знаю, где их искать</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Кроме того, приложение"Безопасность" управляет разрешениями на автозапуск и фоновую деятельность. Если приложение не имеет права работать в фоне, оно не сможет отправить уведомление в нужный момент. В логах оптимизации батареи иногда можно найти записи о том, что система принудительно остановила процесс, предотвратив появление оповещения.</p>
+
+<blockquote>⚠️ Внимание: Очистка данных приложения"Безопасность" через меню управления приложениями приведет к удалению всех сохраненных журналов блокировок и истории сканирования.</blockquote>
+
+<p>Для доступа к расширенным логам иногда требуется активировать дополнительные функции в самом приложении. Нажмите на настройки (шестеренка) в правом верхнем углу и проверьте, включены ли опции ведения журнала. Без этого система может не сохранять историю событий достаточно долго.</p>
+
+<h2 id="скрытый-журнал-уведомлений-android-через-меню-разработчика">Скрытый журнал уведомлений Android через меню разработчика</h2>
+
+<p>Существует способ, о котором знают далеко не все пользователи Xiaomi — это доступ к системному журналу уведомлений Android, скрытому в меню для разработчиков. Этот метод позволяет увидеть абсолютно все уведомления, которые когда-либо поступали на устройство, включая те, что были мгновенно удалены или скрыты. Чтобыровать эту функцию, необходимо сначала включить режим разработчика.</p>
+
+<p>Сделайте 7 быстрых кликов по номеру сборки в разделе <code>О телефоне</code>. После появления надписи"Вы стали разработчиком", вернитесь в главное меню настроек и перейдите в <code>Дополнительные настройки → Для разработчиков</code>. Найдите пункт"Ведение журнала уведомлений" (Notification History Log) и активируйте его.</p>
+
+<pre><code>Настройки → О телефоне → 7 кликов по версии MIUI → Дополнительные настройки → Для разработчиков → Ведение журнала уведомлений (ВКЛ)</code></pre>
+
+<p>После включения этой функции система начнет сохранять полную историю. Для просмотра записей вернитесь в обычные настройки уведомлений: <code>Настройки → Уведомления и строка состояния → Журнал уведомлений</code>. Здесь вы увидите хронологический список всех событий с возможностью просмотра содержимого, даже если оно пришло от приложения, которое вы уже удалили.</p>
+
+<ul>
+<li>🔓 Активируйте режим разработчика, сделав 7 кликов по номеру сборки.</li>
+<li>📝 Включите функцию"Ведение журнала уведомлений" в меню для разработчиков.</li>
+<li>📂 Проверяйте историю в стандартном меню настроек уведомлений.</li>
+</ul>
+
+<p>Важно понимать, что этот журнал не безграничен. Он хранит записи в течение последних 24 часов или до определенного лимита в мегабайтах, после чего старые записи перезаписываются новыми. Поэтому полагаться на него как на архив за месяц не стоит.</p>
+
+<h2 id="настройка-фильтров-и-категорий-в-miui-и-hyperos">Настройка фильтров и категорий в MIUI и HyperOS</h2>
+
+<p>Оболочки от Xiaomi славятся своей агрессивной системой фильтрации, которая делит уведомления на"Важные" и"Неважные". Часто пользователи теряют критические сообщения именно потому, что они попадают в скрытую папку или не отображаются на заблокированном экране. Управление этими категориями происходит в меню настроек уведомлений.</p>
+
+<p>В разделе управления уведомлениями для каждого приложения можно выбрать приоритет. Если выбрано"Без звука" или"Только в центре уведомлений", телефон не будет вибрировать или издавать звуки, а само уведомление может не появиться в виде всплывающего окна (баннера). Это создает иллюзию отсутствия журнала, хотя на самом деле сообщения просто скрыты.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка настроек уведомлений</h4><label class="check-item"><input type="checkbox"><span>Открыть настройки уведомлений</span></label><label class="check-item"><input type="checkbox"><span>Выбрать проблемное приложение</span></label><label class="check-item"><input type="checkbox"><span>Проверить приоритет (Важное)</span></label><label class="check-item"><input type="checkbox"><span>Включить отображение на экране блокировки</span></label><label class="check-item"><input type="checkbox"><span>Проверить разрешение на фоновую работу</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Также стоит обратить внимание на функцию"Умные уведомления". Она пытается группировать сообщения от разных отправщиков, что иногда приводит к ошибкам классификации. Отключение этой функции может вернуть хаос в шторку, но гарантирует, что ни одно сообщение не затеряется в группировках.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип уведомления</th>
+<th>Где отображается</th>
+<th>Звук</th>
+<th>Важность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Важное</td>
+<td>Всюду + Экран блокировки</td>
+<td>Есть</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Обычное</td>
+<td>Шторка</td>
+<td>Есть</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Без звука</td>
+<td>Только в списке</td>
+<td>Нет</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>Скрытое</td>
+<td>Не отображается</td>
+<td>Нет</td>
+<td>Нулевая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Правильная настройка этих параметров позволяет создать персонализированный журнал, где важные события всегда на виду, а рекламный шум отфильтрован, но не потерян окончательно.</p>
+
+<h2 id="сторонние-приложения-для-расширенного-логирования">Сторонние приложения для расширенного логирования</h2>
+
+<p>Если встроенных средств Xiaomi вам недостаточно, рынок Google Play предлагает решения с более продвинутым функционалом. Приложения вроде <em>Notification History Log</em> или <em>NotifLog</em> работают поверх системных служб, перехватывая и сохраняя каждое уведомление в собственную базу данных. Они позволяют экспортировать историю, искать по тексту и восстанавливать удаленные сообщения.</p>
+
+<p>Главное преимущество сторонних решений — независимость от системных обновлений Xiaomi. Даже если в новой версии <em>HyperOS</em> изменят интерфейс настроек, сторонний логгер продолжит работать, пока не изменится сама архитектура Android. Однако такие приложения требуют постоянных разрешений на доступ к уведомлениям, что является вопросом безопасности.</p>
+
+<details class="pb-accordion"><summary>Безопасность сторонних логгеров</summary><div class="pb-accordion-body"><p>Использование сторонних приложений для чтения уведомлений дает им доступ ко всем вашим сообщениям, включая коды 2FA и личные переписки. Используйте только проверенные приложения с открытым исходным кодом или высокой репутацией, и не устанавливайте их на устройства, где хранятся банковские данные в открытом виде.</p></div></details>
+
+<p>При установке такого софта система безопасности Xiaomi может несколько раз предупредить вас о потенциальном риске. Это стандартное поведение для <strong>MIUI</strong>, реагирующей на запрос доступа ктельным данным. Вам нужно будет подтвердить установку и предоставить все запрашиваемые разрешения вручную.</p>
+
+<blockquote>⚠️ Внимание: Приложения-логгеры могут значительно увеличить расход батареи, так как они должны постоянно работать в активном режиме, обрабатывая каждый входящий сигнал.</blockquote>
+
+<h2 id="решение-проблем-с-пропадающими-уведомлениями">Решение проблем с пропадающими уведомлениями</h2>
+
+<p>Часто пользователи ищут журнал не ради интереса, а потому что уведомления перестали приходить или исчезают сразу после появления. Основная причина такого поведения на Xiaomi — агрессивная экономия энергии. Система автоматически"убивает" фоновые процессы, считая их неактивными, что прерывает работу мессенджеров и почтовых клиентов.</p>
+
+<p>Для решения этой проблемы необходимо закрепить важное приложение в памяти и снять ограничения батареи. Зайдите в <code>Настройки → Приложения → Все приложения</code>, выберите нужное, перейдите в"Контроль активности" и выберите"Нет ограничений". Также полезно зафиксировать приложение в меню запущенных задач, нажав на замок.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для критически важных приложений (банк, работа) включите автозапуск в приложении"Безопасность" и добавьте их в белый список экономии батареи.</p></aside>
+
+<p>Еще одной причиной может быть переполненный кэш системного процесса"Центр уведомлений". В этом случае помогает очистка кэша через меню управления приложениями (найдите"Центр уведомлений" или"Системный интерфейс" в списке приложений и нажмите"Очистить кэш", не путать с"Очистить все данные").</p>
+
+<p>Если проблема сохраняется после всех манипуляций, возможно, сбой кроется в конкретном обновлении прошивки. В таких случаях помогает сброс настроек уведомлений до заводских или, в крайнем случае, полный сброс устройства, но это крайняя мера.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>90% проблем с пропадающими уведомлениями на Xiaomi решаются снятием ограничений фоновой активности и включением автозапуска для конкретного приложения.</p></aside>
+
+<h2><details><summary>Можно ли восстановить удаленное уведомление, если журнал не велся?</summary>
+<p>К сожалению, если функция ведения журнала была отключена, и вы смахнули уведомление, восстановить его стандартными средствами невозможно. Данные не хранятся в системе после удаления. Помочь могут только резервные копии самого приложения-отправителя (например, история чата в Telegram), но не системный лог.</p>
+</details></h2>
+
+<h2><details><summary>Почему на Xiaomi 2 разных центра уведомлений?</summary>
+<p>В MIUI и HyperOS существует разделение на"Классический" стиль (как в чистом Android) и"Новый" стиль (как в iOS). Переключить их можно в настройках: <code>Настройки → Уведомления и строка состояния → Стиль центра управления</code>. Выбор стиля влияет только на визуальное отображение и группировку, но не на функционал сохранения истории.</p>
+</details></h2>
+
+<h2><details><summary>Влияет ли режим"Не беспокоить" на сохранение истории?</summary>
+<p>Режим"Не беспокоить" блокирует звук и вибрацию, а также может скрывать визуальное отображение на экране, но он НЕ удаляет уведомления из системы. Они сохраняются в журнале и в шторке, просто не тревожат пользователя. После отключения режима вы увидите все накопившиеся события.</p>
+</details></h2></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/nf/nfs-na-telefone-xiaomi-chto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">NFS на телефоне Xiaomi: что это и как включить режим</span>
+                <span class="pb-related-desc">Подробно разберем, что такое NFS на телефоне Xiaomi. Узнайте, как активировать модуль, настроить опл</span>
+            </a><a href="/articles/k/ku/kuda-zapisyvayutsya-zvonki-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Куда записываются звонки на Xiaomi: поиск и настройка</span>
+                <span class="pb-related-desc">Узнайте, куда записываются звонки на Xiaomi и как их найти. Полный гид по пути к файлам в MIUI и Hyp</span>
+            </a><a href="/articles/k/ka/kak-perenesti-prilozheniya-na-sd-kartu-na-xiaomi-7a-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Перенос приложений на SD карту Xiaomi Redmi 7A: Полная инструкция</span>
+                <span class="pb-related-desc">Как перенести приложения на карту памяти Xiaomi Redmi 7A? Подробное руководство по расширению внутре</span>
+            </a><a href="/articles/a/av/avtovyklyuchenie-telefona-xiaomi-kak-otklyuchit.html" class="pb-related-card">
+                <span class="pb-related-title">Автовыключение телефона Xiaomi: как отключить и настроить</span>
+                <span class="pb-related-desc">Узнайте, как убрать автовыключение на Xiaomi. Полная инструкция по отключению расписания, энергосбер</span>
+            </a><a href="/articles/p/po/pochemu-telefon-medlenno-zaryazhaetsya-xiaomi-redmi-note-7.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi Redmi Note 7: причины медленной зарядки и решения</span>
+                <span class="pb-related-desc">Почему телефон Xiaomi Redmi Note 7 заряжается долго? Разбор причин, проверка кабеля, портов, ПО и те</span>
+            </a><a href="/articles/x/xi/xiaomi-12-lite-skolko-sim-kart-podderzhivaet.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi 12 Lite: сколько SIM-карт поддерживает и как настроить</span>
+                <span class="pb-related-desc">Узнайте, сколько SIM-карт поддерживает Xiaomi 12 Lite. Подробная инструкция по установке, настройке </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как синхронизировать контакты Xiaomi с Google: полная инструкция — СяоМастер</title>
+    <meta name="description" content="Пошаговое руководство: перенос и синхронизация контактов Xiaomi на Google аккаунт. Решение ошибок, настройка MIUI и HyperOS, импорт из SIM.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-sinkhronizirovat-kontakty-s-xiaomi-na-google-akkaunt.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как синхронизировать контакты Xiaomi с Google: полная инструкция">
+    <meta property="og:description" content="Пошаговое руководство: перенос и синхронизация контактов Xiaomi на Google аккаунт. Решение ошибок, настройка MIUI и HyperOS, импорт из SIM.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как синхронизировать контакты Xiaomi с Google: полная инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-аккаунта-и-проверка-статуса-синхронизации">Подготовка аккаунта и проверка статуса синхронизации</a></li><li><a href="#ручной-перенос-контактов-из-памяти-телефона-в-google">Ручной перенос контактов из памяти телефона в Google</a></li><li><a href="#работа-с-sim-картой-импорт-и-экспорт-данных">Работа с SIM-картой: импорт и экспорт данных</a></li><li><a href="#настройка-синхронизации-в-miui-и-hyperos">Настройка синхронизации в MIUI и HyperOS</a></li><li><a href="#решение-проблем-ошибки-синхронизации-и-дубликаты">Решение проблем: ошибки синхронизации и дубликаты</a></li><li><a href="#использование-google-контакты-для-управления-с-пк">Использование Google Контакты для управления с ПК</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/k/ka/kak-stat-dizajnerom-xiaomi.html">Как стать дизайнером Xiaomi: карьерный путь и навыки</a></li><li><a href="/articles/k/ka/kak-ochistit-vyzovy-na-xiaomi-redmi.html">Как очистить вызовы на Xiaomi Redmi: журнал и история звонков</a></li><li><a href="/drugoe/k/ka/kak-na-ksiomi-pisat-vsegda-s-malenkoj-bukvy.html">Как на Xiaomi писать с маленькой буквы: правила и исключения</a></li><li><a href="/articles/k/ka/kak-ustanovit-russkij-yazyk-na-xiaomi-1s.html">Как установить русский язык на Xiaomi 1s: полная инструкция</a></li><li><a href="/articles/k/ka/kak-uznat-kakie-kodeki-podderzhivaet-telefon-xiaomi.html">Как узнать какие кодеки поддерживает Xiaomi: полный разбор</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как синхронизировать контакты Xiaomi на Google аккаунт: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-аккаунта-и-проверка-статуса-синхронизации">Подготовка аккаунта и проверка статуса синхронизации</a></li><li><a href="#ручной-перенос-контактов-из-памяти-телефона-в-google">Ручной перенос контактов из памяти телефона в Google</a></li><li><a href="#работа-с-sim-картой-импорт-и-экспорт-данных">Работа с SIM-картой: импорт и экспорт данных</a></li><li><a href="#настройка-синхронизации-в-miui-и-hyperos">Настройка синхронизации в MIUI и HyperOS</a></li><li><a href="#решение-проблем-ошибки-синхронизации-и-дубликаты">Решение проблем: ошибки синхронизации и дубликаты</a></li><li><a href="#использование-google-контакты-для-управления-с-пк">Использование Google Контакты для управления с ПК</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владение современным смартфоном подразумевает не просто наличие устройства, а сохранность ваших личных данных, среди которых телефонная книга занимает первостепенное место. Многие пользователи сталкиваются с ситуацией, когда после покупки нового гаджета или сброса настроек оказывается, что номера сохранены локально в памяти телефона, а не в облаке. <strong>Синхронизация контактов Xiaomi с Google</strong> — это фундаментальный процесс, который гарантирует, что вы никогда не потеряете доступ к важным номерам, даже если сам аппарат будет утеряан или разбит.</p>
+<p>Экосистема <em>Android</em>, на базе которой работают оболочки <em>MIUI</em> и новая <em>HyperOS</em>, изначально заточена на тесную интеграцию с сервисами корпорации Google. Однако, из-за особенностей региональных настроек или действий пользователя, автоматическая выгрузка данных может быть отключена. В этой статье мы детально разберем все нюансы настройки, рассмотрим ручные методы импорта и решим типичные проблемы, возникающие при работе с телефонной книгой.</p>
+<p>Прежде чем приступать к активным действиям, необходимо понимать разницу между локальным хранением и облачным. Локальная память телефона ограничена конкретным устройством, тогда как <strong>Google Contacts</strong> обеспечивает мгновенный доступ к базе номеров с любого гаджета, будь то планшет, другой смартфон или компьютер через браузер. <mark>Истинная синхронизация происходит только тогда, когда изменения, внесенные на одном устройстве, автоматически отображаются на всех остальных, привязанных к тому же аккаунту.</mark></p>
+
+<h2 id="подготовка-аккаунта-и-проверка-статуса-синхронизации">Подготовка аккаунта и проверка статуса синхронизации</h2>
+<p>Первым шагом всегда должна стать диагностика текущего состояния системы. Часто пользователи полагают, что синхронизация работает, хотя на самом деле она была случайно отключена в системных настройках или приостановлена для экономии трафика. Вам необходимо убедиться, что в устройстве добавлен корректный <strong>Google-аккаунт</strong> и для него разрешена передача данных.</p>
+<p>Для проверки перейдите в меню <code>Настройки → Аккаунты и синхронизация</code> (путь может незначительно отличаться в зависимости от версии <em>MIUI</em>). Здесь вы увидите список всех подключенных сервисов. Найдите в списке ваш адрес электронной почты Gmail. Если рядом с ним стоит предупреждение или значок паузы, значит, обмен данными заблокирован.</p>
+<p>Нажмите на название аккаунта, чтобы раскрыть подробный список служб. Убедитесь, что переключатель напротив пункта "Контакты" активирован. Система может запрашивать подтверждение действия — соглашайтесь. Если переключатель уже включен, но номера не появляются, попробуйте выключить его и включить снова, чтобы инициировать принудительный запрос на обновление данных с сервера.</p>
+
+<div class="pb-poll" id="poll-5a2ad133"><div class="pb-poll-question">📊 Где у вас сейчас хранятся контакты?</div><div class="pb-poll-option" data-poll="5a2ad133" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">В памяти телефона (локально)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5a2ad133" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">В аккаунте Google</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5a2ad133" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">На SIM-карте</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5a2ad133" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">В Mi Cloud</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5a2ad133" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы используете двухсимочный смартфон, убедитесь, что в настройках вызовов по умолчанию для сохранения новых номеров выбран именно Google-аккаунт, а не память устройства. Это предотвратит будущую путаницу.</p>
+</blockquote>
+
+<h2 id="ручной-перенос-контактов-из-памяти-телефона-в-google">Ручной перенос контактов из памяти телефона в Google</h2>
+<p>Если ваша телефонная книга пуста в облаке, но полна номеров в памяти устройства, необходимо выполнить процедуру экспорта или копирования. Стандартное приложение "Контакты" в оболочке <em>MIUI</em> имеет встроенный функционал для управления записями, который позволяет массово перемещать данные без потери информации.</p>
+<p>Откройте приложение "Контакты" и найдите кнопку меню (обычно это три точки в углу или кнопка "Управление"). Выберите опцию "Импорт/Экспорт контактов". В открывшемся меню вам будет предложено несколько вариантов действий. Нам необходим пункт "Экспорт в аккаунт" или "Копировать контакты".</p>
+<p>Система предложит выбрать источник (Память устройства) и destination (Ваш Google аккаунт). После подтверждения начнется процесс переноса. Длительность операции зависит от количества записей: несколько десятков номеров переместятся за секунды, тогда как несколько тысяч могут обрабатываться минуту или две.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Контрольный список перед переносом</h4><label class="check-item"><input type="checkbox"><span>Проверьте наличие стабильного подключения к Wi-Fi</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь, что в аккаунте Google есть свободное место (хотя контакты занимают минимум)</span></label><label class="check-item"><input type="checkbox"><span>Зарядите телефон минимум до 30%</span></label><label class="check-item"><input type="checkbox"><span>Закройте тяжелые приложения для освобождения оперативной памяти</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Важно отметить, что при копировании могут возникнуть дубликаты, если часть номеров уже была сохранена в облаке ранее. <strong>Android</strong> обладает умной системой объединения, но иногда требуется ручная чистка. После завершения переноса обязательно зайдите на сайт <code>contacts.google.com</code> с компьютера, чтобы визуально убедиться в наличии всех записей.</p>
+
+<h2 id="работа-с-sim-картой-импорт-и-экспорт-данных">Работа с SIM-картой: импорт и экспорт данных</h2>
+<p>Многие пользователи до сих пор хранят номера на <strong>SIM-карте</strong>, что является пережитком прошлого, но вполне рабочей практикой для резервного копирования при смене операторов. Однако, SIM-карта имеет ограниченный объем памяти и часто обрезает длинные имена контактов, оставляя только первые символы.</p>
+<p>Чтобы перенести данные с симки на аккаунт Google, снова обратитесь к меню "Импорт/Экспорт" в приложении контактов. Выберите опцию "Импорт с SIM-карты". Система предложит выбрать аккаунт для сохранения — укажите ваш Gmail. В отличие от экспорта, этот процесс практически мгновенный.</p>
+<p>Обратный процесс — экспорт из Google на SIM — также возможен, но не рекомендуется для постоянного использования. Это имеет смысл только если вы меняете смартфон на кнопочный или старый аппарат, не поддерживающий синхронизацию. Помните, что при экспорте на SIM часто теряются дополнительные поля, такие как электронная почта, адрес или второй номер телефона.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Память телефона</th>
+<th>SIM-карта</th>
+<th>Google Аккаунт</th>
+</tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Объем памяти</td>
+<td>Ограничен памятью устройства</td>
+<td>Очень мал (обычно 250 контактов)</td>
+<td>Практически не ограничен</td>
+</tr>
+<tr>
+<td>Длина имени</td>
+<td>Без ограничений</td>
+<td>Часто обрезается</td>
+<td>Без ограничений</td>
+</tr>
+<tr>
+<td>Доп. поля</td>
+<td>Фото, email, адрес</td>
+<td>Только имя и номер</td>
+<td>Фото, email, адрес, заметки</td>
+</tr>
+<tr>
+<td>Доступность</td>
+<td>Только на этом телефоне</td>
+<td>Только с вставленной SIM</td>
+<td>С любого устройства с интернетом</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не используйте SIM-карту как единственное хранилище контактов при переходе на смартфоны с экранами большого размера. Вы рискуете потерять часть имени или важные примечания из-за технических ограничений формата хранения на чипе карты.</p>
+</blockquote>
+
+<h2 id="настройка-синхронизации-в-miui-и-hyperos">Настройка синхронизации в MIUI и HyperOS</h2>
+<p>Оболочки от <em>Xiaomi</em> имеют свои особенности управления энергопотреблением, которые могут агрессивно ограничивать фоновую деятельность приложений, включая системный сервис синхронизации. В новых версиях <em>HyperOS</em> алгоритмы стали умнее, но ручная проверка не помешает.</p>
+<p>Перейдите в <code>Настройки → Приложения → Все приложения</code>. Найдите в списке "Сервисы Google Play" и "Контакты". Зайдите в раздел "Батарея" или "Энергосбережение" для каждого из них. Установите режим работы "Без ограничений" или убедитесь, что включена опция "Автозапуск".</p>
+<p>Это действие разрешит системе обновлять телефонную книгу в фоновом режиме, даже если экран выключен или запущены ресурсоемкие игры. Без этого разрешения <strong>синхронизация</strong> может происходить только в момент открытия приложения контактов, что создает задержки и риск потери данных при внезапном разряде батареи.</p>
+
+<details class="pb-accordion"><summary>Почему контакты могут исчезать после обновления MIUI?</summary><div class="pb-accordion-body"><p>После крупных обновлений прошивки система может сбрасывать разрешения для приложений в целях безопасности. Если вы заметили пропажу контактов, первым делом проверьте, авторизован ли ваш аккаунт Google в настройках системы, и повторите процедуру включения синхронизации, описанную в начале статьи.</p></div></details>
+
+<p>Также стоит проверить настройки даты и времени. Если на устройстве выставлено неверное время, защищенное соединение с серверами Google (<strong>SSL/TLS</strong>) не сможет установиться, и синхронизация будет невозможна физически. Используйте опцию "Использовать время сети" в настройках даты.</p>
+
+<h2 id="решение-проблем-ошибки-синхронизации-и-дубликаты">Решение проблем: ошибки синхронизации и дубликаты</h2>
+<p>Наиболее частая проблема, с которой сталкиваются пользователи — это появление дубликатов. Один и тот же контакт может отображаться дважды: один раз как локальная копия, другой — как запись из облака. Это происходит, когда телефон не может корректно связать две записи в единую карточку.</p>
+<p>Для решения этой проблемы используйте встроенную функцию слияния. В приложении "Контакты" нажмите на меню управления и выберите "Объединить повторяющиеся контакты". Система предложит список пар, которые считает одинаковыми. Подтвердите слияние, и телефонная книга станет чистой.</p>
+<p>Если синхронизация не работает вообще (постоянно висит "Ожидание" или "Ошибка"), попробуйте очистить кэш сервиса. Зайдите в <code>Настройки → Приложения → Все приложения → Показать системные → Синхронизация Google</code>. Нажмите "Очистить данные" и "Очистить кэш". После этого перезагрузите устройство.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярно (раз в 3-6 месяцев) проверяйте раздел "Корзина" в Google Контактах на компьютере. Туда попадают удаленные записи, и их можно восстановить в течение 30 дней, если вы случайно стерли важный номер.</p></aside>
+
+<p>В редких случаях проблема кроется в переполнении хранилища аккаунта (хотя контакты занимают мало места, они учитываются в квоте 15 ГБ вместе с фото и почтой). Проверьте статус хранилища Google One. Если место закончилось, синхронизация новых контактов встанет в очередь.</p>
+
+<h2 id="использование-google-контакты-для-управления-с-пк">Использование Google Контакты для управления с ПК</h2>
+<p>Управление контактами с компьютера — это не только удобно, но и необходимо для быстрой правки больших объемов данных. Веб-интерфейс <code>contacts.google.com</code> предоставляет инструменты, недоступные в мобильном приложении, такие как массовое редактирование, создание групп и экспорт в формате <em>vCard</em> или <em>CSV</em>.</p>
+<p>Здесь вы можете легко переименовать группу контактов, например, изменив "Коллеги Работа" на "Работа", и это изменение мгновенно отразится на вашем <em>Xiaomi</em>. Также веб-версия позволяет восстанавливать контакты на любую дату в прошлом (до 30 дней), что является спасением при случайной массовой deletion.</p>
+<p>Для бизнес-пользователей или тех, кто ведет активную переписку, полезна функция создания ярлыков (групп). Вы можете отправить сообщение сразу всей группе "Семья" или "Клиенты". На смартфоне эти группы также будут видны и позволят фильтровать отображаемый список.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Веб-интерфейс Google Контактов является мастер-источником истины. Любые конфликты данных между телефоном и облаком разрешаются в пользу сервера Google при следующей успешной синхронизации.</p></aside>
+
+<p>Не забывайте, что редактирование контактов через ПК требует активного интернет-соединения на смартфоне для обновления. Если телефон находится в режиме полета, изменения появятся на нем только после восстановления связи.</p>
+
+<details>
+<summary>Почему новые контакты сохраняются не в Google, а в телефоне?</summary>
+<p>Это происходит, если в настройках приложения "Контакты" или в меню создания нового контакта по умолчанию выбрано хранилище "Телефон". Чтобы изменить это, откройте настройки контактов, найдите пункт "Аккаунт по умолчанию для новых контактов" и выберите ваш Gmail. Также проверяйте этот параметр в момент самого создания номера, раскрывая дополнительное меню.</p>
+</details>
+
+<details>
+<summary>Можно ли синхронизировать контакты с несколькими Google аккаунтами?</summary>
+<p>Да, вы можете добавить несколько аккаунтов Google в настройки телефона. В приложении контактов они будут отображаться вместе или раздельно, в зависимости от настроек фильтрации. Однако, при создании нового контакта система всегда будет предлагать выбрать один конкретный аккаунт для сохранения. Синхронизация будет идти независимо для каждого из добавленных профилей.</p>
+</details>
+
+<details>
+<summary>Что делать, если контакты пропали после сброса настроек?</summary>
+<p>Если перед сбросом вы были уверены, что синхронизация прошла успешно, просто войдите в свой Google аккаунт при первоначальной настройке телефона. Контакты подтянутся автоматически в течение нескольких минут. Если их нет, проверьте сайт contacts.google.com — если там пусто, значит, синхронизация до сброса не состоялась, и данные утеряны.</p>
+</details>
+
+<details>
+<summary>Как перенести контакты с iPhone на Xiaomi через Google?</summary>
+<p>На iPhone зайдите в Настройки → Контакты → Аккаунты, добавьте свой Google аккаунт и включите тумблер "Контакты". Дождитесь загрузки. Затем на Xiaomi просто добавьте тот же аккаунт, и все номера появятся автоматически. Это самый быстрый кроссплатформенный метод.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/k/ka/kak-stat-dizajnerom-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как стать дизайнером Xiaomi: карьерный путь и навыки</span>
+                <span class="pb-related-desc">Пошаговое руководство по трудоустройству в Xiaomi на позицию дизайнера: требования, портфолио, резюм</span>
+            </a><a href="/articles/k/ka/kak-ochistit-vyzovy-na-xiaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как очистить вызовы на Xiaomi Redmi: журнал и история звонков</span>
+                <span class="pb-related-desc">Подробная инструкция, как удалить историю вызовов на Xiaomi Redmi. Удаление отдельных записей, очист</span>
+            </a><a href="/drugoe/k/ka/kak-na-ksiomi-pisat-vsegda-s-malenkoj-bukvy.html" class="pb-related-card">
+                <span class="pb-related-title">Как на Xiaomi писать с маленькой буквы: правила и исключения</span>
+                <span class="pb-related-desc">Почему в названиях Xiaomi всегда используется строчная буква? Разбираем официальные правила, исключе</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-russkij-yazyk-na-xiaomi-1s.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить русский язык на Xiaomi 1s: полная инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по локализации Xiaomi Redmi 1s. Установка MultiROM, смена языка через SetLocal</span>
+            </a><a href="/articles/k/ka/kak-uznat-kakie-kodeki-podderzhivaet-telefon-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как узнать какие кодеки поддерживает Xiaomi: полный разбор</span>
+                <span class="pb-related-desc">Подробное руководство: как проверить поддержку кодеков на Xiaomi. Инструменты, тесты и анализ аппара</span>
+            </a><a href="/drugoe/k/kt/kto-silnej-khu-tao-ili-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Кто сильнее: Ху Тао или Сяо? Сравнение DPS в Genshin Impact</span>
+                <span class="pb-related-desc">Детальный разбор, кто сильнее: Ху Тао или Сяо. Сравнение урона, билдов, команд и механик. Гайд по вы</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

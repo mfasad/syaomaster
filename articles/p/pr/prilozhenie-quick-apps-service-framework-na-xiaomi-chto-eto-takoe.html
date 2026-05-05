@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Quick Apps Service на Xiaomi: что это и как отключить — СяоМастер</title>
+    <meta name="description" content="Подробный разбор системного процесса Quick Apps Service Framework на смартфонах Xiaomi. Стоит ли удалять, как отключить и безопасно ли это.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/p/pr/prilozhenie-quick-apps-service-framework-na-xiaomi-chto-eto-takoe.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Quick Apps Service на Xiaomi: что это и как отключить">
+    <meta property="og:description" content="Подробный разбор системного процесса Quick Apps Service Framework на смартфонах Xiaomi. Стоит ли удалять, как отключить и безопасно ли это.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Quick Apps Service на Xiaomi: что это и как отключить</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#что-такое-quick-apps-service-и-зачем-он-нужен">Что такое Quick Apps Service и зачем он нужен</a></li><li><a href="#влияние-на-производительность-и-расход-батареи">Влияние на производительность и расход батареи</a></li><li><a href="#является-ли-quick-apps-service-вирусом">Является ли Quick Apps Service вирусом?</a></li><li><a href="#как-отключить-quick-apps-на-xiaomi-и-redmi">Как отключить Quick Apps на Xiaomi и Redmi</a></li><li><a href="#удаление-через-adb-и-получение-root-прав">Удаление через ADB и получение Root-прав</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-obnovit-xiaomi-airdots-pro.html">Как обновить Xiaomi AirDots Pro: полная инструкция</a></li><li><a href="/articles/s/sk/skolko-stoit-syaomi-redmi-nout-7-64-gb.html">Цена Xiaomi Redmi Note 7 64 Гб: актуальная стоимость</a></li><li><a href="/articles/k/ka/kak-uznat-skolko-let-telefonu-xiaomi-redmi-note-4.html">Как узнать год выпуска Xiaomi Redmi Note 4: все способы</a></li><li><a href="/articles/c/ch/chto-oznachaet-pristavka-t-u-xiaomi.html">Что означает буква Т у Xiaomi: расшифровка и отличия моделей</a></li><li><a href="/articles/g/gd/gde-na-ksiomi-chasy.html">Где на Xiaomi часы: настройка виджетов и будильника</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Quick Apps Service Framework на Xiaomi: что это и стоит ли отключать</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#что-такое-quick-apps-service-и-зачем-он-нужен">Что такое Quick Apps Service и зачем он нужен</a></li><li><a href="#влияние-на-производительность-и-расход-батареи">Влияние на производительность и расход батареи</a></li><li><a href="#является-ли-quick-apps-service-вирусом">Является ли Quick Apps Service вирусом?</a></li><li><a href="#как-отключить-quick-apps-на-xiaomi-и-redmi">Как отключить Quick Apps на Xiaomi и Redmi</a></li><li><a href="#удаление-через-adb-и-получение-root-прав">Удаление через ADB и получение Root-прав</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфонов Xiaomi, Redmi и POCO часто замечают в списке запущенных процессов или в меню управления приложениями загадочную службу под названием <strong>Quick Apps Service Framework</strong>. Появление незнакомого названия вызывает вполне обоснованную настороженность: что это за программа, не является ли она вирусом и можно ли ее удалить без вреда для системы? Этот компонент действительно присутствует в оболочке MIUI и HyperOS, и его функции не всегда очевидны для рядового пользователя.</p>
+<p>На самом деле, это системный модуль, который обеспечивает работу так называемых «быстрых приложений» или мини-программ. Они запускаются без полной установки из Google Play или Mi GetApps, экономя место в памяти устройства. Однако, как и любой фоновый сервис, он потребляет ресурсы, что заставляет пользователей искать способы его оптимизации. Разберемся детально, за что отвечает этот процесс и стоит ли с ним бороться.</p>
+<p>Понимание природы системных процессов — ключ к грамотному управлению <em>Android-смартфоном</em>. Вместо слепого удаления всего непонятного, важно знать назначение каждого элемента. В этой статье мы подробно рассмотрим функционал службы, проанализируем ее влияние на батарею и предоставим пошаговые инструкции по настройке или полному отключению компонента, если он вам не нужен.</p>
+
+<h2 id="что-такое-quick-apps-service-и-зачем-он-нужен">Что такое Quick Apps Service и зачем он нужен</h2>
+<p><strong>Quick Apps Service Framework</strong> — это системная библиотека, разработанная для поддержки технологии мгновенных приложений (Instant Apps). В экосистеме Xiaomi этот сервис интегрирован в оболочку и позволяет запускать легкие версии программ прямо из поиска, виджетов или сканирования QR-кодов. Основное преимущество технологии заключается в том, что пользователю не нужно скачивать полный установочный файл весом в сотни мегабайт, чтобы воспользоваться функцией один раз.</p>
+<p>К примеру, если вы сканируете меню в ресторане через камеру или переходите по ссылке на игру, система может предложить запустить «быструю» версию приложения. За этот процесс отвечает именно данный фреймворк. Он подгружает необходимый код в оперативную память, выполняет задачу и закрывается, не оставляя мусорных файлов после себя. Это особенно актуально для устройств с ограниченным объемом внутренней памяти.</p>
+<p>Однако, в отличие от стандартных приложений, этот сервис работает на более глубоком уровне системы. Он постоянно мониторит действия пользователя, ожидая триггера для запуска мини-программы. Именно из-за этого постоянного мониторинга он может отображаться в списке активных процессов. Важно отметить, что это <em>не вирус</em> и не майнер, а штатный компонент прошивки MIUI.</p>
+<ul>
+<li>🚀 Обеспечивает мгновенный запуск легких версий программ без полной установки.</li>
+<li>📦 Экономит место во внутренней памяти, кэшируя только необходимые данные.</li>
+<li>🔗 Интегрирован с системным поиском и сканером QR-кодов для быстрого доступа.</li>
+</ul>
+<blockquote>⚠️ Внимание: Удаление или принудительная остановка системных компонентов может привести к нестабильной работе оболочки MIUI. Если вы не используете функцию быстрых приложений, безопаснее просто ограничить их фоновую активность, а не удалять файлы.</blockquote>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы редко пользуетесь сканером QR-кодов и виджетами сторонних сервисов, функция Quick Apps вам практически не понадобится, и ее можно смело ограничивать.</p></aside>
+
+<h2 id="влияние-на-производительность-и-расход-батареи">Влияние на производительность и расход батареи</h2>
+<p>Вопрос энергопотребления является одним из самых острых для владельцев смартфонов Xiaomi. Поскольку <strong>Quick Apps Service</strong> является фоновым процессом, он неизбежно потребляет некоторое количество энергии, даже когда вы не пользуетесь телефоном активно. В нормальных условиях это потребление минимально и исчисляется процентами в сутки, но в некоторых ситуациях сервис может «проснуться» и начать активно использовать ресурсы процессора.</p>
+<p>Чаще всего повышенный расход батареи связан с ошибками в коде самого сервиса или конфликтом версий после обновления прошивки. Если вы заметили, что процесс <code>com.miui.qrs</code> (так технически может называться пакет) потребляет значительный процент заряда, это сигнал о сбое. Система может пытаться бесконечно синхронизировать данные или обновлять кэш мини-приложений, что приводит к нагреву корпуса.</p>
+<p>Стоит также учитывать, что на старых моделях смартфонов с небольшим объемом оперативной памяти любой лишний сервис влияет на скорость работы интерфейса. Если телефон начинает подтормаживать при переключении между задачами, отключение неиспользуемых системных служб, включая фреймворк быстрых приложений, может дать небольшой прирост производительности. Однако в современных устройствах с 8 ГБ RAM и более влияние этого сервиса практически незаметно.</p>
+<div class="pb-poll" id="poll-9f4f97a6"><div class="pb-poll-question">📊 Замечали ли вы повышенный расход батареи на Xiaomi?</div><div class="pb-poll-option" data-poll="9f4f97a6" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, телефон греется</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9f4f97a6" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Батарея держит нормально</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9f4f97a6" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не слежу за статистикой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9f4f97a6" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">У меня iPhone</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+<p>Для диагностики реального влияния сервиса на ваш конкретный аппарат можно воспользоваться встроенным анализатором батареи. Перейдите в <code>Настройки → Батарея → Расход заряда</code> и посмотрите список процессов. Если Quick Apps Service находится в топ-5 потребителей, это повод задуматься о его настройке.</p>
+<ul>
+<li>🔋 В штатном режиме потребляет менее 1% заряда в сутки.</li>
+<li>🌡️ При ошибках может вызывать нагрев процессора и быстрый разряд.</li>
+<li>⚡ Отключение сервиса может немного продлить время автономной работы.</li>
+</ul>
+
+<h2 id="является-ли-quick-apps-service-вирусом">Является ли Quick Apps Service вирусом?</h2>
+<p>Многие пользователи паникуют, увидев неизвестное название в диспетчере задач, и сразу же начинают искать антивирусные сканеры. Спешим успокоить: <strong>Quick Apps Service Framework</strong> — это легитимный системный компонент, разработанный компанией Xiaomi. Он имеет цифровую подпись производителя и входит в состав стандартной прошивки. Антивирусные программы, такие как Google Play Protect или встроенный сканер безопасности Xiaomi, помечают его как безопасный.</p>
+<p>Однако, существует нюанс. Злоумышленники иногда маскируют вредоносное ПО под системные процессы, используя схожие названия. Чтобы убедиться, что на вашем устройстве именно оригинальный сервис, а не троян, нужно проверить путь к исполняемому файлу. Настоящий системный процесс располагается в защищенной системной папке, куда обычный пользователь не имеет доступа без root-прав.</p>
+<p>Если вы видите, что приложение с похожим названием было установлено недавно из неизвестного источника (не через Mi GetApps) и требует странных разрешений, это повод для беспокойства. Настоящий сервис не запрашивает доступ к контактам, микрофону или СМС без явной необходимости запуска конкретного мини-приложения.</p>
+<details class="pb-accordion"><summary>Как отличить системный процесс от вируса?</summary><div class="pb-accordion-body"><p>Системные процессы Xiaomi обычно находятся в пакете <code>com.miui</code> или <code>com.xiaomi</code>. Вирусы часто имеют странные названия пакетов, состоящие из случайного набора букв, или маскируются под системные, но находятся в пользовательском разделе памяти.</p></div></details>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Характеристика</th>
+<th>Оригинальный сервис</th>
+<th>Вредоносная программа</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Источник установки</td>
+<td>Системный раздел (прошивка)</td>
+<td>Сторонний APK-файл</td>
+</tr>
+<tr>
+<td>Потребление ресурсов</td>
+<td>Минимальное, фоновое</td>
+<td>Высокое, постоянная активность</td>
+</tr>
+<tr>
+<td>Разрешения</td>
+<td>Ограниченные, системные</td>
+<td>Запрос доступа к SMS, звонкам</td>
+</tr>
+<tr>
+<td>Возможность удаления</td>
+<td>Только через ADB или Root</td>
+<td>Часто можно удалить вручную</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="как-отключить-quick-apps-на-xiaomi-и-redmi">Как отключить Quick Apps на Xiaomi и Redmi</h2>
+<p>Если вы решили, что функционал быстрых приложений вам не нужен, или хотите исключить любые возможные сбои, связанные с этим сервисом, его можно отключить. Стандартными средствами системы полностью удалить этот компонент нельзя, так как он защищен от удаления пользователем. Однако можно ограничить его работу или отключить через специальные инструменты разработчика.</p>
+<p>Самый простой и безопасный способ — ограничить фоновую активность через настройки батареи. Это не удалит файлы сервиса, но запретит ему запускаться без вашего ведома. Для этого откройте настройки телефона, найдите раздел «Приложения», перейдите во вкладку «Все приложения» и в поиске введите «Quick» или «Быстрые». Выберите найденный сервис.</p>
+<p>В открывшемся меню найдите пункт «Батарея» или «Энергосбережение» и установите значение «Нет ограничений» на «Ограничить фоновую активность» (или «Экономить батарею», в зависимости от версии MIUI). Также полезно очистить кэш и данные приложения, чтобы сбросить возможные ошибки накопленные за время работы.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм ограничения сервиса</h4><label class="check-item"><input type="checkbox"><span>Найти приложение в списке:Настройки → Приложения:Ввести в поиск Quick Apps:Выбрать пункт Батарея:Установить ограничение фона</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+<p>Для более продвинутых пользователей существует метод отключения через ADB (Android Debug Bridge). Этот метод требует подключения телефона к компьютеру и наличия базовых знаний командной строки. Он позволяет полностью «заморозить» пакет, сделав его невидимым для системы, но сохраняя возможность восстановления.</p>
+<ul>
+<li>📱 Найдите приложение в списке через поиск в настройках.</li>
+<li>🛑 Выберите опцию ограничения фоновой активности.</li>
+<li>🗑️ Очистите кэш и данные для сброса текущих ошибок.</li>
+</ul>
+<blockquote>⚠️ Внимание: При использовании ADB-команд будьте предельно внимательны. Отключение критически важных системных пакетов (не только Quick Apps) может привести к «бутлупу» (циклической перезагрузке) телефона.</blockquote>
+
+<h2 id="удаление-через-adb-и-получение-root-прав">Удаление через ADB и получение Root-прав</h2>
+<p>Радикальным методом борьбы с любым системным мусором является использование отладки по USB и инструментов вроде <strong>ADB AppControl</strong> или командной строки. Этот способ позволяет удалять или замораживать системные приложения, которые не удаляются стандартным путем. Для работы вам потребуется ПК, USB-кабель и включенная отладка по USB в меню «Для разработчиков».</p>
+<p>После подключения телефона к компьютеру и авторизации отладки, можно использовать команду для заморозки пакета. Обычно пакет называется <code>com.miui.qrscoderecognizer</code> или имеет схожее название, связанное с Quick Apps. Команда выглядит примерно так: <code>adb shell pm disable-user --user 0 имя_пакета</code>. Это делает приложение неактивным для текущего пользователя.</p>
+<p>Альтернативный путь — получение <strong>Root-прав</strong> (например, через Magisk). Это дает полный контроль над файловой системой. С правами суперпользователя можно физически удалить файлы сервиса из системного раздела. Однако, получение рут-прав на современных смартфонах Xiaomi сопряжено с разблокировкой загрузчика, что приводит к сбросу warranty и потенциальным проблемам с работой банковских приложений (Google Pay, Mir Pay).</p>
+<pre><code>adb shell pm disable-user --user 0 com.miui.qrscoderecognizer</code></pre>
+<p>Использование этого метода требует осторожности. Если вы удалите зависящие от этого сервиса компоненты интерфейса (например, сканер QR в камере), функционал камеры может работать некорректно. Поэтому метод ADB рекомендуется только опытным пользователям, понимающим риски.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Самый безопасный способ «удаления» — это заморозка через ADB, а не физическое удаление файлов, так как это позволяет легко вернуть все назад в случае проблем.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Можно ли полностью удалить Quick Apps Service без компьютера?</summary>
+<p>Полностью удалить системное приложение без root-прав и компьютера невозможно. Вы можете только ограничить его работу через настройки батареи или принудительно остановить, но система запустит его снова при необходимости. Для полного удаления потребуются права суперпользователя.</p>
+</details>
+<details>
+<summary>Безопасно ли отключать этот сервис для работы камеры?</summary>
+<p>В большинстве случаев отключение сервиса не влияет на базовую функциональность камеры (съемка фото и видео). Однако может перестать работать встроенный сканер QR-кодов в режиме «Еще» или «Дополнительно». Если вы пользуетесь сторонними сканерами, это не станет проблемой.</p>
+</details>
+<details>
+<summary>Почему процесс Quick Apps грузит процессор после обновления?</summary>
+<p>После обновления прошивки система проводит индексацию и оптимизацию приложений. В этот период фоновые службы, включая Quick Apps, могут работать интенсивнее обычного. Обычно это проходит самостоятельно в течение 1-2 дней активного использования телефона.</p>
+</details>
+<details>
+<summary>Нужен ли этот сервис для работы виджетов?</summary>
+<p>Некоторые виджеты, особенно те, что подгружают контент из интернета (новости, погода, товары), могут использовать фреймворк быстрых приложений для отображения информации без перехода в браузер. Если виджеты работают нормально после отключения сервиса, значит, они используют собственные механизмы обновления.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-obnovit-xiaomi-airdots-pro.html" class="pb-related-card">
+                <span class="pb-related-title">Как обновить Xiaomi AirDots Pro: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как обновить Xiaomi AirDots Pro. Пошаговое руководство, способы устранения ошибок и проверк</span>
+            </a><a href="/articles/s/sk/skolko-stoit-syaomi-redmi-nout-7-64-gb.html" class="pb-related-card">
+                <span class="pb-related-title">Цена Xiaomi Redmi Note 7 64 Гб: актуальная стоимость</span>
+                <span class="pb-related-desc">Сколько стоит Xiaomi Redmi Note 7 64 Гб сегодня? Анализ цен на б/у и новые смартфоны, факторы ценооб</span>
+            </a><a href="/articles/k/ka/kak-uznat-skolko-let-telefonu-xiaomi-redmi-note-4.html" class="pb-related-card">
+                <span class="pb-related-title">Как узнать год выпуска Xiaomi Redmi Note 4: все способы</span>
+                <span class="pb-related-desc">Подробное руководство, как узнать год выпуска Xiaomi Redmi Note 4. Разбор модели X, N, глобальной ве</span>
+            </a><a href="/articles/c/ch/chto-oznachaet-pristavka-t-u-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Что означает буква Т у Xiaomi: расшифровка и отличия моделей</span>
+                <span class="pb-related-desc">Подробный разбор того, что означает приставка Т у Xiaomi. Отличия Lite, Pro и T версий смартфонов, о</span>
+            </a><a href="/articles/g/gd/gde-na-ksiomi-chasy.html" class="pb-related-card">
+                <span class="pb-related-title">Где на Xiaomi часы: настройка виджетов и будильника</span>
+                <span class="pb-related-desc">Подробный гид, где на Xiaomi находятся часы. Настройка виджетов, будильников, таймеров и секундомера</span>
+            </a><a href="/articles/k/ka/kak-vyklyuchit-syaomi-esli-ne-rabotaet-knopka-vyklyucheniya.html" class="pb-related-card">
+                <span class="pb-related-title">Как выключить Xiaomi без кнопки: 5 рабочих способов</span>
+                <span class="pb-related-desc">Не работает кнопка выключения Xiaomi? Узнайте, как перезагрузить или выключить телефон через настрой</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

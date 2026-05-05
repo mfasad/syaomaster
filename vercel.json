@@ -1,0 +1,68 @@
+{
+  "rewrites": [
+    {
+      "source": "/nastrojka-sistemy/:path*",
+      "destination": "https://syaomaster-bin-01.vercel.app/nastrojka-sistemy/:path*"
+    },
+    {
+      "source": "/pamyat-i-fajly/:path*",
+      "destination": "https://syaomaster-bin-01.vercel.app/pamyat-i-fajly/:path*"
+    },
+    {
+      "source": "/prilozheniya-i-servisy/:path*",
+      "destination": "https://syaomaster-bin-01.vercel.app/prilozheniya-i-servisy/:path*"
+    },
+    {
+      "source": "/sbros-i-razblokirovka/:path*",
+      "destination": "https://syaomaster-bin-01.vercel.app/sbros-i-razblokirovka/:path*"
+    },
+    {
+      "source": "/pokupka-i-vybor/:path*",
+      "destination": "https://syaomaster-bin-01.vercel.app/pokupka-i-vybor/:path*"
+    },
+    {
+      "source": "/drugoe/:path*",
+      "destination": "https://syaomaster-bin-01.vercel.app/drugoe/:path*"
+    },
+    {
+      "source": "/remont-i-zhelezo/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/remont-i-zhelezo/:path*"
+    },
+    {
+      "source": "/nosimye-ustrojstva/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/nosimye-ustrojstva/:path*"
+    },
+    {
+      "source": "/svyaz-i-set/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/svyaz-i-set/:path*"
+    },
+    {
+      "source": "/umnyj-dom/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/umnyj-dom/:path*"
+    },
+    {
+      "source": "/obnovleniya-i-proshivka/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/obnovleniya-i-proshivka/:path*"
+    },
+    {
+      "source": "/zvuk-i-vibratsiya/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/zvuk-i-vibratsiya/:path*"
+    },
+    {
+      "source": "/batareya-i-zaryadka/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/batareya-i-zaryadka/:path*"
+    },
+    {
+      "source": "/kamera-i-foto/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/kamera-i-foto/:path*"
+    },
+    {
+      "source": "/bezopasnost/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/bezopasnost/:path*"
+    },
+    {
+      "source": "/routery-i-set/:path*",
+      "destination": "https://syaomaster-bin-02.vercel.app/routery-i-set/:path*"
+    }
+  ]
+}

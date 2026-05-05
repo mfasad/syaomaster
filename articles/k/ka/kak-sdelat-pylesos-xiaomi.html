@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как сделать пылесос Xiaomi: создание робота своими руками — СяоМастер</title>
+    <meta name="description" content="Инструкция, как сделать пылесос Xiaomi самостоятельно. Сборка робота-уборщика из комплектующих, прошивка и настройка умного управления.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-sdelat-pylesos-xiaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как сделать пылесос Xiaomi: создание робота своими руками">
+    <meta property="og:description" content="Инструкция, как сделать пылесос Xiaomi самостоятельно. Сборка робота-уборщика из комплектующих, прошивка и настройка умного управления.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как сделать пылесос Xiaomi: создание робота своими руками</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подбор-компонентов-и-аппаратная-платформа">Подбор компонентов и аппаратная платформа</a></li><li><a href="#сборка-механической-части-и-шасси">Сборка механической части и шасси</a></li><li><a href="#электроника-и-схемотехника">Электроника и схемотехника</a></li><li><a href="#программная-часть-и-прошивка">Программная часть и прошивка</a></li><li><a href="#пример-простейшего-псевдокода-для-движения-вперед">Пример простейшего псевдокода для движения вперед</a></li><li><a href="#интеграция-в-умный-дом-и-управление">Интеграция в умный дом и управление</a></li><li><a href="#тестирование-и-отладка-системы">Тестирование и отладка системы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-uvelichit-rabotu-akkumulyatora-xiaomi.html">Как увеличить работу аккумулятора Xiaomi: полный гид</a></li><li><a href="/articles/g/gd/gde-iskat-zapis-razgovora-v-ksiomi.html">Где искать запись разговора на Xiaomi: полный гид по папкам</a></li><li><a href="/articles/g/gd/gde-nakhoditsya-papka-moi-fajly-na-syaomi.html">Где папка Мои файлы на Xiaomi: поиск и скрытые папки</a></li><li><a href="/articles/k/ka/kak-vyklyuchit-golosovogo-pomoshchnika-na-televizore-xiaomi.html">Как отключить голосовой помощник на Xiaomi TV: полная инструкция</a></li><li><a href="/articles/s/sm/smartfon-xiaomi-redmi-9t-kak-vstavit-sim-kartu.html">Redmi 9T: Как вставить SIM-карту — пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как сделать пылесос Xiaomi своими руками: полная инструкция</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подбор-компонентов-и-аппаратная-платформа">Подбор компонентов и аппаратная платформа</a></li><li><a href="#сборка-механической-части-и-шасси">Сборка механической части и шасси</a></li><li><a href="#электроника-и-схемотехника">Электроника и схемотехника</a></li><li><a href="#программная-часть-и-прошивка">Программная часть и прошивка</a></li><li><a href="#пример-простейшего-псевдокода-для-движения-вперед">Пример простейшего псевдокода для движения вперед</a></li><li><a href="#интеграция-в-умный-дом-и-управление">Интеграция в умный дом и управление</a></li><li><a href="#тестирование-и-отладка-системы">Тестирование и отладка системы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Вопрос о том, как сделать пылесос Xiaomi, часто возникает у энтузиастов электроники, которые хотят собрать собственное умное устройство с нуля, используя популярную экосистему <em>Mi Home</em>. Конечно, создать полноценный промышленный продукт вроде <em>Xiaomi Vacuum Cleaner</em> в домашних условиях невозможно из-за сложной инженерии и литья корпусов, но собрать функциональный аналог на базе контроллеров ESP32 или Raspberry Pi — вполне реальная задача. Это позволит вам не только сэкономить на покупке дорогостоящего гаджета, но и получить полный контроль над программным кодом.</p>
+
+<p>Самодельный робот-пылесос, интегрированный в сеть <strong>умного дома</strong>, станет отличным проектом для изучения основ робототехники и IoT. Вам предстоит разработать шасси, подобрать моторы, настроить систему навигации и, самое главное, написать или адаптировать программное обеспечение для связи с серверами Xiaomi. В этой статье мы разберем все этапы создания такого устройства, от подбора компонентов до финальной отладки.</p>
+
+<p>Прежде чем приступать к сборке, важно понимать, что результат будет отличаться от заводских моделей по уровню автономности и качеству уборки. Однако, кастомное решение дает уникальные возможности, недоступные в серийных устройствах, например, использование собственных алгоритмов объезда препятствий или нестандартных датчиков. <mark>Ключевым моментом является выбор правильной платформы для эмуляции протоколов Xiaomi, так как без этого интеграция в приложение невозможна.</mark></p>
+
+<h2 id="подбор-компонентов-и-аппаратная-платформа">Подбор компонентов и аппаратная платформа</h2>
+
+<p>Основа любого робота — это его «мозг» и «мышцы». Для реализации проекта вам потребуется одноплатный компьютер или мощный микроконтроллер. Наиболее оптимальным вариантом считается <em>Raspberry Pi 3 или 4</em>, так как на них можно развернуть полноценную операционную систему Linux, что необходимо для работы сложных скриптов и серверов управления. Если вы хотите более простое решение, можно использовать связку <em>ESP32</em> для управления моторами и <em>Arduino</em> для сенсоров, но функционал будет ограничен.</p>
+
+<p>Для движения необходимы моторы с редукторами. Лучше всего подойдут двигатели постоянного тока с энкодерами, которые позволяют точно отслеживать скорость вращения колес. В заводских моделях Xiaomi часто используются бесколлекторные моторы, но для самодельного проекта достаточно качественных коллекторных аналогов с напряжением питания 12 Вольт. Не забудьте про драйвер моторов, например, модуль на базе <em>L298N</em> или <em>TB6612FNG</em>, который будет управлять направлением и скоростью вращения.</p>
+
+<ul>
+  <li>🤖 <strong>Контроллер:</strong> Raspberry Pi 4 (2GB или 4GB) для обработки данных и Wi-Fi связи.</li>
+  <li>⚡ <strong>Драйвер моторов:</strong> Двухканальный модуль TB6612FNG для управления ходовой частью.</li>
+  <li>🔋 <strong>Питание:</strong> Литий-ионные аккумуляторы 18650 (минимум 4 штуки) и плата BMS для защиты.</li>
+  <li>📡 <strong>Сенсоры:</strong> Лидар (опционально), ИК-датчики расстояния и датчики падения (cliff sensors).</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: При сборке силовой части используйте провода достаточного сечения. Тонкие провода могут перегреться и вызвать короткое замыкание, что приведет к выходу из строя контроллера или возгоранию аккумулятора.</p>
+</blockquote>
+
+<p>Корпус устройства можно напечатать на 3D-принтере или изготовить из листового пластика. Важно предусмотреть места для крепления всех компонентов и обеспечить доступ к портам для отладки. Также потребуется турбина для создания вакуума; в домашних условиях часто используют мощные вентиляторы от компьютерной техники или автомобильные турбины, адаптируя их под поток воздуха.</p>
+
+<h2 id="сборка-механической-части-и-шасси">Сборка механической части и шасси</h2>
+
+<p>Сборка начинается с монтажа колесной базы. Если вы используете схему с двумя ведущими колесами и одним опорным, убедитесь, что центр тяжести находится строго над осью ведущих колес. Это критически важно для стабильности движения и работы гироскопа. Опорное колесо должно свободно вращаться, чтобы робот мог поворачивать на месте без заеданий.</p>
+
+<p>Крепление моторов должно быть жестким, чтобы вибрации не передавались на датчики и камеру (если она есть). Используйте резиновые прокладки или амортизаторы между моторами и рамой. Для уборки пыли необходимо собрать узел всасывания: турбина устанавливается над контейнером для мусора, создавая разряжение, которое затягивает воздух через щетку.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка механики</h4><label class="check-item"><input type="checkbox"><span>Колеса вращаются в правильном направлении</span></label><label class="check-item"><input type="checkbox"><span>Опорное колесо не заедает</span></label><label class="check-item"><input type="checkbox"><span>Турбина создает ощутимый поток</span></label><label class="check-item"><input type="checkbox"><span>Датчики падения закреплены надежно</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Особое внимание уделите нижней части робота. Там должны располагаться датчики cliffs (обрыва), которые предотвращают падение с лестницы. Обычно это ИК-сенсоры, направленные вниз. Расстояние от датчика до пола должно быть подобрано экспериментально, чтобы робот реагировал на перепад высот, но игнорировал темные коврики, если они не являются препятствием.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Компонент</th>
+      <th>Назначение</th>
+      <th>Требования к монтажу</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ведущие колеса</td>
+      <td>Перемещение</td>
+      <td>Жесткая фиксация, отсутствие люфта</td>
+    </tr>
+    <tr>
+      <td>Турбина</td>
+      <td>Всасывание пыли</td>
+      <td>Герметичное соединение с контейнером</td>
+    </tr>
+    <tr>
+      <td>Боковая щетка</td>
+      <td>Сгребание мусора</td>
+      <td>Зазор 2-3 мм от пола</td>
+    </tr>
+    <tr>
+      <td>ИК-датчики</td>
+      <td>Защита от падения</td>
+      <td>Направлены строго вниз, чистые линзы</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="электроника-и-схемотехника">Электроника и схемотехника</h2>
+
+<p>Электрическая схема самодельного пылесоса должна быть надежной и безопасной. Основное питание подается на драйвер моторов и плату управления через систему защиты BMS (Battery Management System). Это предотвращает глубокий разряд аккумуляторов и защищает от перегрузок по току. Для питания Raspberry Pi или ESP32 необходим качественный понижающий преобразователь (DC-DC), выдающий стабильные 5 Вольт.</p>
+
+<p>Соединение всех компонентов лучше выполнять с использованием коннекторов, чтобы иметь возможность быстро отключать узлы для диагностики. Все силовые линии должны быть изолированы термоусадкой. Если вы используете лидар, его следует размещать на возвышении, чтобы он мог вращаться без препятствий и сканировать помещение на 360 градусов.</p>
+
+<ul>
+  <li>🔌 <strong>BMS плата:</strong> Обязательна для литиевых батарей, балансирует заряд ячеек.</li>
+  <li>📉 <strong>DC-DC конвертер:</strong> Преобразует 12В от батарей в 5В для логики.</li>
+  <li>🔌 <strong>Коннекторы:</strong> Используйте XT60 для питания и JST для сигнальных линий.</li>
+  <li>🛡️ <strong>Предохранители:</strong> Установите плавкий предохранитель на входе питания моторов.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не соединяйте линии питания моторов напрямую с линиями логики микроконтроллера. Это гарантированно приведет к сгоранию процессора из-за скачков напряжения.</p>
+</blockquote>
+
+<p>Для управления вакуумным насосом также используйте реле или MOSFET-транзистор, управляемый GPIO-портом. Это позволит программно регулировать мощность всасывания, переключаясь между режимами «Тихий», «Стандарт» и «Турбо», как в оригинальных устройствах <em>Xiaomi</em>.</p>
+
+<h2 id="программная-часть-и-прошивка">Программная часть и прошивка</h2>
+
+<p>Самая сложная часть проекта — это программное обеспечение. Чтобы ваш робот стал частью экосистемы Xiaomi, он должен уметь общаться с облаком или локальным сервером по протоколам, используемым производителем. Чаще всего для этого используют платформу <em>Home Assistant</em> с интеграцией <em>Xiaomi Mi Robot Vacuum</em> или пишут собственный код на Python, эмулирующий устройство.</p>
+
+<p>Вам потребуется установить операционную систему (например, <em>Raspbian</em>) и настроить окружение. Ключевым элементом является скрипт, который опрашивает датчики, управляет моторами через GPIO и отправляет статусы в приложение. Существуют открытые проекты, такие как <em>VacuumZ</em> или <em>OpenMower</em>, которые можно адаптировать под свое железо.</p>
+
+<details class="pb-accordion"><summary>Сложности с протоколами шифрования</summary><div class="pb-accordion-body"><p>Xiaomi использует шифрование для связи устройств с облаком. Для обхода этого в самодельных устройствах чаще всего эмулируют локальное подключение или используют модифицированные версии прошивок, которые отправляют данные на свой сервер-посредник, а оттуда — в приложение Mi Home.</p></div></details>
+
+<p>Для навигации используются алгоритмы SLAM (Simultaneous Localization and Mapping), если установлен лидар. В упрощенном варианте робот может работать по хаотичному алгоритму, меняя направление при столкновении с препятствием. Код должен включать обработку прерываний от датчиков удара и падения в реальном времени.</p>
+
+<pre><code>
+<h2 id="пример-простейшего-псевдокода-для-движения-вперед">Пример простейшего псевдокода для движения вперед</h2>
+<p>def move_forward():</p>
+<p>set_motor_speed(left_motor, 100)</p>
+<p>set_motor_speed(right_motor, 100)</p>
+<p>if obstacle_detected():</p>
+<p>stop()</p>
+<p>turn_right(90)</p>
+</code></pre>
+
+<h2 id="интеграция-в-умный-дом-и-управление">Интеграция в умный дом и управление</h2>
+
+<p>После того как робот научился ездить и сосать пыль, нужно научить его слушаться команд со смартфона. Самый простой способ — использовать платформу <em>Home Assistant</em>. Вы настраиваете интеграцию, добавляете свое устройство как Generic MQTT Vacuum, и затем пробрасываете его в <em>HomeKit</em> или <em>Yandex Home</em> через плагин.</p>
+
+<p>Если ваша цель — видеть устройство именно в приложении <em>Mi Home</em>, задача усложняется. Вам потребуется получить токены устройств, зарегистрировать свое устройство на сервере разработчиков Xiaomi (IoT Platform) и получить сертификаты. Это требует глубоких знаний в сетевых протоколах и криптографии.</p>
+
+<ul>
+  <li>📱 <strong>Mi Home App:</strong> Официальное приложение для управления (требует сложной эмуляции).</li>
+  <li>🏠 <strong>Home Assistant:</strong> Лучший выбор для локального управления без облака.</li>
+  <li>🗣️ <strong>Голосовые ассистенты:</strong> Интеграция через Алису или Siri Shortcuts.</li>
+  <li>🌐 <strong>MQTT:</strong> Протокол для передачи телеметрии и команд.</li>
+</ul>
+
+<div class="pb-poll" id="poll-b2f9bb8b"><div class="pb-poll-question">📊 Какой способ управления вы предпочитаете?</div><div class="pb-poll-option" data-poll="b2f9bb8b" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Официальное приложение Mi Home</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b2f9bb8b" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Home Assistant</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b2f9bb8b" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Свой веб-интерфейс</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b2f9bb8b" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Голосовое управление</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Не забудьте настроить сценарии автоматизации. Например, запуск уборки, когда все ушли из дома, или возврат на базу при низком заряде батареи. Для реализации возврата на базу потребуется либо ИК-маяк, либо точная карта помещения с координатами зарядного устройства.</p>
+
+<h2 id="тестирование-и-отладка-системы">Тестирование и отладка системы</h2>
+
+<p>Первый запуск всегда происходит на весу. Поднимите робота, включите питание и проверьте реакцию моторов на команды. Убедитесь, что колеса крутятся в правильном направлении при команде «вперед». Если робот пятится назад при команде движения вперед, просто поменяйте местами провода на драйвере мотора или инвертируйте логику в коде.</p>
+
+<p>Затем проведите тесты на полу. Проверьте работу датчиков падения: поднесите робот к краю дивана или ступеньки. Он должен остановиться за 5-10 см до края. Также проверьте работу вакуумной системы: приложите лист бумаги к щетке, он должен плотно прижиматься потоком воздуха.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При первых тестах не оставляйте робот без присмотра. Он может запутаться в проводах, застрять под мебелью или, в худшем случае, загореться из-за ошибки в коде управления моторами.</p>
+</blockquote>
+
+<p>Финальный этап — длительная автономная работа. Запустите робот на полной заряде и отслеживайте, как он расходует энергию. Если батарея садится слишком быстро, возможно, алгоритмы движения неэффективны или моторы потребляют слишком много тока из-за трения в механизмах.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Успех проекта зависит не столько от мощности моторов, сколько от качества алгоритмов навигации и стабильности работы программного обеспечения, управляющего энергосбережением.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+  <summary>Можно ли перепрошить оригинальный пылесос Xiaomi в свой?</summary>
+  <p>Теоретически да, если у вас есть доступ к UART-порту внутри устройства и вы знаете архитектуру процессора. Однако это крайне сложно, так как производители блокируют загрузчики. Проще собрать устройство с нуля на открытых платформах.</p>
+</details>
+
+<details>
+  <summary>Какой бюджет нужен для создания такого робота?</summary>
+  <p>Стоимость компонентов (Raspberry Pi, моторы, аккумуляторы, датчики, пластик) может составить от 100 до 200 долларов, что сопоставимо с ценой бюджетных моделей Xiaomi, поэтому экономический смысл есть только в образовательных целях.</p>
+</details>
+
+<details>
+  <summary>Нужен ли лидар для нормальной работы?</summary>
+  <p>Для хаотичной уборки лидар не обязателен, достаточно гироскопа и дальномеров. Но для построения карты и эффективной навигации по комнатам лазерный сканер (Lidar) крайне желателен.</p>
+</details>
+
+<details>
+  <summary>Безопасно ли использовать самодельные аккумуляторы?</summary>
+  <p>Только если вы используете качественную BMS плату и соблюдаете правила пайки литиевых элементов. Неправильная сборка батареи может привести к пожару, поэтому относитесь к этому со всей серьезностью.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-uvelichit-rabotu-akkumulyatora-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как увеличить работу аккумулятора Xiaomi: полный гид</span>
+                <span class="pb-related-desc">Проверенные способы продлить жизнь батареи Xiaomi. Настройки MIUI, калибровка, устранение фоновых пр</span>
+            </a><a href="/articles/g/gd/gde-iskat-zapis-razgovora-v-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Где искать запись разговора на Xiaomi: полный гид по папкам</span>
+                <span class="pb-related-desc">Узнайте, где хранятся записи звонков на Xiaomi. Инструкция по поиску файлов в проводнике, настройке </span>
+            </a><a href="/articles/g/gd/gde-nakhoditsya-papka-moi-fajly-na-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Где папка Мои файлы на Xiaomi: поиск и скрытые папки</span>
+                <span class="pb-related-desc">Где находится папка Мои файлы на Xiaomi? Полный гид по MIUI и HyperOS: поиск скрытых системных дирек</span>
+            </a><a href="/articles/k/ka/kak-vyklyuchit-golosovogo-pomoshchnika-na-televizore-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить голосовой помощник на Xiaomi TV: полная инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по деактивации Google Assistant на телевизорах Xiaomi. Как выключить кнопку ми</span>
+            </a><a href="/articles/s/sm/smartfon-xiaomi-redmi-9t-kak-vstavit-sim-kartu.html" class="pb-related-card">
+                <span class="pb-related-title">Redmi 9T: Как вставить SIM-карту — пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по установке SIM-карты в Xiaomi Redmi 9T. Узнайте расположение лотка, тип скре</span>
+            </a><a href="/articles/t/te/teletajp-chto-eto-v-telefone-xiaomi-redmi-9.html" class="pb-related-card">
+                <span class="pb-related-title">Телетайп на Xiaomi Redmi 9: что это и как отключить</span>
+                <span class="pb-related-desc">Узнайте, что такое телетайп (TTY) на Xiaomi Redmi 9. Подробный разбор функции, инструкция по отключе</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

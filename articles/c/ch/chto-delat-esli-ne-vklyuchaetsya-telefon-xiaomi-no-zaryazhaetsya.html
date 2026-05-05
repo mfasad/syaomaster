@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Xiaomi заряжается, но не включается: решение проблемы — СяоМастер</title>
+    <meta name="description" content="Смартфон Xiaomi показывает зарядку, но экран черный? Полная инструкция: проверка батареи, сброс до заводских настроек, вход в Recovery.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/c/ch/chto-delat-esli-ne-vklyuchaetsya-telefon-xiaomi-no-zaryazhaetsya.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Xiaomi заряжается, но не включается: решение проблемы">
+    <meta property="og:description" content="Смартфон Xiaomi показывает зарядку, но экран черный? Полная инструкция: проверка батареи, сброс до заводских настроек, вход в Recovery.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Xiaomi заряжается, но не включается: решение проблемы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#первичная-диагностика-и-исключение-ложных-сбоев">Первичная диагностика и исключение ложных сбоев</a></li><li><a href="#принудительная-перезагрузка-и-сброс-статического-напряжения">Принудительная перезагрузка и сброс статического напряжения</a></li><li><a href="#длительная-зарядка-и-реанимация-глубоко-разряженного-аккумулятора">Длительная зарядка и реанимация глубоко разряженного аккумулятора</a></li><li><a href="#вход-в-режим-recovery-и-fastboot">Вход в режим Recovery и Fastboot</a></li><li><a href="#проблемы-с-дисплеем-и-тачскрином">Проблемы с дисплеем и тачскрином</a></li><li><a href="#программный-сброс-и-перепрошивка-через-pc">Программный сброс и перепрошивка через PC</a></li><li><a href="#когда-необходима-помощь-специалистов">Когда необходима помощь специалистов</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/c/ch/chem-otlichaetsya-kitajskaya-versiya-ot-globalnoj-xiaomi-mi-band.html">Китайская или Глобальная версия Xiaomi Mi Band: отличия и выбор</a></li><li><a href="/drugoe/w/we/weatherby-xiaomi-chto.html">Weatherby и Xiaomi: почему бренды перепутали и что это значит?</a></li><li><a href="/articles/k/ka/kak-uvelichit-rabotu-akkumulyatora-xiaomi.html">Как увеличить работу аккумулятора Xiaomi: полный гид</a></li><li><a href="/articles/k/ka/kak-propatchit-menedzher-tem-na-xiaomi.html">Как пропатчить менеджер тем Xiaomi: инструкция</a></li><li><a href="/articles/s/sk/skolko-stoit-syaomi-redmi-nout-7-pro.html">Сяоми Редми Ноут 7 Про: актуальная цена и обзор стоимости</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Что делать, если телефон Xiaomi заряжается, но не включается: экспертное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#первичная-диагностика-и-исключение-ложных-сбоев">Первичная диагностика и исключение ложных сбоев</a></li><li><a href="#принудительная-перезагрузка-и-сброс-статического-напряжения">Принудительная перезагрузка и сброс статического напряжения</a></li><li><a href="#длительная-зарядка-и-реанимация-глубоко-разряженного-аккумулятора">Длительная зарядка и реанимация глубоко разряженного аккумулятора</a></li><li><a href="#вход-в-режим-recovery-и-fastboot">Вход в режим Recovery и Fastboot</a></li><li><a href="#проблемы-с-дисплеем-и-тачскрином">Проблемы с дисплеем и тачскрином</a></li><li><a href="#программный-сброс-и-перепрошивка-через-pc">Программный сброс и перепрошивка через PC</a></li><li><a href="#когда-необходима-помощь-специалистов">Когда необходима помощь специалистов</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда ваш <em>Xiaomi</em> демонстрирует признаки жизни в виде индикатора зарядки, но отказывается запускать операционную систему, может вызвать панику. Экран остается черным, вибрации нет, но при подключении кабеля загорается красный или оранжевый индикатор, либо появляется логотип <strong>Mi</strong> или <strong>Redmi</strong>, после чего устройство снова гаснет. Это распространенная проблема, которая может быть вызвана как программным сбоем, так и физическим повреждением компонентов.</p>
+
+<p>Прежде чем нести гаджет в сервисный центр, стоит провести ряд диагностических процедур самостоятельно. Часто причина кроется в <strong>зависании системы</strong> или глубоком разряде аккумулятора, который требует «толчка» для запуска контроллера питания. В этой статье мы подробно разберем алгоритмы действий, которые помогут оживить смартфон без потери данных или с минимальными рисками.</p>
+
+<p>Важно понимать, что игнорирование симптомов может привести к полному выходу устройства из строя. Если телефон нагревается при подключении к сети, но не реагирует на кнопки, это может указывать на <strong>короткое замыкание</strong> на плате. В таких случаях дальнейшие попытки включения могут быть опасны. Однако в большинстве случаев проблема решаема в домашних условиях при соблюдении осторожности.</p>
+
+<div class="pb-poll" id="poll-822151cb"><div class="pb-poll-question">📊 Как ведет себя ваш Xiaomi при включении?</div><div class="pb-poll-option" data-poll="822151cb" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Экран черный, горит только индикатор:Появляется логотип и снова гаснет:Телефон вибрирует, но экран не загорается:Устройство уходит в бесконечную перезагрузку</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="первичная-диагностика-и-исключение-ложных-сбоев">Первичная диагностика и исключение ложных сбоев</h2>
+
+<p>Первым шагом всегда должна быть проверка целостности зарядного устройства и самого порта. Часто пользователи сталкиваются с ситуацией, когда ток поступает, но его силы недостаточно для запуска <strong>Android</strong>. Попробуйте заменить кабель USB и блок питания на заведомо исправные, желательно оригинальные или сертифицированные аналоги с достаточной силой тока.</p>
+
+<p>Осмотрите разъем зарядки на предмет загрязнения. Ворс из карманов, пыль и окисление контактов могут создавать сопротивление, которое позволяет индикатору гореть, но блокирует нормальную зарядку батареи. Аккуратно, без использования металлических предметов, почистите порт мягкой сухой щеткой или деревянной зубочисткой.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика проблемы</h4><label class="check-item"><input type="checkbox"><span>Заменить кабель зарядки:Очистить порт от пыли:Подключить к другому источнику питания:Проверить реакцию на зажатие кнопок</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<p>Если после замены аксессуаров ситуация не изменилась, обратите внимание на поведение экрана при ярком свете. Иногда подсветка матрицы выходит из строя, но сам телефон работает. Позвоните на номер с другого устройства: если идут гудки, а экран черный, проблема кроется в дисплее или шлейфе, а не в системе.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если в районе нижней части корпуса или в зоне процессора чувствуется сильный нагрев сразу после подключения зарядки, немедленно отключите устройство. Это признак <strong>короткого замыкания</strong> на материнской плате, и дальнейшие эксперименты могут привести к возгоранию.</p>
+</blockquote>
+
+<h2 id="принудительная-перезагрузка-и-сброс-статического-напряжения">Принудительная перезагрузка и сброс статического напряжения</h2>
+
+<p>Одной из самых частых причин отказа включения является статический заряд, накопленный на контроллерах, или программный «завис» на уровне ядра системы. В отличие от обычного выключения, <strong>принудительный рестарт</strong> разрывает цепь питания программным способом, заставляя устройство перезагрузиться заново. Этот метод безопасен для данных пользователя.</p>
+
+<p>Для выполнения этой процедуры на большинстве моделей <em>Xiaomi</em> и <em>Redmi</em> необходимо зажать кнопку питания и удерживать её в течение длительного времени — от 10 до 20 секунд. На некоторых моделях требуется комбинация кнопок питания и увеличения громкости. В момент вибрации или появления логотипа кнопки нужно отпустить.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если телефон лежит на беспроводной зарядке, снимите его и используйте проводное подключение для проведения диагностики, так как беспроводной метод менее стабилен при низком заряде.</p></aside>
+
+<p>В редких случаях помогает метод «разрядки конденсаторов». Для этого извлеките SIM-карту (если конструкция позволяет) и, не подключая зарядное устройство, удерживайте кнопку питания в течение 30-40 секунд. После этого подключите зарядку и попробуйте включить телефон стандартным коротким нажатием.</p>
+
+<p>Эффективность этого метода высока, если сбой произошел после обновления системы или установки тяжелого приложения. Механическое воздействие на кнопки позволяет сбросить ошибки в <strong>ОЗУ</strong> и запустить загрузчик заново. Если после 3-4 попыток результат нулевой, переходите к следующему разделу.</p>
+
+<h2 id="длительная-зарядка-и-реанимация-глубоко-разряженного-аккумулятора">Длительная зарядка и реанимация глубоко разряженного аккумулятора</h2>
+
+<p>Литий-полимерные батареи, используемые в современных смартфонах, имеют защитный механизм, который отключает подачу энергии при падении напряжения ниже критического уровня. Если телефон долго лежал разряженным, контроллер питания может блокировать запуск системы, даже если индикатор показывает процесс зарядки.</p>
+
+<p>В этом случае необходимо оставить устройство на зарядке на длительное время — от 2 до 4 часов, даже если экран не загорается. Не пытайтесь включить телефон каждые 5 минут, так как это сбрасывает процесс «раскачки» батареи. Используйте оригинальный блок питания с поддержкой <strong>Quick Charge</strong> или <strong>PD</strong>.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Состояние индикатора</th>
+<th>Вероятная причина</th>
+<th>Рекомендуемое действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Горит оранжевым/красным</td>
+<td>Батарея разряжена ниже 5%</td>
+<td>Оставить на зарядке на 2-3 часа</td>
+</tr>
+<tr>
+<td>Мигает белым/синим</td>
+<td>Режим ожидания или уведомление</td>
+<td>Кратко нажать кнопку питания</td>
+</tr>
+<tr>
+<td>Не горит, но греется</td>
+<td>Потребление тока без зарядки</td>
+<td>Проверить кабель и порт, заменить БП</td>
+</tr>
+<tr>
+<td>Логотип и гаснет</td>
+<td>Нехватка тока для запуска</td>
+<td>Заряжать выключенным дольше</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Существует методика «импульсной зарядки», которая иногда помогает запустить контроллер. Подключите телефон к зарядке на 10-15 секунд, затем отключите и подождите минуту. Повторите цикл 5-7 раз. Это может поднять напряжение на клеммах аккумулятора до уровня, достаточного для старта <strong>загрузчика</strong>.</p>
+
+<details class="pb-accordion"><summary>Можно ли заряжать телефон на морозе?</summary><div class="pb-accordion-body"><p>Категорически нет. Низкие температуры делают электролит в аккумуляторе вязким, что приводит к резкому падению напряжения и возможному повреждению химии батареи. Внесите телефон в тепло, дайте ему согреться 30-40 минут, и только потом подключайте к сети.</p></div></details>
+
+<h2 id="вход-в-режим-recovery-и-fastboot">Вход в режим Recovery и Fastboot</h2>
+
+<p>Если телефон реагирует на кнопки, но не загружает операционную систему, необходимо проверить доступность системных разделов. Режим <strong>Recovery</strong> позволяет проверить целостность системы или выполнить сброс, а режим <strong>Fastboot</strong> подтверждает исправность основных аппаратных компонентов, таких как процессор и память.</p>
+
+<p>Для входа в режим Recovery на выключенном устройстве зажмите одновременно кнопки питания и увеличения громкости. Удерживайте их до появления логотипа <em>Mi</em> или <em>Redmi</em>, затем отпустите питание, продолжая держать громкость. Если вы попали в меню с несколькими пунктами (обычно на английском или китайском языке), значит, дисплей и тачскрин исправны.</p>
+
+<pre><code>Комбинации для входа в специальные режимы:
+<p>Recovery: Питание + Громкость Вверх</p>
+<p>Fastboot: Питание + Громкость Вниз</p>
+<p>Безопасный режим: Питание (держать после появления логотипа)</code></pre></p>
+
+<p>Режим <strong>Fastboot</strong> вызывается комбинацией питания и уменьшения громкости. Если на экране появляется изображение зайца, чинящего андроида (или надпись Fastboot), это отличная новость: «железо» телефона функционирует корректно, и проблема кроется в программном обеспечении или повреждении системных файлов.</p>
+
+<p>Находясь в меню Recovery, навигация осуществляется кнопками громкости, а выбор — кнопкой питания. Если система предлагает обновиться, но вы не уверены в источнике файла, лучше выбрать пункт <code>Wipe Data</code> (с потерей данных) или просто перезагрузиться (<code>Reboot</code>), чтобы исключить программный конфликт.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Пункт <code>Wipe Data</code> в меню Recovery полностью удаляет все пользовательские данные, включая фото, контакты и приложения. Используйте эту функцию только если другие методы не помогли, и вы готовы к потере информации.</p>
+</blockquote>
+
+<h2 id="проблемы-с-дисплеем-и-тачскрином">Проблемы с дисплеем и тачскрином</h2>
+
+<p>Иногда телефон успешно включается, работает, издает звуки уведомлений и даже реагирует на звонки, но экран остается черным. Это классический симптом выхода из строя матрицы дисплея или шлейфа, соединяющего экран с платой. В таких случаях индикатор зарядки горит, создавая иллюзию проблемы с включением.</p>
+
+<p>Проверить эту гипотезу можно, подключив телефон к компьютеру. Если ПК издает звук подключения нового устройства, значит, система загружена. Также можно попробовать позвонить на номер сим-карты: наличие гудков подтвердит, что смартфон активен. В этом случае требуется замена модуля дисплея.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если телефон вибрирует при звонке и издает звуки, но экран черный — проблема на 90% в дисплее или его шлейфе, а не в материнской плате.</p></aside>
+
+<p>Еще одной причиной может быть отхождение шлейфа дисплея после падения. Аккуратное, но сильное нажатие на верхнюю часть экрана (где расположен шлейф) иногда позволяет временно восстановить контакт. Однако это временная мера, и для полноценного ремонта потребуется вскрытие корпуса.</p>
+
+<p>Не стоит забывать про защитные стекла и пленки. В редких случаях некачественное защитное стекло может создавать помехи для работы дигитайзера, и телефон «думает», что экран выключен или заблокирован. Попробуйте снять защиту и проверить реакцию устройства.</p>
+
+<h2 id="программный-сброс-и-перепрошивка-через-pc">Программный сброс и перепрошивка через PC</h2>
+
+<p>Если аппаратная часть исправна (есть реакция в Fastboot), но загрузка системы невозможна, потребуется вмешательство через компьютер. Для устройств <em>Xiaomi</em> основным инструментом является утилита <strong>Mi Flash Tool</strong> и программа <strong>Mi Unlock</strong> для разблокировки загрузчика, хотя для простого восстановления иногда достаточно сброса через ADB.</p>
+
+<p>Если у вас есть доступ к меню Recovery, можно попробовать пункт <code>Wipe Data</code>. Это вернет телефон к заводскому состоянию. Если же телефон не включается вообще, но определяется компьютером в режиме <strong>EDL</strong> (Emergency Download Mode), потребуется квалифицированное вмешательство с использованием платной авторизации Mi Account.</p>
+
+<ul>
+<li>🔌 Подключите телефон к ПК через качественный USB-кабель.</li>
+<li>💻 Установите драйверы <em>Qualcomm</em> или <em>MediaTek</em> (в зависимости от процессора).</li>
+<li>🛠 Используйте программу <strong>Mi Flash</strong> для прошивки стоковой версии ПО.</li>
+<li>🔄 Если телефон в режиме EDL, может потребоваться разборка для замыкания контактов на плате.</li>
+</ul>
+
+<p>Процесс перепрошивки требует стабильного интернета и заряда батареи не менее 40-50%. Прерывание процесса записи данных может привести к «окирпичиванию» устройства, когда восстановление станет возможным только в сервисном центре с использованием программаторов.</p>
+
+<details class="pb-accordion"><summary>Что такое режим EDL?</summary><div class="pb-accordion-body"><p>Режим Emergency Download Mode (экран черный, ПК издает звук подключения) используется инженерами для восстановления телефона после критических сбоев. Вход в него часто требует разборки телефона и замыкания специальных тестовых точек на плате.</p></div></details>
+
+<h2 id="когда-необходима-помощь-специалистов">Когда необходима помощь специалистов</h2>
+
+<p>Существует ряд симптомов, при которых самостоятельный ремонт не только бесполезен, но и опасен. Если телефон Xiaomi заряжается, но не включается, и при этом сильно греется в верхней части корпуса (где расположен процессор), скорее всего, произошло отслоение чипа или короткое замыкание в цепи питания.</p>
+
+<p>Также поводом для обращения в сервис является попадание влаги. Даже если телефон после просушки начал показывать зарядку, коррозионные процессы внутри уже запущены. Окисление контактов может происходить неделями, постепенно выводя устройство из строя.</p>
+
+<p>Специалисты используют микроскопы и тепловизоры для поиска пробоев на плате. Самостоятельно, без паяльной станции и схем, восстановить сгоревший контроллер питания или заменить чип памяти невозможно. В таких случаях экономия времени на диагностике у мастера будет разумнее, чем покупка новых аккумуляторов и экранов наугад.</p>
+
+<details>
+<summary>Почему телефон показывает зарядку, но процент батареи не растет?</summary>
+<p>Это может указывать на износ аккумулятора, когда его реальная емкость упала ниже критической, или на неисправность контроллера заряда на плате. Также причина может быть в неоригинальном зарядном устройстве, которое не может обеспечить необходимый ток.</p>
+</details>
+
+<details>
+<summary>Сколько времени нужно заряжать полностью разряженный Xiaomi?</summary>
+<p>Для активации контроллера питания может потребоваться от 30 минут до 1 часа. Полная зарядка deeply discharged батареи обычно занимает 2-3 часа. Если за 2 часа индикатор не изменил цвет или не появился логотип, проблема глубже.</p>
+</details>
+
+<details>
+<summary>Может ли обновление системы вызвать такую проблему?</summary>
+<p>Да, если во время обновления прервалось питание или повредился файл прошивки. В этом случае помогает вход в Recovery и сброс данных (Wipe Data), либо перепрошивка через компьютер.</p>
+</details>
+
+<details>
+<summary>Что делать, если телефон включается только при подключении к зарядке?</summary>
+<p>Это верный признак того, что аккумулятор полностью вышел из строя и не держит заряд, либо отошел шлейф батареи. Требуется замена аккумулятора.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/c/ch/chem-otlichaetsya-kitajskaya-versiya-ot-globalnoj-xiaomi-mi-band.html" class="pb-related-card">
+                <span class="pb-related-title">Китайская или Глобальная версия Xiaomi Mi Band: отличия и выбор</span>
+                <span class="pb-related-desc">Подробный разбор отличий китайской и глобальной версий Xiaomi Mi Band. Стоит ли переплачивать? Пробл</span>
+            </a><a href="/drugoe/w/we/weatherby-xiaomi-chto.html" class="pb-related-card">
+                <span class="pb-related-title">Weatherby и Xiaomi: почему бренды перепутали и что это значит?</span>
+                <span class="pb-related-desc">Разбираемся, как американская оружейная компания Weatherby связана с китайским гигантом Xiaomi. Анал</span>
+            </a><a href="/articles/k/ka/kak-uvelichit-rabotu-akkumulyatora-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как увеличить работу аккумулятора Xiaomi: полный гид</span>
+                <span class="pb-related-desc">Проверенные способы продлить жизнь батареи Xiaomi. Настройки MIUI, калибровка, устранение фоновых пр</span>
+            </a><a href="/articles/k/ka/kak-propatchit-menedzher-tem-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как пропатчить менеджер тем Xiaomi: инструкция</span>
+                <span class="pb-related-desc">Узнайте, как пропатчить менеджер тем на Xiaomi для установки сторонних тем. Подробная инструкция, AD</span>
+            </a><a href="/articles/s/sk/skolko-stoit-syaomi-redmi-nout-7-pro.html" class="pb-related-card">
+                <span class="pb-related-title">Сяоми Редми Ноут 7 Про: актуальная цена и обзор стоимости</span>
+                <span class="pb-related-desc">Сколько стоит Xiaomi Redmi Note 7 Pro сегодня? Анализ цен на новый и б/у смартфон, стоимость запчаст</span>
+            </a><a href="/drugoe/x/xi/xiaomi-gde-nakhodyatsya-kontakty.html" class="pb-related-card">
+                <span class="pb-related-title">Контакты Xiaomi: где найти и как связаться с поддержкой</span>
+                <span class="pb-related-desc">Полный гид по поиску официальных контактов Xiaomi. Где находятся телефоны, чаты, адреса сервисных це</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

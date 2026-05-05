@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как сделать тему на Xiaomi: гид по HyperOS и MIUI — СяоМастер</title>
+    <meta name="description" content="Узнайте, как делать тему на Xiaomi. Полная инструкция: создание, паковка, установка .mtz. Гайд для новичков и профи.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-delat-temu-na-syaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как сделать тему на Xiaomi: гид по HyperOS и MIUI">
+    <meta property="og:description" content="Узнайте, как делать тему на Xiaomi. Полная инструкция: создание, паковка, установка .mtz. Гайд для новичков и профи.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как сделать тему на Xiaomi: гид по HyperOS и MIUI</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#необходимые-инструменты-и-подготовка-рабочего-места">Необходимые инструменты и подготовка рабочего места</a></li><li><a href="#регистрация-аккаунта-разработчика-и-получение-прав">Регистрация аккаунта разработчика и получение прав</a></li><li><a href="#структура-проекта-и-основные-файлы-темы">Структура проекта и основные файлы темы</a></li><li><a href="#процесс-создания-и-редактирования-элементов">Процесс создания и редактирования элементов</a></li><li><a href="#компиляция-тестирование-и-отладка">Компиляция, тестирование и отладка</a></li><li><a href="#упаковка-и-установка-готовой-темы">Упаковка и установка готовой темы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-udalit-neskolko-kontaktov-na-xiaomi-redmi-note-10.html">Как удалить несколько контактов на Xiaomi Redmi Note 10</a></li><li><a href="/articles/s/sk/skolko-stoit-xiaomi-mi-note-2.html">Сколько стоит Xiaomi Mi Note 2: актуальные цены и анализ</a></li><li><a href="/drugoe/k/ka/kak-narisovat-syaomi.html">Как нарисовать Сяоми: рисуем логотип и смартфон Xiaomi</a></li><li><a href="/drugoe/s/st/stas-aj-kak-prosto-mem-syaomi.html">Стас Ай и мем «Как просто»: история, Xiaomi и вирусный успех</a></li><li><a href="/articles/k/ka/kak-ustanovit-samsung-pay-na-xiaomi-redmi-note-9.html">Как установить Samsung Pay на Xiaomi Redmi Note 9: Инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как делать темы на Xiaomi: от идеи до готового .mtz</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#необходимые-инструменты-и-подготовка-рабочего-места">Необходимые инструменты и подготовка рабочего места</a></li><li><a href="#регистрация-аккаунта-разработчика-и-получение-прав">Регистрация аккаунта разработчика и получение прав</a></li><li><a href="#структура-проекта-и-основные-файлы-темы">Структура проекта и основные файлы темы</a></li><li><a href="#процесс-создания-и-редактирования-элементов">Процесс создания и редактирования элементов</a></li><li><a href="#компиляция-тестирование-и-отладка">Компиляция, тестирование и отладка</a></li><li><a href="#упаковка-и-установка-готовой-темы">Упаковка и установка готовой темы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Создание собственной темы оформления — это не просто способ выделиться, а полноценный процесс разработки, который превращает ваш <em>Xiaomi</em> в уникальное устройство. Многие пользователи задаются вопросом, как делать темы на сяоми, чтобы изменить стандартный интерфейс до неузнаваемости, добавив свои иконки, шрифты и анимацию. Этот процесс требует внимательности, но результат того стоит, ведь вы получаете полный контроль над визуальным стилем операционной системы.</p>
+
+<p>Для начала работы вам потребуется не только желание творить, но и специализированный инструментарий, который предоставляет сам производитель. <strong>MIUI Theme Editor</strong> является официальным решением, позволяющим редактировать графические ресурсы без глубоких знаний программирования. Однако, если вы хотите создать по-настоящему продвинутый продукт, придется разобраться с файловой структурой и параметрами <code>.xml</code>.</p>
+
+<p>Важно понимать, что тема — это не просто набор картинок, а сложная структура, которая взаимодействует с системными процессами <em>HyperOS</em> или <em>MIUI</em>. Ошибки в коде могут привести к тому, что интерфейс будет отображаться некорректно, поэтому к подготовке файлов следует подходить с максимальной аккуратностью. В этой статье мы разберем все этапы, от установки редактора до финальной упаковки архива.</p>
+
+<h2 id="необходимые-инструменты-и-подготовка-рабочего-места">Необходимые инструменты и подготовка рабочего места</h2>
+
+<p>Прежде чем приступать к рисованию иконок или верстке виджетов, необходимо подготовить программную среду. Основным инструментом является <strong>MIUI Theme Editor</strong>, который можно найти на официальном форуме разработчиков или в специализированных разделах сообщества. Программа распространяется бесплатно, но требует регистрации аккаунта разработчика <em>Xiaomi</em> для получения необходимых сертификатов.</p>
+
+<p>Помимо основного редактора, вам могут понадобиться графические редакторы, такие как <em>Adobe Photoshop</em> или <em>GIMP</em>, для создания и редактирования изображений в нужных форматах. Часто требуется работа с прозрачностью <code>alpha-channel</code>, поэтому убедитесь, что выбранный софт корректно обрабатывает PNG-файлы. Также не лишним будет текстовый редактор с подсветкой синтаксиса, например, <code>Notepad++</code> или <em>VS Code</em>, для правки конфигурационных файлов.</p>
+
+<ul>
+<li>📦 <strong>MIUI Theme Editor</strong> — базовая среда для сборки и компиляции проектов.</li>
+<li>🎨 <strong>Графический редактор</strong> — для отрисовки иконок, обоев и элементов интерфейса.</li>
+<li>📝 <strong>Текстовый редактор</strong> — для тонкой настройки <code>description.xml</code> и других параметров.</li>
+<li>📱 <strong>Тестовое устройство</strong> — смартфон или планшет Xiaomi для проверки темы в реальных условиях.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Использование неофициальных версий редактора тем может привести к нестабильной работе программы и потере данных проекта. Скачивайте софт только из проверенных источников.</p>
+</blockquote>
+
+<p>Установка редактора обычно проходит стандартно, но на современных версиях Windows могут возникнуть проблемы с совместимостью. В таком случае попробуйте запустить программу от имени администратора или в режиме совместимости с более ранними версиями ОС. После первого запуска потребуется авторизация, для чего необходим стабильный доступ в интернет и действующий аккаунт.</p>
+
+<div class="pb-poll" id="poll-3e6cf36d"><div class="pb-poll-question">📊 Какой уровень ваших навыков дизайна?</div><div class="pb-poll-option" data-poll="3e6cf36d" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Новичок (рисую первый раз)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3e6cf36d" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Любитель (умею пользоваться Photoshop)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3e6cf36d" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Профи (работаю дизайнером)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3e6cf36d" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Мне нужно только поменять иконки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="регистрация-аккаунта-разработчика-и-получение-прав">Регистрация аккаунта разработчика и получение прав</h2>
+
+<p>Ключевым этапом, без которого создание тем невозможно, является получение статуса разработчика. Система безопасности <em>Xiaomi</em> требует, чтобы все модифицированные темы были подписаны цифровым ключом. Для этого вам необходимо зарегистрироваться на портале <strong>Xiaomi Developer</strong> и подать заявку на получение прав разработчика тем.</p>
+
+<p>Процесс активации может занять от нескольких минут до нескольких дней, так как заявки проходят модерацию. Вам потребуется привязать номер телефона и подтвердить личность. После одобрения в личном кабинете появится возможность генерировать сертификаты, которые необходимы для компиляции проекта в финальный файл <code>.mtz</code>.</p>
+
+<p>Внутри редактора тем существует меню управления аккаунтами, где нужно ввести полученные credentials. Если вы планируете публиковать темы в официальном магазине <em>GetThemes</em>, требования к аккаунту будут еще строже, включая необходимость портфолио работ. Для личного использования достаточно базовой регистрации.</p>
+
+<ul>
+<li>🔑 <strong>Регистрация</strong> — создание аккаунта на сайте разработчиков.</li>
+<li>📄 <strong>Заявка</strong> — заполнение анкеты и ожидание модерации.</li>
+<li>🔐 <strong>Сертификаты</strong> — получение и установка ключей подписи в редактор.</li>
+<li>🌐 <strong>Публикация</strong> — доступ к загрузке тем в магазин (опционально).</li>
+</ul>
+
+<p>Стоит отметить, что один аккаунт может использоваться на нескольких компьютерах, но количество одновременно активных сессий может быть ограничено. <mark>Цифровой сертификат привязывается к конкретному аппаратному обеспечению и программной среде, поэтому перенос проекта на другой ПК потребует повторной авторизации.</mark> Это мера защиты от незаконного распространения платных тем.</p>
+
+<h2 id="структура-проекта-и-основные-файлы-темы">Структура проекта и основные файлы темы</h2>
+
+<p>Любая тема для <em>MIUI</em> или <em>HyperOS</em> представляет собой архив с четкой структурой папок и файлов. Понимание того, за что отвечает каждый элемент, критически важно для успешной разработки. При создании нового проекта в редакторе автоматически генерируется базовый набор файлов, которые можно модифицировать.</p>
+
+<p>Центральным элементом является файл <code>description.xml</code>, который содержит метаданные темы: название, версию, автора и список всех используемых ресурсов. Именно этот файл "диктует" системе, какие картинки и шрифты загружать. Ошибка в синтаксисе XML приведет к тому, что тема не установится или будет выглядеть как стандартная.</p>
+
+<p>Графические ресурсы распределены по папкам: <code>icons</code> для иконок приложений, <code>images</code> для системной графики, <code>fonts</code> для шрифтов. Каждый файл имеет строго определенное имя и формат, обычно это PNG с прозрачностью. Изменение структуры папок вручную вне редактора не рекомендуется, так как это может нарушить целостность проекта.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Файл/Папка</th>
+<th>Описание</th>
+<th>Формат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>description.xml</td>
+<td>Конфигурационный файл темы</td>
+<td>XML</td>
+</tr>
+<tr>
+<td>preview.png</td>
+<td>Превью темы в магазине</td>
+<td>PNG</td>
+</tr>
+<tr>
+<td>icons/</td>
+<td>Папка с иконками приложений</td>
+<td>PNG</td>
+</tr>
+<tr>
+<td>statusbar/</td>
+<td>Элементы строки состояния</td>
+<td>PNG/XML</td>
+</tr>
+<tr>
+<td>lockscreen/</td>
+<td>Файлы экрана блокировки</td>
+<td>Различные</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Особое внимание стоит уделить разрешению изображений. Для современных экранов с высокой плотностью пикселей необходимо готовить графику в высоком разрешении, часто в формате <code>1080x2400</code> и выше. Система сама масштабирует элементы, но лучше сразу использовать качественные исходники, чтобы избежать "мыла" на интерфейсе.</p>
+
+<details class="pb-accordion"><summary>Секреты папки Wallpapers</summary><div class="pb-accordion-body"><p>В папке wallpapers можно указать несколько изображений для слайд-шоу. Для этого в description.xml нужно прописать список файлов через запятую, и система будет циклически менять обои на рабочем столе.</p></div></details>
+
+<h2 id="процесс-создания-и-редактирования-элементов">Процесс создания и редактирования элементов</h2>
+
+<p>Непосредственная разработка начинается с выбора стиля. Вы можете пойти двумя путями: создать тему с нуля или взять за основу существующую (<strong>Default Theme</strong>) и модифицировать её. Второй вариант часто предпочтительнее для новичков, так как позволяет увидеть, как реализованы те или иные функции в стандартной оболочке.</p>
+
+<p>Редактирование иконок — самый объемный этап. Вам нужно перерисовать сотни значков популярных приложений, чтобы они соответствовали единому стилю. В <strong>MIUI Theme Editor</strong> есть функция автоматической генерации иконок на основе шаблона, что значительно ускоряет процесс. Однако для уникальности лучше рисовать каждый значок вручную.</p>
+
+<p>Кастомизация системных элементов, таких как ползунки громкости, переключатели в шторке уведомлений и меню настроек, требует точности. Здесь важно соблюдать отступы и размеры, указанные в документации. Использование готовых шаблонов из папки <code>templates</code> помогает не сбиться с нужных размеров.</p>
+
+<ul>
+<li>🖌️ <strong>Рисование</strong> — создание уникальной графики для всех элементов.</li>
+<li>⚙️ <strong>Настройка</strong> — изменение цветов и параметров в редакторе.</li>
+<li>🔄 <strong>Предпросмотр</strong> — проверка изменений в реальном времени.</li>
+<li>💾 <strong>Сохранение</strong> — фиксация изменений в проекте.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: При замене системных изображений убедитесь, что формат и битность цвета совпадают с оригиналом. Вставка RGB-картинки вместо RGBA (с альфа-каналом) приведет к появлению черного фона вместо прозрачности.</p>
+</blockquote>
+
+<p>Для продвинутых пользователей доступна правка <code>XML</code>-файлов анимаций. Это позволяет создавать сложные эффекты при разблокировке экрана или запуске приложений. Синтаксис анимаций базируется на стандартных тегах, описывающих последовательность кадров и время их отображения.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист перед сборкой темы</h4><label class="check-item"><input type="checkbox"><span>Все иконки заменены</span></label><label class="check-item"><input type="checkbox"><span>Шрифты читаемы на контрасте</span></label><label class="check-item"><input type="checkbox"><span>XML-файлы проверены на ошибки</span></label><label class="check-item"><input type="checkbox"><span>Превью загружено</span></label><label class="check-item"><input type="checkbox"><span>Описание заполнено</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="компиляция-тестирование-и-отладка">Компиляция, тестирование и отладка</h2>
+
+<p>После внесения всех изменений проект необходимо скомпилировать. В меню редактора выберите пункт <strong>Build</strong> или <code>Compile</code>. Программа проверит наличие всех необходимых файлов и соберет их в единый архив с расширением <code>.mtz</code>. Если в проекте есть ошибки, сборка прервется, и вы получите лог с указанием проблемы.</p>
+
+<p>Тестирование — критический этап. Установите полученный файл на свое устройство. Это можно сделать через файловый менеджер, выбрав файл темы, или через меню тем в настройках, используя функцию "Импорт". Внимательно осмотрите каждый экран, меню и диалоговое окно.</p>
+
+<p>Часто бывает так, что на компьютере все выглядит идеально, а на телефоне шрифты "плывут" или иконки наезжают друг на друга. Это требует возврата к редактору и корректировки размеров или отступов. Процесс отладки может занять больше времени, чем сама отрисовка.</p>
+
+<p>Для удаленного тестирования можно использовать <strong>ADB</strong> (Android Debug Bridge). Подключив телефон по USB, вы можете устанавливать тему командой, не используя файловый менеджер. Это особенно удобно при частых пересборках.</p>
+
+<pre><code>adb push my_theme.mtz /sdcard/MIUI/theme/
+<p>adb shell am start -n com.android.thememanager/.ThemeActivity</code></pre></p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Совет: Ведите журнал изменений (changelog). Записывайте, какие файлы менялись в каждой версии, чтобы при появлении бага можно было быстро откатиться к стабильному состоянию.</p></aside>
+
+<h2 id="упаковка-и-установка-готовой-темы">Упаковка и установка готовой темы</h2>
+
+<p>Финальный этап — упаковка. Убедитесь, что в свойствах темы указаны корректные данные: название, версия, автор и описание. Эти данные будут отображаться в магазине и в меню управления темами. После успешной компиляции вы получите файл <code>.mtz</code>, готовый к распространению.</p>
+
+<p>Установка темы на устройство производится стандартным способом. Скопируйте файл в память телефона и откройте его. Система предложит применить тему. Если тема подписана вашим ключом, она установится без проблем. Если вы взяли чужую тему и изменили её, могут потребоваться дополнительные действия по переподписи.</p>
+
+<p>Для распространения темы среди друзей или в интернете можно использовать облачные хранилища или форумы. Если вы планируете публикацию в официальном магазине <em>GetThemes</em>, необходимо пройти строгую модерацию, где проверяется качество графики, отсутствие багов и соответствие правилам оформления.</p>
+
+<ul>
+<li>📦 <strong>Сборка</strong> — финальная компиляция проекта в .mtz.</li>
+<li>📲 <strong>Установка</strong> — применение темы на устройстве.</li>
+<li>🔍 <strong>Проверка</strong> — финальный осмотр на наличие артефактов.</li>
+<li>🚀 <strong>Публикация</strong> — выкладка темы для пользователей.</li>
+</ul>
+
+<p>Помните, что темы, созданные для одной версии <em>MIUI</em>, могут некорректно работать на другой. Например, темы для <em>MIUI 12</em> могут иметь проблемы на <em>HyperOS</em> из-за изменений в структуре системных файлов. Всегда тестируйте тему на актуальной версии прошивки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Качественная тема — это баланс между уникальным дизайном и стабильностью работы системы. Не перегружайте интерфейс тяжелой графикой, чтобы не снижать производительность устройства.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Где скачать официальный MIUI Theme Editor?</summary>
+<p>Официальный редактор доступен на форуме <em>Xiaomi Community</em> в разделе для разработчиков. Также ссылки часто встречаются в темах на форуме <em>4PDA</em>. Будьте осторожны со сторонними сайтами, чтобы не скачать вредоносное ПО.</p>
+</details>
+
+<details>
+<summary>Можно ли создать тему без компьютера?</summary>
+<p>Полноценную тему с нуля создать на телефоне практически невозможно из-за отсутствия мощных инструментов редактирования. Существуют приложения-конструкторы, но они позволяют лишь менять обои и базовые цвета, не затрагивая структуру интерфейса.</p>
+</details>
+
+<details>
+<summary>Почему тема не устанавливается и пишет "Файл поврежден"?</summary>
+<p>Скорее всего, нарушена структура архива или файл <code>description.xml</code> содержит синтаксические ошибки. Также проблема может быть в отсутствии цифровой подписи, если тема собрана неправильно или сертификат истек.</p>
+</details>
+
+<details>
+<summary>Как добавить свои шрифты в тему?</summary>
+<p>В папку проекта нужно поместить файл шрифта (обычно <code>.ttf</code> или <code>.otf</code>) и прописать путь к нему в файле <code>description.xml</code> в соответствующем теге <code>&lt;font&gt;</code>.</p>
+</details>
+
+<details>
+<summary>Безопасно ли устанавливать темы из непроверенных источников?</summary>
+<p>Темы имеют расширение <code>.mtz</code> и по сути являются архивами. Теоретически, злоумышленник может внедрить туда вредоносный скрипт, хотя система <em>Android</em> ограничивает права тем. Рекомендуется скачивать темы только из официального магазина или от доверенных авторов.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-udalit-neskolko-kontaktov-na-xiaomi-redmi-note-10.html" class="pb-related-card">
+                <span class="pb-related-title">Как удалить несколько контактов на Xiaomi Redmi Note 10</span>
+                <span class="pb-related-desc">Пошаговая инструкция: как быстро удалить группу контактов на Redmi Note 10. Синхронизация, очистка д</span>
+            </a><a href="/articles/s/sk/skolko-stoit-xiaomi-mi-note-2.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько стоит Xiaomi Mi Note 2: актуальные цены и анализ</span>
+                <span class="pb-related-desc">Узнайте, сколько стоит Xiaomi Mi Note 2 на вторичном рынке. Анализ цен, состояние, комплектация и ст</span>
+            </a><a href="/drugoe/k/ka/kak-narisovat-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как нарисовать Сяоми: рисуем логотип и смартфон Xiaomi</span>
+                <span class="pb-related-desc">Пошаговая инструкция: как нарисовать логотип Xiaomi и смартфон. Техники рисования, материалы, пропор</span>
+            </a><a href="/drugoe/s/st/stas-aj-kak-prosto-mem-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Стас Ай и мем «Как просто»: история, Xiaomi и вирусный успех</span>
+                <span class="pb-related-desc">Разбираем мем «Как просто» от Стаса Ай, его связь с Xiaomi и почему он стал вирусным. Подробности, а</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-samsung-pay-na-xiaomi-redmi-note-9.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить Samsung Pay на Xiaomi Redmi Note 9: Инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство по установке Samsung Pay на Xiaomi Redmi Note 9. Обход блокировок, установка с</span>
+            </a><a href="/articles/z/za/zachem-pereproshivat-telefon-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Зачем перепрошивать Xiaomi: плюсы, минусы и риски</span>
+                <span class="pb-related-desc">Подробный разбор причин перепрошивки смартфонов Xiaomi. Стоит ли переходить на Global ROM, что дает </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

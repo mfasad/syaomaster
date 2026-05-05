@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как узнать модель Xiaomi если разбит экран: 5 способов — СяоМастер</title>
+    <meta name="description" content="Подробная инструкция, как определить точную модель телефона Xiaomi при разбитом или черном экране. Рабочие методы через ПК, ADB, Mi-аккаунт и IMEI.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-uznat-model-telefona-xiaomi-esli-razbit-ekran.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как узнать модель Xiaomi если разбит экран: 5 способов">
+    <meta property="og:description" content="Подробная инструкция, как определить точную модель телефона Xiaomi при разбитом или черном экране. Рабочие методы через ПК, ADB, Mi-аккаунт и IMEI.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как узнать модель Xiaomi если разбит экран: 5 способов</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#поиск-информации-на-корпусе-и-оригинальной-упаковке">Поиск информации на корпусе и оригинальной упаковке</a></li><li><a href="#использование-mi-аккаунта-и-облачных-сервисов">Использование Mi-аккаунта и облачных сервисов</a></li><li><a href="#определение-модели-через-диспетчер-устройств-windows">Определение модели через диспетчер устройств Windows</a></li><li><a href="#использование-adb-android-debug-bridge-для-точной-идентификации">Использование ADB (Android Debug Bridge) для точной идентификации</a></li><li><a href="#анализ-imei-кода-через-онлайн-сервисы">Анализ IMEI-кода через онлайн-сервисы</a></li><li><a href="#визуальное-сравнение-и-габариты-устройства">Визуальное сравнение и габариты устройства</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/k/ka/kak-prigotovit-kurinye-goleni-v-aerogrile-xiaomi.html">Куриные голени в аэрогриле Xiaomi: 5 рецептов с фото и таймингами</a></li><li><a href="/articles/k/ka/kakoj-srok-sluzhby-smartfonov-xiaomi.html">Срок службы смартфонов Xiaomi: реальный ресурс и советы</a></li><li><a href="/articles/x/xi/xiaomi-mi-band-7-pro-kogda-v-rossii.html">Xiaomi Mi Band 7 Pro: когда выйдет в России, дата и цена</a></li><li><a href="/articles/k/ka/kak-perenesti-prilozhenie-na-sd-kartu-xiaomi-redmi-8.html">Как перенести приложения на SD-карту Xiaomi Redmi 8: Инструкция</a></li><li><a href="/articles/k/ka/kak-ubrat-prilozhenie-telefon-po-umolchaniyu-na-xiaomi-redmi.html">Как убрать приложение Телефон на Xiaomi Redmi: полное руководство</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как узнать модель телефона Xiaomi, если экран разбит или не работает</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#поиск-информации-на-корпусе-и-оригинальной-упаковке">Поиск информации на корпусе и оригинальной упаковке</a></li><li><a href="#использование-mi-аккаунта-и-облачных-сервисов">Использование Mi-аккаунта и облачных сервисов</a></li><li><a href="#определение-модели-через-диспетчер-устройств-windows">Определение модели через диспетчер устройств Windows</a></li><li><a href="#использование-adb-android-debug-bridge-для-точной-идентификации">Использование ADB (Android Debug Bridge) для точной идентификации</a></li><li><a href="#анализ-imei-кода-через-онлайн-сервисы">Анализ IMEI-кода через онлайн-сервисы</a></li><li><a href="#визуальное-сравнение-и-габариты-устройства">Визуальное сравнение и габариты устройства</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда экран смартфона Xiaomi разбит, погас или перестал реагировать на касания, всегда застаёт врасплох. Особенно остро встает вопрос идентификации устройства, если вам нужно найти совместимый дисплей для замены или уточнить спецификации для восстановления данных. Владельцы часто теряются, не зная, как точно назвать модель, ведь наклейки на корпусе давно нет, а увидеть информацию в меню «О телефоне» невозможно.</p>
+
+<p>К счастью, архитектура <strong>Android</strong> и сервисные возможности <em>Xiaomi</em> позволяют получить доступ к системной информации даже при неработающем дисплее. Существует несколько проверенных методов, от простых визуальных подсказок до использования командной строки. Выбор конкретного способа зависит от того, включается ли устройство, работает ли отладка по USB и есть ли у вас доступ к компьютеру.</p>
+
+<p>В этой статье мы разберем все актуальные варианты действий, которые помогут вам выяснить точное наименование модели, будь то <em>Redmi Note</em> или флагманский <em>Mi</em>. Мы рассмотрим программные методы, работу с <strong>IMEI</strong>-кодом и физические маркеры, которые помогут идентифицировать гаджет без включения экрана.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если экран телефона сильно разбит и торчат острые осколки стекла, все манипуляции проводите крайне осторожно, чтобы не повредить матрицу окончательно или не пораниться.</p>
+</blockquote>
+
+<h2 id="поиск-информации-на-корпусе-и-оригинальной-упаковке">Поиск информации на корпусе и оригинальной упаковке</h2>
+
+<p>Самый очевидный, но часто игнорируемый способ — это поиск заводских маркировок. Даже если экран полностью черный, на задней крышке большинства современных смартфонов <em>Xiaomi</em> и <em>Redmi</em> есть мелкий шрифт с информацией о модели. Обычно эти данные расположены в нижней части корпуса или под лотком для SIM-карты, хотя в новых моделях их часто убирают.</p>
+
+<p>Если на самом устройстве ничего найти не удалось, обратитесь к оригинальной коробке. На боковой или торцевой грани всегда присутствует белая наклейка со штрих-кодом. Там указано точное модельное имя, например, <code>M2101K7BNY</code>, что соответствует <em>Redmi Note 10 Pro</em>. Также там прописан <strong>IMEI</strong>, который является уникальным идентификатором.</p>
+
+<p>В случае утери коробки можно попробовать найти чек о покупке или гарантийный талон. В официальных документах всегда прописывается полное название модели, которое продавец вбивал в базу при регистрации. Это особенно актуально для устройств, купленных в крупных сетевых магазинах электроники, где чеки часто дублируются в электронном виде.</p>
+
+<ul>
+<li>📦 Ищите наклейку на задней крышке смартфона, даже если она частично стерта.</li>
+<li>📄 Проверьте коробку из-под устройства, обращая внимание на штрих-код.</li>
+<li>🧾 Найдите электронный чек или гарантийный талон в почте или облаке.</li>
+<li>🔍 Осмотрите лоток SIM-карты, иногда модель выбита там мелким шрифтом.</li>
+</ul>
+
+<h2 id="использование-mi-аккаунта-и-облачных-сервисов">Использование Mi-аккаунта и облачных сервисов</h2>
+
+<p>Если на разбитом телефоне был выполнен вход в <strong>Mi-аккаунт</strong>, вы можете узнать модель через веб-интерфейс. Сервисы <em>Xiaomi Cloud</em> автоматически синхронизируют информацию о подключенных устройствах, включая их точное название и технические характеристики. Это один из самых простых способов, не требующий подключения кабелей.</p>
+
+<p>Для этого перейдите на официальный сайт <code>i.mi.com</code> с любого другого устройства (компьютера или планшета). Авторизуйтесь, используя тот же номер телефона или email, что и на поврежденном смартфоне. После входа в систему перейдите в раздел «Настройки» или «Устройства», где отобразится список всей техники, привязанной к вашему профилю.</p>
+
+<p>В списке вы увидите не просто «My Phone», а конкретное название, например, <em>Xiaomi 12</em> или <em>POCO F3</em>. Кроме того, здесь часто отображается уровень заряда батареи и статус блокировки, что подтверждает, что устройство именно то, которое вы ищете. Этот метод работает даже если телефон выключен, так как данные о последней синхронизации сохраняются на сервере.</p>
+
+<details class="pb-accordion"><summary>Что делать, если забыли пароль от Mi-аккаунта?</summary><div class="pb-accordion-body"><p>Если вы не помните пароль, попробуйте восстановить его через привязанный номер телефона или резервный email на странице авторизации. Без доступа к аккаунту этот метод не сработает, поэтому важно помнить данные для входа.</p></div></details>
+
+<h2 id="определение-модели-через-диспетчер-устройств-windows">Определение модели через диспетчер устройств Windows</h2>
+
+<p>Когда экран не работает, но телефон подает признаки жизни (вибрирует, издает звуки), его можно подключить к компьютеру через USB-кабель. Операционная система <strong>Windows</strong> часто способна распознать подключенное устройство и отобразить его название в диспетчере задач, даже если драйверы установлены не полностью.</p>
+
+<p>Подключите смартфон кабелем к ПК. Если телефон ранее был сопряжен с этим компьютером и стоит режим «Только зарядка», система может не показать данных. Однако, если включена отладка или режим передачи файлов, в диспетчере устройств (<code>devmgmt.msc</code>) в разделе «Переносные устройства» или «Другие устройства» может появиться имя модели.</p>
+
+<p>Часто Windows отображает устройство как «Android» или «MTP Device», но при двойном клике и переходе на вкладку «Сведения» -> «ИД оборудования» можно найти строки, содержащие коды производителя. Расшифровав <strong>VEN_<strong></strong> и <strong>DEV_</strong></strong> коды через интернет-поисковик, можно выйти на конкретную модель чипсета или устройства.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте оригинальный USB-кабель или качественный аналог. Дешевые кабели «только для зарядки» не передают данные, и компьютер не сможет считать информацию о телефоне.</p></aside>
+
+<h2 id="использование-adb-android-debug-bridge-для-точной-идентификации">Использование ADB (Android Debug Bridge) для точной идентификации</h2>
+
+<p>Наиболее надежный технический способ узнать модель — это использование утилиты <strong>ADB</strong>. Этот инструмент позволяет общаться с операционной системой телефона напрямую через командную строку. Главное условие — на телефоне должна быть заранее включена «Отладка по USB» в меню для разработчиков.</p>
+
+<p>Сначала необходимо скачать и установить <strong>Platform Tools</strong> на компьютер. После подключения телефона распакуйте архив, откройте командную строку в папке с инструментами и введите команду для проверки связи. Если телефон авторизован, вы увидите серийный номер устройства.</p>
+
+<pre><code>adb devices
+<p>adb shell getprop ro.product.model</p>
+<p>adb shell getprop ro.product.name</code></pre></p>
+
+<p>Команда <code>ro.product.model</code> вернет коммерческое название (например, <em>M2010J19SG</em>), а <code>ro.product.name</code> — внутреннее кодовое имя (например, <em>curtana</em>). Зная кодовое имя, можно легко найти полные спецификации и совместимые запчасти на форумах вроде <em>4PDA</em> или <em>XDA Developers</em>.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка готовности к ADB</h4><label class="check-item"><input type="checkbox"><span>Установлены драйверы ADB</span></label><label class="check-item"><input type="checkbox"><span>Включена отладка по USB</span></label><label class="check-item"><input type="checkbox"><span>Телефон подключен кабелем</span></label><label class="check-item"><input type="checkbox"><span>Режим USB выбран «Передача файлов» или «Отладка»</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="анализ-imei-кода-через-онлайн-сервисы">Анализ IMEI-кода через онлайн-сервисы</h2>
+
+<p>Если программные методы недоступны, остается уникальный идентификатор — <strong>IMEI</strong>. Его можно найти на коробке, под батареей (если она съемная, что редкость для современных Xiaomi) или на чеке. Зная этот 15-значный номер, можно пробить устройство в глобальных базах данных.</p>
+
+<p>Существует множество сервисов, таких как <em>imei.info</em> или <em>sndeep.info</em>, которые по запросу выдают точную модель, цвет, объем памяти и дату производства. Введите 15 цифр в поле поиска, и система покажет, какому именно устройству принадлежит этот идентификатор.</p>
+
+<p>Этот метод особенно полезен, если телефон полностью «кирпич» и не подает признаков жизни, но наклейка с IMEI сохранилась. Также по IMEI можно проверить, не находится ли устройство в розыске или не заблокировано ли оно оператором, что важно при покупке б/у телефона с разбитым экраном.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>Необходимые условия</th>
+<th>Точность</th>
+<th>Сложность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Коробка/Наклейка</td>
+<td>Наличие упаковки или целой крышки</td>
+<td>100%</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>Mi-аккаунт</td>
+<td>Вход в аккаунт, интернет</td>
+<td>100%</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>ADB команды</td>
+<td>Включенная отладка, ПК</td>
+<td>100%</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>IMEI сервисы</td>
+<td>Знание номера IMEI</td>
+<td>100%</td>
+<td>Низкая</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-poll" id="poll-309b76af"><div class="pb-poll-question">📊 Как вам удалось узнать модель телефона?</div><div class="pb-poll-option" data-poll="309b76af" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Нашел на коробке</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="309b76af" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Через Mi-аккаунт</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="309b76af" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">С помощью ADB команд</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="309b76af" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">По IMEI коду</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="309b76af" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Не удалось узнать</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="визуальное-сравнение-и-габариты-устройства">Визуальное сравнение и габариты устройства</h2>
+
+<p>Когда все цифровые методы исчерпаны, остается старый добрый визуальный анализ. Смартфоны <em>Xiaomi</em>, <em>Redmi</em> и <em>POCO</em> имеют характерный дизайн. Обратите внимание на расположение камер: модуль может быть квадратным, круглым или вытянутым вертикально. Количество объективов и их размер также являются ключевыми маркерами.</p>
+
+<p>Измерьте габариты телефона линейкой с точностью до миллиметра. Зная диагональ экрана (например, 6.67 дюйма) и примерные размеры корпуса, можно отфильтровать модели в каталоге. Также обратите внимание на разъемы: наличие или отсутствие разъема 3.5 мм для наушников, тип порта USB (2.0 или 3.0 по цвету язычка внутри).</p>
+
+<p>Еще один важный элемент — логотип. На некоторых моделях <em>POCO</em> он крупный и расположен вертикально, на <em>Redmi</em> — горизонтально или отсутствует, а на флагманах <em>Mi</em> может быть нанесен лазером мелко внизу. Сравните эти детали с фотографиями в интернете, чтобы сузить круг поиска до 2-3 моделей.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не пытайтесь самостоятельно разбирать телефон, чтобы найти модель на плате, если у вас нет опыта. Вы можете повредить шлейфы или нарушить герметичность корпуса, что усложнит дальнейший ремонт.</p>
+</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли узнать модель, если телефон вообще не включается?</summary>
+<p>Да, в этом случае помогут только внешние признаки: наклейка на коробке, чек покупки, маркировка IMEI на коробке или визуальное сравнение дизайна и габаритов с каталогом моделей. Программные методы не сработают без питания.</p>
+</details>
+
+<details>
+<summary>Что делать, если компьютер не видит телефон при подключении?</summary>
+<p>Скорее всего, установлен режим «Только зарядка». Попробуйте нажать комбинацию кнопок (если тачскрин частично работает) или использовать USB-хаб с кнопкой переключения режимов. Также проверьте целостность USB-кабеля.</p>
+</details>
+
+<details>
+<summary>Где найти IMEI, если наклейки нет?</summary>
+<p>Если телефон включается, но экран черный, IMEI иногда можно увидеть, позвонив на устройство с другого телефона и посмотрев определитель номера (не всегда работает). Также код может быть на плате под задней крышкой, но это требует разборки.</p>
+</details>
+
+<details>
+<summary>Поможет ли сброс до заводских настроек узнать модель?</summary>
+<p>Нет, сброс (<code>Wipe Data</code>) удалит все ваши данные, но не отобразит модель на экране, если он не работает. Более того, после сброса телефон потребует аккаунт Google или Mi, к которому был привязан, что может создать дополнительные сложности.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Самый быстрый способ узнать модель без включения телефона — найти оригинальную коробку или чек. Если их нет, используйте сервисы пробивки по IMEI или визуальное сравнение с каталогом.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/k/ka/kak-prigotovit-kurinye-goleni-v-aerogrile-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Куриные голени в аэрогриле Xiaomi: 5 рецептов с фото и таймингами</span>
+                <span class="pb-related-desc">Пошаговые инструкции приготовления сочных куриных голеней в Xiaomi Mi Smart Air Fryer: температуры, </span>
+            </a><a href="/articles/k/ka/kakoj-srok-sluzhby-smartfonov-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Срок службы смартфонов Xiaomi: реальный ресурс и советы</span>
+                <span class="pb-related-desc">Сколько реально служат смартфоны Xiaomi? Анализ деградации батареи, износа экрана и поддержки MIUI. </span>
+            </a><a href="/articles/x/xi/xiaomi-mi-band-7-pro-kogda-v-rossii.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi Mi Band 7 Pro: когда выйдет в России, дата и цена</span>
+                <span class="pb-related-desc">Актуальная информация о выходе Xiaomi Mi Band 7 Pro в России. Официальная дата старта продаж, рекоме</span>
+            </a><a href="/articles/k/ka/kak-perenesti-prilozhenie-na-sd-kartu-xiaomi-redmi-8.html" class="pb-related-card">
+                <span class="pb-related-title">Как перенести приложения на SD-карту Xiaomi Redmi 8: Инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство, как перенести приложения на SD-карту на Xiaomi Redmi 8. Настройка внутренней </span>
+            </a><a href="/articles/k/ka/kak-ubrat-prilozhenie-telefon-po-umolchaniyu-na-xiaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как убрать приложение Телефон на Xiaomi Redmi: полное руководство</span>
+                <span class="pb-related-desc">Подробная инструкция по отключению или замене стандартного приложения Телефон на смартфонах Xiaomi R</span>
+            </a><a href="/articles/k/ka/kak-posmotret-statistiku-ekrana-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Статистика экрана Xiaomi: как посмотреть и расшифровать</span>
+                <span class="pb-related-desc">Узнайте, как проверить статистику экрана Xiaomi. Подробный разбор работы, циклов, температуры и пров</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

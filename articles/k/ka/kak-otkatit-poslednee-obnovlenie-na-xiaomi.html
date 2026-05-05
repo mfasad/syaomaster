@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как откатить обновление на Xiaomi: пошаговая инструкция — СяоМастер</title>
+    <meta name="description" content="Подробное руководство по откату MIUI и HyperOS. Узнайте, как удалить последнее обновление Xiaomi и вернуть стабильную версию прошивки.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-otkatit-poslednee-obnovlenie-na-xiaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как откатить обновление на Xiaomi: пошаговая инструкция">
+    <meta property="og:description" content="Подробное руководство по откату MIUI и HyperOS. Узнайте, как удалить последнее обновление Xiaomi и вернуть стабильную версию прошивки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как откатить обновление на Xiaomi: пошаговая инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#почему-стоит-откатывать-обновление">Почему стоит откатывать обновление</a></li><li><a href="#подготовка-к-процедуре-отката">Подготовка к процедуре отката</a></li><li><a href="#поиск-и-загрузка-нужной-версии-прошивки">Поиск и загрузка нужной версии прошивки</a></li><li><a href="#метод-1-откат-через-меню-обновление-системы">Метод 1: Откат через меню «Обновление системы»</a></li><li><a href="#метод-2-откат-через-recovery-mode">Метод 2: Откат через Recovery Mode</a></li><li><a href="#метод-3-использование-fastboot-и-mi-flash-tool">Метод 3: Использование Fastboot и Mi Flash Tool</a></li><li><a href="#возможные-ошибки-и-их-решение">Возможные ошибки и их решение</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-sbrosit-telefon-do-zavodskikh-nastroek-xiaomi-redmi-note-5.html">Сброс Xiaomi Redmi Note 5: Полный сброс до заводских настроек</a></li><li><a href="/articles/p/po/pochemu-plokho-slyshno-sobesednika-v-telefone-xiaomi-redmi-8.html">Плохо слышно в Redmi 8: причины и решение</a></li><li><a href="/articles/n/ne/ne-udalos-sokhranit-izmeneniya-kontakty-xiaomi-redmi-9-chto-delat.html">Не удалось сохранить контакты Xiaomi Redmi 9: решение ошибки</a></li><li><a href="/articles/z/za/zachem-pereproshivat-telefon-xiaomi.html">Зачем перепрошивать Xiaomi: плюсы, минусы и риски</a></li><li><a href="/drugoe/k/ka/kak-kitajtsy-proiznosyat-xiaomi.html">Как китайцы произносят Xiaomi: правильное ударение и тонкости</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как откатить обновление на Xiaomi: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#почему-стоит-откатывать-обновление">Почему стоит откатывать обновление</a></li><li><a href="#подготовка-к-процедуре-отката">Подготовка к процедуре отката</a></li><li><a href="#поиск-и-загрузка-нужной-версии-прошивки">Поиск и загрузка нужной версии прошивки</a></li><li><a href="#метод-1-откат-через-меню-обновление-системы">Метод 1: Откат через меню «Обновление системы»</a></li><li><a href="#метод-2-откат-через-recovery-mode">Метод 2: Откат через Recovery Mode</a></li><li><a href="#метод-3-использование-fastboot-и-mi-flash-tool">Метод 3: Использование Fastboot и Mi Flash Tool</a></li><li><a href="#возможные-ошибки-и-их-решение">Возможные ошибки и их решение</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда после установки нового ПО смартфон начинает работать хуже, знакома многим владельцам китайских гаджетов. Батарея держит заряд меньше, интерфейс подтормаживает, а привычные функции исчезают или работают некорректно. В такие моменты единственным верным решением становится <strong>откат системы</strong> к предыдущей, более стабильной версии.</p>
+
+<p>Процедура возврата не всегда очевидна, так как стандартные настройки <em>Xiaomi</em> не предлагают кнопки «Отменить обновление». Однако, используя официальные инструменты и специальные режимы загрузки, можно безопасно вернуть устройство к жизни. В этой статье мы разберем проверенные методы для разных версий <em>MIUI</em> и новой <em>HyperOS</em>.</p>
+
+<p>Важно понимать, что откат — это операция, требующая внимательности и подготовки. <mark>Процедура отката с более новой версии MIUI на более старую всегда сопровождается полным удалением всех пользовательских данных.</mark> Поэтому перед началом любых действий необходимо создать резервную копию важной информации.</p>
+
+<h2 id="почему-стоит-откатывать-обновление">Почему стоит откатывать обновление</h2>
+
+<p>Часто пользователи спешат установить новую версию прошивки ради свежих функций или изменений в дизайне. Однако бета-версии или даже финальные сборки могут содержать критические ошибки, которые разработчики обнаруживают уже после релиза. Если вы заметили, что после апдейта <em>смартфон</em> начал греться или быстро разряжаться, откат будет лучшим решением.</p>
+
+<p>Нестабильность работы — не единственная причина. Иногда новые алгоритмы энергосбережения агрессивно «убивают» фоновые процессы, из-за чего перестают приходить уведомления из мессенджеров. В других случаях могут возникать проблемы с модулями связи или камерой, которые в предыдущей версии работали идеально.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не стоит игнорировать серьезные баги в надежде, что их исправят в следующем патче. Использование нестабильной системы может привести к потере данных или аппаратным проблемам, если перегрев будет критическим.</p>
+</blockquote>
+
+<p>Кроме того, некоторые пользователи предпочитают консервативный подход к программному обеспечению. Им важнее стабильность и привычный интерфейс, чем новые, но сырые функции. Возврат на проверенную версию позволяет сохранить продуктивность и избежать лишних нервов.</p>
+
+<p>Стоит отметить, что откат возможен не всегда. Политика безопасности <em>Xiaomi</em> запрещает установку более старой версии загрузчика (<strong>Anti-Rollback</strong>). Если вы пропустите критическое обновление безопасности, путь назад может быть закрыт на уровне «железа», и попытка отката превратит устройство в «кирпич».</p>
+
+<div class="pb-poll" id="poll-4a1b51a5"><div class="pb-poll-question">📊 Столкнулись ли вы с проблемами после последнего обновления?</div><div class="pb-poll-option" data-poll="4a1b51a5" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Все работает отлично</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4a1b51a5" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Есть мелкие баги</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4a1b51a5" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Сильно села батарея</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4a1b51a5" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Телефон греется или виснет</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="подготовка-к-процедуре-отката">Подготовка к процедуре отката</h2>
+
+<p>Прежде чем приступать к активным действиям, необходимо выполнить ряд подготовительных операций. Это критически важный этап, игнорирование которого может привести к потере личных фотографий, контактов и документов. <strong>Резервное копирование</strong> — это первое, что вы должны сделать.</p>
+
+<p>Используйте облачные сервисы или локальное хранилище для сохранения данных. Встроенное средство резервного копирования <em>MIUI</em> позволяет сохранить список приложений, настройки системы и данные аккаунтов. Для фотографий и видео лучше использовать <em>Google Фото</em> или перенести файлы на компьютер.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист подготовки</h4><label class="check-item"><input type="checkbox"><span>Сделайте полную резервную копию данных</span></label><label class="check-item"><input type="checkbox"><span>Зарядите батарею минимум до 60%</span></label><label class="check-item"><input type="checkbox"><span>Освободите 5-10 ГБ места в памяти</span></label><label class="check-item"><input type="checkbox"><span>Узнайте точную модель устройства</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Также убедитесь, что у вас есть стабильное интернет-соединение для загрузки необходимых файлов прошивки. Файл обновления весит от 2 до 4 ГБ, поэтому использование Wi-Fi предпочтительнее мобильного трафика. Не забудьте проверить модель устройства, так как прошивка для <em>Redmi Note 10</em> не подойдет для <em>Redmi Note 10 Pro</em>.</p>
+
+<p>Последний шаг подготовки — поиск и скачивание правильного архива прошивки. Вам нужна именно та версия, на которую вы хотите откатиться. Архив должен иметь расширение <code>.zip</code> и быть предназначен для вашего региона (Global, Russia, China).</p>
+
+<h2 id="поиск-и-загрузка-нужной-версии-прошивки">Поиск и загрузка нужной версии прошивки</h2>
+
+<p>Найти старую версию прошивки можно на официальных ресурсах или проверенных сторонних порталах, таких как Xiaomi Firmware Updater. Главное требование к файлу — он должен быть «Recovery ROM», а не «Fastboot ROM», если вы планируете обновляться через стандартное меню.</p>
+
+<p>При выборе версии обращайте внимание на номер сборки. Он должен быть ниже текущего, установленного на вашем устройстве. Например, если у вас стоит версия <code>V14.0.5.0</code>, то откатываться нужно на <code>V14.0.4.0</code> или ниже. Установка версии с тем же или более высоким номером не произведет откат.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип файла</th>
+<th>Расширение</th>
+<th>Метод установки</th>
+<th>Особенности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recovery ROM</td>
+<td>.zip</td>
+<td>Через меню обновления</td>
+<td>Проще в установке, требует переименования</td>
+</tr>
+<tr>
+<td>Fastboot ROM</td>
+<td>.tgz</td>
+<td>Через Mi Flash Tool (PC)</td>
+<td>Полная очистка, нужен разблокированный загрузчик</td>
+</tr>
+<tr>
+<td>Recovery ROM</td>
+<td>.zip</td>
+<td>Через Recovery Mode</td>
+<td>Используется при сбоях системы</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>После загрузки файла поместите его в корень внутренней памяти смартфона. Если вы используете карту памяти <em>MicroSD</em>, файл также можно разместить там, но современные модели часто не имеют слота для карт, поэтому внутренняя память — универсальный вариант.</p>
+
+<details class="pb-accordion"><summary>Где искать архивы прошивок?</summary><div class="pb-accordion-body"><p>Официальный сайт miui.com часто содержит только последние версии. Для поиска архивных сборок лучше использовать ресурс xiaomi-firmware-updater.com, где есть фильтры по моделям и версиям Android. Всегда проверяйте хеш-сумму файла, если она доступна, чтобы убедиться в целостности загрузки.</p></div></details>
+
+<h2 id="метод-1-откат-через-меню-обновление-системы">Метод 1: Откат через меню «Обновление системы»</h2>
+
+<p>Это самый простой и безопасный способ, который не требует подключения к компьютеру или входа в специальные режимы. Однако он работает только в том случае, если версия, на которую вы откатываетесь, не слишком старая и не заблокирована защитой <strong>Anti-Rollback</strong>.</p>
+
+<p>Для начала перейдите в настройки телефона. Вам нужно найти пункт <code>Настройки → О телефоне → Версия MIUI</code> (или «Версия ОС»). Нажмите на иконку трех точек в правом верхнем углу экрана и выберите опцию «Выбрать файл прошивки».</p>
+
+<p>В открывшемся файловом менеджере найдите ранее загруженный архив <code>.zip</code>. Система проверит файл. Если версия подходит для отката, появится окно с предложением обновиться (фактически — переустановить систему на выбранную версию). Если же версия слишком старая, вы увидите сообщение об ошибке.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если система пишет, что файл поврежден или версия не подходит, не пытайтесь обмануть систему переименованием файла. Это может привести к циклической перезагрузке.</p>
+</blockquote>
+
+<p>После подтверждения начнется процесс установки. Смартфон перезагрузится, и начнется установка компонентов. В это время устройство может несколько раз перезагрузиться. Не прерывайте процесс и не нажимайте кнопки, пока не появится рабочий стол.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если кнопка «Выбрать файл прошивки» неактивна или скрыта, попробуйте быстро нажать 10 раз по номеру версии MIUI в центре экрана. Это разблокирует дополнительные функции меню.</p></aside>
+
+<h2 id="метод-2-откат-через-recovery-mode">Метод 2: Откат через Recovery Mode</h2>
+
+<p>Если стандартный метод не сработал, можно попробовать режим восстановления. Этот способ часто позволяет обойти некоторые программные ограничения, но требует точного переименования файла. Вам понадобится переименовать архив прошивки в <code>update.zip</code>.</p>
+
+<p>Поместите переименованный файл в корень внутренней памяти. Затем выключите смартфон полностью. Для входа в режим Recovery зажмите одновременно кнопку увеличения громкости и кнопку питания. Держите их, пока не появится логотип, затем отпустите кнопку питания, продолжая держать громкость.</p>
+
+<p>В меню Recovery управление осуществляется кнопками громкости (вверх/вниз) и подтверждение кнопкой питания. Выберите язык (если доступно), затем перейдите к пункту <code>Wipe Data</code> и выберите <code>Wipe All Data</code>. Это обязательный шаг для чистоты установки.</p>
+
+<p>После очистки вернитесь в главное меню и выберите <code>Connect with MIAssistant</code> (если требуется подключение к ПК) или ищите пункт <code>Install Update.zip to System One</code>. Если такого пункта нет в обычном режиме Recovery, возможно, ваш телефон требует подключения к компьютеру с установленной утилитой <em>Mi Flash</em>.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Режим Recovery — это мощный инструмент, но он требует полного форматирования данных. Убедитесь, что резервная копия сделана и проверена перед входом в этот режим.</p></aside>
+
+<h2 id="метод-3-использование-fastboot-и-mi-flash-tool">Метод 3: Использование Fastboot и Mi Flash Tool</h2>
+
+<p>Самый радикальный и надежный метод — прошивка через режим <strong>Fastboot</strong> с помощью компьютера. Этот способ требует разблокированного загрузчика (<em>Bootloader</em>). Если загрузчик заблокирован, этот метод не сработает без официальной разблокировки через аккаунт Mi.</p>
+
+<p>Скачайте и установите драйверы ADB и Fastboot, а также программу <em>Mi Flash Tool</em> на компьютер. Загрузите архив Fastboot ROM (расширение <code>.tgz</code>) и распакуйте его в папку с коротким путем, например, <code>C:\mi_rom\</code>. Путь не должен содержать кириллицы.</p>
+
+<pre><code>fastboot devices</code></pre>
+
+<p>Выключите телефон и войдите в режим Fastboot, зажав кнопку уменьшения громкости и питания. Подключите устройство к ПК кабелем. В командной строке введите команду выше, чтобы убедиться, что компьютер видит смартфон. Если все верно, запустите Mi Flash Tool, выберите путь к распакованной папке и нажмите кнопку «Flash».</p>
+
+<p>Важно выбрать правильный режим прошивки внизу окна программы. Для полного отката и очистки выберите <code>clean all</code>. Режим <code>save user data</code> может не сработать при попытке откатить версию, так как структуры данных могут отличаться.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При прошивке через Fastboot с выбором «Clean All» удаляются абсолютно все данные, включая файлы на внутренней памяти. Телефон станет как новый из коробки.</p>
+</blockquote>
+
+<h2 id="возможные-ошибки-и-их-решение">Возможные ошибки и их решение</h2>
+
+<p>В процессе отката пользователи часто сталкиваются с различными ошибками. Самая распространенная — «Current version is newer than the selected one» (Текущая версия новее выбранной). Это означает, что встроенная защита <em>Anti-Rollback</em> запрещает откат.</p>
+
+<p>В таком случае обойти ограничение программными методами не получится. Единственный выход — поиск альтернативных методов, таких как перепрошивка через EDL-режим (требует авторизованного аккаунта и часто платных услуг сервисных центров) или ожидание выхода новой стабильной версии, которая исправит текущие баги.</p>
+
+<p>Другая частая ошибка — «Package is invalid» (Пакет недействителен). Это указывает на поврежденный файл прошивки или неправильное имя файла. Проверьте целостность архива и убедитесь, что он переименован в <code>update.zip</code> без лишних символов.</p>
+
+<p>Если телефон ушел в циклическую перезагрузку (bootloop), попробуйте войти в Recovery и сделать сброс настроек (<code>Wipe Data</code>). Если это не помогает, потребуется перепрошивка через Fastboot с полной очисткой.</p>
+
+<details class="pb-accordion"><summary>Что такое Anti-Rollback?</summary><div class="pb-accordion-body"><p>Это механизм защиты, введенный Xiaomi для предотвращения установки уязвимых версий ПО. Он записывает специальный счетчик в память устройства. Если вы попытаетесь установить прошивку с более низким номером счетчика, телефон заблокируется. Проверить статус можно в Fastboot режиме, посмотрев строку antirollback.</p></div></details>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли откатиться с HyperOS на MIUI?</summary>
+<p>Официально такой возможности нет. Переход с HyperOS обратно на MIUI требует полной перепрошивки через Fastboot с разблокированным загрузчиком и выбором опции полной очистки данных. Простой откат через меню обновления не сработает, так как это смена базовой версии Android и оболочки.</p>
+</details>
+
+<details>
+<summary>Сохранятся ли мои данные после отката?</summary>
+<p>Нет, в подавляющем большинстве случаев откат версии прошивки подразумевает полный сброс устройства до заводских настроек. Все приложения, фото, контакты и настройки будут удалены. Резервное копирование обязательно.</p>
+</details>
+
+<details>
+<summary>Что делать, если телефон пишет «Can't verify update»?</summary>
+<p>Эта ошибка часто возникает при попытке установить глобальную прошивку на китайскую версию устройства или наоборот. Также причина может быть в измененном системном разделе (наличии root-прав). Необходимо использовать оригинальную прошивку для вашего региона и версии устройства.</p>
+</details>
+
+<details>
+<summary>Сколько времени занимает процесс отката?</summary>
+<p>Сам процесс установки занимает от 5 до 15 минут в зависимости от мощности смартфона и объема данных. Однако подготовка (скачивание прошивки, резервное копирование, перенос файлов) может занять значительно больше времени.</p>
+</details>
+
+<details>
+<summary>Опасно ли делать откат обновления?</summary>
+<p>Если следовать инструкции и использовать официальные файлы, риск минимален. Главная опасность — потеря данных при отсутствии резервной копии или установка поврежденного файла прошивки, что может потребовать обращения в сервис.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-sbrosit-telefon-do-zavodskikh-nastroek-xiaomi-redmi-note-5.html" class="pb-related-card">
+                <span class="pb-related-title">Сброс Xiaomi Redmi Note 5: Полный сброс до заводских настроек</span>
+                <span class="pb-related-desc">Подробная инструкция: как сбросить Xiaomi Redmi Note 5 до заводских настроек. Способы через меню и R</span>
+            </a><a href="/articles/p/po/pochemu-plokho-slyshno-sobesednika-v-telefone-xiaomi-redmi-8.html" class="pb-related-card">
+                <span class="pb-related-title">Плохо слышно в Redmi 8: причины и решение</span>
+                <span class="pb-related-desc">Тихий динамик в Xiaomi Redmi 8? Разбираем причины: от загрязнений до сбоев ПО. Инструкция по чистке,</span>
+            </a><a href="/articles/n/ne/ne-udalos-sokhranit-izmeneniya-kontakty-xiaomi-redmi-9-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Не удалось сохранить контакты Xiaomi Redmi 9: решение ошибки</span>
+                <span class="pb-related-desc">Ошибка сохранения контактов на Redmi 9? Узнайте причины, способы очистки памяти и методы восстановле</span>
+            </a><a href="/articles/z/za/zachem-pereproshivat-telefon-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Зачем перепрошивать Xiaomi: плюсы, минусы и риски</span>
+                <span class="pb-related-desc">Подробный разбор причин перепрошивки смартфонов Xiaomi. Стоит ли переходить на Global ROM, что дает </span>
+            </a><a href="/drugoe/k/ka/kak-kitajtsy-proiznosyat-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как китайцы произносят Xiaomi: правильное ударение и тонкости</span>
+                <span class="pb-related-desc">Узнайте, как корректно произносится бренд Xiaomi на китайском: расшифровка иероглифов, тона и ударен</span>
+            </a><a href="/drugoe/x/xi/xiaomi-kak-zvuchit-na-kitajskom.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно произносится Xiaomi на китайском: транскрипция и аудио</span>
+                <span class="pb-related-desc">Узнайте, как звучит название бренда Xiaomi на китайском языке: официальная транскрипция, пиньинь, то</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

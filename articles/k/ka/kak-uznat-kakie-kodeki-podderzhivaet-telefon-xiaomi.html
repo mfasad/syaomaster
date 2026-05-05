@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как узнать какие кодеки поддерживает Xiaomi: полный разбор — СяоМастер</title>
+    <meta name="description" content="Подробное руководство: как проверить поддержку кодеков на Xiaomi. Инструменты, тесты и анализ аппаратных возможностей для Android.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-uznat-kakie-kodeki-podderzhivaet-telefon-xiaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как узнать какие кодеки поддерживает Xiaomi: полный разбор">
+    <meta property="og:description" content="Подробное руководство: как проверить поддержку кодеков на Xiaomi. Инструменты, тесты и анализ аппаратных возможностей для Android.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как узнать какие кодеки поддерживает Xiaomi: полный разбор</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#аппаратные-и-программные-ограничения-платформы">Аппаратные и программные ограничения платформы</a></li><li><a href="#использование-специализированных-приложений-анализаторов">Использование специализированных приложений-анализаторов</a></li><li><a href="#анализ-через-терминал-и-команды-adb">Анализ через терминал и команды ADB</a></li><li><a href="#тестирование-воспроизведением-тестовых-файлов">Тестирование воспроизведением тестовых файлов</a></li><li><a href="#расшифровка-форматов-h264-h265-vp9-и-av1">Расшифровка форматов: H.264, H.265, VP9 и AV1</a></li><li><a href="#влияние-версии-android-и-оболочки-miuihyperos">Влияние версии Android и оболочки MIUI/HyperOS</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/ne/ne-zagruzhaetsya-android-na-telefone-xiaomi-chto-delat.html">Не загружается Android на Xiaomi: пошаговое решение</a></li><li><a href="/drugoe/k/ka/kak-pisat-vsegda-s-malenkoj-bukvy-na-syaomi.html">Как писать «на сяоми» с маленькой буквы — правила и примеры</a></li><li><a href="/drugoe/k/ka/kak-pravilno-ksyaomi-i-syaomi.html">Как правильно: Ксяоми или Сяоми? Разбор названия бренда Xiaomi</a></li><li><a href="/articles/k/ka/kak-nazyvaetsya-ksiomi.html">Как называется Xiaomi: история бренда и расшифровка логотипа</a></li><li><a href="/articles/k/ka/kak-vklyuchit-svetovuyu-indikatsiyu-na-xiaomi-redmi-10.html">Световая индикация на Xiaomi Redmi 10: как включить и настроить</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как узнать какие кодеки поддерживает телефон Xiaomi</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#аппаратные-и-программные-ограничения-платформы">Аппаратные и программные ограничения платформы</a></li><li><a href="#использование-специализированных-приложений-анализаторов">Использование специализированных приложений-анализаторов</a></li><li><a href="#анализ-через-терминал-и-команды-adb">Анализ через терминал и команды ADB</a></li><li><a href="#тестирование-воспроизведением-тестовых-файлов">Тестирование воспроизведением тестовых файлов</a></li><li><a href="#расшифровка-форматов-h264-h265-vp9-и-av1">Расшифровка форматов: H.264, H.265, VP9 и AV1</a></li><li><a href="#влияние-версии-android-и-оболочки-miuihyperos">Влияние версии Android и оболочки MIUI/HyperOS</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современные смартфоны Xiaomi превратились в мощные мультимедийные центры, способные воспроизводить контент в разрешении 4K и даже 8K. Однако владельцы часто сталкиваются с ситуацией, когда видеофайл просто отказывается запускаться или воспроизводится без звука, несмотря на наличие мощного процессора. Корень проблемы кроется в программной поддержке форматов сжатия аудио и видео, известных как <strong>кодеки</strong>. Понимание того, какие именно алгоритмы декодирования встроены в ваш аппарат, критически важно для видеомонтажеров, стримеров и просто любителей качественного кино.</p>
+
+<p>В отличие от ПК, где можно легко установить любой драйвер, в экосистеме Android и оболочке <em>MIUI</em> или <em>HyperOS</em> ситуация сложнее. Поддержка кодеков здесь делится на аппаратную (зашита в чипсет) и программную (реализована в операционной системе). Если аппаратный декодер отсутствует, система может попытаться использовать программный, но это часто приводит к рывкам изображения и быстрому разряду батареи. Именно поэтому вопрос, как узнать список поддерживаемых форматов, становится ключевым для комфортного использования гаджета.</p>
+
+<p>В этой статье мы разберем все доступные методы диагностики, от простых встроенных инструментов до профессионального софта. Вы научитесь различать базовые форматы вроде H.264 от продвинутых HEVC и AV1, а также поймете, почему ваш Xiaomi может не тянуть тяжелые файлы. Мы рассмотрим технические нюансы, которые часто игнорируются в стандартных руководствах, и дадим практические советы по обходу ограничений.</p>
+
+<h2 id="аппаратные-и-программные-ограничения-платформы">Аппаратные и программные ограничения платформы</h2>
+
+<p>Фундаментальным фактором, определяющим возможности вашего смартфона, является модель процессора (SoC). Xiaomi использует чипы от Qualcomm, MediaTek, Samsung и Unisoc, и каждый производитель чипов реализует поддержку кодеков по-своему. Например, <strong>аппаратное декодирование</strong> происходит на специализированном блоке GPU или VPU, что обеспечивает максимальную энергоэффективность. Если видеопоток не соответствует поддерживаемым профилям, процессор вынужден брать нагрузку на себя, что не всегда эффективно.</p>
+
+<p>Программная оболочка Android также накладывает свои ограничения. Даже если "железо" теоретически может обработать формат, операционная система должна иметь соответствующий плагин или библиотеку. В последних версиях <em>Android 13</em> и <em>14</em> поддержка новых стандартов, таких как AV1, становится обязательной для сертификации, но на старых моделях Xiaomi это может отсутствовать. Важно понимать разницу между контейнером (например, .mkv или .mp4) и кодеком (содержимым внутри контейнера).</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не путайте поддержку разрешения (например, 4K) с поддержкой кодека. Телефон может поддерживать 4K, но только при кодеке H.264, а при H.265 (HEVC) изображение может рассыпаться на квадраты или отсутствовать вовсе.</p>
+</blockquote>
+
+<p>Существует также понятие "профиля" и "уровня" (Level) внутри одного кодека. Ваш Xiaomi может поддерживать базовый профиль H.265, но не потянуть High 10 Profile или 10-bit цветность. Это часто становится сюрпризом при попытке воспроизвести HDR-контент. Проверка этих тонких нюансов требует более глубокого анализа, чем просто просмотр спецификаций на сайте производителя.</p>
+
+<div class="pb-poll" id="poll-475ef616"><div class="pb-poll-question">📊 Какой у вас процессор Xiaomi?</div><div class="pb-poll-option" data-poll="475ef616" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Snapdragon</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="475ef616" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">MediaTek (Helio/Dimensity)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="475ef616" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Exynos</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="475ef616" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Unisoc</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="475ef616" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="использование-специализированных-приложений-анализаторов">Использование специализированных приложений-анализаторов</h2>
+
+<p>Самый надежный и быстрый способ получить точную информацию о кодеках — это использование стороннего софта, который считывает системные файлы <code>media_codecs.xml</code>. Стандартные настройки телефона редко предоставляют такую детальную техническую информацию. Одним из лучших инструментов для этого является приложение <strong>Device Info HW</strong>, которое доступно в Google Play и специализированных магазинах.</p>
+
+<p>После установки и запуска утилиты необходимо перейти на вкладку "Кодек" (Codec). Здесь вы увидите исчерпывающий список всех видео- и аудиокодеков, которые поддерживает ваше устройство. Интерфейс разделен на категории: видео-декодеры, видео-кодировщики, аудио-декодеры и аудио-кодировщики. Для каждого формата указано, является ли он аппаратным или программным, а также поддерживаемые разрешения и частоты кадров.</p>
+
+<ul>
+<li>📱 <strong>Device Info HW</strong> — наиболее точное приложение для детального анализа мультимедийных возможностей.</li>
+<li>📺 <strong>AIDA64</strong> — универсальный инструмент, показывающий поддержку кодеков в разделе "Мультимедиа".</li>
+<li>🎞️ <strong>CPU-Z</strong> — базовая информация, но менее детальная по сравнению с конкурентами.</li>
+<li>📦 <strong>Termux</strong> — для продвинутых пользователей, позволяющий запросить данные напрямую у системы.</li>
+</ul>
+
+<p>Еще одним популярным вариантом является приложение <em>AIDA64</em>. Оно предоставляет информацию в более структурированном виде, группируя данные по типам. В разделе "Мультимедиа" можно увидеть список поддерживаемых форматов. Однако, стоит отметить, что иногда эти приложения могут показывать теоретическую поддержку чипсета, а не фактическую реализацию в прошивке Xiaomi. Поэтому перепроверка через воспроизведение тестовых файлов не будет лишней.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка через софт</h4><label class="check-item"><input type="checkbox"><span>Скачать Device Info HW:Запустить сканирование:Перейти во вкладку Codec:Сравнить с форматом видео</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<h2 id="анализ-через-терминал-и-команды-adb">Анализ через терминал и команды ADB</h2>
+
+<p>Для пользователей, которые не хотят устанавливать лишние приложения или нуждаются в максимально "сырых" данных, отличным вариантом является использование командной строки. В Android существует файл конфигурации <code>/system/etc/media_codecs.xml</code>, который содержит всю правду о возможностях системы. Доступ к нему можно получить через эмулятор терминала на самом устройстве или через отладку по USB (ADB) с компьютера.</p>
+
+<p>Если вы используете эмулятор терминала (например, Termux), вам потребуются права root для прямого чтения файла. Однако, есть команда, которая работает без рут-прав и выдает список кодеков через системный сервис. Введите команду <code>adb shell dumpsys media.codec</code> (при подключении к ПК) или используйте аналоги в терминале. Это выдаст огромный список, в котором нужно ориентироваться по названиям, таким как <code>OMX.qcom.video.decoder.avc</code> (аппаратный декодер H.264 от Qualcomm).</p>
+
+<pre><code>adb shell dumpsys media.codec | grep "decoder"
+</code></pre>
+
+<p>В выводе команды вы увидите префиксы, указывающие на производителя: <code>OMX.qcom</code> (Qualcomm), <code>OMX.mtk</code> (MediaTek), <code>OMX.google</code> (программные кодеки Android). Наличие префикса <code>google</code> означает, что декодирование будет идти силами процессора, что менее эффективно. Для владельцев Xiaomi с процессорами Snapdragon наличие строк с <code>qcom</code> — это хороший знак аппаратной поддержки.</p>
+
+<details class="pb-accordion"><summary>Что означают префиксы OMX?</summary><div class="pb-accordion-body"><p>OMX.qcom — кодеки Qualcomm (аппаратные, быстрые). OMX.mtk — кодеки MediaTek. OMX.google — программные кодеки Android (универсальные, но нагружают ЦП). OMX.Exynos — кодеки Samsung.</p></div></details>
+
+<h2 id="тестирование-воспроизведением-тестовых-файлов">Тестирование воспроизведением тестовых файлов</h2>
+
+<p>Теория — это хорошо, но практика всегда показывает реальную картину. Самый верный способ узнать, потянет ли ваш Xiaomi конкретный формат, — это воспроизведение эталонных файлов. Для этого метода вам понадобится видеоплеер, который не имеет собственных встроенных кодеков и полагается на системные, либо умеет показывать статистику декодирования. Идеальным кандидатом здесь является <strong>VLC for Android</strong> или <em>MX Player</em> (в режиме системного декодера).</p>
+
+<p>Суть метода заключается в загрузке набора тестовых роликов, закодированных в разных стандартах (H.264, H.265, VP9, AV1) и с разными битрейтами. Запустите файл и наблюдайте. Если видео идет плавно, а в информации о потоке (обычно вызывается нажатием на экран или через меню "Статистика") указано "Hardware decoding" или "MediaCodec", значит, аппаратная поддержка есть. Если идет рывками или указано "Software decoding" — ваш телефон не дружит с этим форматом на аппаратном уровне.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Кодек</th>
+<th>Типичное расширение</th>
+<th>Потребность в ресурсах</th>
+<th>Статус поддержки на Xiaomi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H.264 (AVC)</td>
+<td>.mp4, .mkv</td>
+<td>Низкая</td>
+<td>Полная аппаратная</td>
+</tr>
+<tr>
+<td>H.265 (HEVC)</td>
+<td>.mkv, .mp4</td>
+<td>Средняя</td>
+<td>Аппаратная (кроме бюджетных)</td>
+</tr>
+<tr>
+<td>VP9</td>
+<td>.webm, .mkv</td>
+<td>Высокая</td>
+<td>Частичная (зависит от чипа)</td>
+</tr>
+<tr>
+<td>AV1</td>
+<td>.mp4</td>
+<td>Очень высокая</td>
+<td>Только флагманы 2023+</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание на поведение батареи во время теста. Если при воспроизведении 4K видео телефон нагревается в районе камеры и заряд тает на глазах, скорее всего, включилось программное декодирование. Аппаратный декодер работает "холодно" и почти не влияет на общее энергопотребление. Это важный маркер для определения реальных возможностей устройства.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте сайт "Sample Videos" или специализированные форумы для скачивания коротких тестовых роликов в разных кодеках, чтобы не тратить память телефона на хранение тяжелых фильмов ради теста.</p></aside>
+
+<h2 id="расшифровка-форматов-h264-h265-vp9-и-av1">Расшифровка форматов: H.264, H.265, VP9 и AV1</h2>
+
+<p>Чтобы грамотно оценивать возможности своего Xiaomi, нужно разбираться в аббревиатурах. <strong>H.264 (AVC)</strong> — это золотой стандарт, который поддерживается абсолютно любым смартфоном, выпущенным за последние 10 лет. Проблем с ним не возникает практически никогда. Следующий уровень — <strong>H.265 (HEVC)</strong>, который обеспечивает лучшее качество при меньшем размере файла, но требует более мощного "железа". Большинство современных Xiaomi (начиная со среднего сегмента) отлично справляются с ним.</p>
+
+<p>Кодек <strong>VP9</strong> разработан Google и активно используется YouTube для снижения трафика. Поддержка этого формата на уровне чипсета есть не у всех. Если ваш телефон не умеет аппаратно декодировать VP9, просмотр YouTube в 4K может вызывать подтормаживания интерфейса. И наконец, король современных стандартов — <strong>AV1</strong>. Это открытый формат будущего, но его аппаратная поддержка появилась только в процессорах Snapdragon 8 Gen 2, Dimensity 9000 и новее. На старых моделях Xiaomi видео в AV1 либо не запустится, либо будет работать через мощнейшую нагрузку на процессор.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы планируете использовать телефон как медиа-сервер или для подключения к ТВ, наличие поддержки AV1 и HEVC 10-bit является критическим фактором выбора модели.</p>
+</blockquote>
+
+<p>Также стоит упомянуть аудио-кодеки. Для видеоконтента важны не только picture, но и sound. Форматы вроде <em>Dolby Digital Plus</em>, <em>DTS</em> или_lossless_ кодеки (FLAC, ALAC) также требуют поддержки. Xiaomi, как правило, имеет лицензию на основные форматы, но с DTS могут быть нюансы в зависимости от региона прошивки (Global vs China).</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Наличие аппаратной поддержки кодека напрямую влияет на плавность видео и время автономной работы, поэтому для 4K контента важнее наличие HEVC/VP9, чем просто частота процессора.</p></aside>
+
+<h2 id="влияние-версии-android-и-оболочки-miuihyperos">Влияние версии Android и оболочки MIUI/HyperOS</h2>
+
+<p>Программное обеспечение играет не последнюю роль. С каждым обновлением Android компания Google добавляет поддержку новых стандартов на системном уровне. Например, поддержка AV1 стала обязательной только в Android 13. Это означает, что даже если у вас мощный процессор, но стоит старая Android 10 или 11, системные плееры могут не знать, как работать с новыми форматами без сторонних декодеров.</p>
+
+<p>Оболочки <em>MIUI</em> и <em>HyperOS</em> иногда модифицируют системные библиотеки мультимедиа. В погоне за оптимизацией инженеры Xiaomi могут удалять редко используемые кодеки или, наоборот, добавлять проприетарные улучшения для популярных форматов. Известны случаи, когда после обновления прошивки переставал работать звук в определенных контейнерах MKV из-за конфликта аудиодорожек. Поэтому актуальность ПО — важный фактор.</p>
+
+<ul>
+<li>🔄 <strong>Обновления безопасности</strong> часто содержат патчи для медиа-библиотек, исправляющие уязвимости и баги воспроизведения.</li>
+<li>🌍 <strong>Региональные прошивки</strong> могут отличаться набором лицензированных аудио-кодеков (например, наличие Dolby Atmos).</li>
+<li>📉 <strong>Старые версии Android</strong> не имеют нативной поддержки современных стандартов сжатия, полагаясь на софт.</li>
+</ul>
+
+<p>Если вы пользователь кастомных прошивок (LineageOS, Pixel Experience), ситуация может кардинально измениться. Разработчики сообществ часто добавляют поддержку кодеков, которую вендор "забыл" включить, или, наоборот, вырезают лишнее для легкости системы. В стоковой прошивке Xiaomi список кодеков наиболее стабилен, но не всегда максимален.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Почему видео 4K тормозит на Xiaomi, хотя в характеристиках заявлена поддержка?</summary>
+<p>Заявленная поддержка часто относится к максимальному разрешению матрицы экрана, а не к декодированию видео. Также важно различать 4K при 30 кадрах и 4K при 60 кадрах. Если видео имеет высокий битрейт или использует 10-битный цвет, а процессор не тянет этот профиль кодека, начнутся тормоза.</p>
+</details>
+
+<details>
+<summary>Можно ли добавить поддержку кодеков на Xiaomi установкой плеера?</summary>
+<p>Сторонние плееры (VLC, MX Player с кодеками) могут воспроизводить форматы программно, даже если "железо" их не понимает. Однако это приведет к высокому потреблению энергии и нагреву. Аппаратно добавить поддержку нельзя, это физическое ограничение чипа.</p>
+</details>
+
+<details>
+<summary>В чем разница между контейнером MKV и кодеком?</summary>
+<p>MKV, MP4, AVI — это контейнеры (коробки), внутри которых лежат видео- и аудиодорожки (кодеки). Телефон может открывать контейнер MKV, но не иметь кодека для видео внутри него. Именно кодек определяет, сможет ли устройство показать картинку.</p>
+</details>
+
+<details>
+<summary>Поддерживает ли мой бюджетный Redmi кодек H.265?</summary>
+<p>Практически все современные бюджетники Redmi (начиная с Note 7-8 и новее) имеют аппаратную поддержку H.265 (HEVC) базового профиля. Проблемы могут возникнуть только с 10-битным цветом или разрешением выше 4K.</p>
+</details>
+
+<details>
+<summary>Как проверить, работает ли аппаратное ускорение в конкретном видео?</summary>
+<p>Используйте приложение "Device Info HW" во время воспроизведения или встроенную статистику в плеере VLC. Если в строке декодера указано "Hardware" или имя чипа (qcom/mtk), ускорение работает. Если "Software" или "FFmpeg" — работает процессор.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/ne/ne-zagruzhaetsya-android-na-telefone-xiaomi-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Не загружается Android на Xiaomi: пошаговое решение</span>
+                <span class="pb-related-desc">Смартфон Xiaomi не включается или завис на логотипе? Узнайте, как восстановить Android, войти в Reco</span>
+            </a><a href="/drugoe/k/ka/kak-pisat-vsegda-s-malenkoj-bukvy-na-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как писать «на сяоми» с маленькой буквы — правила и примеры</span>
+                <span class="pb-related-desc">Почему «на сяоми» пишется со строчной буквы, когда это уместно, а когда — ошибка. Правила написания </span>
+            </a><a href="/drugoe/k/ka/kak-pravilno-ksyaomi-i-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно: Ксяоми или Сяоми? Разбор названия бренда Xiaomi</span>
+                <span class="pb-related-desc">Узнайте, как правильно произносить и писать название бренда Xiaomi на русском языке: «Ксяоми» или «С</span>
+            </a><a href="/articles/k/ka/kak-nazyvaetsya-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как называется Xiaomi: история бренда и расшифровка логотипа</span>
+                <span class="pb-related-desc">Узнайте, как правильно пишется Xiaomi на русском, что означает название бренда и почему его путают с</span>
+            </a><a href="/articles/k/ka/kak-vklyuchit-svetovuyu-indikatsiyu-na-xiaomi-redmi-10.html" class="pb-related-card">
+                <span class="pb-related-title">Световая индикация на Xiaomi Redmi 10: как включить и настроить</span>
+                <span class="pb-related-desc">Подробная инструкция: как активировать светодиодный индикатор на Redmi 10. Настройка уведомлений, цв</span>
+            </a><a href="/drugoe/k/ka/kak-napisat-syaomi-pravilno.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно писать «Сяоми»: официальные правила и распространённые ошибки</span>
+                <span class="pb-related-desc">Узнайте, как грамотно писать название бренда Xiaomi на русском: официальная транслитерация, ошибки в</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

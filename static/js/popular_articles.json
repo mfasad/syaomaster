@@ -1,0 +1,1282 @@
+[
+  {
+    "title": "ADB и Fastboot для Xiaomi: полное руководство с инструкциями",
+    "slug": "adb-fastboot-tools-xiaomi-kak-polzovatsya",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Как пользоваться ADB и Fastboot на смартфонах Xiaomi: разблокировка загрузчика, прошивка, отладка. Пошаговые инструкции ...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Как сбросить AirDots Xiaomi до заводских настроек: пошаговая инструкция",
+    "slug": "airdots-xiaomi-kak-sbrosit-nastrojki",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Подробное руководство по сбросу наушников Xiaomi AirDots (все модели) к заводским настройкам. Способы через кнопки, прил...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Как включить безопасный режим на Xiaomi: пошаговая инструкция 2026",
+    "slug": "bezopasnyj-rezhim-android-kak-vklyuchit-xiaomi",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Подробное руководство по активации Safe Mode на смартфонах Xiaomi (Redmi, POCO, Mi). Способы для работающего и зависшего...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Как отключить безопасный режим на Xiaomi: пошаговая инструкция 2026",
+    "slug": "bezopasnyj-rezhim-na-telefone-kak-otklyuchit-android-ksiomi",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Не можете выйти из Safe Mode на смартфоне Xiaomi? Узнайте 5 проверенных способов отключения безопасного режима на Androi...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Fastboot на Xiaomi: как убрать картинку и восстановить смартфон",
+    "slug": "chto-delat-esli-na-ksyaomi-vykhodit-kartinka-fastboot",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Появился Fastboot на Xiaomi? Узнайте причины и 5 рабочих способов выхода из режима. Пошаговые инструкции для Redmi, POCO...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Телефон Xiaomi завис на логотипе — как исправить за 10 минут",
+    "slug": "chto-delat-esli-telefon-syaomi-zavis-na-vklyuchenii",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Пошаговая инструкция: что делать если Xiaomi (Redmi, POCO) не включается дальше заставки. Способы сброса, прошивки и диа...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Телефон Xiaomi Redmi завис на включении — что делать в 2026 году",
+    "slug": "chto-delat-esli-telefon-zavis-na-vklyuchenii-xiaomi-redmi",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Пошаговая инструкция: как реанимировать Redmi, если он не выходит из загрузки. Причины, способы сброса и прошивки без по...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Телефон Xiaomi завис при включении: что делать в 2026 году",
+    "slug": "chto-delat-esli-telefon-zavis-pri-vklyuchenii-ksiomi",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Пошаговая инструкция: как оживить зависший Xiaomi при загрузке. Причины, способы сброса, прошивка через Fastboot и Mi Fl...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Забыл пароль на Redmi 9: как разблокировать без потери данных",
+    "slug": "chto-delat-esli-zabyl-parol-na-syaomi-redmi-9",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Пошаговая инструкция, как сбросить пароль на Xiaomi Redmi 9, если забыли графический ключ или PIN. Способы через Mi Acco...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Забыл пароль от приложения на Xiaomi: 7 способов восстановления",
+    "slug": "chto-delat-esli-zabyl-parol-ot-prilozheniya-na-telefone-na-syaomi",
+    "catSlug": "sbros-i-razblokirovka",
+    "desc": "Не можете войти в приложение на Xiaomi? Узнайте, как сбросить пароль через аккаунт Mi, резервную копию или сброс настрое...",
+    "cat": "Сброс и разблокировка",
+    "icon": "🔓"
+  },
+  {
+    "title": "Амулет экран на Xiaomi: что это и как работает в 2026 году",
+    "slug": "amulet-ekran-na-xiaomi-chto-eto",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Разбираемся, что такое «амулет экран» в смартфонах Xiaomi: функции, принципы работы, как включить/отключить и почему он ...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Автозапуск на Xiaomi: что это и как работает в 2026 году",
+    "slug": "avtozapusk-na-telefone-xiaomi-chto-eto",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Разбираемся, что такое автозапуск на смартфонах Xiaomi, как он влияет на производительность и батарею, а также как прави...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Что можно отключить в Xiaomi для ускорения и экономии батареи",
+    "slug": "chto-mozhno-otklyuchit-v-ksiomi",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Подробный гайд по безопасному отключению ненужных функций в смартфонах Xiaomi: MIUI-фишки, фоновые процессы, реклама и с...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Карусель обоев на Redmi 9: как работает и как настроить",
+    "slug": "chto-takoe-karusel-oboev-na-xiaomi-redmi-9",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Подробное руководство по функции карусели обоев на Xiaomi Redmi 9: что это, как включить, где скачать новые темы и как у...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Плагин системной службы на Xiaomi: что это и как работает",
+    "slug": "chto-takoe-plagin-sistemnoj-sluzhby-na-syaomi",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Разбираемся, что такое плагин системной службы на смартфонах Xiaomi, зачем он нужен и как его правильно настроить. Подро...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Пресеты в Xiaomi: что это, как использовать и где найти",
+    "slug": "chto-takoe-preset-v-telefone-xiaomi",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Разбираемся, что такое пресеты в смартфонах Xiaomi: где они хранятся, как их применять для камеры, звука и системы, а та...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Шторка уведомлений на Xiaomi Redmi 9: как настроить и использовать",
+    "slug": "chto-takoe-shtorka-uvedomlenij-na-xiaomi-redmi-9",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Подробное руководство по шторке уведомлений на Redmi 9: функции, настройки, скрытые возможности и решение проблем. Узнай...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Синхронизация на Xiaomi Redmi 8: как работает и зачем нужна",
+    "slug": "chto-takoe-sinkhronizatsiya-v-telefone-xiaomi-redmi-8",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Подробное руководство по настройке синхронизации на Redmi 8: облачные сервисы, резервное копирование, восстановление дан...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Ярлыки на рабочем столе Xiaomi: что это и как настроить",
+    "slug": "chto-znachit-yarlyki-rabochego-stola-na-telefone-xiaomi",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Подробный разбор значений ярлыков на экране смартфонов Xiaomi, их типы, настройка и удаление. Узнайте, как оптимизироват...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "DND Mode на Xiaomi: что это и как настроить режим «Не беспокоить»",
+    "slug": "dnd-mode-xiaomi-chto-eto",
+    "catSlug": "nastrojka-sistemy",
+    "desc": "Разбираемся, что такое DND Mode на смартфонах Xiaomi, как включить/отключить режим «Не беспокоить», его функции и отличи...",
+    "cat": "Настройка системы",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Буфер журнала Xiaomi: что это такое и как его очистить",
+    "slug": "bufer-zhurnala-xiaomi-chto-eto",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Разбираемся, что такое буфер журнала на Xiaomi, зачем он нужен, как его очистить и какие проблемы решает. Подробная инст...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "Память Xiaomi Redmi забита: 10 причин и как очистить (2026)",
+    "slug": "chem-mozhet-byt-zabita-pamyat-telefona-android-syaomi-redmi",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Разбираемся, почему заканчивается память на Redmi (Note, K50, 12 и др.), что занимает место и как освободить 5-20 ГБ без...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "Что удалить из телефона Xiaomi, чтобы освободить память: 12 способов",
+    "slug": "chto-udalit-iz-telefona-chtoby-osvobodit-pamyat-syaomi",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Пошаговая инструкция, как очистить память на Xiaomi: удаляем ненужные файлы, кеш, дубликаты и системный мусор. Работает ...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "«Другое» в памяти Xiaomi: что это и как очистить?",
+    "slug": "chto-znachit-drugoe-v-pamyati-telefona-syaomi",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Разбираемся, что скрывается под пунктом «Другое» в памяти смартфонов Xiaomi, почему он занимает место и как безопасно ум...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "Cloud Gallery на Xiaomi: что это и как пользоваться в 2026 году",
+    "slug": "cloud-gallery-chto-eto-xiaomi",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Разбираемся, что такое Cloud Gallery в телефонах Xiaomi: функции, настройка, синхронизация с Mi Cloud и альтернативы. Ин...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "Где найти скачанную музыку на Xiaomi: все папки и способы",
+    "slug": "gde-iskat-skachennuyu-muzyku-na-ksiomi",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Не можете найти загруженные треки? Узнайте, где Xiaomi хранит музыку по умолчанию, как найти файлы в разных приложениях ...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "Где найти удаленные фото на телефоне Xiaomi: 7 проверенных способов",
+    "slug": "gde-iskat-udalennye-foto-na-telefone-ksiomi",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Удалили важные фото на Xiaomi? Узнайте, как восстановить их из корзины, облака, резервных копий и даже с помощью ПК. Пош...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "Где найти записи диктофона на Xiaomi: 5 проверенных способов",
+    "slug": "gde-iskat-zapisi-s-diktofona-na-androide-xiaomi",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Потеряли аудиозаписи на Xiaomi? Узнайте, где хранятся файлы диктофона, как их восстановить и почему они могут исчезать. ...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "Где хранится диктофон на Xiaomi: поиск записей и скрытые папки",
+    "slug": "gde-khranitsya-diktofon-na-xiaomi",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Не можете найти записи диктофона на смартфоне Xiaomi? Узнайте, где хранится диктофон в MIUI, как найти скрытые файлы и в...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "Где Xiaomi Redmi хранит записи разговоров: 5 мест поиска",
+    "slug": "gde-khranitsya-zapis-telefonnogo-razgovora-na-xiaomi-redmi",
+    "catSlug": "pamyat-i-fajly",
+    "desc": "Ищем записи телефонных разговоров на Redmi: встроенные папки, облако, сторонние приложения. Инструкции для MIUI 12-14 и ...",
+    "cat": "Память и файлы",
+    "icon": "💾"
+  },
+  {
+    "title": "Не работает вибрация на Xiaomi Redmi Note 5: 7 способов исправить",
+    "slug": "chto-delat-esli-ne-rabotaet-vibratsiya-na-telefone-xiaomi-redmi-note-5",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Вибрация на Redmi Note 5 перестала работать? Узнайте причины поломки и пошаговые инструкции по восстановлению тактильной...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Не работает один наушник на Xiaomi: 10 способов исправить",
+    "slug": "chto-delat-esli-rabotaet-tolko-1-naushnik-na-telefone-xiaomi",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Если на смартфоне Xiaomi перестал работать один наушник, проверьте 10 проверенных решений: от чистки разъёма до сброса н...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Dolby Atmos в Xiaomi Redmi Note 10 Pro: как работает и как включить",
+    "slug": "dolby-atmos-chto-eto-v-telefone-xiaomi-redmi-note-10-pro",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Что такое Dolby Atmos в смартфоне Xiaomi Redmi Note 10 Pro, как его активировать, какие наушники поддерживаются и как ул...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Как изменить громкость на Xiaomi: 5 способов регулировки звука",
+    "slug": "kak-izmenit-regulirovku-gromkosti-na-xiaomi",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Пошаговая инструкция по настройке громкости на смартфонах и умных устройствах Xiaomi: кнопки, меню, жесты, ADB-команды и...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Как поменять звуки на Xiaomi без ROOT: 5 работающих способов",
+    "slug": "kak-izmenit-sistemnye-zvuki-na-xiaomi-bez-rut-prav",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Пошаговая инструкция по замене системных звуков на смартфонах Xiaomi без рут-прав. Способы для MIUI 12-14, включая скрыт...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Как на Xiaomi поставить мелодию на СМС: пошаговая инструкция 2026",
+    "slug": "kak-na-ksiomi-postavit-melodiyu-na-sms",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Подробное руководство по установке уникальной мелодии на СМС для смартфонов Xiaomi: от стандартных настроек до сторонних...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Как отключить звук клавиатуры на Xiaomi: 5 способов (2026)",
+    "slug": "kak-na-xiaomi-ubrat-zvuk-pri-nabore-teksta",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Пошаговая инструкция, как убрать раздражающий звук при наборе текста на смартфонах Xiaomi, Redmi и POCO. Работает на MIU...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Как поставить мелодию на Xiaomi: 5 способов (2026)",
+    "slug": "kak-nastroit-melodiyu-vyzova-na-xiaomi",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Пошаговая инструкция по настройке мелодии вызова на смартфонах Xiaomi, Redmi и POCO. Узнайте, как установить свою музыку...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Настройка наушников на Xiaomi Redmi 9: пошаговая инструкция 2026",
+    "slug": "kak-nastroit-naushniki-na-telefone-xiaomi-redmi-9",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Как правильно подключить и настроить проводные/беспроводные наушники на Redmi 9: звук, эквалайзер, Bluetooth, проблемы с...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Настройка вибрации на Xiaomi: пошаговая инструкция 2026",
+    "slug": "kak-nastroit-vibratsii-na-syaomi",
+    "catSlug": "zvuk-i-vibratsiya",
+    "desc": "Как включить, отрегулировать и отключить вибрацию на смартфонах Xiaomi (Redmi, POCO). Инструкции для MIUI 14/15, советы ...",
+    "cat": "Звук и вибрация",
+    "icon": "🔊"
+  },
+  {
+    "title": "Где найти панораму на Xiaomi: инструкция для всех моделей 2026",
+    "slug": "gde-na-syaomi-panorama",
+    "catSlug": "kamera-i-foto",
+    "desc": "Пошаговое руководство, как включить режим панорамы на смартфонах Xiaomi (Redmi, POCO). Где искать настройки камеры, как ...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "Где камера в телевизоре Xiaomi: расположение и функции (2026)",
+    "slug": "gde-nakhoditsya-kamera-v-televizore-xiaomi",
+    "catSlug": "kamera-i-foto",
+    "desc": "Подробный гайд по поиску камеры в телевизорах Xiaomi: модели с фронтальной камерой, скрытое расположение, как включить и...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "HDR и HDR+ в Xiaomi: ключевые отличия и как их включить",
+    "slug": "hdr-i-hdr-a-v-chem-raznitsa-xiaomi",
+    "catSlug": "kamera-i-foto",
+    "desc": "Разбираемся, чем отличается HDR от HDR+ на смартфонах Xiaomi: технические особенности, поддерживаемые модели, как активи...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "Как делать качественные фото на Xiaomi: 12 секретов от эксперта",
+    "slug": "kak-delat-kachestvennye-fotografii-na-telefone-xiaomi",
+    "catSlug": "kamera-i-foto",
+    "desc": "Пошаговое руководство по съёмке на смартфоны Xiaomi: настройки камеры, освещение, композиция и постобработка для идеальн...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "Как фотографировать Луну на Xiaomi: настройки камеры и секреты",
+    "slug": "kak-fotografirovat-lunu-ksyaomi",
+    "catSlug": "kamera-i-foto",
+    "desc": "Пошаговая инструкция для съёмки Луны на смартфонах Xiaomi: режимы камеры, ручные настройки и обработка. Получайте чёткие...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "Ночная съёмка на Xiaomi: секреты идеальных фото в темноте",
+    "slug": "kak-fotografirovat-nochyu-na-syaomi",
+    "catSlug": "kamera-i-foto",
+    "desc": "Как настроить камеру Xiaomi для съёмки ночью: режимы, параметры, советы по освещению и обработке. Пошаговая инструкция д...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "Долгая выдержка на Xiaomi: как снимать светящиеся фото ночью",
+    "slug": "kak-fotografirovat-s-vyderzhkoj-na-syaomi",
+    "catSlug": "kamera-i-foto",
+    "desc": "Пошаговая инструкция по съёмке с длинной выдержкой на смартфонах Xiaomi: от выбора режима до обработки. Подходит для Red...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "Настройка камеры Xiaomi Redmi 9: пошаговая инструкция 2026",
+    "slug": "kak-nastroit-kameru-na-syaomi-redmi-9",
+    "catSlug": "kamera-i-foto",
+    "desc": "Как правильно настроить камеру на Redmi 9 для лучших фото и видео: разбор всех режимов, скрытых функций и оптимизации па...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "Как записать видео с камеры Xiaomi на ПК: 5 способов 2026",
+    "slug": "kak-nastroit-zapis-s-kamery-xiaomi-na-kompyuter",
+    "catSlug": "kamera-i-foto",
+    "desc": "Пошаговые инструкции по настройке записи с камеры Xiaomi на компьютер через USB, Wi-Fi или облако. Сравнение методов для...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "Как отсканировать документ на Xiaomi в PDF: пошаговая инструкция",
+    "slug": "kak-otskanirovat-dokument-na-telefone-ksiomi-v-pdf",
+    "catSlug": "kamera-i-foto",
+    "desc": "Узнайте, как быстро и качественно отсканировать документ на смартфоне Xiaomi, сохранив его в PDF. Подробные инструкции д...",
+    "cat": "Камера и фото",
+    "icon": "📸"
+  },
+  {
+    "title": "Cast на Xiaomi: что это, как работает и как настроить трансляцию",
+    "slug": "cast-na-xiaomi-chto-eto-takoe",
+    "catSlug": "svyaz-i-set",
+    "desc": "Разбираемся, что такое Cast на телевизорах и смартфонах Xiaomi: принципы работы, поддерживаемые форматы, пошаговая настр...",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "Какой частный DNS-сервер выбрать для Xiaomi в 2026 году: ТОП-5 решений",
+    "slug": "chastnyj-dns-server-xiaomi-kakoj-luchshe",
+    "catSlug": "svyaz-i-set",
+    "desc": "Сравнение лучших DNS-серверов для устройств Xiaomi: как улучшить скорость, безопасность и обойти блокировки. Пошаговые и...",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "Wi-Fi на Xiaomi плохо работает: 10 способов устранить проблему",
+    "slug": "chto-delat-esli-vaj-faj-plokho-rabotaet-na-telefone-xiaomi",
+    "catSlug": "svyaz-i-set",
+    "desc": "Узнайте, почему на смартфонах Xiaomi (Redmi, POCO) медленный или нестабильный Wi-Fi и как это исправить самостоятельно. ...",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "Carrier Default Up на Xiaomi: что это и как исправить ошибку",
+    "slug": "chto-takoe-carrier-defalt-up-na-xiaomi",
+    "catSlug": "svyaz-i-set",
+    "desc": "Подробный разбор функции Carrier Default Up на смартфонах Xiaomi: причины появления, способы устранения ошибки и влияние...",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "Модуль NFC в Xiaomi: что это, как работает и зачем нужен в смартфоне",
+    "slug": "chto-takoe-modul-nfs-v-telefone-xiaomi",
+    "catSlug": "svyaz-i-set",
+    "desc": "Разбираемся, что такое модуль NFC в телефонах Xiaomi: принципы работы, поддерживаемые модели, настройка и реальные сцена...",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "Номер SIM-карты в Xiaomi: где найти и как использовать в настройках",
+    "slug": "chto-takoe-nomer-sim-karty-v-nastrojkakh-telefona-xiaomi",
+    "catSlug": "svyaz-i-set",
+    "desc": "Подробное руководство по поиску номера SIM-карты в настройках телефонов Xiaomi (Redmi, POCO). Где посмотреть IMSI, ICCID...",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "Номер SIM-карты в Xiaomi Redmi: где найти и как узнать",
+    "slug": "chto-takoe-nomer-sim-karty-v-telefone-syaomi-redmi",
+    "catSlug": "svyaz-i-set",
+    "desc": "Подробная инструкция, как определить номер SIM-карты на смартфонах Xiaomi Redmi (все модели). Где хранится номер, как ег...",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "Режим полета на Xiaomi: как включить и зачем он нужен в 2026",
+    "slug": "chto-takoe-rezhim-poleta-na-androide-v-telefone-xiaomi",
+    "catSlug": "svyaz-i-set",
+    "desc": "Подробное руководство по использованию режима полета на смартфонах Xiaomi: функции, настройки, скрытые возможности и отл...",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "VoLTE в Xiaomi Redmi 9C: что это и как включить (2026)",
+    "slug": "chto-takoe-volte-v-smartfone-xiaomi-redmi-9-c",
+    "catSlug": "svyaz-i-set",
+    "desc": "Разбираемся, что такое VoLTE в смартфоне Xiaomi Redmi 9C, как его активировать и почему без этой технологии звонки хуже....",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "Yandex Satellite в Xiaomi: что это и как работает в 2026 году",
+    "slug": "chto-takoe-yandex-satellite-v-xiaomi-i-dlya-chego-on-nuzhen",
+    "catSlug": "svyaz-i-set",
+    "desc": "Разбираемся, что такое Yandex Satellite в смартфонах Xiaomi, для чего нужен этот сервис, как его включить и отключить. П...",
+    "cat": "Связь и сеть",
+    "icon": "📡"
+  },
+  {
+    "title": "Что можно приготовить в аэрогриле Xiaomi: 50+ рецептов и лайфхаки",
+    "slug": "aerogril-xiaomi-chto-gotovyat",
+    "catSlug": "umnyj-dom",
+    "desc": "Полный гид по использованию аэрогриля Xiaomi: от куриных крылышек до десертов. Технические тонкости, таблицы температур ...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "Беспроводная кнопка Xiaomi: как работает и как настроить",
+    "slug": "besprovodnaya-knopka-xiaomi-kak-rabotaet",
+    "catSlug": "umnyj-dom",
+    "desc": "Разбираемся в принципах работы беспроводных кнопок Xiaomi (Aqara, MiJia), их совместимости с умным домом и инструкции по...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "Roborock vs Xiaomi: 7 ключевых отличий роботов-пылесосов в 2026",
+    "slug": "chem-otlichaetsya-roborock-ot-xiaomi",
+    "catSlug": "umnyj-dom",
+    "desc": "Чем отличается Roborock от Xiaomi: сравнение технологий, функций, цен и совместимости с Mi Home. Какой робот-пылесос луч...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "Что говорит робот пылесос Xiaomi: расшифровка голосовых команд и звуков",
+    "slug": "chto-govorit-robot-pylesos-xiaomi",
+    "catSlug": "umnyj-dom",
+    "desc": "Разбираемся в голосовых сообщениях и звуковых сигналах робота-пылесоса Xiaomi: что означают фразы, как исправить ошибки ...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "Что нужно для умного дома Xiaomi: полный список 2026",
+    "slug": "chto-nuzhno-dlya-umnogo-doma-xiaomi",
+    "catSlug": "umnyj-dom",
+    "desc": "Подробный гайд по выбору устройств, хабов и приложений для экосистемы умного дома Xiaomi. Схемы подключения, совместимос...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "LDS в роботах-пылесосах Xiaomi: что это и как работает в 2026 году",
+    "slug": "chto-takoe-lds-v-robote-pylesose-xiaomi",
+    "catSlug": "umnyj-dom",
+    "desc": "Разбираемся, что такое LDS в пылесосах Xiaomi, как лазерный дальномер влияет на картографирование и навигацию, и почему ...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "Смарт-устройства на Xiaomi Redmi 9: что это и как ими управлять",
+    "slug": "chto-takoe-smart-ustrojstva-na-xiaomi-redmi-9",
+    "catSlug": "umnyj-dom",
+    "desc": "Разбираемся, какие смарт-функции поддерживает Redmi 9, как подключить умные устройства Xiaomi и управлять ими через Mi H...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "Умный дом в телефоне Xiaomi: как настроить и управлять",
+    "slug": "chto-takoe-umnyj-dom-v-telefone-xiaomi",
+    "catSlug": "umnyj-dom",
+    "desc": "Разбираемся, что такое умный дом в телефоне Xiaomi, как подключить устройства и управлять ими через Mi Home. Пошаговая и...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "Как заправить диспенсер Xiaomi Mijia жидким мылом: инструкция 2026",
+    "slug": "dispenser-dlya-zhidkogo-myla-xiaomi-mijia-kak-zapravlyat",
+    "catSlug": "umnyj-dom",
+    "desc": "Пошаговое руководство по заправке автоматического диспенсера Xiaomi Mijia с фото, советами по выбору мыла и устранению о...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "Экосистема Xiaomi: что это и как работает в 2026 году",
+    "slug": "ekosistema-xiaomi-chto-eto",
+    "catSlug": "umnyj-dom",
+    "desc": "Разбираемся, что такое экосистема Xiaomi, как она объединяет умные устройства и почему это выгодно пользователю. Пошагов...",
+    "cat": "Умный дом",
+    "icon": "🏠"
+  },
+  {
+    "title": "Почему в наушниках Xiaomi работает только один? 7 причин и исправление",
+    "slug": "besprovodnye-naushniki-xiaomi-pochemu-rabotaet-odin-naushnik",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Разобрались, почему не работает один наушник Xiaomi: от банального разряда до аппаратных поломок. Пошаговые инструкции п...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Как настроить время на браслете Xiaomi: пошаговая инструкция 2026",
+    "slug": "braslet-xiaomi-kak-nastroit-vremya",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Подробное руководство по синхронизации времени на фитнес-браслетах Mi Band всех поколений. Решаем проблемы с неверным вр...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Какой браслет Xiaomi выбрать в 2026? ТОП-5 моделей с сравнением",
+    "slug": "braslet-xiaomi-kakoj-luchshe-vybrat",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Не знаете, какой фитнес-браслет Xiaomi купить? Сравниваем Mi Band 8, Smart Band 8 Pro, Watch 2 Pro и другие по цене, фун...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Как включить Xiaomi Mi Band 4: пошаговая инструкция и советы",
+    "slug": "braslet-xiaomi-mi-band-4-kak-vklyuchit",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Не включается Mi Band 4? Узнайте, как правильно активировать браслет, настроить его и устранить возможные проблемы. Подр...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Настройка часов-термометра Xiaomi Mijia: пошаговая инструкция 2026",
+    "slug": "chasy-termometr-xiaomi-mijia-kak-nastroit",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Как подключить, синхронизировать и настроить часы-термометр Xiaomi Mijia через Mi Home/Lumi. Решение проблем с отображен...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Как изменить время на часах Xiaomi: пошаговая инструкция 2026",
+    "slug": "chasy-xiaomi-kak-pomenyat-vremya",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Не знаете, как настроить время на умных часах Xiaomi? Разбираем все способы: через приложение, вручную, автоматическую с...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Xiaomi наушники: сравнение моделей и ключевые отличия 2026",
+    "slug": "chem-otlichayutsya-besprovodnye-naushniki-xiaomi",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Подробный разбор всех типов беспроводных наушников Xiaomi: TWS, шейные, игровые. Сравнение звука, батареи, цены и функци...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Как правильно заряжать Xiaomi Mi Band 2: инструкция и советы",
+    "slug": "chem-zaryazhat-xiaomi-mi-band-2",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Узнайте, чем можно зарядить фитнес-браслет Xiaomi Mi Band 2, как избежать ошибок и продлить срок службы батареи. Подробн...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Наушники Xiaomi не подключаются друг к другу: 7 способов исправить",
+    "slug": "chto-delat-esli-naushniki-ksiomi-ne-podklyuchayutsya-drug-k-drugu",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Что делать, если беспроводные наушники Xiaomi не синхронизируются между собой? Пошаговые инструкции, причины и решения д...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Не синхронизируются наушники Xiaomi: 7 способов решения",
+    "slug": "chto-delat-esli-naushniki-xiaomi-ne-sinkhroniziruyutsya",
+    "catSlug": "nosimye-ustrojstva",
+    "desc": "Наушники Xiaomi не подключаются или не синхронизируются? Разбираем причины и даём пошаговые инструкции по восстановлению...",
+    "cat": "Носимые устройства",
+    "icon": "⌚"
+  },
+  {
+    "title": "Как изменить название Wi-Fi сети на роутере Xiaomi за 5 минут",
+    "slug": "kak-izmenit-nazvanie-seti-routera-xiaomi",
+    "catSlug": "routery-i-set",
+    "desc": "Пошаговая инструкция по смене SSID на роутерах Xiaomi (Mi Router, AX3600, AX6000 и др.). Как войти в настройки, выбрать ...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Настройка IPTV на роутере Xiaomi 4A: пошаговое руководство 2026",
+    "slug": "kak-nastroit-iptv-na-routere-xiaomi-4a",
+    "catSlug": "routery-i-set",
+    "desc": "Как подключить IPTV через роутер Xiaomi 4A: инструкция с настройкой IGMP, VLAN и плейлистов. Решение проблем с зависание...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Настройка модема Xiaomi: пошаговое руководство 2026",
+    "slug": "kak-nastroit-modem-ksiomi",
+    "catSlug": "routery-i-set",
+    "desc": "Как подключить и настроить модем Xiaomi: от распаковки до оптимизации скорости. Инструкции для Mi Router, Mi WiFi и 4G-м...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Настройка роутера Xiaomi 4C через ПК: пошаговая инструкция 2026",
+    "slug": "kak-nastroit-router-syaomi-4s-cherez-kompyuter",
+    "catSlug": "routery-i-set",
+    "desc": "Как подключить и настроить Xiaomi Router 4C через компьютер: вход в админ-панель, изменение пароля Wi-Fi, обновление про...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Настройка роутера Xiaomi Redmi AC2100: пошаговая инструкция 2026",
+    "slug": "kak-nastroit-router-syaomi-redmi-as2100",
+    "catSlug": "routery-i-set",
+    "desc": "Детальное руководство по настройке Wi-Fi, безопасности и дополнительных функций роутера Redmi AC2100 от Xiaomi. Оптимиза...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Настройка роутера Xiaomi 4A Giga через iPhone: пошаговое руководство",
+    "slug": "kak-nastroit-router-xiaomi-4a-giga-version-cherez-ajfon",
+    "catSlug": "routery-i-set",
+    "desc": "Как подключить и настроить роутер Xiaomi 4A Giga Edition с помощью iPhone: инструкция с фото, советы по Wi-Fi, безопасно...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Настройка роутера Xiaomi AX3000: подключение к провайдеру за 10 минут",
+    "slug": "kak-nastroit-router-xiaomi-ax3000-k-provajderu",
+    "catSlug": "routery-i-set",
+    "desc": "Пошаговая инструкция по настройке Xiaomi AX3000 для Ростелеком, Билайн, МТС и других провайдеров. Типы подключений, реше...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Настройка роутера Xiaomi Mi WiFi: пошаговое руководство 2026",
+    "slug": "kak-nastroit-router-xiaomi-mi-wifi",
+    "catSlug": "routery-i-set",
+    "desc": "Как подключить и настроить роутер Xiaomi Mi WiFi: пошаговая инструкция с фото, советы по оптимизации сети, решение пробл...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Настройка Wi-Fi роутера Xiaomi 4A на ПК: пошаговая инструкция 2026",
+    "slug": "kak-nastroit-wifi-router-xiaomi-4a-na-kompyutere",
+    "catSlug": "routery-i-set",
+    "desc": "Как подключить и настроить роутер Xiaomi 4A через компьютер: вход в админ-панель, смена пароля, оптимизация сети. Разбир...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Настройка Xiaomi AX6000: полное руководство для оптимальной работы",
+    "slug": "kak-nastroit-xiaomi-ax6000",
+    "catSlug": "routery-i-set",
+    "desc": "Пошаговая инструкция по настройке роутера Xiaomi AX6000: от подключения к интернету до тонких параметров Wi-Fi 6, безопа...",
+    "cat": "Роутеры и сеть",
+    "icon": "📶"
+  },
+  {
+    "title": "Черный список Xiaomi: где найти и как настроить в 2026 году",
+    "slug": "gde-najti-chernyj-spisok-v-telefone-syaomi",
+    "catSlug": "bezopasnost",
+    "desc": "Пошаговая инструкция по поиску и управлению черным списком на смартфонах Xiaomi (MIUI 14/15). Где хранится, как добавить...",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Где найти пароли в телефоне Xiaomi Redmi: скрытые места и безопасность",
+    "slug": "gde-najti-paroli-v-telefone-syaomi-redmi",
+    "catSlug": "bezopasnost",
+    "desc": "Пошаговая инструкция, как найти сохранённые пароли в смартфонах Xiaomi Redmi: браузер, Wi-Fi, приложения, MIUI Account. ...",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Где в Xiaomi хранятся сохранённые пароли: полный гайд 2026",
+    "slug": "gde-v-xiaomi-sokhranennye-paroli",
+    "catSlug": "bezopasnost",
+    "desc": "Узнайте, как найти и управлять сохранёнными паролями в смартфонах Xiaomi (MIUI 12-15). Инструкции для браузера, аккаунта...",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Family Link на Xiaomi Redmi: как активировать родительский контроль",
+    "slug": "kak-aktivirovat-family-link-manager-na-xiaomi-redmi",
+    "catSlug": "bezopasnost",
+    "desc": "Пошаговая инструкция по настройке Family Link Manager на смартфонах Xiaomi Redmi. Как установить, привязать ребёнка и ог...",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Как удалить вирус с телефона Xiaomi: пошаговая инструкция 2026",
+    "slug": "kak-izbavitsya-ot-virusa-na-telefone-ksiomi",
+    "catSlug": "bezopasnost",
+    "desc": "Полное руководство по очистке смартфона Xiaomi от вредоносного ПО: от ручного удаления до сброса к заводским настройкам....",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Как изменить пароль на Xiaomi: пошаговая инструкция 2026",
+    "slug": "kak-izmenit-parol-na-syaomi",
+    "catSlug": "bezopasnost",
+    "desc": "Подробное руководство по смене пароля на смартфонах и устройствах Xiaomi: MIUI, Mi Account, разблокировка экрана. Рабочи...",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Как изменить пароль на телефоне Xiaomi: пошаговая инструкция 2026",
+    "slug": "kak-izmenit-parol-na-telefone-xiaomi",
+    "catSlug": "bezopasnost",
+    "desc": "Подробное руководство по смене пароля на смартфонах Xiaomi (Redmi, POCO). Разблокировка экрана, MI-аккаунт, PIN-код и гр...",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Как отследить телефон Xiaomi: 7 проверенных способов (2026)",
+    "slug": "kak-mozhno-otsledit-telefon-xiaomi",
+    "catSlug": "bezopasnost",
+    "desc": "Потеряли смартфон Xiaomi? Узнайте, как найти его по IMEI, через Mi Account, Google или оператора связи. Пошаговые инстру...",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Как найти телефон Xiaomi Redmi Note 7: все способы поиска",
+    "slug": "kak-najti-telefon-xiaomi-redmi-note-7",
+    "catSlug": "bezopasnost",
+    "desc": "Потеряли Xiaomi Redmi Note 7? Узнайте, как найти смартфон через Mi Account, Google, IMEI, оператора связи и сторонние се...",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Как найти украденный Xiaomi Poco X3: пошаговая инструкция 2026",
+    "slug": "kak-najti-ukradennyj-telefon-xiaomi-poco-x3",
+    "catSlug": "bezopasnost",
+    "desc": "Потеряли или украли Poco X3? Узнайте, как отследить телефон через Mi Account, Google и оператора, даже если SIM-карта за...",
+    "cat": "Безопасность",
+    "icon": "🛡️"
+  },
+  {
+    "title": "Быстрая зарядка Xiaomi: как работает, модели и советы",
+    "slug": "bystraya-zaryadka-xiaomi-chto-eto-takoe",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Что такое быстрая зарядка в Xiaomi: технологии, поддерживаемые модели, как включить и продлить срок службы аккумулятора....",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Как включить быструю зарядку на Xiaomi Redmi: пошаговая инструкция",
+    "slug": "bystraya-zaryadka-xiaomi-kak-vklyuchit-redmi",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Не работает быстрая зарядка на Redmi? Узнайте, как активировать Super Charge, Turbo Charge и проверить совместимость зар...",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Двойная молния на Xiaomi при зарядке: что это значит и как исправить",
+    "slug": "chto-znachit-dvojnaya-molniya-pri-zaryadke-na-syaomi",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Разбираемся, почему на Xiaomi появляется двойная молния при зарядке: значение значка, причины, как ускорить зарядку и из...",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Как изменить значок батареи на Xiaomi: пошаговая инструкция 2026",
+    "slug": "izmenit-znachok-batarei-na-xiaomi-kak",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Узнайте, как поменять иконку зарядки на смартфонах Xiaomi, Redmi и POCO без root и с root-правами. Подробные методы для ...",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Как быстро зарядить Xiaomi: 7 работающих способов 2026",
+    "slug": "kak-bystro-zaryadit-xiaomi",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Узнайте, как ускорить зарядку смартфонов Xiaomi до 100% за 30-60 минут: от выбора зарядного устройства до скрытых настро...",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Как изменить иконку батареи на Xiaomi: 5 способов с инструкциями",
+    "slug": "kak-izmenit-ikonku-batarei-xiaomi",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Пошаговое руководство по замене значка батареи на смартфонах Xiaomi (MIUI 12-15). Способы без root, с ADB, через темы и ...",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Как изменить индикатор батареи на Xiaomi Redmi: 5 способов",
+    "slug": "kak-izmenit-indikator-batarei-na-xiaomi-redmi",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Пошаговая инструкция по замене стиля отображения заряда батареи на смартфонах Xiaomi Redmi (MIUI 12-14). Способы без roo...",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Калибровка батареи Xiaomi Redmi 8: пошаговая инструкция 2026",
+    "slug": "kak-otkalibrovat-batareyu-na-xiaomi-redmi-8",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Как правильно откалибровать батарею на Redmi 8: проверенные методы, ошибки и советы для продления срока службы аккумулят...",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Калибровка батареи Xiaomi Redmi Note 4: пошаговая инструкция 2026",
+    "slug": "kak-otkalibrovat-batareyu-na-xiaomi-redmi-note-4",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Как правильно откалибровать батарею на Redmi Note 4 (Mido) для восстановления точного отображения заряда. Пошаговые мето...",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Как отключить быструю зарядку на Xiaomi Mi 8: пошаговая инструкция",
+    "slug": "kak-otklyuchit-bystruyu-zaryadku-na-xiaomi-8",
+    "catSlug": "batareya-i-zaryadka",
+    "desc": "Подробное руководство по отключению быстрой зарядки на смартфоне Xiaomi Mi 8. Способы через настройки, инженерное меню и...",
+    "cat": "Батарея и зарядка",
+    "icon": "🔋"
+  },
+  {
+    "title": "Бесконтактная оплата с Xiaomi Redmi 9: настройка за 5 минут",
+    "slug": "beskontaktnaya-oplata-s-telefona-xiaomi-redmi-9-kak-nastroit-prilozhenie",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Пошаговая инструкция по настройке NFC и бесконтактных платежей на Redmi 9 через Google Pay, Mi Pay и SberPay. Разбираем ...",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "Bookmark Provider в Xiaomi: что это и как работает в 2026 году",
+    "slug": "bookmark-provider-xiaomi-chto-eto",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Разбираемся, что такое Bookmark Provider на устройствах Xiaomi, зачем нужен этот системный компонент и как он влияет на ...",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "Быстрые приложения на Xiaomi: что это и как ими пользоваться в 2026",
+    "slug": "bystrye-prilozheniya-chto-eto-za-programma-na-android-xiaomi",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Разбираемся, что такое «Быстрые приложения» на Android-смартфонах Xiaomi: как они работают, чем отличаются от обычных, к...",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "Аккаунт Xiaomi: что это и как создать за 5 минут (пошагово)",
+    "slug": "chto-takoe-akkaunt-xiaomi-i-kak-ego-sozdat",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Разбираемся, зачем нужен аккаунт Xiaomi, как его зарегистрировать на телефоне или ПК, и какие проблемы могут возникнуть....",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "FaceMoji на Xiaomi: что это и как пользоваться в 2026 году",
+    "slug": "chto-takoe-facemoji-na-xiaomi",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Разбираемся, что такое FaceMoji на смартфонах Xiaomi: как создавать анимированные эмодзи с вашим лицом, настраивать их и...",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "Mi Connect Service на Xiaomi: что это, зачем нужен и как отключить",
+    "slug": "chto-takoe-mi-connect-service-na-xiaomi",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Разбираемся, что такое Mi Connect Service на смартфонах Xiaomi, как он работает, влияет ли на батарею и можно ли его без...",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "Фоновые приложения на Xiaomi: как работают и как управлять",
+    "slug": "chto-takoe-prilozhenie-rabotaet-v-fonovom-rezhime-na-android-syaomi",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Разбираемся, что значит «работает в фоновом режиме» на Android-смартфонах Xiaomi, как это влияет на батарею и производит...",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "Xiaomi Cloud: что это и как пользоваться облаком Xiaomi в 2026 году",
+    "slug": "chto-takoe-xiaomi-cloud-i-dlya-chego",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Разбираемся, что такое Xiaomi Cloud, как он работает, какие функции предлагает и как безопасно хранить данные в облаке X...",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "Запись экрана на Xiaomi: как сделать скринкаст с телефона",
+    "slug": "chto-takoe-zapis-ekrana-na-xiaomi",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Пошаговая инструкция по записи экрана на смартфонах Xiaomi (MIUI 12-14). Как включить запись, настроить качество и звук,...",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "MIUI Daemon на Xiaomi: что это за приложение и зачем оно нужно?",
+    "slug": "chto-za-prilozhenie-miui-daemon-na-androide-xiaomi",
+    "catSlug": "prilozheniya-i-servisy",
+    "desc": "Разбираемся, что такое процесс miui_daemon на смартфонах Xiaomi, почему он работает в фоне, как влияет на батарею и можн...",
+    "cat": "Приложения и сервисы",
+    "icon": "📲"
+  },
+  {
+    "title": "Экран Xiaomi Redmi 6 не реагирует на касания — 7 способов исправить",
+    "slug": "chto-delat-esli-ekran-telefona-ne-reagiruet-na-prikosnoveniya-xiaomi-redmi-6",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Если тачскрин на Redmi 6 не работает: причины, диагностика, программные и аппаратные решения. Пошаговые инструкции с фот...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Не включается Xiaomi Redmi: 7 причин и способы ремонта",
+    "slug": "chto-delat-esli-ne-vklyuchaetsya-telefon-syaomi-redmi",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Телефон Redmi не реагирует на кнопку питания? Разбираем причины — от разряженной батареи до аппаратных поломок. Пошаговы...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Экран Xiaomi выключается при прослушивании голосовых — что делать?",
+    "slug": "chto-delat-esli-pri-proslushivanii-golosovykh-ekran-vyklyuchaetsya-ksyaomi",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Почему гаснет экран на Xiaomi во время звонков или голосовых сообщений? 7 проверенных способов устранения проблемы + FAQ...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Кнопка включения Xiaomi не работает — как включить телефон без Power",
+    "slug": "chto-delat-esli-slomalas-knopka-vklyucheniya-na-telefone-syaomi",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Сломана кнопка питания на Xiaomi? Узнайте 7 способов включить смартфон без Power, как разблокировать экран и что делать ...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Телефон Xiaomi не включается: что делать, если смартфон выключился и не реагирует",
+    "slug": "chto-delat-esli-vyklyuchilsya-telefon-i-ne-vklyuchaetsya-ksyaomi",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Пошаговая инструкция по восстановлению Xiaomi, если он не включается после выключения. Причины, диагностика и методы реш...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Xiaomi постоянно перезагружается: 10 причин и решений (2026)",
+    "slug": "chto-esli-syaomi-vse-vremya-perezagruzhaetsya",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Смартфон Xiaomi циклично перезагружается? Узнайте причины — от сбоя прошивки до аппаратных неисправностей — и пошаговые ...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Датчик на теле в Xiaomi — что это и как работает в 2026 году",
+    "slug": "datchik-na-tele-v-xiaomi-chto-eto",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Разбираемся, что за датчик на корпусе смартфонов Xiaomi, для чего он нужен, как его проверить и отключить. Подробный гай...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Debug Log на Xiaomi: что это, как включить и прочитать лог ошибок",
+    "slug": "debug-log-chto-eto-xiaomi",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Разбираемся, что такое debug log на смартфонах Xiaomi, как его включить через инженерное меню или ADB, где искать файлы ...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Где купить матрицу для телевизора Xiaomi — проверенные способы 2026",
+    "slug": "gde-kupit-matritsu-dlya-televizora-xiaomi",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Ищем оригинальную матрицу для Xiaomi TV: официальные сервисы, AliExpress, eBay и локальные мастерские. Сравниваем цены, ...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Датчик приближения в Redmi 8T: где находится и как проверить",
+    "slug": "gde-nakhoditsya-datchik-priblizheniya-na-xiaomi-redmi-8t",
+    "catSlug": "remont-i-zhelezo",
+    "desc": "Пошаговое руководство по поиску датчика приближения на Xiaomi Redmi 8T: расположение, проверка, неисправности и ремонт. ...",
+    "cat": "Ремонт и железо",
+    "icon": "🔧"
+  },
+  {
+    "title": "Global vs RoSTest Xiaomi: чем отличаются версии прошивок (2026)",
+    "slug": "chem-otlichaetsya-global-ot-rostesta-xiaomi-versiya",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Разбираем ключевые отличия глобальной и российской (RoSTest) прошивок Xiaomi: локализация, сервисы, обновления и совмест...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "Как распаковать прошивку Xiaomi: 5 проверенных способов (2026)",
+    "slug": "chem-raspakovat-proshivku-xiaomi",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Пошаговая инструкция по распаковке прошивок для Xiaomi: официальные и кастомные файлы, инструменты и советы для безопасн...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "Fastboot на Xiaomi Redmi 8: что это и как работает в 2026 году",
+    "slug": "chto-oznachaet-fastboot-na-xiaomi-redmi-8",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Разбираемся, что значит режим Fastboot на Redmi 8: зачем нужен, как войти/выйти, отличие от Recovery и как избежать ошиб...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "Xiaomi сегодня: что произошло с брендом в 2026 году?",
+    "slug": "chto-sluchilos-s-xiaomi-segodnya",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Последние новости Xiaomi 2026: новые модели, проблемы с прошивками, изменения в политике обновлений и реакция пользовате...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "Что такое 4PDA на Xiaomi: разбор форума, прошивок и сообщества",
+    "slug": "chto-takoe-4pda-na-xiaomi",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Подробный гайд по 4PDA для владельцев Xiaomi: как пользоваться форумом, где скачивать прошивки, разбираемся в терминах и...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "Fastboot на Xiaomi Redmi: что это и как использовать в 2026 году",
+    "slug": "chto-takoe-fastbut-na-androide-xiaomi-redmi",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Разбираемся, что такое режим Fastboot на смартфонах Xiaomi Redmi, зачем он нужен и как правильно его использовать для пр...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "MIUI Forum Xiaomi: что это и как пользоваться в 2026 году",
+    "slug": "chto-takoe-forum-miui-na-xiaomi-i-dlya-chego-on-nuzhen",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Подробный гайд по официальному форуму MIUI: регистрация, поиск прошивок, решение проблем и скрытые возможности для владе...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "MIUI на Redmi 7: что это, особенности и как обновить оболочку",
+    "slug": "chto-takoe-miui-na-xiaomi-redmi-7",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Разбираемся, что такое MIUI на Xiaomi Redmi 7: функции, версии, как проверить и обновить прошивку, а также отзывы пользо...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "Recovery и OTA на Xiaomi: что это и как ими пользоваться",
+    "slug": "chto-takoe-recovery-i-ota-na-xiaomi",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Разбираемся, что такое Recovery Mode и OTA-обновления на смартфонах Xiaomi: назначение, отличия, как правильно использов...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "Что значит скачать полную прошивку на Xiaomi Redmi 9T: гайд 2026",
+    "slug": "chto-znachit-skachat-polnuyu-proshivku-na-xiaomi-redmi-9-t",
+    "catSlug": "obnovleniya-i-proshivka",
+    "desc": "Разбираемся, что такое полная прошивка для Redmi 9T, зачем она нужна, как скачать официальную MIUI и избежать ошибок при...",
+    "cat": "Обновления и прошивка",
+    "icon": "🔄"
+  },
+  {
+    "title": "Какой аэрогриль Xiaomi лучше выбрать в 2026 году: сравнение моделей",
+    "slug": "aerogril-syaomi-kakoj-luchshe",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Подробный обзор лучших аэрогрилей Xiaomi: сравнение Mi Smart Air Fryer, Mijia и других моделей по цене, объёму и функция...",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "Аэрогриль Xiaomi: для чего нужен и как использовать в 2026 году",
+    "slug": "aerogril-xiaomi-dlya-chego-nuzhen",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Разбираем 7 ключевых функций аэрогриля Xiaomi Smart Air Fryer, сравниваем с мультиваркой и духовкой, даём инструкции по ...",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "Apple или Xiaomi: что лучше выбрать в 2026 году? Сравнение по 7 критериям",
+    "slug": "apple-ili-xiaomi-chto-luchshe",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Подробный анализ смартфонов Apple iPhone и Xiaomi: сравнение камер, производительности, цены, экосистемы и аккумулятора....",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "iPhone vs Redmi: 7 ключевых преимуществ Apple для пользователей Xiaomi",
+    "slug": "chem-ajfon-luchshe-syaomi-redmi",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Сравнили iPhone и Xiaomi Redmi по 12 параметрам: почему Apple лучше для фотографии, безопасности и долгосрочного использ...",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "Глобальная и EU-версия Xiaomi: ключевые отличия и что выбрать",
+    "slug": "chem-otlichaetsya-globalnaya-versiya-xiaomi-ot-eu",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Разбираемся, чем отличается глобальная версия Xiaomi от EU: прошивки, частоты, гарантия, цены и совместимость. Подробный...",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "Ростест vs Евротест на Xiaomi Poco X3 Pro: ключевые отличия 2026",
+    "slug": "chem-otlichaetsya-rostest-ot-evrotest-xiaomi-poco-x3-pro",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Чем отличаются версии Poco X3 Pro для России (Ростест) и Европы (Евротест)? Сравнение прошивок, частот, сертификатов и с...",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "Xiaomi vs Redmi vs POCO: ключевые отличия и что выбрать в 2026",
+    "slug": "chem-otlichaetsya-xiaomi-ot-redmi-i-poco",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Разбираемся, чем отличаются бренды Xiaomi, Redmi и POCO: целевая аудитория, цены, процессоры, камеры, дизайн и особеннос...",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "Xiaomi: как отличить модели — сравнение линеек и особенностей",
+    "slug": "chem-otlichayutsya-modeli-syaomi",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Подробный разбор отличий смартфонов и умной техники Xiaomi: Redmi vs POCO vs Mi, бюджетные и флагманы, процессоры и каме...",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "Xiaomi Mi 11 vs Mi 11 Lite: 10 ключевых отличий в 2026 году",
+    "slug": "chem-otlichayutsya-xiaomi-mi-11-i-mi-11-lite",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Подробное сравнение флагмана и облегчённой версии: процессоры, камеры, батарея, дизайн и цены. Какую модель выбрать? Экс...",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "iPhone 11 vs Xiaomi 10 Pro: что лучше выбрать в 2026 году?",
+    "slug": "chto-luchshe-ajfon-11-ili-syaomi-10-pro",
+    "catSlug": "pokupka-i-vybor",
+    "desc": "Сравнение iPhone 11 и Xiaomi 10 Pro по 10+ параметрам: камера, процессор, батарея, цена. Экспертный анализ с тестами и р...",
+    "cat": "Покупка и выбор",
+    "icon": "🛒"
+  },
+  {
+    "title": "Как пожарить котлеты в аэрогриле Xiaomi: пошаговый рецепт",
+    "slug": "kak-pozharit-kotlety-v-aerogrile-ksiomi",
+    "catSlug": "drugoe",
+    "desc": "Узнайте, как правильно готовить сочные котлеты в аэрогриле Mi Smart Air Fryer: температура, время, секреты равномерной п...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Ушная палочка Xiaomi: для чего нужна и как правильно использовать",
+    "slug": "ushnaya-palochka-xiaomi-dlya-chego",
+    "catSlug": "drugoe",
+    "desc": "Разбираем все функции умной ушной палочки от Xiaomi: от гигиены до неожиданных применений. Подробный гайд с инструкциями...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Как правильно: Ксяоми или Сяоми? Разбор названия бренда Xiaomi",
+    "slug": "kak-pravilno-ksyaomi-i-syaomi",
+    "catSlug": "drugoe",
+    "desc": "Узнайте, как правильно произносить и писать название бренда Xiaomi на русском языке: «Ксяоми» или «Сяоми»? История назва...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Как сделать Xiaomi из бумаги: пошаговая инструкция с шаблонами",
+    "slug": "kak-sdelat-syaomi-iz-bumagi",
+    "catSlug": "drugoe",
+    "desc": "Узнайте, как создать реалистичную модель смартфона Xiaomi из бумаги: шаблоны, инструменты, советы по сборке и декорирова...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "ADAS в видеорегистраторе Xiaomi: что это и как работает в 2026 году",
+    "slug": "adas-v-videoregistratore-chto-eto-xiaomi",
+    "catSlug": null,
+    "desc": "Разбираемся, что такое система ADAS в видеорегистраторах Xiaomi: функции, принципы работы, модели с поддержкой и как нас...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Xiaomi — что это за слово и как переводится? История бренда",
+    "slug": "chto-oznachaet-slovo-xiaomi",
+    "catSlug": "drugoe",
+    "desc": "Разбираем значение слова Xiaomi: перевод с китайского, история названия компании, мифы и факты о бренде. Узнайте, почему...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Как писать «на сяоми» с маленькой буквы — правила и примеры",
+    "slug": "kak-pisat-vsegda-s-malenkoj-bukvy-na-syaomi",
+    "catSlug": "drugoe",
+    "desc": "Почему «на сяоми» пишется со строчной буквы, когда это уместно, а когда — ошибка. Правила написания бренда Xiaomi в разн...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Сколько сотрудников у Xiaomi в 2026 году: официальные данные и анализ",
+    "slug": "xiaomi-skolko-sotrudnikov",
+    "catSlug": "drugoe",
+    "desc": "Актуальная статистика о численности сотрудников Xiaomi по странам, динамика роста с 2010 года, сравнение с конкурентами ...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Как разбавить жидкое мыло Xiaomi: пропорции и советы 2026",
+    "slug": "zhidkoe-mylo-syaomi-kak-razbavit",
+    "catSlug": "drugoe",
+    "desc": "Пошаговая инструкция по разбавлению концентрированного жидкого мыла Xiaomi с таблицей пропорций, советами по хранению и ...",
+    "cat": "Другое",
+    "icon": "📁"
+  },
+  {
+    "title": "Как стать дизайнером Xiaomi: карьерный путь и навыки",
+    "slug": "kak-stat-dizajnerom-xiaomi",
+    "catSlug": "drugoe",
+    "desc": "Пошаговое руководство по трудоустройству в Xiaomi на позицию дизайнера: требования, портфолио, резюме и советы от экспер...",
+    "cat": "Другое",
+    "icon": "📁"
+  }
+]

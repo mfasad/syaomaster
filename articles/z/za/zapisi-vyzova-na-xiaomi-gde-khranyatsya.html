@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Где хранятся записи вызовов на Xiaomi: поиск и восстановление — СяоМастер</title>
+    <meta name="description" content="Подробный разбор путей хранения аудиозаписей разговоров на смартфонах Xiaomi. Инструкция для MIUI и HyperOS, работа с проводником, скрытыми папками и Google Диском.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/z/za/zapisi-vyzova-na-xiaomi-gde-khranyatsya.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Где хранятся записи вызовов на Xiaomi: поиск и восстановление">
+    <meta property="og:description" content="Подробный разбор путей хранения аудиозаписей разговоров на смартфонах Xiaomi. Инструкция для MIUI и HyperOS, работа с проводником, скрытыми папками и Google Диском.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Где хранятся записи вызовов на Xiaomi: поиск и восстановление</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#стандартный-путь-в-системном-хранилище">Стандартный путь в системном хранилище</a></li><li><a href="#различия-в-путях-для-miui-и-google-dialer">Различия в путях для MIUI и Google Dialer</a></li><li><a href="#использование-облачных-сервисов-для-хранения">Использование облачных сервисов для хранения</a></li><li><a href="#поиск-скрытых-и-системных-папок">Поиск скрытых и системных папок</a></li><li><a href="#настройка-пути-сохранения-записей">Настройка пути сохранения записей</a></li><li><a href="#проблемы-с-форматом-и-воспроизведением">Проблемы с форматом и воспроизведением</a></li><li><a href="#восстановление-удаленных-записей">Восстановление удаленных записей</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-proverit-originalnye-naushniki-xiaomi-ili-net.html">Как проверить оригинальные наушники Xiaomi: полная инструкция</a></li><li><a href="/drugoe/k/ka/kak-prigotovit-mylo-xiaomi.html">Как сделать мыло Xiaomi в домашних условиях: пошаговый рецепт</a></li><li><a href="/articles/k/ka/kak-ochistit-kesh-na-telefone-xiaomi-redmi.html">Как очистить кэш на Xiaomi Redmi: полная инструкция</a></li><li><a href="/articles/k/ka/kak-podklyuchit-kartu-belarusbank-dlya-oplaty-s-telefona-ksyaomi.html">Как подключить карту Беларусбанк к Xiaomi Pay: полная инструкция</a></li><li><a href="/articles/k/ka/kak-ochistit-dannye-prilozhenij-na-ksiomi-redmi.html">Как очистить данные приложений на Xiaomi Redmi: полная инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Где хранятся записи вызовов на Xiaomi: полный гид по поиску</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#стандартный-путь-в-системном-хранилище">Стандартный путь в системном хранилище</a></li><li><a href="#различия-в-путях-для-miui-и-google-dialer">Различия в путях для MIUI и Google Dialer</a></li><li><a href="#использование-облачных-сервисов-для-хранения">Использование облачных сервисов для хранения</a></li><li><a href="#поиск-скрытых-и-системных-папок">Поиск скрытых и системных папок</a></li><li><a href="#настройка-пути-сохранения-записей">Настройка пути сохранения записей</a></li><li><a href="#проблемы-с-форматом-и-воспроизведением">Проблемы с форматом и воспроизведением</a></li><li><a href="#восстановление-удаленных-записей">Восстановление удаленных записей</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфонов Xiaomi часто сталкиваются с необходимостью сохранить важную информацию из телефонного разговора, будь то договоренность с клиентом или подтверждение заказа услуги. Однако после завершения звонка многие пользователи теряются, не зная, куда именно система сохранила аудиофайл. Стандартный интерфейс «Звонков» позволяет прослушать запись, но для передачи файла, его копирования на компьютер или отправке в мессенджер необходимо знать точный физический адрес в памяти устройства.</p>
+
+<p>Ситуация усложняется тем, что структура файловой системы в оболочках <em>MIUI</em> и новой <em>HyperOS</em> может отличаться от чистого Android или iOS. Система безопасности Google и политика конфиденциальности Xiaomi периодически меняют правила доступа к микрофону и хранилищу, что приводит к появлению скрытых папок или изменению путей по умолчанию. Понимание логики хранения данных поможет вам быстро найти нужный файл, даже если стандартный поиск не дает результатов.</p>
+
+<p>В этой статье мы детально разберем все возможные локации, где могут находиться ваши записи, включая системные директории, облачные хранилища и скрытые разделы памяти. Вы узнаете, как изменить путь сохранения по умолчанию и что делать, если файлы перестали появляться после обновления системы.</p>
+
+<h2 id="стандартный-путь-в-системном-хранилище">Стандартный путь в системном хранилище</h2>
+
+<p>По умолчанию операционная система Android, установленная на смартфонах Xiaomi, следует строгой иерархии каталогов. Все мультимедийные файлы, создаваемые стандартными приложениями, обычно помещаются в корневую директорию внутренней памяти. Для записей разговоров основным местом назначения является папка с названием <code>MIUI</code>, которая создается автоматически при первой настройке устройства.</p>
+
+<p>Внутри этой директории находится подпапка <code>sound_recorder</code>, где хранятся не только диктофонные записи, но и аудио из звонков. Однако стоит быть внимательным: в некоторых версиях прошивки файлы могут сортироваться по типу источника. Если вы используете стандартную звонилку от Google, путь может отличаться от пути для родной оболочки Xiaomi.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не удаляйте и не переименовывайте системные папки <code>MIUI</code> или <code>Android</code> вручную через проводник, если не уверены в своих действиях. Это может привести к сбою в работе приложения «Звонки» или потере истории записей.</p>
+</blockquote>
+
+<p>Для быстрого доступа к файлам можно использовать встроенный файловый менеджер. Просто откройте приложение «Проводник», перейдите в раздел «Внутренний накопитель» и найдите нужную директорию. Если папка пуста, проверьте, включена ли функция автоматической записи в настройках телефона, так как файлы создаются только в момент активного использования этой опции.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте функцию поиска внутри Проводника, введя расширение файла.m4a или.mp3, чтобы найти все аудиофайлы на устройстве, независимо от их расположения.</p></aside>
+
+<h2 id="различия-в-путях-для-miui-и-google-dialer">Различия в путях для MIUI и Google Dialer</h2>
+
+<p>Одной из главных причин путаницы является различие между стандартной звонилкой Xiaomi и приложением «Телефон» от Google, которое часто предустановлено на глобальных версиях смартфонов. Эти два приложения используют разные алгоритмы для сохранения данных, и знать эту разницу критически важно для поиска.</p>
+
+<p>Если на вашем устройстве установлена родная оболочка <em>Xiaomi EU</em> или китайская версия прошивки, путь чаще всего выглядит как <code>/MIUI/sound_recorder/call_rec/</code>. Здесь файлы обычно имеют расширение <code>.m4a</code> или <code>.aac</code> и сортируются по дате создания. В этом каталоже также могут находиться подпапки с датами, если записей очень много.</p>
+
+<p>В случае с глобальными версиями, где используется <em>Google Phone</em>, структура может быть иной. Часто файлы прячутся глубже в системные папки приложений. Путь может выглядеть как <code>/Android/data/com.google.android.dialer/files/sound_recorder</code>. Доступ к папке <code>Android/data</code> в новых версиях Android (11, 12, 13, 14) ограничен системой безопасности, поэтому для просмотра содержимого могут потребоваться специальные разрешения или сторонние файловые менеджеры с правами доступа.</p>
+
+<div class="pb-poll" id="poll-6a47e7a7"><div class="pb-poll-question">📊 Какое приложение для звонков у вас стоит?</div><div class="pb-poll-option" data-poll="6a47e7a7" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Родная звонилка Xiaomi</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6a47e7a7" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Google Телефон (синяя трубка)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6a47e7a7" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Стороннее приложение (Truecaller и др.)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6a47e7a7" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Чтобы определить, какое приложение активно, обратите внимание на иконку трубки в меню. Если это синяя трубка с логотипом Google, ориентируйтесь на пути внутри папки <code>Android/data</code>. Если иконка зеленая или красная с логотипом Mi — ищите в корне <code>MIUI</code>.</p>
+
+<h2 id="использование-облачных-сервисов-для-хранения">Использование облачных сервисов для хранения</h2>
+
+<p>Современные смартфоны Xiaomi активно интегрированы с облачными экосистемами. Если у вас включена синхронизация, записи разговоров могут автоматически копироваться в облако, освобождая место на устройстве. Это особенно актуально для владельцев, использующих аккаунт Mi Cloud или Google Диск.</p>
+
+<p>При использовании <em>Mi Cloud</em>, аудиофайлы могут сохраняться в разделе «Диктофон» или «Звукозапись». Проверить это можно, перейдя в настройки аккаунта Mi и выбрав пункт «Облако». Там часто хранятся резервные копии, которые не видны в обычном файловом менеджере без авторизации.</p>
+
+<p>Для пользователей, предпочитающих экосистему Google, записи могут дублироваться на <em>Google Диск</em>. Это происходит, если в настройках приложения «Звонки» или «Диктофон» активирована опция резервного копирования. Файлы в облаке часто имеют другую структуру именования, включающую дату и время звонка, что облегчает их поиск через веб-интерфейс.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Сервис</th>
+<th>Тип хранилища</th>
+<th>Автоматическая загрузка</th>
+<th>Доступ с ПК</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mi Cloud</td>
+<td>Облачный</td>
+<td>Да (при настройке)</td>
+<td>Да (через браузер)</td>
+</tr>
+<tr>
+<td>Google Диск</td>
+<td>Облачный</td>
+<td>Опционально</td>
+<td>Да (через браузер/приложение)</td>
+</tr>
+<tr>
+<td>Внутренняя память</td>
+<td>Локальный</td>
+<td>Всегда</td>
+<td>Через USB-кабель</td>
+</tr>
+</tbody>
+</table></div>
+
+<p> Если лимит исчерпан, новые записи могут перестать синхронизироваться или вообще не создаваться, если стоит соответствующее ограничение в настройках.</p>
+
+<h2 id="поиск-скрытых-и-системных-папок">Поиск скрытых и системных папок</h2>
+
+<p>Начиная с Android 11, Google внедрила строгие ограничения на доступ к папке <code>Android/data</code> и <code>Android/obb</code>. Это сделано для защиты пользовательских данных от вредоносных программ, но часто создает проблемы для legitimate пользователей, пытающихся найти свои файлы. На Xiaomi с оболочкой <em>HyperOS</em> эти ограничения также действуют.</p>
+
+<p>Если вы не видите папку с записями звонков по стандартному пути, возможно, она скрыта или доступ к ней ограничен. В стандартном проводнике Xiaomi может потребоваться включить отображение скрытых файлов. Для этого нажмите на меню (три точки или полоски) в проводнике и выберите соответствующий пункт настроек.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Файлы в папке <code>Android/data</code> могут быть удалены системой при очистке кэша или удалении приложения. Не храните важные записи только в этой директории без резервной копии.</p>
+</blockquote>
+
+<p>Для доступа к защищенным областям можно использовать компьютер. Подключите смартфон к ПК через USB-кабель, выберите режим передачи файлов (MTP) и попробуйте найти нужную директорию через «Мой компьютер». Компьютеры часто имеют более широкий доступ к файловой системе Android, чем встроенные менеджеры.</p>
+
+<details class="pb-accordion"><summary>Как получить полный доступ к папке Android/data?</summary><div class="pb-accordion-body"><p>Для полного доступа к этой папке с самого телефона можно использовать специальные файловые менеджеры, такие как Solid Explorer или Total Commander, которые запрашиваютные разрешения через ADB или используют системные уязвимости (в зависимости от версии Android). Также можно использовать приложение"Файлы" от Google, которое иногда позволяет копировать файлы из этой папки, но не просматривать её содержимое напрямую.</p></div></details>
+
+<h2 id="настройка-пути-сохранения-записей">Настройка пути сохранения записей</h2>
+
+<p>Многие пользователи не знают, что в некоторых версиях прошивки и сторонних приложениях для звонков можно вручную изменить путь сохранения записей. Это особенно удобно, если вы хотите хранить все важные данные на карте памяти SD, чтобы не занимать внутреннее пространство.</p>
+
+<p>Для изменения настроек перейдите в приложение «Звонки», нажмите на три точки в углу экрана и выберите «Настройки». Найдите раздел «Запись вызовов» или «Автосекретарь». Если функция изменения пути доступна, вы увидите пункт «Папка для записей» или аналогичный.</p>
+
+<ul>
+<li>📂 Откройте настройки звонилки и найдите раздел записи.</li>
+<li>💾 Выберите опцию «Путь сохранения» или «Хранилище».</li>
+<li>📀 Укажите карту памяти SD или создайте новую папку во внутреннем хранилище.</li>
+<li>✅ Сохраните изменения и сделайте тестовый звонок для проверки.</li>
+</ul>
+
+<p>К сожалению, в стоковых приложениях Google Phone на многих глобальных прошивках Xiaomi эта функция может отсутствовать. В таком случае единственным решением остается регулярная ручная сортировка файлов или использование сторонних приложений для автоматизации процесса копирования.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка настроек записи</h4><label class="check-item"><input type="checkbox"><span>Включена ли автос запись?:Да</span></label><label class="check-item"><input type="checkbox"><span>Нет</span></label><label class="check-item"><input type="checkbox"><span>Только избранные:Проверен путь сохранения:Да</span></label><label class="check-item"><input type="checkbox"><span>Нет:Есть ли свободное место на диске?:Да</span></label><label class="check-item"><input type="checkbox"><span>Нет</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="проблемы-с-форматом-и-воспроизведением">Проблемы с форматом и воспроизведением</h2>
+
+<p>Иногда файл найден, но не воспроизводится. Это может быть связано с форматом кодирования. Стандартным для Xiaomi является формат <code>.m4a</code> (AAC), который поддерживается большинством современных плееров. Однако в старых моделях или при использовании сторонних звонилок встречался формат <code>.amr</code>, который может требовать конвертации.</p>
+
+<p>Если файл имеет расширение <code>.mp3</code>, но не играет, возможно, он поврежден или заголовок файла некорректен. В таких случаях помогает переименование расширения или использование универсальных плееров, таких как <em>VLC for Android</em>, которые имеют собственные кодеки и игнорируют системные ограничения.</p>
+
+<p>Также стоит проверить права доступа приложения «Звонки» к хранилищу. Если после обновления Android или MIUI права были сброшены, приложение может «думать», что оно сохранило файл, но фактически запись не состоялась или файл лежит в временной папке, которая очищается при перезагрузке.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте универсальные медиаплееры вроде VLC, если стандартный плеер не открывает файл записи — это решает 90% проблем с кодеками.</p></aside>
+
+<h2 id="восстановление-удаленных-записей">Восстановление удаленных записей</h2>
+
+<p>Случайное удаление важного разговора — неприятная ситуация, но не всегда безнадежная. Если файл был удален недавно, он может находиться в корзине файлового менеджера. В MIUI корзина обычно хранит удаленные файлы до 30 дней.</p>
+
+<p>Проверьте папку «Корзина» в приложении «Проводник» или «Галерея» (если запись отображалась там). Если там пусто, можно попробовать использовать специализированный софт для восстановления данных, подключив телефон к компьютеру. Программы вроде DiskDigger или Dr.Fone могут найти следы удаленных файлов, если поверх них не была записана новая информация.</p>
+
+<p>Наиболее эффективный метод — проверка резервных копий. Если у вас настроена синхронизация с Mi Cloud или Google, удаленный файл может все еще существовать в облаке. Зайдите в веб-версию облачного сервиса и проверьте разделы «Корзина» или «Архив» там.</p>
+
+<details>
+<summary>Можно ли восстановить запись, если телефон был сброшен до заводских настроек?</summary>
+<p>После полного сброса (Hard Reset) восстановить данные с внутренней памяти практически невозможно без профессионального оборудования, так как ключи шифрования уничтожаются. Единственный шанс — если файлы были синхронизированы с облаком до сброса.</p>
+</details>
+
+<details>
+<summary>Почему запись прерывается посередине разговора?</summary>
+<p>Чаще всего это происходит из- нехватки свободной памяти или работы энергосберегающих алгоритмов, которые «убивают» процесс записи. Также причиной может быть входящий второй звонок или уведомление системы.</p>
+</details>
+
+<details>
+<summary>Где хранятся записи, если я использовал WhatsApp или Telegram?</summary>
+<p>Записи звонков через мессенджеры (VoIP) стандартными средствами телефона не сохраняются. Для их записи нужны специальные приложения-рекордеры, которые захватывают системный звук, и они сохраняются в папки этих приложений или в общую папку рекордера.</p>
+</details>
+
+<details>
+<summary>Как скрыть папку с записями от посторонних?</summary>
+<p>В MIUI есть функция «Скрытая папка». В Проводнике нажмите и удерживайте папку, выберите «Скрыть» и задайте пароль. После этого папка исчезнет из обычного просмотра и будет доступна только через специальный вход в проводнике.</p>
+</details>
+
+<details>
+<summary>Почему изменился формат записи после обновления?</summary>
+<p>Обновления Android часто меняют кодеки по умолчанию для оптимизации размера и качества. Например, переход с AMR на AAC (M4A) произошел несколько лет назад и стал стандартом для экономии места при высоком качестве.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-proverit-originalnye-naushniki-xiaomi-ili-net.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить оригинальные наушники Xiaomi: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как отличить оригинальные наушники Xiaomi от подделки. Проверка по коду, QR, приложению и в</span>
+            </a><a href="/drugoe/k/ka/kak-prigotovit-mylo-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать мыло Xiaomi в домашних условиях: пошаговый рецепт</span>
+                <span class="pb-related-desc">Узнайте, как приготовить мыло в стиле Xiaomi с фирменными ингредиентами и дизайном. Пошаговая инстру</span>
+            </a><a href="/articles/k/ka/kak-ochistit-kesh-na-telefone-xiaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как очистить кэш на Xiaomi Redmi: полная инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по очистке кэша на Xiaomi Redmi. Ускорьте работу телефона, освободите память и</span>
+            </a><a href="/articles/k/ka/kak-podklyuchit-kartu-belarusbank-dlya-oplaty-s-telefona-ksyaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как подключить карту Беларусбанк к Xiaomi Pay: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как добавить карту Беларусбанк в Mi Pay на Xiaomi. Подробная настройка NFC, привязка через </span>
+            </a><a href="/articles/k/ka/kak-ochistit-dannye-prilozhenij-na-ksiomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как очистить данные приложений на Xiaomi Redmi: полная инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по очистке кэша и данных приложений на смартфонах Xiaomi и Redmi. Решите пробл</span>
+            </a><a href="/articles/k/ka/kak-rabotaet-reversivnaya-zaryadka-na-xiaomi-redmi-10.html" class="pb-related-card">
+                <span class="pb-related-title">Реверсивная зарядка Xiaomi Redmi 10: как включить и использовать</span>
+                <span class="pb-related-desc">Подробное руководство по активации реверсивной зарядки на Redmi 10. Узнайте, как заряжать другие уст</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

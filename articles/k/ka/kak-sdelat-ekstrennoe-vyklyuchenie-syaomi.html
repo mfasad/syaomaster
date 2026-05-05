@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как сделать экстренное выключение Xiaomi: полный гид — СяоМастер</title>
+    <meta name="description" content="Смартфон Xiaomi завис и не реагирует? Узнайте, как выполнить экстренную перезагрузку, принудительный сброс или выключение через ADB без потери данных.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-sdelat-ekstrennoe-vyklyuchenie-syaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как сделать экстренное выключение Xiaomi: полный гид">
+    <meta property="og:description" content="Смартфон Xiaomi завис и не реагирует? Узнайте, как выполнить экстренную перезагрузку, принудительный сброс или выключение через ADB без потери данных.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как сделать экстренное выключение Xiaomi: полный гид</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#метод-принудительной-перезагрузки-кнопкой-питания">Метод принудительной перезагрузки кнопкой питания</a></li><li><a href="#комбинация-кнопок-питания-и-громкости">Комбинация кнопок питания и громкости</a></li><li><a href="#выключение-при-разряженном-аккумуляторе">Выключение при разряженном аккумуляторе</a></li><li><a href="#использование-adb-для-удаленного-выключения">Использование ADB для удаленного выключения</a></li><li><a href="#действия-при-неисправной-кнопке-включения">Действия при неисправной кнопке включения</a></li><li><a href="#специфика-моделей-redmi-и-poco">Специфика моделей Redmi и POCO</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gd/gde-proizvodyat-syaomi-v-kakoj-strane.html">Где производят Xiaomi: в какой стране собирают телефоны</a></li><li><a href="/articles/k/ka/kak-vosstanovit-foto-iz-korziny-na-syaomi.html">Как восстановить фото из корзины на Xiaomi: пошаговая инструкция</a></li><li><a href="/articles/s/sk/skolko-stoit-14-syaomi-pro.html">Сколько стоит Xiaomi 14 Pro: актуальные цены и анализ</a></li><li><a href="/articles/k/ku/kuda-sokhranyayutsya-zapisi-razgovora-na-xiaomi-redmi-note-8-pro.html">Куда сохраняются записи разговора на Xiaomi Redmi Note 8 Pro: путь</a></li><li><a href="/articles/k/ka/kak-postavit-video-zvonok-na-telefon-xiaomi.html">Как поставить видео-звонок на Xiaomi: все способы 2026</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как сделать экстренное выключение Xiaomi: методы для любых ситуаций</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#метод-принудительной-перезагрузки-кнопкой-питания">Метод принудительной перезагрузки кнопкой питания</a></li><li><a href="#комбинация-кнопок-питания-и-громкости">Комбинация кнопок питания и громкости</a></li><li><a href="#выключение-при-разряженном-аккумуляторе">Выключение при разряженном аккумуляторе</a></li><li><a href="#использование-adb-для-удаленного-выключения">Использование ADB для удаленного выключения</a></li><li><a href="#действия-при-неисправной-кнопке-включения">Действия при неисправной кнопке включения</a></li><li><a href="#специфика-моделей-redmi-и-poco">Специфика моделей Redmi и POCO</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда <em>Xiaomi</em> или <em>Redmi</em> перестает реагировать на касания, знакома многим пользователям. Экран горит, но интерфейс заблокирован, или же устройство просто показывает черный экран, игнорируя любые попытки взаимодействия. В такие моменты стандартное меню недоступно, и возникает острая необходимость в принудительных мерах.</p>
+
+<p>Экстренное выключение — это не просто каприз, а часто единственная возможность вернуть гаджет к жизни без обращения в сервисный центр. <strong>Принудительная перезагрузка</strong> позволяет очистить оперативную память от зависших процессов и восстановить нормальную работу системы. Важно понимать разницу между обычным выключением и аппаратным сбросом, чтобы не навредить устройству.</p>
+
+<p>В этом руководстве мы разберем все возможные способы, от простых комбинаций кнопок до продвинутых методов через компьютер. Вы узнаете, как действовать, если кнопка питания сломана, и что делать, если телефон ушел в глубокий сон. <em>MIUI</em> и <em>HyperOS</em> имеют свои особенности, которые необходимо учитывать при реанимации смартфона.</p>
+
+<h2 id="метод-принудительной-перезагрузки-кнопкой-питания">Метод принудительной перезагрузки кнопкой питания</h2>
+
+<p>Самый распространенный и безопасный способ реанимировать зависший смартфон — использование физической кнопки включения. В отличие от обычных телефонов, где долгое нажатие вызывает меню выбора действий, в экстренных случаях алгоритм работы <strong>аппаратного контроллера</strong> меняется. Система игнорирует программные блокировки и выполняет аппаратный сброс питания.</p>
+
+<p>Для выполнения этой процедуры вам необходимо зажать кнопку блокировки экрана и удерживать её достаточно долго. Стандартное время ожидания составляет от 10 до 20 секунд. Если устройство не реагирует сразу, не отпускайте кнопку prematurely. В некоторых моделях с <em>Redmi</em> или <em>POCO</em> может потребоваться до 30 секунд непрерывного давления.</p>
+
+<p>Иногда однократного нажатия недостаточно, особенно если процессор находится в состоянии глубокого зависания. В таких случаях эффективна техника "пульсирующего" нажатия: сильно нажмите кнопку, отпустите на долю секунды и снова нажмите, не прекращая цикл. Это помогает прервать цикл зависания на уровне прерываний процессора.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм экстренной перезагрузки</h4><label class="check-item"><input type="checkbox"><span>Зажать кнопку питания на 15-20 секунд</span></label><label class="check-item"><input type="checkbox"><span>Не отпускать до появления логотипа Mi</span></label><label class="check-item"><input type="checkbox"><span>Если вибрации нет — подключить зарядку</span></label><label class="check-item"><input type="checkbox"><span>Повторить процедуру 3 раза с интервалом</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Стоит отметить, что данный метод не удаляет ваши личные данные. Он аналогичен выдергиванию батареи из старого телефона, но реализован программно-аппаратным путем. После появления логотипа <em>Mi</em> устройство начнет стандартную процедуру загрузки операциной системы.</p>
+
+<h2 id="комбинация-кнопок-питания-и-громкости">Комбинация кнопок питания и громкости</h2>
+
+<p>Если монопольное использование кнопки включения не дает результата, необходимо задействовать комбинацию клавиш. Этот метод часто используется для входа в режимы восстановления (<em>Recovery</em>) или быстрой загрузки (<em>Fastboot</em>), но также может служить триггером для <strong>аппаратного сброса</strong> на определенных версиях прошивок.</p>
+
+<p>Наиболее эффективной комбинацией для экстренного вмешательства является одновременное зажатие кнопки питания и кнопки увеличения громкости (<code>Volume Up</code>). Удерживайте обе клавиши в течение 10-15 секунд. В некоторых случаях, особенно на старых моделях <em>Xiaomi</em>, это действие принудительно переводит устройство в режим восстановления, откуда можно выбрать пункт "Reboot".</p>
+
+<blockquote>
+<p>⚠️ Внимание: Длительное удерживание комбинации кнопок может привести к случайному входу в режим <em>Fastboot</em> (изображение зайца, чинящего андроида). Если это произошло, просто зажмите кнопку питания на 10 секунд для выхода.</p>
+</blockquote>
+
+<p>Существует также вариация с кнопкой уменьшения громкости (<code>Volume Down</code>). На некоторых глобальных версиях <em>MIUI</em> сочетание <code>Power</code> + <code>Volume Down</code> работает как аналог извлечения батареи. Попробуйте оба варианта, если первый не сработал, так как логика работы контроллера питания может различаться в зависимости от региональной версии устройства.</p>
+
+<div class="pb-poll" id="poll-fbbb351f"><div class="pb-poll-question">📊 Какой метод перезагрузки вам помог?</div><div class="pb-poll-option" data-poll="fbbb351f" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только кнопка питания</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fbbb351f" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Питание + Громкость вверх</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fbbb351f" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Питание + Громкость вниз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fbbb351f" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Ничего не помогло</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Важно при выполнении этих действий не бояться нажимать кнопки сильно. Механические переключатели в современных смартфонах достаточно надежны, и для активации экстренного режима часто требуется физическое усилие, превышающее обычное нажатие для блокировки экрана.</p>
+
+<h2 id="выключение-при-разряженном-аккумуляторе">Выключение при разряженном аккумуляторе</h2>
+
+<p>Парадоксально, но иногда лучший способ выключить зависший телефон — это дать ему разрядиться. Если программные методы и кнопки не работают, а экран продолжает гореть или телефон вибрирует в цикле, можно прибегнуть к методу <strong>глубокого разряда</strong>. Это особенно актуально, когда устройство находится в состоянии "bootloop" (бесконечной перезагрузки).</p>
+
+<p>Оставьте смартфон в покое до тех пор, пока он полностью не потеряет заряд. Современные литий-полимерные батареи при критическом разряде отключают подачу питания на материнскую плату. После того как экран погаснет и устройство перестанет подавать признаки жизни, подождите еще 15-20 минут.</p>
+
+<p>Затем подключите оригинальное зарядное устройство. Часто при подключении питания к полностью разряженному и зависшему <em>Xiaomi</em>, система управления питанием (<em>PMIC</em>) инициирует сброс и устройство либо начнет заряжаться в выключенном состоянии, либо автоматически запустится. Этот метод безопасен для электроники, но занимает много времени.</p>
+
+<details class="pb-accordion"><summary>Риски глубокого разряда</summary><div class="pb-accordion-body"><p>Хотя метод безопасен для данных, регулярный полный разряд литиевых аккумуляторов вредит их химической структуре и снижает общую емкость. Используйте этот метод только в крайних случаях, когда другие способы не работают.</p></div></details>
+
+<p>Если телефон завис во время зарядки и греется, оставьте его подключенным. Контроллер питания может самостоятельно отключить подачу тока при достижении критической температуры, что приведет к выключению устройства. Однако следите за температурой корпуса, чтобы избежать повреждения батареи.</p>
+
+<h2 id="использование-adb-для-удаленного-выключения">Использование ADB для удаленного выключения</h2>
+
+<p>Для продвинутых пользователей, у которых на смартфоне включена <strong>отладка по USB</strong>, существует способ выключить телефон через компьютер. Это идеальный вариант, если тачскрин не работает, но система частично реагирует. Вам потребуется компьютер с установленными драйверами <em>Xiaomi</em> и утилитами <em>ADB</em> (Android Debug Bridge).</p>
+
+<p>Подключите смартфон к ПК через качественный USB-кабель. Откройте командную строку или терминал в папке с ADB и введите команду для проверки соединения:</p>
+
+<pre><code>adb devices</code></pre>
+
+<p>Если в списке появилось устройство с статусом <code>device</code>, вы можете отправить команду на выключение. Существует несколько вариантов команд, которые можно использовать в зависимости от версии Android и прав доступа:</p>
+
+<pre><code>adb shell reboot -p</code></pre>
+
+<p>Эта команда (<code>reboot -p</code>) instructs the system to power off completely. Также можно попробовать более прямую команду:</p>
+
+<pre><code>adb shell svc power shutdown</code></pre>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Убедитесь, что на экране телефона появилось разрешение на отладку с этого компьютера. Если экран не работает, попробуйте подключить USB-мышь через OTG-адаптер, чтобы принять запрос.</p></aside>
+
+<p>Если стандартные команды не работают из-за блокировки интерфейса, можно попробовать отправить сигнал низкого уровня:</p>
+
+<pre><code>adb shell input keyevent 26</code></pre>
+
+<p>Эта команда эмулирует короткое нажатие кнопки питания. Если система не заморожена намертво, это может вызвать меню выключения, которое можно будет выбрать мышью или клавиатурой.</p>
+
+<h2 id="действия-при-неисправной-кнопке-включения">Действия при неисправной кнопке включения</h2>
+
+<p>Ситуация усложняется, если кнопка питания физически неисправна (запала, сломана или окислилась). В этом случае классические методы не сработают. Однако, операционная система <em>Android</em> предоставляет альтернативные пути управления. Если телефон включен, но завис, можно попробовать использовать функции <strong>специальных возможностей</strong>.</p>
+
+<p>Заранее (или если есть возможность управлять телефоном частично) активируйте "Меню специальных возможностей" (<em>Accessibility Menu</em>). Оно добавляет плавающую кнопку на экран, через которую можно эмулировать нажатие кнопки питания, делать скриншоты и управлять громкостью. Это программный дублер физических клавиш.</p>
+
+<p>Если экран реагирует, но кнопка не работает, можно использовать приложения для автоматизации, такие как <em>MacroDroid</em> или <em>Tasker</em>. Создайте сценарий: "Если время такое-то" или "Если потрясти устройство" -> "Действие: Перезагрузка". Это позволит инициировать выключение без участия механической кнопки.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>Необходимые условия</th>
+<th>Эффективность</th>
+<th>Риск потери данных</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Долгое нажатие Power</td>
+<td>Рабочая кнопка</td>
+<td>Высокая</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td>Комбинация кнопок</td>
+<td>Рабочие кнопки громкости</td>
+<td>Средняя</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td>ADB команды</td>
+<td>Включенная отладка USB</td>
+<td>Высокая</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td>Разряд батареи</td>
+<td>Время</td>
+<td>100%</td>
+<td>Нет (но вредно для АКБ)</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>В крайнем случае, если телефон нужно выключить срочно, а кнопка не работает, можно аккуратно (и это рискованно) снять заднюю крышку, если она съемная, и отключить шлейф батареи от материнской платы. Для современных моноблоков этот метод требует нагрева корпуса и специальных инструментов, поэтому <mark>не рекомендуется</mark> без опыта ремонта.</p>
+
+<h2 id="специфика-моделей-redmi-и-poco">Специфика моделей Redmi и POCO</h2>
+
+<p>Устройства суббрендов <em>Xiaomi</em>, такие как <em>Redmi Note</em> и <em>POCO F/X</em> серии, часто имеют отличия в расположении кнопок и логике работы <strong>Bootloader</strong>. Например, на многих моделях <em>POCO</em> кнопка питания совмещена со сканером отпечатков пальцев сбоку. Это делает её более чувствительной, но и более подверженной случайным нажатиям.</p>
+
+<p>Для телефонов с боковым сканером характерен метод "двойного сброса". Если обычное долгое нажатие не помогает, попробуйте быстро нажать кнопку питания 5-7 раз подряд. В некоторых версиях <em>MIUI</em> это вызывает меню экстренного вызова или SOS, но также может разбудить контроллер питания.</p>
+
+<blockquote>
+<p>⚠️ Внимание: На моделях с встроенной батареей и стеклянным корпусом (например, <em>Redmi Note 10 Pro</em> или <em>POCO F3</em>) избегайте сильного физического давления на кнопки в области экрана, чтобы не повредить матрицу или</div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gd/gde-proizvodyat-syaomi-v-kakoj-strane.html" class="pb-related-card">
+                <span class="pb-related-title">Где производят Xiaomi: в какой стране собирают телефоны</span>
+                <span class="pb-related-desc">Полный разбор географии производства Xiaomi. Узнайте, в каких странах и на каких заводах собирают см</span>
+            </a><a href="/articles/k/ka/kak-vosstanovit-foto-iz-korziny-na-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как восстановить фото из корзины на Xiaomi: пошаговая инструкция</span>
+                <span class="pb-related-desc">Удаленные снимки на Сяоми? Узнайте, как быстро восстановить фото из корзины Галереи или облака Googl</span>
+            </a><a href="/articles/s/sk/skolko-stoit-14-syaomi-pro.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько стоит Xiaomi 14 Pro: актуальные цены и анализ</span>
+                <span class="pb-related-desc">Подробный разбор стоимости Xiaomi 14 Pro в 2026 году. От чего зависит цена, стоит ли покупать флагма</span>
+            </a><a href="/articles/k/ku/kuda-sokhranyayutsya-zapisi-razgovora-na-xiaomi-redmi-note-8-pro.html" class="pb-related-card">
+                <span class="pb-related-title">Куда сохраняются записи разговора на Xiaomi Redmi Note 8 Pro: путь</span>
+                <span class="pb-related-desc">Узнайте, где найти записи разговоров на Redmi Note 8 Pro. Полный путь к файлам, настройки MIUI и спо</span>
+            </a><a href="/articles/k/ka/kak-postavit-video-zvonok-na-telefon-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как поставить видео-звонок на Xiaomi: все способы 2026</span>
+                <span class="pb-related-desc">Подробная инструкция, как настроить и совершить видео-звонок на Xiaomi. Разбор Mi Video Call, WhatsA</span>
+            </a><a href="/articles/o/os/oshibka-zagruzki-4000-xiaomi-temy-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Ошибка 4000 при загрузке тем Xiaomi: причины и решения</span>
+                <span class="pb-related-desc">Узнайте, как исправить ошибку 4000 при загрузке тем на Xiaomi. Пошаговые методы решения проблемы чер</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

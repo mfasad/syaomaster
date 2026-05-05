@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как получить Root на Xiaomi Redmi Note 7: полная инструкция — СяоМастер</title>
+    <meta name="description" content="Подробный гайд по получению прав суперпользователя на Xiaomi Redmi Note 7. Разблокировка загрузчика, установка Magisk и TWRP. Все риски и нюансы процедуры.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-poluchit-rut-na-xiaomi-redmi-note-7.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как получить Root на Xiaomi Redmi Note 7: полная инструкция">
+    <meta property="og:description" content="Подробный гайд по получению прав суперпользователя на Xiaomi Redmi Note 7. Разблокировка загрузчика, установка Magisk и TWRP. Все риски и нюансы процедуры.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как получить Root на Xiaomi Redmi Note 7: полная инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-смартфона-и-необходимые-инструменты">Подготовка смартфона и необходимые инструменты</a></li><li><a href="#разблокировка-загрузчика-unlock-bootloader">Разблокировка загрузчика (Unlock Bootloader)</a></li><li><a href="#установка-кастомного-рекавери-twrp">Установка кастомного рекавери TWRP</a></li><li><a href="#установка-magisk-для-получения-root-прав">Установка Magisk для получения Root-прав</a></li><li><a href="#проверка-прав-и-базовая-настройка">Проверка прав и базовая настройка</a></li><li><a href="#возможные-проблемы-и-способы-их-решения">Возможные проблемы и способы их решения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-ustanovit-melodiyu-na-zvonok-v-telefone-xiaomi.html">Как установить мелодию на звонок Xiaomi: пошаговая инструкция</a></li><li><a href="/articles/s/sy/syaomi-redmi-chto-znachit.html">Сяоми Редми: что значит и как выбрать модель?</a></li><li><a href="/articles/k/ka/kak-udalit-sistemnye-prilozheniya-na-syaomi-bez-kompyutera.html">Удаление системных приложений на Xiaomi без ПК: гайд</a></li><li><a href="/articles/x/xi/xiaomi-redmi-4a-kak-proshit.html">Xiaomi Redmi 4A: как прошить телефон — полная инструкция</a></li><li><a href="/articles/k/ka/kak-udalit-sistemnye-prilozheniya-na-android-xiaomi-redmi.html">Как удалить системные приложения на Xiaomi Redmi: полная инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Получение Root-прав на Xiaomi Redmi Note 7: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-смартфона-и-необходимые-инструменты">Подготовка смартфона и необходимые инструменты</a></li><li><a href="#разблокировка-загрузчика-unlock-bootloader">Разблокировка загрузчика (Unlock Bootloader)</a></li><li><a href="#установка-кастомного-рекавери-twrp">Установка кастомного рекавери TWRP</a></li><li><a href="#установка-magisk-для-получения-root-прав">Установка Magisk для получения Root-прав</a></li><li><a href="#проверка-прав-и-базовая-настройка">Проверка прав и базовая настройка</a></li><li><a href="#возможные-проблемы-и-способы-их-решения">Возможные проблемы и способы их решения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Смартфон <em>Xiaomi Redmi Note 7</em>, вышедший в начале 2019 года, до сих пор остается популярным устройством благодаря своему удачному балансу между производительностью и стоимостью. Однако стандартная оболочка MIUI, несмотря на свою функциональность, часто ограничивает возможности продвинутых пользователей, блокируя доступ к системным файлам и глубоким настройкам. Именно здесь на сцену выходит необходимость получения прав <strong>Root</strong>, которые открывают двери к полной кастомизации гаджета.</p>
+
+<p>Процедура рутирования на устройствах Xiaomi имеет свои уникальные особенности, отличающие их от аппаратов других брендов. Основным препятствием является необходимость официальной разблокировки загрузчика через серверы компании, что требует времени и подготовки. В этой статье мы детально разберем каждый этап, от получения разблокировщика до установки менеджера прав, чтобы ваш опыт прошел максимально гладко.</p>
+
+<p>Стоит сразу отметить, что вмешательство в программный код устройства всегда несет определенные риски. Неправильные действия могут привести к потере гарантии или, в худшем случае, к превращению смартфона в"кирпич". Поэтому <strong>внимательно</strong> следуйте каждому шагу инструкции и не пропускайте важные предупреждения, которые будут встречаться по ходу текста.</p>
+
+<h2 id="подготовка-смартфона-и-необходимые-инструменты">Подготовка смартфона и необходимые инструменты</h2>
+
+<p>Перед началом любых манипуляций с системным разделом необходимо тщательно подготовить рабочее место и сам гаджет. Вам потребуется качественный USB-кабель, желательно оригинальный, который шел в комплекте, и компьютер под управлением Windows. Также убедитесь, что заряд батареи смартфона составляет не менее 60%, так как процесс может занять время.</p>
+
+<p>На компьютере необходимо установить драйверы ADB и Fastboot. Без этих компонентов ПК просто не увидит устройство в нужном режиме. Можно скачать пакет <em>Platform Tools</em> с официального сайта Google или воспользоваться специализированными сборщиками драйверов для Xiaomi.</p>
+
+<p>Важным этапом является создание полной резервной копии всех данных. Получение прав суперпользователя и разблокировка загрузчика <strong>гарантированно удалят</strong> все файлы с внутренней памяти устройства. Сфотографируйте важные документы, сохраните контакты и пароли.</p>
+
+<ul>
+<li>📱 Зарядите смартфон минимум до 60-70% для избежания внезапного выключения.</li>
+<li>💾 Сделайте бэкап контактов, фото и важных документов на облако или ПК.</li>
+<li>🔌 Подготовьте исправный USB-кабель и порт USB 2.0/3.0 на компьютере.</li>
+<li>🔐 Запомните или запишите пароль от Mi-аккаунта, привязанного к устройству.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Разблокировка загрузчика автоматически стирает все данные с устройства (фото, контакты, приложения). Заранее позаботьтесь о резервном копировании, так как восстановить удаленное после форматирования будет невозможно.</p>
+</blockquote>
+
+<p>После подготовки оборудования переходим к настройкам самого смартфона. Вам нужно активировать режим разработчика и разрешить отладку по USB. Без этого шага компьютер не сможет отправлять команды на устройство.</p>
+
+<h2 id="разблокировка-загрузчика-unlock-bootloader">Разблокировка загрузчика (Unlock Bootloader)</h2>
+
+<p>Это самый сложный и длительный этап во всей процедуре. Xiaomi внедрила систему защиты, которая требует ожидания от 7 до 168 часов (от 1 до 7 дней) после подачи заявки. Это сделано для безопасности пользователей, чтобы украденный телефон нельзя было быстро перепрошить.</p>
+
+<p>Для начала привяжите аккаунт Mi к устройству. Зайдите в настройки, найдите раздел"О телефоне" и несколько раз нажмите на версию MIUI, пока не появится надпись"Вы стали разработчиком". Затем в меню"Для разработчиков" выберите"Статус Mi Unlock" и привяжите аккаunt, включив мобильный интернет (Wi-Fi должен быть выключен).</p>
+
+<p>После привязки скачайте официальную утилиту <em>Mi Unlock Tool</em> на компьютер. Запустите её, войдите в тот же аккаунт, что и на телефоне. Переведите смартфон в режим Fastboot, зажав кнопки уменьшения громкости и питания одновременно, и подключите его к ПК.</p>
+
+<p>Нажмите кнопку"Unlock" в программе. Если с момента привязки аккаунта прошло мало времени, система попросит подождать определенное количество часов. <strong>Не пытайтесь</strong> обойти это ограничение сбросом настроек или перепривязкой — таймер не обнулится, а может только увеличиться.</p>
+
+<div class="pb-poll" id="poll-84cd27b2"><div class="pb-poll-question">📊 Сколько вы ждали разблокировку загрузчика?</div><div class="pb-poll-option" data-poll="84cd27b2" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Менее 24 часов:Мгновенно:3 дня:Неделя и более</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Когда таймер истечет, повторите процедуру подключения и нажмите"Unlock" снова. Устройство предупредит о рисках, и после подтверждения начнется процесс разблокировки, который займет несколько секунд. Телефон перезагрузится и очистит данные.</p>
+
+
+
+<h2 id="установка-кастомного-рекавери-twrp">Установка кастомного рекавери TWRP</h2>
+
+<p>Стандартное меню восстановления (Recovery) в Xiaomi не позволяет устанавливать сторонние файлы прошивки или патчи для получения root-прав. Поэтому нам необходимо заменить его на модифицированную версию — <em>TWRP (Team Win Recovery Project)</em>.</p>
+
+<p>Сначала скачайте актуальный образ TWRP именно для модели Redmi Note 7 (кодовое имя <code>lavender</code>). Важно не перепутать версию, так как прошивка от другой модели может повредить дисплей или тачскрин. Также скачайте файл-загрузчик <code>twrp-installer.zip</code> или аналогичный скрипт для закрепления рекавери.</p>
+
+<p>Переведите телефон в режим Fastboot (кнопки громкость вниз + питание). Подключите его к компьютеру. Откройте командную строку (CMD) в папке с ADB и введите команду для проверки связи:</p>
+
+<pre><code>fastboot devices</code></pre>
+
+<p>Если устройство определилось, введите команду для прошивки образа:</p>
+
+<pre><code>fastboot flash recovery twrp-3.x.x-x-lavender.img</code></pre>
+
+<p>После успешной записи <strong>не нажимайте</strong> кнопку включения сразу. Зажмите кнопку увеличения громкости и, не отпуская её, нажмите кнопку питания. Держите обе кнопки, пока не появится логотип MI, затем отпустите питание, но продолжайте держать громкость, пока не загрузится меню TWRP.</p>
+
+<ul>
+<li>📂 Скачайте образ TWRP специально для кодового имени <code>lavender</code>.</li>
+<li>💻 Используйте команду <code>fastboot flash recovery</code> для установки образа.</li>
+<li>🔘 Для первого входа зажимайте Громкость Вверх + Питание.</li>
+<li>🚫 Не позволяйте системе загрузиться в стандартный режим до установки TWRP, иначе она перезапишет рекавери обратно на сток.</li>
+</ul>
+
+
+
+<h2 id="установка-magisk-для-получения-root-прав">Установка Magisk для получения Root-прав</h2>
+
+<p>Современным стандартом получения прав суперпользователя является <strong>Magisk</strong>. В отличие от старых методов (SuperSU), Magisk работает системно-бесплатно (systemless), что позволяет скрывать наличие root-прав от банковских приложений и систем безопасности.</p>
+
+<p>Скачайте последнюю стабильную версию Magisk в формате APK и переименуйте расширение файла на <code>.zip</code>. Загрузите этот файл во внутреннюю память смартфона. Если у вас уже установлено TWRP, подключите телефон и скопируйте файл через ADB:</p>
+
+<pre><code>adb push magisk.apk /sdcard/</code></pre>
+
+<p>В меню TWRP выберите пункт"Install" (Установка). Найдите переименованный файл Magisk и проведите пальцем для подтверждения установки. Процесс займет несколько секунд. После завершения нажмите"Reboot System".</p>
+
+<p>После загрузки системы в меню приложений появится иконка Magisk. Откройте её. Приложение может предложить доустановить дополнительные компоненты — согласитесь и дождитесь перезагрузки. Теперь права получены.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Назначение</th>
+<th>Статус после установки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bootloader</td>
+<td>Загрузчик ОС</td>
+<td>Unlocked (Разблокирован)</td>
+</tr>
+<tr>
+<td>Recovery</td>
+<td>Меню восстановления</td>
+<td>TWRP (Кастомный)</td>
+</tr>
+<tr>
+<td>Root Manager</td>
+<td>Управление правами</td>
+<td>Magisk (Активен)</td>
+</tr>
+<tr>
+<td>System Partition</td>
+<td>Системный раздел</td>
+<td>Не изменен (Systemless)</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="проверка-прав-и-базовая-настройка">Проверка прав и базовая настройка</h2>
+
+<p>Чтобы убедиться в успешности операции, откройте приложение Magisk. В верхней части экрана должна быть отображена версия установленного менеджера. Также можно скачать из Play Market приложение <em>Root Checker</em>, которое проведет автоматический тест и выдаст зеленый результат.</p>
+
+<p>Теперь вы можете устанавливать модули, которые изменяют работу системы. Однако помните о мере: установка слишком большого количества тяжелых модулей может замедлить работу <em>Redmi Note 7</em> или вызвать нестабильность. Начинайте с проверенных дополнений.</p>
+
+<p>Для некоторых приложений, особенно банковских, наличие root-прав является стоп-фактором. В настройках Magisk есть функция"MagiskHide" (или аналог в новых версиях — Zygisk + DenyList). Добавьте туда нужные приложения, и они перестанут видеть измененную систему.</p>
+
+
+
+<blockquote>
+<p>⚠️ Внимание: После получения root-прав перестанут работать некоторые функции безопасности, например, Google Pay (Mir Pay) или Samsung Pay (если бы они поддерживались). Для их работы требуется дополнительная настройка скрытия root через MagiskHide или модули вроде Play Integrity Fix.</p>
+</blockquote>
+
+<h2 id="возможные-проблемы-и-способы-их-решения">Возможные проблемы и способы их решения</h2>
+
+<p>В процессе модификации прошивки могут возникнуть ошибки. Одна из самых частых —"bootloop", когда телефон постоянно перезагружается. Если это случилось, зайдите в TWRP и сделайте"Wipe Dalvik/Cache". Если не помогло — восстановите резервную копию стоковой прошивки.</p>
+
+<p>Еще одна проблема — неработающий (сканер отпечатков) или камера. Это часто случается при установке кастомных рекавери или прошивок, не предназначенных для вашей региональной версии. Решение — перепрошивка стокового образа <code>boot.img</code> из оригинальной прошивки вашей версии MIUI.</p>
+
+<p>Если компьютер перестал видеть телефон в режиме Fastboot, попробуйте сменить USB-порт, кабель или установить драйверы вручную через диспетчер устройств, выбрав устройство с желтым восклицательным знаком и обновив драйвер.</p>
+
+
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Слетит ли гарантия после получения Root-прав?</summary>
+<p>Формально — да, получение прав суперпользователя и разблокировка загрузчика являются нарушением условий гарантии. Однако, если вы сможете вернуть устройство в стоковое состояние (залочить загрузчик и установить оригинальную прошивку), при внешнем осмотре определить вмешательство будет сложно, если не было физических повреждений.</p>
+</details>
+
+<details>
+<summary>Можно ли обновляться по OTA после рутирования?</summary>
+<p>Стандартные обновления"по воздуху" (OTA) на модифицированные устройства обычно не приходят или не устанавливаются. Более того, попытка обновления может привести к потере root-прав или циклической перезагрузке. Обновляться следует вручную, скачивая полные образы прошивок.</p>
+</details>
+
+<details>
+<summary>Безопасно ли использовать банковские приложения с Root?</summary>
+<p>Сам по себе root не крадет данные, но уязвимости в системе управления правами могут быть использованы вредоносным ПО. Используя Magisk и скрывая root от конкретных приложений, можно пользоваться банками, но риск всегда выше, чем на чистом устройстве.</p>
+</details>
+
+<details>
+<summary>Как вернуться на сток (убрать Root)?</summary>
+<p>В приложении Magisk есть кнопка"Удалить" (Uninstall). Выберите полное удаление. После этого необходимо зайти в Mi Unlock Tool на компьютере и выполнить процедуру"Lock Bootloader". Это вернет телефон к заводскому состоянию, но потребует повторной разблокировки для будущих экспериментов.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-ustanovit-melodiyu-na-zvonok-v-telefone-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить мелодию на звонок Xiaomi: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как поставить свой звук на звонок в телефонах Xiaomi, Redmi и POCO. Инструкция для MIUI и H</span>
+            </a><a href="/articles/s/sy/syaomi-redmi-chto-znachit.html" class="pb-related-card">
+                <span class="pb-related-title">Сяоми Редми: что значит и как выбрать модель?</span>
+                <span class="pb-related-desc">Расшифровка бренда Redmi и Xiaomi. Что значат буквы в названиях, в чем разница между сериями и как п</span>
+            </a><a href="/articles/k/ka/kak-udalit-sistemnye-prilozheniya-na-syaomi-bez-kompyutera.html" class="pb-related-card">
+                <span class="pb-related-title">Удаление системных приложений на Xiaomi без ПК: гайд</span>
+                <span class="pb-related-desc">Подробная инструкция, как удалить системный софт на Xiaomi без компьютера. Используем ADB по Wi-Fi, </span>
+            </a><a href="/articles/x/xi/xiaomi-redmi-4a-kak-proshit.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi Redmi 4A: как прошить телефон — полная инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство: как прошить Xiaomi Redmi 4A через Fastboot и Recovery. Установка официальной </span>
+            </a><a href="/articles/k/ka/kak-udalit-sistemnye-prilozheniya-na-android-xiaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как удалить системные приложения на Xiaomi Redmi: полная инструкция</span>
+                <span class="pb-related-desc">Безопасное удаление системных приложений и bloatware на Xiaomi Redmi через ADB и настройки. Ускорени</span>
+            </a><a href="/drugoe/k/ka/kak-sdelat-syaomi-iz-bumagi.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать Xiaomi из бумаги: пошаговая инструкция с шаблонами</span>
+                <span class="pb-related-desc">Узнайте, как создать реалистичную модель смартфона Xiaomi из бумаги: шаблоны, инструменты, советы по</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

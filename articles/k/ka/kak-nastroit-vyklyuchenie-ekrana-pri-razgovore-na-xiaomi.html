@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Выключение экрана при разговоре на Xiaomi: настройка датчика — СяоМастер</title>
+    <meta name="description" content="Почему гаснет экран на Xiaomi во время звонка? Настройка датчика приближения, калибровка, сброс и решение проблем с MIUI и HyperOS.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-nastroit-vyklyuchenie-ekrana-pri-razgovore-na-xiaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Выключение экрана при разговоре на Xiaomi: настройка датчика">
+    <meta property="og:description" content="Почему гаснет экран на Xiaomi во время звонка? Настройка датчика приближения, калибровка, сброс и решение проблем с MIUI и HyperOS.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Выключение экрана при разговоре на Xiaomi: настройка датчика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-датчика-приближения-в-смартфонах-xiaomi">Принцип работы датчика приближения в смартфонах Xiaomi</a></li><li><a href="#где-найти-настройки-датчика-в-miui-и-hyperos">Где найти настройки датчика в MIUI и HyperOS</a></li><li><a href="#пошаговая-калибровка-датчика-приближения">Пошаговая калибровка датчика приближения</a></li><li><a href="#решение-проблем-с-ранним-гашением-экрана">Решение проблем с ранним гашением экрана</a></li><li><a href="#что-делать-если-экран-не-гаснет-при-поднесении-к-уху">Что делать, если экран не гаснет при поднесении к уху</a></li><li><a href="#сравнение-работы-датчиков-в-разных-моделях-xiaomi">Сравнение работы датчиков в разных моделях Xiaomi</a></li><li><a href="#использование-сторонних-приложений-для-управления">Использование сторонних приложений для управления</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-vklyuchit-stereo-na-telefone-xiaomi.html">Как включить стерео на телефоне Xiaomi: полная настройка звука</a></li><li><a href="/articles/k/ka/kak-ustanovit-shrift-na-syaomi-redmi.html">Как установить шрифт на Xiaomi Redmi: полная инструкция</a></li><li><a href="/articles/k/ka/kak-otklyuchit-datchik-priblizheniya-na-xiaomi-a2-lite.html">Как отключить датчик приближения на Xiaomi A2 Lite: инструкции</a></li><li><a href="/articles/k/ka/kak-otklyuchit-funktsiyu-dlya-slepykh-na-xiaomi.html">Как отключить TalkBack на Xiaomi: полная инструкция</a></li><li><a href="/articles/x/xi/xiaomi-besprovodnaya-zaryadka-kak-vklyuchit.html">Xiaomi беспроводная зарядка: как включить и настроить</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как настроить выключение экрана при разговоре на Xiaomi: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-датчика-приближения-в-смартфонах-xiaomi">Принцип работы датчика приближения в смартфонах Xiaomi</a></li><li><a href="#где-найти-настройки-датчика-в-miui-и-hyperos">Где найти настройки датчика в MIUI и HyperOS</a></li><li><a href="#пошаговая-калибровка-датчика-приближения">Пошаговая калибровка датчика приближения</a></li><li><a href="#решение-проблем-с-ранним-гашением-экрана">Решение проблем с ранним гашением экрана</a></li><li><a href="#что-делать-если-экран-не-гаснет-при-поднесении-к-уху">Что делать, если экран не гаснет при поднесении к уху</a></li><li><a href="#сравнение-работы-датчиков-в-разных-моделях-xiaomi">Сравнение работы датчиков в разных моделях Xiaomi</a></li><li><a href="#использование-сторонних-приложений-для-управления">Использование сторонних приложений для управления</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современные смартфоны, включая популярные модели <em>Xiaomi</em>, <em>Redmi</em> и <em>POCO</em>, оснащены множеством датчиков, которые делают использование устройства более комфортным. Одним из таких важных элементов является датчик приближения, который автоматически отключает дисплей, когда вы подносите телефон к уху во время разговора. Это не только предотвращает случайные нажатия щекой, но и существенно экономит заряд батареи.</p>
+
+<p>Однако пользователи часто сталкиваются с ситуацией, когда экран гаснет слишком рано, не загорается вовсе или, наоборот, не реагирует на приближение. В операционной системе <strong>MIUI</strong> и новой <strong>HyperOS</strong> настройки этого параметра могут быть скрыты или работать некорректно из-за программных сбоев. В этой статье мы подробно разберем, как управлять этой функцией, откалибровать сенсор и исправить типичные ошибки.</p>
+
+<p>Понимание принципа работы <strong>инфракрасного датчика</strong> поможет вам избежать множества неудобств. Мы рассмотрим как программные методы настройки через стандартное меню, так и более глубокие способы диагностики, включая использование инженерного меню. Это руководство актуально для большинства актуальных моделей китайского производителя.</p>
+
+<h2 id="принцип-работы-датчика-приближения-в-смартфонах-xiaomi">Принцип работы датчика приближения в смартфонах Xiaomi</h2>
+
+<p>В основе функции автоматического гашения экрана лежит простой, но эффективный механизм. Датчик приближения, расположенный обычно в верхней части дисплея или в рамке вокруг него, испускает инфракрасное излучение. Когда вы подносите телефон к голове, луч отражается от объекта и возвращается в приемник, что сигнализирует системе о необходимости заблокировать тачскрин.</p>
+
+<p>В устройствах <em>Xiaomi</em> реализованы различные типы сенсоров. В более старых или бюджетных моделях часто используется виртуальный датчик, который работает в связке с акселерометром и гироскопом, анализируя положение телефона в пространстве. Флагманские же модели чаще оснащены физическим инфракрасным модулем, который отличается большей точностью и скоростью реакции.</p>
+
+<p>Система <strong>Android</strong> в связке с оболочкой <em>MIUI</em> обрабатывает данные с сенсора в фоновом режиме. Если программное обеспечение получает сигнал о приближении, оно принудительно отключает подсветку и блокирует ввод. Важно отметить, что именно программная обработка данных иногда дает сбой, приводя к ложным срабатываниям или полному игнорированию действий пользователя.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Физический датчик всегда работает точнее виртуального, так как он реагирует на реальное отражение света, а не на положение телефона в пространстве.</p></aside>
+
+<p>Некорректная работа этого механизма может быть вызвана как загрязнением верхней части экрана, так и программными конфликтами после обновления системы. Понимание того, какой именно тип сенсора установлен в вашей модели, помогает выбрать правильный метод решения проблемы.</p>
+
+<h2 id="где-найти-настройки-датчика-в-miui-и-hyperos">Где найти настройки датчика в MIUI и HyperOS</h2>
+
+<p>Многие пользователи ошибочно полагают, что в смартфонах <em>Xiaomi</em> существует отдельный переключатель для включения или выключения функции гашения экрана. На самом деле, в стандартном меню настроек такой опции нет, так как она считается системной и должна работать по умолчанию. Однако существуют скрытые меню и инженерные коды, позволяющие провести диагностику.</p>
+
+<p>Для проверки состояния сенсора можно воспользоваться встроенным инженерным тестом. Для этого необходимо открыть приложение «Телефон» и набрать специальный код <code><em>#</em>#6484#<em>#</em></code>. После ввода комбинации откроется меню CIT, где можно выбрать пункт «Proximity sensor» для проверки его реакции на (руку).</p>
+
+<p>Если вы ищете настройки чувствительности, то в новых версиях <strong>HyperOS</strong> они могут быть полностью скрыты от пользователя. В более старых версиях <em>MIUI</em></p> иногда встречалась опция «Датчик приближения» в разделе «Ввод и вывод» или «Специальные возможности», но в актуальных сборках разработчики убрали возможность ручной регулировки порога срабатывания.</p>
+
+<details class="pb-accordion"><summary>Почему пропали настройки датчика?</summary><div class="pb-accordion-body"><p>В целях унификации интерфейса и улучшения стабильности работы, разработчики Xiaomi приняли решение скрыть ручные настройки чувствительности датчика приближения в глобальных версиях прошивок, оставив только автоматическую калибровку.</p></div></details>
+
+<p>Отсутствие видимых настроек не означает, что вы не можете повлиять на работу устройства. Существуют сторонние приложения и системные хаки, позволяющие сбросить калибровку или изменить пороги срабатывания, о чем мы поговорим в следующих разделах.</p>
+
+<h2 id="пошаговая-калибровка-датчика-приближения">Пошаговая калибровка датчика приближения</h2>
+
+<p>Если экран гаснет не вовремя или не гаснет вообще, чаще всего требуется калибровка. Это процесс, в ходе которого система заново определяет «нулевую» точку и точку максимального приближения. На смартфонах <em>Xiaomi</em> это можно сделать несколькими способами.</p>
+
+<p>Первый и самый простой способ — использование инженерного меню, о котором мы упоминали ранее. Войдя в режим CIT через код <code><em>#</em>#6484#<em>#</em></code>, выберите тест датчика приближения. Следуйте инструкциям на экране: обычно требуется закрыть верхнюю часть телефона ладонью, а затем убрать ее. Система сама запишет новые значения.</p>
+
+<p>Второй способ подходит для продвинутых пользователей и требует включения отладки по USB. Через компьютер с установленным <strong>ADB</strong> (Android Debug Bridge) можно отправить команду для сброса калибровки. В командной строке вводится:</p>
+
+<pre><code>adb shell settings put system proximity_sensor_offset 0</code></pre>
+
+<p>После выполнения команды необходимо перезагрузить устройство. Этот метод особенно эффективен, если программный сбой привел к тому, что датчик «запомнил» неверные значения и перестал реагировать на изменения освещенности.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист перед калибровкой</h4><label class="check-item"><input type="checkbox"><span>Снять защитную пленку с верхней части экрана</span></label><label class="check-item"><input type="checkbox"><span>Протереть область динамик спиртовой салфеткой</span></label><label class="check-item"><input type="checkbox"><span>Перезагрузить смартфон</span></label><label class="check-item"><input type="checkbox"><span>Закрыть все фоновые приложения</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Третий вариант — использование специализированных приложений из <em>Google Play</em>, таких как «Proximity Sensor Reset/Fix». Они автоматизируют процесс ввода команд и часто имеют более дружелюбный интерфейс для обычного пользователя.</p>
+
+<h2 id="решение-проблем-с-ранним-гашением-экрана">Решение проблем с ранним гашением экрана</h2>
+
+<p>Одной из самых раздражающих проблем является ситуация, когда экран гаснет сразу после начала звонка, еще до того, как вы поднесли телефон к уху. Это часто происходит из-за того, что датчик «видит» объект там, где его нет, или реагирует на свет.</p>
+
+<p>Частой причиной ложных срабатываний является защитное стекло или пленка, которые перекрывают область сенсора. Даже если стекло прозрачное, оно может искажать инфракрасное излучение или создавать блики, которые датчик воспринимает как препятствие. В таком случае рекомендуется снять защиту и проверить работу телефона без нее.</p>
+
+<p>Еще один фактор — яркость окружающего света. Если вы находитесь под ярким солнцем или, наоборот, в полной темноте, алгоритмы работы сенсора могут сбоить. Попробуйте изменить угол наклона телефона или положение головы во время разговора, чтобы понять, зависит ли проблема от освещения.</p>
+
+<div class="pb-poll" id="poll-727add50"><div class="pb-poll-question">📊 Как часто у вас гаснет экран во время звонка?</div><div class="pb-poll-option" data-poll="727add50" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Постоянно, очень мешает</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="727add50" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Иногда, при определенном освещении</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="727add50" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Редко, почти не замечаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="727add50" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда, все работает идеально</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Также стоит проверить, не установлено ли у вас приложение для управления звонками от сторонних разработчиков. Некоторые «улучшайзеры» звонков могут конфликтовать с системными службами <em>MIUI</em>, перехватывая управление датчиком и вызывая некорректное поведение.</p>
+
+<h2 id="что-делать-если-экран-не-гаснет-при-поднесении-к-уху">Что делать, если экран не гаснет при поднесении к уху</h2>
+
+<p>Обратная проблема — экран продолжает гореть во время разговора, что приводит к случайным нажатиям щекой и сбросу звонка или включению громкоговорителя. Это указывает на то, что датчик либо загрязнен, либо полностью отключен на программном уровне.</p>
+
+<p>В первую очередь убедитесь, что в верхней части смартфона нет грязи, пыли или жира. Даже тонкий слой загрязнений может блокировать инфракрасный луч. Протрите область вокруг разговорного динамика мягкой тканью. Если это не помогло, проверьте, не активирован ли режим «В кармане» в настройках блокировки, который иногда влияет на логику работы сенсоров.</p>
+
+<p>Следующий шаг — проверка обновлений системы. Разработчики <em>Xiaomi</em> регулярно выпускают патчи, исправляющие баги работы оборудования. Перейдите в <code>Настройки → О телефоне → Версия MIUI/HyperOS</code> и проверьте наличие обновлений.</p>
+
+<p>Если программные методы не помогают, возможно, проблема носит аппаратный характер. Отклеившаяся пленка внутри корпуса, шлейф датчика или сам модуль могли выйти из строя. В этом случае поможет только диагностика в сервисном центре.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Попробуйте включить режим «Безопасный режим» на время звонка. Если в этом режиме датчик работает корректно, значит, проблему вызывает одно из установленных вами приложений.</p></aside>
+
+<h2 id="сравнение-работы-датчиков-в-разных-моделях-xiaomi">Сравнение работы датчиков в разных моделях Xiaomi</h2>
+
+<p>Разные модели смартфонов <em>Xiaomi</em> оснащаются разными модулями датчиков, что влияет на качество их работы. Понимание различий помогает понять, является ли ваша проблема типовой для конкретной серии устройств.</p>
+
+<p>Ниже приведена таблица, сравнивающая особенности работы датчиков приближения в различных линейках смартфонов:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Серия устройств</th>
+<th>Тип датчика</th>
+<th>Расположение</th>
+<th>Типичные проблемы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xiaomi Mi /</td>
+<td>Физический ИК</td>
+<td>Рамка дисплея</td>
+<td>Редкие сбои, высокая точность</td>
+</tr>
+<tr>
+<td>Redmi Note</td>
+<td>Виртуальный / ИК</td>
+<td>Под экраном / Рамка</td>
+<td>Реакция на защитные стекла</td>
+</tr>
+<tr>
+<td>POCO</td>
+<td>Виртуальный</td>
+<td>Под экраном</td>
+<td>Задержка реакции, ложные срабатывания</td>
+</tr>
+<tr>
+<td>Xiaomi Civi</td>
+<td>Физический ИК</td>
+<td>Узкая рамка</td>
+<td>Чувствительность к яркому свету</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из таблицы, владельцы бюджетных моделей серий <em>Redmi</em> и <em>POCO</em> чаще сталкиваются с проблемами из-за использования виртуальных датчиков. В таких устройствах система полагается на алгоритмы машинного обучения, которые могут ошибаться.</p>
+
+<p>Флагманские модели, как правило, лишены этих проблем благодаря использованию качественного физического оборудования. Однако и они не застрахованы от программных багов после крупных обновлений <strong>Android</strong>.</p>
+
+<h2 id="использование-сторонних-приложений-для-управления">Использование сторонних приложений для управления</h2>
+
+<p>Когда встроенные средства <em>MIUI</em> не справляются, на помощь приходят приложения из магазина <em>Google Play</em>. Они позволяют более гибко настраивать пороги чувствительности и принудительно включать или выключать датчик.</p>
+
+<p>Популярным решением является приложение «Proximity Service». Оно позволяет создать профиль, при котором датчик будет игнорировать определенные расстояния или, наоборот, становиться сверхчувствительным. Для работы таких приложений часто требуются расширенные разрешения.</p>
+
+<p>Еще один вариант — использование приложений для управления звонками, которые имеют собственную реализацию блокировки экрана. Они полностью заменяют стандартный интерфейс звонка и используют свои алгоритмы работы с сенсором.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Установка сторонних приложений, глубоко внедряющихся в систему, может привести к повышенному расходу батареи и нестабильной работе смартфона. Используйте их только если стандартные методы не помогли.</p>
+</blockquote>
+
+<p>При выборе приложения обращайте внимание на отзывы и дату последнего обновления. Старые программы могут некорректно работать на новых версиях <em>HyperOS</em>.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли полностью отключить датчик приближения на Xiaomi?</summary>
+<p>Стандартными средствами системы это сделать нельзя, так как функция является критически важной для безопасности и удобства. Однако можно использовать сторонние приложения или режимы разработчика, чтобы минимизировать его влияние, хотя полное отключение не гарантируется.</p>
+</details>
+
+<details>
+<summary>Почему после обновления MIUI датчик перестал работать?</summary>
+<p>Обновления часто содержат изменения в драйверах оборудования. Иногда новая версия прошивки содержит баги, которые исправляются в последующих патчах. Также возможно, что сбились настройки калибровки, которые нужно восстановить вручную.</p>
+</details>
+
+<details>
+<summary>Влияет ли защитное стекло на работу датчика?</summary>
+<p>Да, это одна из самых частых причин проблем. Если стекло некачественное, имеет черную рамку, перекрывающую сенсор, или просто сильно загрязнено, датчик может работать некорректно. Попробуйте временно снять защиту для проверки.</p>
+</details>
+
+<details>
+<summary>Как проверить, исправен ли датчик без звонка?</summary>
+<p>Вы можете запустить инженерный тест через код <code><em>#</em>#6484#<em>#</em></code> или использовать специальные приложения-тестеры из Play Market, которые показывают расстояние до объекта в сантиметрах при поднесении руки к экрану.</p>
+</details>
+
+<details>
+<summary>Сброс до заводских настроек поможет решить проблему?</summary>
+<p>В большинстве случаев полный сброс (Hard Reset) устраняет программные конфликты и возвращает заводскую калибровку датчиков. Однако перед этим обязательно сделайте резервную копию важных данных, так как все они будут удалены.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-vklyuchit-stereo-na-telefone-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как включить стерео на телефоне Xiaomi: полная настройка звука</span>
+                <span class="pb-related-desc">Пошаговое руководство: как активировать стереозвук на Xiaomi. Настройка MIUI, Dolby Atmos, эквалайзе</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-shrift-na-syaomi-redmi.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить шрифт на Xiaomi Redmi: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как установить шрифт на Xiaomi Redmi. Способы через тему, Mi Fonts и сторонние приложения. </span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-datchik-priblizheniya-na-xiaomi-a2-lite.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить датчик приближения на Xiaomi A2 Lite: инструкции</span>
+                <span class="pb-related-desc">Подробное руководство, как отключить датчик приближения на Xiaomi Redmi A2 Lite. Решение проблем с э</span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-funktsiyu-dlya-slepykh-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить TalkBack на Xiaomi: полная инструкция</span>
+                <span class="pb-related-desc">Подробный гид по деактивации функции для слепых на Xiaomi. Узнайте, как выключить TalkBack жестами, </span>
+            </a><a href="/articles/x/xi/xiaomi-besprovodnaya-zaryadka-kak-vklyuchit.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi беспроводная зарядка: как включить и настроить</span>
+                <span class="pb-related-desc">Подробная инструкция: как включить беспроводную зарядку Xiaomi. Настройка реверсивной зарядки, индик</span>
+            </a><a href="/articles/k/ka/kak-nastroit-rezhim-sna-na-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Режим сна на Xiaomi: настройка и отключение</span>
+                <span class="pb-related-desc">Подробная инструкция: как настроить, активировать или отключить режим сна на Xiaomi. Решение проблем</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

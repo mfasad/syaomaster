@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Перенос приложений на SD карту Xiaomi Redmi 4X: Полная инструкция — СяоМастер</title>
+    <meta name="description" content="Подробный гайд по переносу данных на MicroSD в Xiaomi Redmi 4X. Настройка внутренней памяти, ADB-команды и решение типичных ошибок системы MIUI.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-perenesti-prilozheniya-na-sd-kartu-xiaomi-redmi-4x.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Перенос приложений на SD карту Xiaomi Redmi 4X: Полная инструкция">
+    <meta property="og:description" content="Подробный гайд по переносу данных на MicroSD в Xiaomi Redmi 4X. Настройка внутренней памяти, ADB-команды и решение типичных ошибок системы MIUI.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Перенос приложений на SD карту Xiaomi Redmi 4X: Полная инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-карты-памяти-и-устройства">Подготовка карты памяти и устройства</a></li><li><a href="#штатный-метод-переноса-через-настройки-miui">Штатный метод переноса через настройки MIUI</a></li><li><a href="#использование-режима-adoptable-storage">Использование режима Adoptable Storage</a></li><li><a href="#продвинутый-метод-команды-adb">Продвинутый метод: команды ADB</a></li><li><a href="#работа-с-кэшем-и-мультимедиа">Работа с кэшем и мультимедиа</a></li><li><a href="#типичные-ошибки-и-способы-их-решения">Типичные ошибки и способы их решения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/k/ka/kak-pozharit-rybnye-kotlety-v-aerogrile-xiaomi.html">Как пожарить рыбные котлеты в аэрогриле Xiaomi: пошаговый рецепт</a></li><li><a href="/articles/a/ad/adas-v-videoregistratore-chto-eto-xiaomi.html">ADAS в видеорегистраторе Xiaomi: что это и как работает в 2026 году</a></li><li><a href="/articles/n/ne/ne-zakryvajte-oblast-dinamika-xiaomi-kak-chto-za-funktsiya.html">Как закрыть область динамика Xiaomi: функция и настройки</a></li><li><a href="/articles/k/ka/kak-sbrosit-telefon-do-zavodskikh-nastroek-xiaomi-redmi-note-5.html">Сброс Xiaomi Redmi Note 5: Полный сброс до заводских настроек</a></li><li><a href="/articles/k/ka/kakie-noutbuki-luchshe-xiaomi-ili-honor.html">Xiaomi или Honor: какие ноутбуки лучше выбрать в 2026</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как перенести приложения на SD карту Xiaomi Redmi 4X: Инструкция</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-карты-памяти-и-устройства">Подготовка карты памяти и устройства</a></li><li><a href="#штатный-метод-переноса-через-настройки-miui">Штатный метод переноса через настройки MIUI</a></li><li><a href="#использование-режима-adoptable-storage">Использование режима Adoptable Storage</a></li><li><a href="#продвинутый-метод-команды-adb">Продвинутый метод: команды ADB</a></li><li><a href="#работа-с-кэшем-и-мультимедиа">Работа с кэшем и мультимедиа</a></li><li><a href="#типичные-ошибки-и-способы-их-решения">Типичные ошибки и способы их решения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы популярного смартфона <em>Xiaomi Redmi 4X</em> часто сталкиваются с нехваткой встроенного хранилища, особенно в базовых версиях на 16 или 32 гигабайта. Современные приложения обрастают огромным количеством кэша, и системное сообщение о нехватке места может появляться в самый неподходящий момент. Решением проблемы становится грамотное использование внешней карты памяти <em>MicroSD</em>, однако стандартные методы Android в оболочке <strong>MIUI</strong> часто скрыты или ограничены.</p>
+
+<p>Процесс переноса данных не всегда сводится к простому перетаскиванию файлов, так как операционная система имеет строгие правила безопасности. В этой статье мы разберем все доступные способы: от штатных настроек до продвинутых методов через <strong>ADB</strong>, которые позволяют обойти ограничения производителя. Вы узнаете, как превратить обычную флешку в полноценное продолжение системного раздела.</p>
+
+<p>Прежде чем приступать к активным действиям, необходимо подготовить устройство и убедиться в совместимости компонентов. Неправильная подготовка может привести к потере данных или нестабильной работе <em>Redmi 4X</em>, поэтому игнорировать начальный этап категорически не рекомендуется.</p>
+
+<h2 id="подготовка-карты-памяти-и-устройства">Подготовка карты памяти и устройства</h2>
+
+<p>Первым шагом является выбор качественного накопителя, так как скорость работы приложений напрямую зависит от класса скорости вашей флешки. Дешевые карты с низким рейтингом записи могут вызвать сильное подтормаживание интерфейса и долгие загрузки программ. Для <em>Xiaomi Redmi 4X</em> оптимальным выбором станут карты стандарта <strong>Class 10</strong> или <strong>UHS-I</strong>, которые обеспечивают достаточную пропускную способность.</p>
+
+<p>После физической установки карты в слот, расположенный в гибридном лотке вместе с SIM-картой, система предложит несколько вариантов использования. Если вы планируете хранить только фото и музыку, можно оставить форматирование как "Портативное хранилище". Однако для переноса приложений потребуется изменить этот статус, что повлечет за собой полное удаление всех данных на носителе.</p>
+
+<ul>
+<li>📱 Убедитесь, что карта памяти вставлена до щелчка и определяется в меню <code>Настройки → Память</code>.</li>
+<li>💾 Сделайте резервную копию важных файлов, так как форматирование уничтожит всю информацию.</li>
+<li>🔋 Зарядите смартфон минимум до 50%, чтобы избежать отключения во время критических процессов.</li>
+</ul>
+
+<p>Важно понимать, что после форматирования под внутренние нужды карта будет зашифрована и не сможет быть прочитана на других устройствах без повторной разблокировки. Это мера безопасности <strong>Android</strong>, предотвращающая кражу данных при потере телефона.</p>
+
+<blockquote>⚠️ Внимание: Если вы извлечете отформатированную как внутреннюю память карту из телефона, все приложения, перенесенные на нее, перестанут работать, а система может потребовать форматирования при повторной установке.</blockquote>
+
+<h2 id="штатный-метод-переноса-через-настройки-miui">Штатный метод переноса через настройки MIUI</h2>
+
+<p>Оболочка <em>MIUI</em> предоставляет базовый функционал для управления памятью, который позволяет перемещать некоторые приложения без использования стороннего софта. Этот метод работает не для всех программ, так как разработчики могут запрещать перенос своих продуктов на внешние носители. Чтобы проверить возможность переноса, необходимо перейти в раздел управления приложениями.</p>
+
+<p>Найдите в списке нужную программу и нажмите на неё. Если функция доступна, вы увидите активную кнопку "Переместить на SD-карту". В ином случае кнопка будет отсутствовать или быть неактивной, что означает жесткую привязку приложения к системному разделу. Чаще всего так ведут себя системные сервисы <em>Xiaomi</em> и тяжелые игры с дополнительными кэш-файлами.</p>
+
+<div class="pb-poll" id="poll-edfb138a"><div class="pb-poll-question">📊 Какой объем встроенной памяти у вашего Redmi 4X?</div><div class="pb-poll-option" data-poll="edfb138a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">16 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="edfb138a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">32 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="edfb138a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">64 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="edfb138a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Не важно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Стоит отметить, что даже при успешном переносе часть данных все равно останется во внутренней памяти. Это связано с архитектурой <strong>Android</strong>, где исполняемые файлы могут оставаться на системном диске, а на карту выгружаются только ресурсы.</p>
+
+<ul>
+<li>📂 Перейдите в <code>Настройки → Приложения → Все приложения</code> для доступа к полному списку.</li>
+<li>🔄 Нажмите на иконку приложения и выберите опцию перемещения, если она активна.</li>
+<li>⏳ Дождитесь окончания процесса, не закрывая меню настроек.</li>
+</ul>
+
+<p>Этот способ наиболее безопасен для неопытных пользователей, но его эффективность ограничена политиками безопасности Google и разработчиков ПО. Если стандартный метод не помог освободить место, придется прибегать к более радикальным мерам.</p>
+
+<h2 id="использование-режима-adoptable-storage">Использование режима Adoptable Storage</h2>
+
+<p>Существует скрытая функция под названием <strong>Adoptable Storage</strong>, которая позволяет системе воспринимать карту памяти как неотъемлемую часть внутреннего хранилища. В отличие от обычного переноса, этот метод делает карту частью файловой системы, позволяя устанавливать на неё любые приложения, даже те, которые обычно блокируют перенос.</p>
+
+<p>Для активации этой функции на <em>Redmi 4X</em> часто требуется доступ к скрытому меню или использование специальных команд. После включения режима карта форматируется в файловой системе <strong>ext4</strong> или <strong>f2fs</strong>, что обеспечивает лучшую производительность и надежность хранения данных по сравнению с обычным <em>FAT32</em> или <em>exFAT</em>.</p>
+
+<details class="pb-accordion"><summary>Риски использования Adoptable Storage</summary><div class="pb-accordion-body"><p>При активном использовании режима срок службы карты памяти может сократиться из-за интенсивной записи системных логов и временных файлов. Рекомендуется использовать карты высокого класса надежности (High Endurance).</p></div></details>
+
+<p>Не все версии MIUI поддерживают эту функцию "из коробки", и иногда она блокируется производителем для защиты от некачественных карт памяти. Если в стандартном меню опции нет, её можно активировать через компьютер и отладку по USB, о чем пойдет речь в следующих разделах.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Портативное хранилище</th>
+<th>Внутреннее хранилище (Adoptable)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Файловая система</td>
+<td>FAT32 / exFAT</td>
+<td>ext4 / f2fs</td>
+</tr>
+<tr>
+<td>Доступ с ПК</td>
+<td>Прямой (через картридер)</td>
+<td>Только через телефон</td>
+</tr>
+<tr>
+<td>Перенос приложений</td>
+<td>Частичный</td>
+<td>Полный</td>
+</tr>
+<tr>
+<td>Шифрование</td>
+<td>Опционально</td>
+<td>Обязательно</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Использование этого режима превращает вашу флешку в аналог встроенного чипа памяти, но с меньшей скоростью чтения и записи. Для <em>Redmi 4X</em> с его процессором Snapdragon 435 разница в скорости может быть заметна, но для освобождения места это часто единственное решение.</p>
+
+<h2 id="продвинутый-метод-команды-adb">Продвинутый метод: команды ADB</h2>
+
+<p>Если графический интерфейс не дает нужных результатов, на помощь приходит инструментарий <strong>Android Debug Bridge (ADB)</strong>. Этот метод требует подключения смартфона к компьютеру и наличия установленных драйверов. Он позволяет принудительно включить поддержку карт памяти как внутреннего хранилища, даже если производитель скрыл эту опцию.</p>
+
+<p>Для начала необходимо активировать режим разработчика на телефоне. Для этого семь раз нажмите на номер сборки в разделе "О телефоне". Затем включите отладку по USB в появившемся меню. После подключения к ПК выполните команду для проверки соединения.</p>
+
+<pre><code>adb devices</code></pre>
+
+<p>После успешного подключения устройства введите команду для принудительного включения функции переноса. Это изменит глобальную переменную в системе <em>MIUI</em>, разрешающую перемещение приложений.</p>
+
+<pre><code>adb shell pm setInstallLocation 2</code></pre>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед запуском ADB</h4><label class="check-item"><input type="checkbox"><span>Установлены драйверы ADB</span></label><label class="check-item"><input type="checkbox"><span>Включена отладка по USB</span></label><label class="check-item"><input type="checkbox"><span>Подтверждено подключение на экране телефона</span></label><label class="check-item"><input type="checkbox"><span>Карта памяти отформатирована</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Значение "2" в команде указывает системе на приоритет внешнего хранилища при установке новых программ. Однако стоит помнить, что это не гарантирует перенос уже установленных приложений автоматически — их нужно будет переместить вручную через настройки.</p>
+
+<blockquote>⚠️ Внимание: Использование команд ADB может привести к нестабильности системы, если карта памяти имеет низкую скорость отклика. Убедитесь, что ваш накопитель соответствует требованиям производительности.</blockquote>
+
+<h2 id="работа-с-кэшем-и-мультимедиа">Работа с кэшем и мультимедиа</h2>
+
+<p>Даже после переноса самих приложений основной объем данных часто занимают медиафайлы мессенджеров вроде <em>Telegram</em> или <em>WhatsApp</em>. Эти программы позволяют вручную изменить путь сохранения загруженных файлов, что существенно разгружает основной раздел памяти.</p>
+
+<p>В настройках каждого мессенджера найдите раздел "Данные и хранилище" и укажите путь на SD-карту. Это действие не требует root-прав и безопасно для данных аккаунта. Фотографии и видео будут автоматически сохраняться на внешний носитель.</p>
+
+<ul>
+<li>📸 В камере измените путь сохранения в настройках на карту памяти.</li>
+<li>🎵 В музыкальных плеерах укажите папку на SD-карте как основную библиотеку.</li>
+<li>🗺️ В навигационных приложениях (например, <em>Yandex Navigator</em>) загрузите карты на внешний носитель.</li>
+</ul>
+
+<p>Такой подход позволяет освободить гигабайты пространства без риска повредить системные файлы приложений. Для <em>Xiaomi Redmi 4X</em> это особенно актуально, учитывая скромный объем встроенной памяти в базовых конфигурациях.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте стандартный файловый менеджер MIUI для очистки дубликатов фото. Часто в папке "Camera" и "WhatsApp Images" хранятся копии одних и тех же снимков, которые можно безопасно удалить.</p></aside>
+
+<h2 id="типичные-ошибки-и-способы-их-решения">Типичные ошибки и способы их решения</h2>
+
+<p>В процессе оптимизации памяти пользователи могут столкнуться с различными проблемами. Чаще всего система сообщает об ошибке перемещения или приложение перестает запускаться после переноса. Это может быть связано с повреждением файловой системы карты или конфликтом прав доступа.</p>
+
+<p>Если приложение "вылетает" сразу после запуска, попробуйте переместить его обратно во внутреннюю память. Некоторые программы, особенно банковские клиенты и сервисы <strong>Google</strong>, критически зависят от скорости доступа к файлам и не могут корректно работать с внешнего носителя.</p>
+
+<p>В случае если телефон перестал видеть карту памяти, проверьте контакты в слоте. Гибридный лоток <em>Redmi 4X</em> чувствителен к качеству контактов SIM-карты, которая может мешать плотному прилеганию microSD.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главная причина ошибок при переносе — низкая скорость карты памяти или её физический износ. Если проблемы повторяются, замените накопитель на более качественный.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли перенести все системные приложения на SD карту?</summary>
+<p>Перенос критических системных приложений не рекомендуется и часто блокируется системой. Это может привести к циклической перезагрузке (bootloop) или полной неработоспособности смартфона <em>Xiaomi</em>.</p>
+</details>
+
+<details>
+<summary>Ускорит ли это работу телефона?</summary>
+<p>Нет, скорее всего, скорость работы немного снизится. Карты памяти, даже быстрые, уступают во скорости внутренней памяти смартфона. Перенос нужен только для освобождения места, а не для повышения производительности.</p>
+</details>
+
+<details>
+<summary>Что будет с данными на карте, если я сброшу телефон до заводских настроек?</summary>
+<p>При полном сбросе (Wipe Data) данные на карте, отформатированной как внутреннее хранилище, будут зашифрованы ключом, который будет удален. Вы потеряете доступ к этим файлам без специального восстановления ключей, поэтому делайте бэкапы.</p>
+</details>
+
+<details>
+<summary>Почему кнопка переноса серая или отсутствует?</summary>
+<p>Это означает, что разработчик приложения запретил установку на внешние носители. Обойти это ограничение можно только с помощью root-прав или специальных модификаций системы, что не входит в рамки стандартной инструкции.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/k/ka/kak-pozharit-rybnye-kotlety-v-aerogrile-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как пожарить рыбные котлеты в аэрогриле Xiaomi: пошаговый рецепт</span>
+                <span class="pb-related-desc">Узнайте, как правильно приготовить сочные рыбные котлеты в аэрогриле Xiaomi — температура, время, се</span>
+            </a><a href="/articles/a/ad/adas-v-videoregistratore-chto-eto-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">ADAS в видеорегистраторе Xiaomi: что это и как работает в 2026 году</span>
+                <span class="pb-related-desc">Разбираемся, что такое система ADAS в видеорегистраторах Xiaomi: функции, принципы работы, модели с </span>
+            </a><a href="/articles/n/ne/ne-zakryvajte-oblast-dinamika-xiaomi-kak-chto-za-funktsiya.html" class="pb-related-card">
+                <span class="pb-related-title">Как закрыть область динамика Xiaomi: функция и настройки</span>
+                <span class="pb-related-desc">Узнайте, что такое закрытие области динамика на Xiaomi. Разбор функции, настройка звука и устранение</span>
+            </a><a href="/articles/k/ka/kak-sbrosit-telefon-do-zavodskikh-nastroek-xiaomi-redmi-note-5.html" class="pb-related-card">
+                <span class="pb-related-title">Сброс Xiaomi Redmi Note 5: Полный сброс до заводских настроек</span>
+                <span class="pb-related-desc">Подробная инструкция: как сбросить Xiaomi Redmi Note 5 до заводских настроек. Способы через меню и R</span>
+            </a><a href="/articles/k/ka/kakie-noutbuki-luchshe-xiaomi-ili-honor.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi или Honor: какие ноутбуки лучше выбрать в 2026</span>
+                <span class="pb-related-desc">Сравнение ноутбуков Xiaomi и Honor. Анализ экранов, автономности, производительности и экосистем. По</span>
+            </a><a href="/articles/c/ch/chto-oznachaet-sovmestimyj-brend-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Совместимый бренд Xiaomi: что это значит и как выбрать</span>
+                <span class="pb-related-desc">Разбираем, что означает совместимый бренд Xiaomi. Отличия суббрендов, экосистема Mi Home и список лу</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

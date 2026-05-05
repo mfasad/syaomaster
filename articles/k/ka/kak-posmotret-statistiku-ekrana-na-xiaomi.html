@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Статистика экрана Xiaomi: как посмотреть и расшифровать — СяоМастер</title>
+    <meta name="description" content="Узнайте, как проверить статистику экрана Xiaomi. Подробный разбор работы, циклов, температуры и проверка матрицы на битые пиксели.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-posmotret-statistiku-ekrana-na-xiaomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Статистика экрана Xiaomi: как посмотреть и расшифровать">
+    <meta property="og:description" content="Узнайте, как проверить статистику экрана Xiaomi. Подробный разбор работы, циклов, температуры и проверка матрицы на битые пиксели.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Статистика экрана Xiaomi: как посмотреть и расшифровать</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#диагностика-через-инженерное-меню-cit">Диагностика через инженерное меню CIT</a></li><li><a href="#использование-скрытых-кодов-для-проверки-матрицы">Использование скрытых кодов для проверки матрицы</a></li><li><a href="#анализ-времени-работы-и-активности-приложений">Анализ времени работы и активности приложений</a></li><li><a href="#проверка-температуры-и-напряжения-дисплея">Проверка температуры и напряжения дисплея</a></li><li><a href="#дополнительные-параметры-в-hyperos-и-miui">Дополнительные параметры в HyperOS и MIUI</a></li><li><a href="#частые-проблемы-и-их-решение">Частые проблемы и их решение</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/c/ch/chto-oznachaet-slovo-syaomi.html">Что означает слово Сяоми: история, перевод и значение бренда</a></li><li><a href="/articles/x/xi/xiaomi-parts-apk-chto-eto.html">Xiaomi Parts APK: что это и как работает сервис деталей</a></li><li><a href="/articles/e/em/emoji-keyboard-kak-udalit-s-xiaomi-poco.html">Как удалить emoji keyboard с Xiaomi Poco: полное руководство</a></li><li><a href="/articles/k/ka/kak-vyklyuchit-geolokatsiyu-na-androide-ksiomi.html">Как выключить геолокацию на Xiaomi: подробная инструкция</a></li><li><a href="/drugoe/k/ka/kak-pishetsya-originalnyj-xiaomi.html">Как правильно пишется бренд Xiaomi — официальное написание и ошибки</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как посмотреть статистику экрана Xiaomi: скрытые коды и инженерное меню</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#диагностика-через-инженерное-меню-cit">Диагностика через инженерное меню CIT</a></li><li><a href="#использование-скрытых-кодов-для-проверки-матрицы">Использование скрытых кодов для проверки матрицы</a></li><li><a href="#анализ-времени-работы-и-активности-приложений">Анализ времени работы и активности приложений</a></li><li><a href="#проверка-температуры-и-напряжения-дисплея">Проверка температуры и напряжения дисплея</a></li><li><a href="#дополнительные-параметры-в-hyperos-и-miui">Дополнительные параметры в HyperOS и MIUI</a></li><li><a href="#частые-проблемы-и-их-решение">Частые проблемы и их решение</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Пользователи смартфонов <em>Xiaomi</em>, <em>Redmi</em> и <em>POCO</em> часто задаются вопросом о ресурсе своего дисплея, особенно перед покупкой б/у устройства или при возникновении визуальных артефактов. В отличие от аккумуляторов, где счетчик циклов зарядки виден сразу, <strong>статистика экрана</strong> скрыта в глубине системных логов и инженерных меню. Однако существуют проверенные способы получить доступ к этим данным, не обладая правами суперпользователя.</p>
+
+<p>Понимание того, как работает <strong>мониторинг дисплея</strong>, позволяет вовремя диагностировать выгорание матрицы, проблемы с тачскрином или перегрев контроллера подсветки. Система Android и оболочка <em>MIUI</em> (а теперь уже <em>HyperOS</em>) ведут подробные журналы работы всех аппаратных компонентов. В этой статье мы разберем, как извлечь эту информацию, используя только встроенные средства и специальные коды, без установки стороннего софта.</p>
+
+<p>Важно отметить, что не все модели смартфонов предоставляют одинаковый уровень детализации данных. Флагманские серии <em>Xiaomi</em> и <em>Redmi Note</em> обычно имеют более продвинутые диагностические инструменты по сравнению с бюджетными моделями серии <em>C</em> или <em>A</em>. Тем не менее, базовые параметры, такие как время работы и текущее разрешение, доступны практически на любом устройстве.</p>
+
+<h2 id="диагностика-через-инженерное-меню-cit">Диагностика через инженерное меню CIT</h2>
+
+<p>Самый надежный способ получить доступ к аппаратной статистике — это использование встроенного инженерного меню <strong>CIT</strong> (Customer Integration Test). Этот раздел предназначен для заводской проверки качества и содержит тесты всех компонентов, включая дисплей. Чтобы попасть туда, необходимо открыть стандартное приложение «Телефон» и набрать секретный код.</p>
+
+<p>Введите комбинацию <code><em>#</em>#6484#<em>#</em></code> на клавиатуре набора номера. Если код введен правильно, система автоматически перенаправит вас в меню тестирования, не требуя нажатия кнопки вызова. Здесь вы найдете список всех доступных тестов. Нас интересует пункт, связанный с дисплеем, который может называться «Display», «Screen» или «Color bar».</p>
+
+<p>Выбрав тест экрана, вы сможете не только визуально оценить цветопередачу, но и увидеть текущие параметры работы. В некоторых версиях прошивки <em>MIUI</em> при переходе в этот раздел отображается информация о версии драйвера дисплея и текущей частоте обновления. Это критически важно для владельцев моделей с адаптивной частотой, например, <em>Redmi Note 12 Pro+</em> или <em>Xiaomi 13</em>.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка экрана в CIT</h4><label class="check-item"><input type="checkbox"><span>Набрать код <em>#</em>#6484#<em>#</em></span></label><label class="check-item"><input type="checkbox"><span>Найти пункт Display/Screen</span></label><label class="check-item"><input type="checkbox"><span>Проверить наличие битых пикселей</span></label><label class="check-item"><input type="checkbox"><span>Сверить версию драйвера</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote>
+<p>⚠️ Внимание: Не изменяйте настройки в инженерном меню, если не уверены в их назначении. Сброс калибровки тачскрина или изменение цветового профиля без оборудования может привести к некорректному отображению цветов.</p>
+</blockquote>
+
+<h2 id="использование-скрытых-кодов-для-проверки-матрицы">Использование скрытых кодов для проверки матрицы</h2>
+
+<p>Помимо общего меню CIT, существуют специфические коды, которые запускают непосредственно тесты матрицы. Они помогают выявить <strong>битые пиксели</strong>, неравномерность подсветки или проблемы с сенсорным слоем. Для запуска теста часто используется код <code><em>#</em>#64663#<em>#</em></code>, который открывает расширенное меню тестов.</p>
+
+<p>В этом режиме экран последовательно заливается различными цветами: красным, зеленым, синим, белым и черным. Ваша задача — внимательно осмотреть поверхность дисплея на предмет пятен, которые не меняют цвет, или точек, которые постоянно горят или не горят вовсе. Это и есть <mark>основной метод выявления дефектов матрицы при покупке б/у смартфона Xiaomi</mark>.</p>
+
+<p>Также в этом режиме можно проверить работу <strong>сенсорного слоя</strong>. Часто статистика «отказов» тачскрина не ведется в явном виде, но тест на многопальцевое касание покажет, все ли зоны экрана реагируют на прикосновения. Если в определенном углу смартфона сенсор не срабатывает, это может указывать на физическое повреждение шлейфа или самого дигитайзера.</p>
+
+<ul>
+<li>🔍 Равномерность: проверьте белый фон в темноте на наличие «облаков» или засветов по краям.</li>
+<li>🎨 Цветопередача: убедитесь, что при переключении цветов нет посторонних оттенков или полос.</li>
+<li>👆 Мультитач: тест должен поддерживать до 10 одновременных касаний на современных моделях.</li>
+</ul>
+
+<details class="pb-accordion"><summary>Почему тесты важны?</summary><div class="pb-accordion-body"><p>Тесты в инженерном меню работают на низком уровне, минуя многие программные фильтры оболочки. Это позволяет увидеть реальные артефакты матрицы, которые в обычном режиме использования могут маскироваться программной коррекцией яркости и цвета.</p></div></details>
+
+<h2 id="анализ-времени-работы-и-активности-приложений">Анализ времени работы и активности приложений</h2>
+
+<p>Если под статистикой экрана вы понимаете данные о том, сколько времени он был включен, то стандартные средства <em>Android</em> предоставляют эту информацию в полном объеме. Статистика использования позволяет понять, какие приложения больше всего нагружают дисплей и сколько времени вы проводите, глядя в смартфон. Это косвенный показатель износа <strong>OLED</strong> или <strong>IPS</strong> матрицы.</p>
+
+<p>Для просмотра детальной статистики перейдите в <code>Настройки → Цифровое благополучие и родительский контроль</code>. Здесь представлен график работы экрана, разбитый по дням и часам. Вы можете увидеть, сколько раз вы разблокировали устройство и какие приложения использовали чаще всего. Эти данные помогают оценить нагрузку на подсветку и пиксели.</p>
+
+<p>Более глубокий уровень статистики доступен в меню «Для разработчиков». Чтобы активировать его, нужно 7 раз нажать на номер версии в разделе «О телефоне». После активации в меню появится новый пункт. Там можно найти опцию «Показывать активность» или «Статистика процессов», где видно, какие службы используют экран в фоновом режиме, что может указывать на оптимизацию системы.</p>
+
+<div class="pb-poll" id="poll-6f64c46a"><div class="pb-poll-question">📊 Какой тип экрана у вашего Xiaomi?</div><div class="pb-poll-option" data-poll="6f64c46a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">IPS LCD</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6f64c46a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">AMOLED</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6f64c46a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">OLED</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6f64c46a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Super AMOLED</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6f64c46a" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Стоит отметить, что постоянная высокая яркость и статичное изображение (например, навигатор или клавиатура) ускоряют деградацию органических светодиодов в экранах <em>AMOLED</em>. Поэтому анализ времени работы помогает скорректировать привычки использования, например, включить автояркость или темную тему.</p>
+
+<h2 id="проверка-температуры-и-напряжения-дисплея">Проверка температуры и напряжения дисплея</h2>
+
+<p>Техническая статистика также включает параметры питания и температурные режимы. Перегрев — один из главных врагов электроники, и дисплейный модуль здесь не исключение. Контроллер питания дисплея может нагреваться приной игре или просмотре видео в высоком разрешении. Мониторинг этих показателей помогает предотвратить отслоение шлейфов или деградацию клея.</p>
+
+<p>Для получения данных о температуре можно использовать ADB-команды, но есть и более простые способы через меню отладки. В разделе «Для разработчиков» часто доступна опция «Отображать температуру» или подобные инструменты мониторинга. Однако для точных данных лучше воспользоваться приложениями вроде <em>CPU Throttling Test</em>, которые считывают данные с датчиков термоконтроля, включая датчик near-panel.</p>
+
+<p>Нормальной рабочей температурой для зоны дисплея считается диапазон от 30 до 45 градусов Цельсия при активной нагрузке. Если показатели превышают 50 градусов, это может свидетельствовать о проблемах с теплоотводом или неисправности контроллера. Длительная работа при таких температурах сокращает срок службы <strong>жидких кристаллов</strong> или органических соединений.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Нормальное значение</th>
+<th>Критическое значение</th>
+<th>Влияние на экран</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Температура панели</td>
+<td>30-40 °C</td>
+<td>> 50 °C</td>
+<td>Выгорание, желтизна</td>
+</tr>
+<tr>
+<td>Частота обновления</td>
+<td>60/90/120 Гц</td>
+<td>Нестабильная</td>
+<td>Рывки, лаги интерфейса</td>
+</tr>
+<tr>
+<td>Яркость (ниты)</td>
+<td>400-1000+</td>
+<td>Падение максимума</td>
+<td>Деградация подсветки</td>
+</tr>
+<tr>
+<td>Время отклика</td>
+<td>< 10 мс</td>
+<td>> 20 мс</td>
+<td>Шлейфы в играх</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>
+<p>⚠️ Внимание: Если ваш смартфон Xiaomi сильно нагревается в верхней части (где расположен шлейф дисплея), немедленно прекратите использование и дайте ему остыть. Это может быть признаком короткого замыкания в цепи подсветки.</p>
+</blockquote>
+
+<h2 id="дополнительные-параметры-в-hyperos-и-miui">Дополнительные параметры в HyperOS и MIUI</h2>
+
+<p>С выходом оболочки <em>HyperOS</em> компания <em>Xiaomi</em> несколько изменила структуру системных отчетов. Теперь больше внимания уделяется энергопотреблению каждого элемента, включая экран. В разделе «Батарея» можно увидеть детальную статистику времени «Экран включен» (Screen On Time). Этот параметр является ключевым для оценки остаточного ресурса устройства.</p>
+
+<p>Также в новых версиях прошивки появилась функция защиты зрения, которая регулирует цветовую температуру в зависимости от времени суток. Статистика работы этой функции доступна в меню «Экран». Вы можете увидеть, сколько часов в день работала защита от синего света, что полезно для оценки нагрузки на глаза.</p>
+
+<p>Для продвинутых пользователей доступен режим «Расширенные цвета», который позволяет переключаться между цветовыми профилями (sRGB, P3, Vivid). Переключение между ними не сбрасывает статистику, но может временно изменить калибровку. Если вы заметили, что после переключения профилей цвета стали неестественными, возможно, потребуется сброс настроек экрана или калибровка через инженерное меню.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте темную тему и Always On Display с минималистичным циферблатом, чтобы снизить нагрузку на отдельные пиксели AMOLED-экранов и предотвратить неравномерное выгорание.</p></aside>
+
+<h2 id="частые-проблемы-и-их-решение">Частые проблемы и их решение</h2>
+
+<p>При анализе статистики и состояния экрана пользователи часто сталкиваются с артефактами, которые можно интерпретировать как поломку. Однако это программные сбои. Например, «мертвые» пиксели иногда можно реанимировать с помощью программ, быстро меняющих цвет соседних точек. Это не всегда помогает, но попробовать стоит перед заменой модуля.</p>
+
+<p>Другая распространенная проблема — «призрачные касания» (ghost touch). Статистика таких событий не ведется, но проявляется это в хаотичном открытии приложений. Часто причина кроется в некачественном зарядном устройстве, создающем помехи, или в повреждении шлейфа. Если статистика экрана показывает нормальную работу, но тачскрин ведет себя странно, проверьте зарядку.</p>
+
+<p>Если вы обнаружили, что статистика времени работы экрана резко выросла без вашего участия, проверьте список запущенных приложений. Возможно, какое-то приложение зависло в фоне и держит экран активным или не дает ему погаснуть. В таком случае поможет очистка кэша или удаление проблемного приложения.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная проверка экрана через инженерное меню и анализ времени работы — лучшие способы продлить жизнь дисплею вашего Xiaomi и вовремя заметить начинающиеся проблемы.</p></aside>
+
+<details>
+<summary>Как узнать точное количество часов наработки экрана?</summary>
+<p>Точное количество часов наработки (как пробег у автомобиля) в явном виде в меню Xiaomi обычно не отображается. Эти данные хранятся в логах производителя экрана. Получить их можно только через специальные утилиты на ПК с root-правами или через ADB-команды, счит</div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/c/ch/chto-oznachaet-slovo-syaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Что означает слово Сяоми: история, перевод и значение бренда</span>
+                <span class="pb-related-desc">Узнайте, что означает слово Сяоми, как переводится логотип компании и почему основатель Лэй Цзюнь вы</span>
+            </a><a href="/articles/x/xi/xiaomi-parts-apk-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Xiaomi Parts APK: что это и как работает сервис деталей</span>
+                <span class="pb-related-desc">Подробный разбор Xiaomi Parts APK: что это за системный компонент, как он связан с ремонтом экрана и</span>
+            </a><a href="/articles/e/em/emoji-keyboard-kak-udalit-s-xiaomi-poco.html" class="pb-related-card">
+                <span class="pb-related-title">Как удалить emoji keyboard с Xiaomi Poco: полное руководство</span>
+                <span class="pb-related-desc">Подробная инструкция, как убрать сторонние эмодзи на Xiaomi и Poco. Удаление приложения, отключение </span>
+            </a><a href="/articles/k/ka/kak-vyklyuchit-geolokatsiyu-na-androide-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как выключить геолокацию на Xiaomi: подробная инструкция</span>
+                <span class="pb-related-desc">Полный гид по отключению GPS на смартфонах Xiaomi и Redmi. Сохраните батарею и скройте местоположени</span>
+            </a><a href="/drugoe/k/ka/kak-pishetsya-originalnyj-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно пишется бренд Xiaomi — официальное написание и ошибки</span>
+                <span class="pb-related-desc">Узнайте, как правильно писать название бренда Xiaomi на русском и английском, распространённые ошибк</span>
+            </a><a href="/articles/k/ka/kak-sdelat-rezervnoe-kopirovanie-na-xiaomi-redmi-3.html" class="pb-related-card">
+                <span class="pb-related-title">Резервное копирование Xiaomi Redmi 3: Полная инструкция</span>
+                <span class="pb-related-desc">Как сделать бэкап на Xiaomi Redmi 3: пошаговое руководство по сохранению данных, фото и контактов. О</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

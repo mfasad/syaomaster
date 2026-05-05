@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Gboard на Xiaomi: что это и как настроить клавиатуру — СяоМастер</title>
+    <meta name="description" content="Подробный разбор Gboard на смартфонах Xiaomi. Настройка, скрытые функции, управление жестами и решение типичных проблем с вводом текста.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/g/gb/gboard-chto-eto-za-programma-na-ksiomi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Gboard на Xiaomi: что это и как настроить клавиатуру">
+    <meta property="og:description" content="Подробный разбор Gboard на смартфонах Xiaomi. Настройка, скрытые функции, управление жестами и решение типичных проблем с вводом текста.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Gboard на Xiaomi: что это и как настроить клавиатуру</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основное-назначение-и-ключевые-особенности-gboard">Основное назначение и ключевые особенности Gboard</a></li><li><a href="#отличия-от-стандартной-клавиатуры-miui">Отличия от стандартной клавиатуры MIUI</a></li><li><a href="#подробная-инструкция-по-установке-и-активации">Подробная инструкция по установке и активации</a></li><li><a href="#настройка-персонализации-и-языковых-панелей">Настройка персонализации и языковых панелей</a></li><li><a href="#управление-жестами-и-скрытые-возможности">Управление жестами и скрытые возможности</a></li><li><a href="#решение-типичных-проблем-и-часто-задаваемые-вопросы">Решение типичных проблем и часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-perenesti-prilozhenie-na-sd-kartu-xiaomi-redmi-8.html">Как перенести приложения на SD-карту Xiaomi Redmi 8: Инструкция</a></li><li><a href="/articles/k/ka/kak-podklyuchit-nfs-na-telefone-xiaomi-sberbank.html">NFS на Xiaomi и Сбербанк: как включить и пользоваться</a></li><li><a href="/articles/c/ch/chto-takoe-google-play-services-for-ar-na-xiaomi.html">Google Play Services for AR на Xiaomi: что это и зачем нужно</a></li><li><a href="/articles/g/gd/gde-na-ksiomi-chasy.html">Где на Xiaomi часы: настройка виджетов и будильника</a></li><li><a href="/articles/k/ka/kakoj-tip-akkumulyatora-v-telefone-xiaomi-redmi-9.html">Тип аккумулятора Xiaomi Redmi 9: характеристики, модель и замена</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Gboard: что это за программа на Xiaomi и как её настроить</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основное-назначение-и-ключевые-особенности-gboard">Основное назначение и ключевые особенности Gboard</a></li><li><a href="#отличия-от-стандартной-клавиатуры-miui">Отличия от стандартной клавиатуры MIUI</a></li><li><a href="#подробная-инструкция-по-установке-и-активации">Подробная инструкция по установке и активации</a></li><li><a href="#настройка-персонализации-и-языковых-панелей">Настройка персонализации и языковых панелей</a></li><li><a href="#управление-жестами-и-скрытые-возможности">Управление жестами и скрытые возможности</a></li><li><a href="#решение-типичных-проблем-и-часто-задаваемые-вопросы">Решение типичных проблем и часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Владельцы смартфонов Xiaomi часто сталкиваются с вопросом о том, что представляет собой приложение <strong>Gboard</strong>, которое предустановлено в системе или предлагается к обновлению. Это не просто стандартная клавиатура, а мощный инструмент ввода от Google, который приходит на смену или дополняет стандартный Mi Keyboard. Понимание функционала этой программы позволяет значительно ускорить набор текста, улучшить автокоррекцию и получить доступ к уникальным возможностям, недоступным в базовых версиях.</p>
+
+<p>На устройствах с оболочкой <em>MIUI</em> или новой <em>HyperOS</em> интеграция сервисов Google является ключевым аспектом пользовательского опыта. <strong>Gboard</strong> (Google Keyboard) — это интеллектуальная система, которая обучается вашему стилю письма, запоминает часто используемые фразы и адаптируется под конкретные приложения. В отличие от простых аналогов, она глубоко встроена в экосистему поискового гиганта, что обеспечивает мгновенный поиск GIF-изображений, перевод слов на лету и голосовой ввод с высочайшей точностью.</p>
+
+<p>Многие пользователи ошибочно полагают, что это лишнее приложение, занимающее память, однако его удаление или отключение может лишить смартфон важного функционала. <mark>Без Gboard на многих глобальных версиях Xiaomi становится невозможным полноценный голосовой ввод и умная автокоррекция русского языка.</mark> В этой статье мы детально разберем, зачем нужна эта программа, как её правильно настроить и какие скрытые возможности стоит активировать прямо сейчас.</p>
+
+<h2 id="основное-назначение-и-ключевые-особенности-gboard">Основное назначение и ключевые особенности Gboard</h2>
+
+<p>Главная задача <strong>Gboard</strong> — обеспечить максимально быстрый и комфортный ввод текста в любых условиях. Программа анализирует контекст переписки и предлагает наиболее вероятные слова, имена контактов или даже целые фразы. На смартфонах <em>Xiaomi</em> это особенно актуально, так как стандартная клавиатура иногда уступает в скорости предиктивного набора. Алгоритмы машинного обучения позволяют клавиатуре «понимать» сленг, специфические названия моделей или профессиональные термины после нескольких вводов.</p>
+
+<p>Одной из визитных карточек приложения является встроенный переводчик. Вам не нужно переключаться между приложениями, чтобы отправить сообщение иностранному партнеру. Достаточно нажать кнопку перевода, выбрать язык, и <strong>Gboard</strong> будет транслировать ваши слова в реальном времени. Это работает не только для английского, но и для десятков других языков, поддерживаемых сервисами Google.</p>
+
+<ul>
+<li>🚀 Голосовой ввод с поддержкой пунктуации голосом и распознаванием команд без необходимости касаться экрана.</li>
+<li>🎨 Встроенная панель эмодзи, стикеров и GIF-анимаций с возможностью поиска по ключевым словам.</li>
+<li>🔍 Прямоугольная навигация (свайпы), позволяющая управлять курсором без отрыва пальцев от клавиатуры.</li>
+</ul>
+
+<p>Важно отметить, что программа постоянно обновляется через <em>Google Play Маркет</em>, получая новые функции и исправления безопасности. В отличие от системных клавиатур, которые обновляются только с прошивкой, <strong>Gboard</strong> эволюционирует независимо от версии <em>MIUI</em>. Это гарантирует, что даже на старых моделях <em>Redmi</em> или <em>Poco</em> вы будете иметь доступ к самым свежим технологиям ввода.</p>
+
+<div class="pb-poll" id="poll-2b8410af"><div class="pb-poll-question">📊 Какой способ ввода текста вы используете чаще всего?</div><div class="pb-poll-option" data-poll="2b8410af" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Полный набор пальцами</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2b8410af" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Голосовой ввод</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2b8410af" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Свайпы (не отрывая палец)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2b8410af" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Т9 (цифровая клавиатура)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="отличия-от-стандартной-клавиатуры-miui">Отличия от стандартной клавиатуры MIUI</h2>
+
+<p>Стандартная клавиатура, поставляемая с оболочкой <em>MIUI</em>, часто разрабатывается сторонними подрядчиками (например, TouchPal или Sogou в китайских версиях) и может содержать избыточную рекламу или навязчивые предложения эмодзи. <strong>Gboard</strong> выделяется минимализмом и отсутствием визуального шума. Интерфейс чистый, ничто не отвлекает от набора текста, а темы оформления меняются одним касанием без необходимости скачивания отдельных плагинов.</p>
+
+<p>С точки зрения приватности, подход Google также отличается. Хотя клавиатура собирает данные для улучшения алгоритмов, у пользователя есть полный контроль над этим процессом. Вы можете в любой момент очистить историю обучения или вообще запретить сбор статистики. Стандартные клавиатуры на <em>Xiaomi</em> иногда требуют больше разрешений, чем необходимо для их работы, что вызывает вопросы у пользователей, следящих за цифровой гигиеной.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При переходе на Gboard с китайской версии прошивки убедитесь, что в настройках языков активирована русская раскладка, иначе клавиатура может по умолчанию предлагать только английский или китайский ввод.</p>
+</blockquote>
+
+<p>Еще одно важное отличие — стабильность работы. Пользователи часто жалуются на «лаги» стандартной клавиатуры при быстром печатании в тяжелых приложениях вроде <em>Telegram</em> или <em>Viber</em>. <strong>Gboard</strong> оптимизирована для работы с любыми Android-приложениями и реже подвержена зависаниям. Кроме того, она поддерживает разделение экрана на планшетах <em>Xiaomi Pad</em>, автоматически адаптируя layout кнопок под горизонтальную ориентацию.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если стандартная клавиатура Xiaomi кажется вам перегруженной, просто установите Gboard как основную в настройках системы — это instantly улучшит отзывчивость ввода.</p></aside>
+
+<h2 id="подробная-инструкция-по-установке-и-активации">Подробная инструкция по установке и активации</h2>
+
+<p>На глобальных версиях смартфонов <em>Xiaomi</em> приложение часто уже предустановлено, но может быть скрыто или не активировано по умолчанию. Если вы не нашли его в списке приложений, необходимо загрузить последнюю версию из официального магазина <em>Google Play</em>. Процесс установки занимает менее минуты и не требует root-прав или сложных манипуляций с ADB.</p>
+
+<p>После загрузки приложения система автоматически предложит активировать новый метод ввода. Если этого не произошло, вам нужно вручную перейти в настройки. Путь может немного отличаться в зависимости от версии оболочки, но логика остается единой: вам нужно разрешить клавиатуре работать и выбрать её приоритетной.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист активации Gboard</h4><label class="check-item"><input type="checkbox"><span>Скачать приложение из Google Play</span></label><label class="check-item"><input type="checkbox"><span>Перейти в Настройки → Дополнительные настройки</span></label><label class="check-item"><input type="checkbox"><span>Выбрать Язык и ввод → Управление клавиатурами</span></label><label class="check-item"><input type="checkbox"><span>Активировать переключатель Gboard</span></label><label class="check-item"><input type="checkbox"><span>Выбрать Gboard в качестве метода ввода по умолчанию</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Для выполнения активации выполните следующие действия:</p>
+<ol>
+<li>Откройте меню <code>Настройки</code> вашего смартфона.</li>
+<li>Перейдите в раздел <code>Дополнительные настройки</code> (или просто прокрутите вниз в новых версиях HyperOS).</li>
+<li>Найдите пункт <code>Язык и ввод</code>.</li>
+<li>Выберите <code>Управление клавиатурами</code> и включите тумблер напротив <strong>Gboard</strong>.</li>
+<li>Вернитесь назад и в пункте <code>Текущая клавиатура</code> выберите Google.</li>
+</ol>
+
+<p>После этих действий при любом вызове поля ввода будет появляться клавиатура Google. Первоначальная настройка может занять пару минут, пока система индексирует ваши контакты и часто используемые слова для улучшения автокоррекции.</p>
+
+<h2 id="настройка-персонализации-и-языковых-панелей">Настройка персонализации и языковых панелей</h2>
+
+<p>Мощь <strong>Gboard</strong> раскрывается при грамотной настройке. По умолчанию клавиатура предлагает базовый набор функций, но глубокое погружение в меню позволяет адаптировать её под себя. В первую очередь стоит проверить языковые настройки, особенно если вы используете несколько языков общения.</p>
+
+<p>Для добавления языка нажмите и удерживайте клавишу пробела или перейдите в настройки клавиатуры через шестеренку. Здесь можно не только добавить язык, но и выбрать конкретную раскладку (например, фонетическую или ручную для китайского, или стандартную ЙЦУКЕН для русского). <em>Xiaomi</em> позволяет легко переключаться между языками свайпом по пробелу, что очень удобно.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр настройки</th>
+<th>Описание функции</th>
+<th>Рекомендуемое значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Автокоррекция</td>
+<td>Автоматическое исправление опечаток</td>
+<td>Включено (высокий уровень)</td>
+</tr>
+<tr>
+<td>Предиктивный текст</td>
+<td>Предложение слов над клавиатурой</td>
+<td>Включено</td>
+</tr>
+<tr>
+<td>Вибрация при нажатии</td>
+<td>Тактильный отклик клавиш</td>
+<td>По желанию (5-10 мс)</td>
+</tr>
+<tr>
+<td>Звук нажатия</td>
+<td>Аудио сопровождение ввода</td>
+<td>Выключено (для экономии)</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Отдельного внимания заслуживает функция «Личный словарь». Сюда можно занести специфические слова, имена, названия улиц или профессиональные термины, которые стандартный алгоритм постоянно пытается исправить. Это делает <strong>Gboard</strong> уникальным инструментом для каждого конкретного пользователя.</p>
+
+<details class="pb-accordion"><summary>Как очистить историю обучения?</summary><div class="pb-accordion-body"><p>Если клавиатура начала предлагать странные слова или вы хотите сбросить все накопленные данные, перейдите в Настройки Gboard → Дополнительно → Сбросить настройки → Очистить личные данные. Это вернет клавиатуру в состояние «как после установки».</p></div></details>
+
+<h2 id="управление-жестами-и-скрытые-возможности">Управление жестами и скрытые возможности</h2>
+
+<p>Одной из самых полезных функций для владельцев больших смартфонов <em>Xiaomi</em> является ввод методом «свайп» (Glide typing). Вам не нужно отрывать палец от экрана, чтобы напечатать целое слово — просто скользите пальцем от буквы к букве. Алгоритм <strong>Gboard</strong> удивительно точно распознает даже небрежные движения, что позволяет печатать одной рукой на ходу.</p>
+
+<p>Кроме того, существует скрытая панель управления курсором. Если зажать пробел, клавиатура превращается в тачпад. Двигая пальцем по клавиатуре, вы можете перемещать курсор в тексте с точностью до символа, что критически важно при редактировании длинных сообщений или документов. Это избавляет от необходимости целиться пальцем в маленький курсор на экране.</p>
+
+<ul>
+<li>🎤 Диктовка текста: нажмите на микрофон и диктуйте сообщения, ставя знаки препинания голосом («запятая», «точка», «новый абзац»).</li>
+<li>📋 Буфер обмена: встроенная история копирования позволяет хранить до 5 последних фрагментов текста и вставлять их по мере необходимости.</li>
+<li>🎭 Темы оформления: возможность установить любое фото из галереи на фон клавиатуры или выбрать анимированную тему.</li>
+</ul>
+
+<p>Также стоит упомянуть функцию поиска Google, встроенную прямо в клавиатуру. Не выходя из чата, вы можете найти GIF-анимацию, карту местности или перевод фразы и сразу отправить собеседнику. Это делает <strong>Gboard</strong> настоящим комбайном для коммуникации, экономящим время на переключение между приложениями.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Функция голосового ввода требует стабильного подключения к интернету для максимальной точности распознавания, так как обработка звука происходит на серверах Google.</p>
+</blockquote>
+
+<h2 id="решение-типичных-проблем-и-часто-задаваемые-вопросы">Решение типичных проблем и часто задаваемые вопросы</h2>
+
+<p>Несмотря на высокую стабильность, пользователи <em>Xiaomi</em> могут сталкиваться с определенными нюансами работы программы. Чаще всего проблемы связаны с конфликтом настроек энергосбережения MIUI, который агрессивно «убивает» фоновые процессы, включая процессы ввода.</p>
+
+<p>Если клавиатура пропадает или не всплывает при наборе текста, проверьте настройки батареи. Убедитесь, что для <strong>Gboard</strong> выставлено разрешение на работу в фоне и отсутсвует ограничение «Автозапуск». Также проблема может решаться простой очисткой кэша приложения через меню управления приложениями.</p>
+
+<p>Другая распространенная проблема — incorrect раскладка или отсутствие русских букв. Это лечится переподключением языка в настройках самой клавиатуры. Иногда помогает полный сброс настроек клавиатуры до заводских параметров.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Большинство проблем с Gboard на Xiaomi решаются настройкой автозапуска и снятием ограничений энергосбережения для этого конкретного приложения.</p></aside>
+
+<details>
+<summary>Безопасно ли использовать Gboard на Xiaomi с точки зрения конфиденциальности?</summary>
+<p>Да, это безопасно. Gboard является официальным продуктом Google. Данные, которые она собирает (для автокоррекции), хранятся в зашифрованном виде и привязаны к вашему аккаунту. Вы можете в любой момент отключить сбор статистики в настройках клавиатуры.</p>
+</details>
+
+<details>
+<summary>Почему Gboard потребляет много батареи?</summary>
+<p>Высокий расход энергии обычно связан с постоянным использованием микрофона для функции «Окей, Google» или активным использованием голосового ввода. Отключение постоянной прослушки в настройках Google значительно снизит потребление.</p>
+</details>
+
+<details>
+<summary>Можно ли полностью удалить Gboard с телефона Xiaomi?</summary>
+<p>Если клавиатура была предустановлена системно, удалить её полностью без root-прав нельзя, но можно отключить. Если вы скачали её сами — удаление доступно через стандартное меню приложений. Однако без неё телефон может остаться без возможности ввода текста, если другая клавиатура не активирована.</p>
+</details>
+
+<details>
+<summary>Как включить режим одной руки в Gboard?</summary>
+<p>В настройках клавиатуры найдите пункт «Режим одной рукой». Активируйте его и выберите сторону (левую или правую). Клавиатура сожмется и сместится к краю экрана для удобного ввода большим пальцем.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-perenesti-prilozhenie-na-sd-kartu-xiaomi-redmi-8.html" class="pb-related-card">
+                <span class="pb-related-title">Как перенести приложения на SD-карту Xiaomi Redmi 8: Инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство, как перенести приложения на SD-карту на Xiaomi Redmi 8. Настройка внутренней </span>
+            </a><a href="/articles/k/ka/kak-podklyuchit-nfs-na-telefone-xiaomi-sberbank.html" class="pb-related-card">
+                <span class="pb-related-title">NFS на Xiaomi и Сбербанк: как включить и пользоваться</span>
+                <span class="pb-related-desc">Подробная инструкция по настройке NFC на смартфонах Xiaomi для оплаты через Сбербанк. Решения пробле</span>
+            </a><a href="/articles/c/ch/chto-takoe-google-play-services-for-ar-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Google Play Services for AR на Xiaomi: что это и зачем нужно</span>
+                <span class="pb-related-desc">Полный разбор Google Play Services for AR на смартфонах Xiaomi. Нужно ли это приложение, как обновит</span>
+            </a><a href="/articles/g/gd/gde-na-ksiomi-chasy.html" class="pb-related-card">
+                <span class="pb-related-title">Где на Xiaomi часы: настройка виджетов и будильника</span>
+                <span class="pb-related-desc">Подробный гид, где на Xiaomi находятся часы. Настройка виджетов, будильников, таймеров и секундомера</span>
+            </a><a href="/articles/k/ka/kakoj-tip-akkumulyatora-v-telefone-xiaomi-redmi-9.html" class="pb-related-card">
+                <span class="pb-related-title">Тип аккумулятора Xiaomi Redmi 9: характеристики, модель и замена</span>
+                <span class="pb-related-desc">Какой аккумулятор стоит в Xiaomi Redmi 9? Подробный разбор модели BM47, емкости 5020 мАч, технологий</span>
+            </a><a href="/articles/k/ka/kak-vyklyuchit-bystruyu-zaryadku-na-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить быструю зарядку на Xiaomi: полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, как выключить быструю зарядку на Xiaomi, Redmi и POCO. Эффективные методы через инженерное </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

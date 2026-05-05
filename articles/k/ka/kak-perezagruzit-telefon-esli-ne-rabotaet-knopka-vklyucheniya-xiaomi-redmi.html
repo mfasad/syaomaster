@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📱</text></svg>">
+    <title>Как перезагрузить телефон Xiaomi Redmi без кнопки включения — СяоМастер</title>
+    <meta name="description" content="Способы перезагрузки Xiaomi Redmi и POCO, если кнопка питания не работает. Сброс через ADB, инженерное меню и настройки системы.">
+    <link rel="canonical" href="https://syaomaster.vercel.app/articles/k/ka/kak-perezagruzit-telefon-esli-ne-rabotaet-knopka-vklyucheniya-xiaomi-redmi.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как перезагрузить телефон Xiaomi Redmi без кнопки включения">
+    <meta property="og:description" content="Способы перезагрузки Xiaomi Redmi и POCO, если кнопка питания не работает. Сброс через ADB, инженерное меню и настройки системы.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777981272">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">📱</span>
+                <span class="pb-logo-text">СяоМастер</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sbros-i-razblokirovka/" class="pb-dropdown-item">🔓 Сброс и разблокировка</a>
+<a href="/category/nastrojka-sistemy/" class="pb-dropdown-item">⚙️ Настройка системы</a>
+<a href="/category/pamyat-i-fajly/" class="pb-dropdown-item">💾 Память и файлы</a>
+<a href="/category/zvuk-i-vibratsiya/" class="pb-dropdown-item">🔊 Звук и вибрация</a>
+<a href="/category/kamera-i-foto/" class="pb-dropdown-item">📸 Камера и фото</a>
+<a href="/category/svyaz-i-set/" class="pb-dropdown-item">📡 Связь и сеть</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный дом</a>
+<a href="/category/nosimye-ustrojstva/" class="pb-dropdown-item">⌚ Носимые устройства</a>
+<a href="/category/routery-i-set/" class="pb-dropdown-item">📶 Роутеры и сеть</a>
+<a href="/category/bezopasnost/" class="pb-dropdown-item">🛡️ Безопасность</a>
+<a href="/category/batareya-i-zaryadka/" class="pb-dropdown-item">🔋 Батарея и зарядка</a>
+<a href="/category/prilozheniya-i-servisy/" class="pb-dropdown-item">📲 Приложения и сервисы</a>
+<a href="/category/remont-i-zhelezo/" class="pb-dropdown-item">🔧 Ремонт и железо</a>
+<a href="/category/obnovleniya-i-proshivka/" class="pb-dropdown-item">🔄 Обновления и прошивка</a>
+<a href="/category/pokupka-i-vybor/" class="pb-dropdown-item">🛒 Покупка и выбор</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как перезагрузить телефон Xiaomi Redmi без кнопки включения</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#использование-встроенного-расписания-включения-и-выключения">Использование встроенного расписания включения и выключения</a></li><li><a href="#перезагрузка-через-меню-специальных-возможностей">Перезагрузка через меню специальных возможностей</a></li><li><a href="#сброс-через-меню-recovery-режим-восстановления">Сброс через меню Recovery (Режим восстановления)</a></li><li><a href="#использование-adb-android-debug-bridge-для-рестарта">Использование ADB (Android Debug Bridge) для рестарта</a></li><li><a href="#программы-помощники-и-эмуляторы-кнопок">Программы-помощники и эмуляторы кнопок</a></li><li><a href="#радикальные-меры-полный-сброс-и-ремонт">Радикальные меры: полный сброс и ремонт</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-delat-papki-xiaomi.html">Как создать папку на Xiaomi: пошаговая инструкция для MIUI</a></li><li><a href="/articles/c/ch/chto-takoe-sluzhby-i-obratnaya-svyaz-v-telefone-ksiomi.html">Службы и обратная связь Xiaomi: что это и как настроить?</a></li><li><a href="/articles/k/ka/kak-ubrat-dlya-vas-v-galeree-xiaomi.html">Как убрать папку «Для вас» в галерее Xiaomi: Полная инструкция</a></li><li><a href="/articles/k/ka/kak-zamenit-zadnyuyu-kryshku-na-xiaomi-mi-9-lite.html">Замена задней крышки Xiaomi Mi 9 Lite: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-uznat-est-li-na-telefone-nfc-xiaomi-redmi-note-8.html">Как проверить NFC на Xiaomi Redmi Note 8: Полная инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как перезагрузить Xiaomi Redmi, если кнопка включения сломана</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#использование-встроенного-расписания-включения-и-выключения">Использование встроенного расписания включения и выключения</a></li><li><a href="#перезагрузка-через-меню-специальных-возможностей">Перезагрузка через меню специальных возможностей</a></li><li><a href="#сброс-через-меню-recovery-режим-восстановления">Сброс через меню Recovery (Режим восстановления)</a></li><li><a href="#использование-adb-android-debug-bridge-для-рестарта">Использование ADB (Android Debug Bridge) для рестарта</a></li><li><a href="#программы-помощники-и-эмуляторы-кнопок">Программы-помощники и эмуляторы кнопок</a></li><li><a href="#радикальные-меры-полный-сброс-и-ремонт">Радикальные меры: полный сброс и ремонт</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда <em>Xiaomi Redmi</em> или <em>POCO</em> перестает реагировать на касания, а физическая кнопка включения повреждена, вызывает панику у любого владельца. Устройство может зависнуть в бесконечном цикле, перестать отвечать на команды или просто потребовать банального рестарта после установки обновлений. В нормальных условиях достаточно зажать клавишу питания на 10 секунд, но что делать, если этот механизм перестал функционировать? К счастью, операционная система <strong>Android</strong> и оболочка <strong>MIUI</strong> предусматривают несколько программных путей для управления энергосостоянием гаджета.</p>
+
+<p>Прежде чем нести смартфон в сервисный центр для замены шлейфа или кнопки, стоит попробовать программные методы решения проблемы. Они варьируются от стандартных настроек интерфейса до более сложных инженерных манипуляций через компьютер. Успешность метода часто зависит от текущей версии прошивки и состояния <strong>USB-отладки</strong>. Если экран хотя бы частично реагирует на касания, шансы вернуть устройство к жизни без пайки очень высоки.</p>
+
+<p>В этой статье мы подробно разберем все доступные способы принудительной перезагрузки, которые не требуют исправной механической кнопки. Вы узнаете, как использовать возможности операционной системы, сторонние приложения и компьютерные улиты для управления питанием. Важно действовать последовательно, начиная с самых простых и безопасных вариантов.</p>
+
+<h2 id="использование-встроенного-расписания-включения-и-выключения">Использование встроенного расписания включения и выключения</h2>
+
+<p>Самый простой и надежный способ перезагрузить смартфон <em>Xiaomi</em> без использования физических кнопок — это функция автоматического включения и выключения. Эта опция встроена в оболочку <strong>MIUI</strong> и <strong>HyperOS</strong> специально для таких случаев или для экономии энергии в ночное время. Механизм работы прост: вы устанавливаете время выключения через минуту, и телефон самостоятельно завершит работу и запустится заново.</p>
+
+<p>Для активации этой функции необходимо перейти в меню настроек. Найдите раздел <code>Батарея и производительность</code> или просто введите в поиске настроек фразу "расписание". Интерфейс может незначительно отличаться в зависимости от версии системы, но логика остается единой. Вам нужно установить время выключения на текущий момент плюс 2-3 минуты, а время включения — на минуту позже времени выключения.</p>
+
+<ul>
+<li>📱 Перейдите в <code>Настройки</code> → <code>Батарея и производительность</code>.</li>
+<li>⏰ Нажмите на вкладку <code>Расписание вкл./выкл.</code> в верхней части экрана.</li>
+<li>⚙️ Активируйте переключатель и задайте время выключения на 1-2 минуты вперед.</li>
+<li>🔄 Установите время включения на одну минуту позже времени выключения.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы не можете найти пункт в меню, используйте строку поиска в верхней части экрана настроек и введите "расписание" или "автозапуск".</p></aside>
+
+<p>После установки таймеров телефон сам выключится и тут же включится. Это полноценная перезагрузка, которая очищает оперативную память и перезапускает системные процессы. Метод идеально подходит, если экран работает, но тачскрин реагирует с задержкой, не давая зажать кнопку питания.</p>
+
+<h2 id="перезагрузка-через-меню-специальных-возможностей">Перезагрузка через меню специальных возможностей</h2>
+
+<p>В современных версиях Android и MIUI существует скрытое меню ассистента, которое дублирует функции физических кнопок. Оно создавалось для людей с ограниченными возможностями, но стало спасением для пользователей с поломанными кнопками. Активировав "Меню специальных возможностей", вы получите плавающую кнопку на экране, содержащую опции блокировки экрана, скриншота и, самое главное, перезагрузки.</p>
+
+<p>Чтобы включить этот инструмент, зайдите в настройки системы. Путь обычно выглядит так: <code>Настройки</code> → <code>Расширенные настройки</code> → <code>Специальные возможности</code>. В списке найдите пункт <strong>Меню специальных возможностей</strong>. После активации на экране появится виртуальная кнопка. Нажав на нее, вы увидите меню, где есть иконка выключения питания.</p>
+
+<blockquote>
+<p>⚠️ Внимание: В некоторых версиях MIUI при нажатии на кнопку выключения в этом меню телефон может потребовать подтверждения через графический ключ или отпечаток пальца. Убедитесь, что вы помните пароль разблокировки.</p>
+</blockquote>
+
+<p>Этот метод хорош тем, что он не требует подключения к компьютеру и работает даже в тех случаях, когда система работает нестабально, но интерфейс еще не "лег" окончательно. Если стандартное меню не помогает, можно попробовать сторонние приложения-ассистенты из <strong>Google Play</strong>, которые эмулируют кнопку питания.</p>
+
+
+
+
+<h2 id="сброс-через-меню-recovery-режим-восстановления">Сброс через меню Recovery (Режим восстановления)</h2>
+
+<p>Если интерфейс системы полностью заблокирован и не реагирует на касания, но сам телефон включен (горит подсветка или индикатор), можно попробовать войти в режим восстановления <strong>Recovery</strong>. В отличие от полной перезагрузки, вход в это меню часто осуществляется комбинацией кнопок громкости при выключенном (или зависшем) состоянии, но иногда требует и кнопки питания. Однако, если телефон завис и экран черный, но идет зарядка, есть шанс.</p>
+
+<p>Попасть в меню <strong>Recovery</strong> на Xiaomi можно, зажав кнопку <strong>Громкость Вверх</strong> и подключив кабель USB, подключенный к компьютеру. Если телефон выключен и не реагирует, этот метод может не сработать без кнопки питания, но если устройство просто зависло "намертво", подключение кабеля с зажатой громкостью может инициировать вход в режим восстановления.</p>
+
+<p>Попав в меню Recovery (оно обычно на английском или китайском языке, управление кнопками громкости, выбор кнопкой питания — которую мы обойти не можем, но иногда работает и тачскрин в этом режиме), можно выбрать опцию <code>Reboot</code>. Если тачскрин в этом режиме работает, вы сможете нажать <code>Reboot to System</code>, что приведет к перезагрузке.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Комбинация / Метод</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Вход в Recovery</td>
+<td>Громкость Вверх + Подключение USB</td>
+<td>Запуск режима восстановления</td>
+</tr>
+<tr>
+<td>Перезагрузка</td>
+<td>Выбор Reboot в меню</td>
+<td>Рестарт системы</td>
+</tr>
+<tr>
+<td>Wipe Data</td>
+<td>Выбор Wipe Data в меню</td>
+<td>Полный сброс (удаление данных)</td>
+</tr>
+<tr>
+<td>Safe Mode</td>
+<td>Выбор Safe Mode (если есть)</td>
+<td>Запуск в безопасном режиме</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Режим Recovery — это последний рубеж программной реанимации перед обращением к компьютерным утилитам.</p></aside>
+
+<h2 id="использование-adb-android-debug-bridge-для-рестарта">Использование ADB (Android Debug Bridge) для рестарта</h2>
+
+<p>Наиболее профессиональным и гарантированным способом перезагрузки является использование отладочного моста <strong>ADB</strong>. Этот инструмент позволяет отправлять команды напрямую в операционную систему Android с компьютера. Главное условие — на телефоне должна быть заранее включена <strong>USB-отладка</strong>. Если вы не включали её ранее, этот метод, увы, не сработает.</p>
+
+<p>Для начала вам понадобится компьютер (Windows, macOS или Linux) и USB-кабель. На компьютер необходимо установить драйвера для вашего устройства и платформу <strong>SDK Platform Tools</strong>. После подключения телефона к ПК в командной строке вводится специальная команда, которая принудительно инициирует перезагрузку, игнорируя состояние физических кнопок.</p>
+
+<pre><code>adb reboot</code></pre>
+
+<p>Эта короткая команда отправляет сигнал ядру системы о необходимости перезапуска. Если устройство зависло настолько сильно, что ADB не видит его (статус <code>offline</code> или отсутствие устройства в списке), попробуйте команду <code>adb reboot bootloader</code>, которая отправит телефон в режим загрузчика (Fastboot). Из режима Fastboot на некоторых моделях можно выполнить перезагрузку, снова подключив кабель при зажатой кнопке громкости (если она работает), но чаще всего команда <code>adb reboot</code> является финальным решением.</p>
+
+<details class="pb-accordion"><summary>Что делать, если компьютер не видит телефон по ADB?-->
+<!--WIDGET</summary><div class="pb-accordion-body"><p>spoiler:Если в списке устройств пусто, проверьте установленные драйверы. Возможно, потребуется установить универсальный драйвер Google USB Driver или специфичный драйвер Xiaomi. Также попробуйте другой USB-кабель, так как некоторые кабели поддерживают только зарядку.</p></div></details>
+
+<h2 id="программы-помощники-и-эмуляторы-кнопок">Программы-помощники и эмуляторы кнопок</h2>
+
+<p>Если тачскрин работает, но кнопка включения физически сломана, имеет смысл установить приложение, которое создаст программный аналог кнопки питания. В Google Play Store существует множество таких утилит, например, <em>Assistive Touch</em> или <em>Button Mapper</em>. Они создают на экране плавающую кнопку, функционал которой можно расширить.</p>
+
+<p>Некоторые приложения требуют предоставления специальных разрешений через ADB для эмуляции нажатий, другие работают через сервисы специальных возможностей (Accessibility Services). После установки и настройки вы сможете перезагружать телефон одним касанием по экрану. Это временное решение, которое позволит комфортно пользоваться смартфоном до ремонта.</p>
+
+<ul>
+<li>📲 Скачайте приложение для эмуляции кнопок из проверенного источника.</li>
+<li>🔐 Предоставьте необходимые разрешения в меню специальных возможностей.</li>
+<li>🎛️ Настройте действие "Перезагрузка" или "Блокировка" на длительное нажатие.</li>
+<li>✅ Проверьте работу виртуальной кнопки.</li>
+</ul>
+
+<p>Важно понимать, что такие приложения не смогут перезагрузить телефон, если система полностью зависла и перестала отвечать на касания. Они эффективны только как превентивная мера или при частичной неисправности.</p>
+
+<h2 id="радикальные-меры-полный-сброс-и-ремонт">Радикальные меры: полный сброс и ремонт</h2>
+
+<p>Если ни один из программных методов не помог, а телефон продолжает висеть на логотипе или черном экране, возможно, проблема кроется глубже — в повреждении системных файлов или аппаратном сбое контроллера питания. В этом случае может потребоваться полный сброс данных (<strong>Wipe Data</strong>), который также можно выполнить через меню Recovery, если получится туда попасть.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Полный сброс (Wipe Data) безвозвратно удалит все ваши фотографии, контакты и приложения. Используйте этот метод только в крайнем случае, если данные не важны или есть резервная копия.</p>
+</blockquote>
+
+<p>Однако, если кнопка включения не работает физически (провалилась, отошел контакт), никакие программы не починят сам механизм. Смартфон может разрядиться и вы больше не сможете его включить. Единственным верным решением в такой ситуации остается визит в сервисный центр для замены шлейфа кнопок или самой кнопки. Это недорогая и быстрая процедура, которая вернет полную функциональность вашему <em>Xiaomi Redmi</em>.</p>
+
+
+
+
+
+
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли включить выключенный телефон Xiaomi без кнопки?</summary>
+<p>Включить полностью выключенный телефон (когда батарея не в глубоком разряде) без кнопки питания крайне сложно. Некоторые модели позволяют это сделать подключением к компьютеру при зажатой громкости, но это работает не на всех устройствах. Чаще всего для первичного включения кнопка необходима.</p>
+</details>
+
+<details>
+<summary>Безопасно ли постоянно использовать команду ADB для перезагрузки?</summary>
+<p>Да, команда <code>adb reboot</code> является штатным средством разработчика и абсолютно безопасна для системы. Она выполняет тот же процесс, что и обычная перезагрузка, просто инициируется программно.</p></details>
+
+<details>
+<summary>Что делать, если тачскрин тоже не работает?</summary>
+<p>Если не работают и кнопка, и экран, программные методы бессильны. Вам понадобится адаптер OTG для подключения мыши к телефону (если экран хотя бы показывает изображение) или прямое подключение к компьютеру для управления через ADB, если была включена отладка.</p>
+</details>
+
+<details>
+<summary>Сколько стоит замена кнопки включения на Redmi?</summary>
+<p>Стоимость замены зависит от модели. Обычно меняется весь шлейф с кнопками. В сервисных центрах это одна из самых недорогих процедур, часто занимающая менее 30 минут.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-delat-papki-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как создать папку на Xiaomi: пошаговая инструкция для MIUI</span>
+                <span class="pb-related-desc">Узнайте, как делать папки на Xiaomi, переименовывать их, создавать папки-группы и использовать скрыт</span>
+            </a><a href="/articles/c/ch/chto-takoe-sluzhby-i-obratnaya-svyaz-v-telefone-ksiomi.html" class="pb-related-card">
+                <span class="pb-related-title">Службы и обратная связь Xiaomi: что это и как настроить?</span>
+                <span class="pb-related-desc">Подробный разбор системных процессов Android на Xiaomi. Что такое службы, как работает обратная связ</span>
+            </a><a href="/articles/k/ka/kak-ubrat-dlya-vas-v-galeree-xiaomi.html" class="pb-related-card">
+                <span class="pb-related-title">Как убрать папку «Для вас» в галерее Xiaomi: Полная инструкция</span>
+                <span class="pb-related-desc">Подробный гид по отключению рекомендаций и папки «Для вас» в галерее Xiaomi. Убираем рекламу, чистим</span>
+            </a><a href="/articles/k/ka/kak-zamenit-zadnyuyu-kryshku-na-xiaomi-mi-9-lite.html" class="pb-related-card">
+                <span class="pb-related-title">Замена задней крышки Xiaomi Mi 9 Lite: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гайд по замене разбитой задней панели Xiaomi Mi 9 Lite. Список инструментов, этапы разборк</span>
+            </a><a href="/articles/k/ka/kak-uznat-est-li-na-telefone-nfc-xiaomi-redmi-note-8.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить NFC на Xiaomi Redmi Note 8: Полная инструкция</span>
+                <span class="pb-related-desc">Узнайте, есть ли NFC в Redmi Note 8, и как его активировать. Проверенные способы проверки чипа, наст</span>
+            </a><a href="/articles/g/gd/gde-na-ksiomi-chasy.html" class="pb-related-card">
+                <span class="pb-related-title">Где на Xiaomi часы: настройка виджетов и будильника</span>
+                <span class="pb-related-desc">Подробный гид, где на Xiaomi находятся часы. Настройка виджетов, будильников, таймеров и секундомера</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">📱 СяоМастер</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sbros-i-razblokirovka/">🔓 Сброс и разблокировка</a> · <a href="/category/nastrojka-sistemy/">⚙️ Настройка системы</a> · <a href="/category/pamyat-i-fajly/">💾 Память и файлы</a> · <a href="/category/zvuk-i-vibratsiya/">🔊 Звук и вибрация</a> · <a href="/category/kamera-i-foto/">📸 Камера и фото</a> · <a href="/category/svyaz-i-set/">📡 Связь и сеть</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© СяоМастер. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
